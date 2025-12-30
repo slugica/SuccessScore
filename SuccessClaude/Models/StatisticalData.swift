@@ -145,6 +145,11 @@ struct RegionIncomeStats: Codable {
         case top10Percent = "top_10_percent"
         case sampleSize = "sample_size"
     }
+
+    // Helper to convert to IncomeStats
+    var asIncomeStats: IncomeStats {
+        IncomeStats(median: median, mean: mean)
+    }
 }
 
 // MARK: - Legacy Type Aliases (for backward compatibility)

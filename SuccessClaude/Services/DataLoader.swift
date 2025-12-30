@@ -117,21 +117,21 @@ class DataLoader {
     // MARK: - Individual Loaders (Country-specific)
 
     private func loadOccupationsData(countryCode: String) async throws -> BLSOEWSData {
-        let filename = countryCode == "us" ? "bls_oews_occupations" : "occupations"
+        let filename = "\(countryCode)_" + (countryCode == "us" ? "bls_oews_occupations" : "occupations")
         return try await load(filename: filename, extension: "json", subdirectory: countryCode)
     }
 
     private func loadRegionData(countryCode: String) async throws -> RegionIncomeData {
-        let filename = countryCode == "us" ? "state_income_data" : "regions"
+        let filename = "\(countryCode)_" + (countryCode == "us" ? "state_income_data" : "regions")
         return try await load(filename: filename, extension: "json", subdirectory: countryCode)
     }
 
     private func loadNationalData(countryCode: String) async throws -> NationalStatisticsData {
-        try await load(filename: "national_statistics", extension: "json", subdirectory: countryCode)
+        try await load(filename: "\(countryCode)_national_statistics", extension: "json", subdirectory: countryCode)
     }
 
     private func loadAutomationRiskData(countryCode: String) async throws -> AutomationRiskData {
-        try await load(filename: "automation_risk_data", extension: "json", subdirectory: countryCode)
+        try await load(filename: "\(countryCode)_automation_risk_data", extension: "json", subdirectory: countryCode)
     }
 
     // MARK: - Generic JSON Loader

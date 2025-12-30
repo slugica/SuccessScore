@@ -72,13 +72,13 @@ class StatisticsCalculator {
 
         // Get the most specific data available - prioritize marital status for household comparisons
         let stats: IncomeStats
-        if let maritalStats = stateData.byMaritalStatus[maritalKey] {
+        if let maritalStats = stateData.byMaritalStatus?[maritalKey] {
             // Use marital status specific data (better for household income comparisons)
             stats = maritalStats
         } else if let ageStats = stateData.byAge[ageRange] {
             stats = ageStats
         } else {
-            stats = stateData.overall
+            stats = stateData.overall.asIncomeStats
         }
 
         let income = profile.effectiveIncome
@@ -289,10 +289,10 @@ class StatisticsCalculator {
 
         let maritalKey = profile.maritalStatus.rawValue
         let stats: IncomeStats
-        if let maritalStats = stateData.byMaritalStatus[maritalKey] {
+        if let maritalStats = stateData.byMaritalStatus?[maritalKey] {
             stats = maritalStats
         } else {
-            stats = stateData.overall
+            stats = stateData.overall.asIncomeStats
         }
 
         let top10 = stats.mean * 1.8
