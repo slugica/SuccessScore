@@ -1,0 +1,37 @@
+{
+  "app_version": "1.0.0",
+  "data_version": "2024.1",
+  "last_updated": "2024-09-15",
+  "sources": [
+    {
+      "name": "BLS OEWS",
+      "full_name": "BLS OEWS, Census ACS, MERIC Cost of Living (2024), AI/Automation Risk Data",
+      "period": "May 2024",
+      "url": "https://www.bls.gov/oes/"
+    },
+    {
+      "name": "Census ACS",
+      "full_name": "U.S. Census Bureau American Community Survey",
+      "period": "2024",
+      "url": "https://www.census.gov/programs-surveys/acs"
+    },
+    {
+      "name": "MERIC COL",
+      "full_name": "Missouri Economic Research and Information Center",
+      "period": "2024",
+      "url": "https://meric.mo.gov/data/cost-living-data-series"
+    },
+    {
+      "name": "AI/Automation Risk",
+      "full_name": "AI & Robotics Automation Risk Data",
+      "period": "2024",
+      "url": ""
+    }
+  ],
+  "coverage": {
+    "occupations": 10,
+    "states": 8,
+    "total_soc_codes": 10
+  },
+  "notes": "Sample dataset for demonstration. Actual data derived from BLS OEWS May 2024 and Census ACS 2024 reports."
+}

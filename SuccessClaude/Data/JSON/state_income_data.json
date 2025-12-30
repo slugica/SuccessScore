@@ -1,0 +1,3223 @@
+{
+  "states": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "overall": {
+        "median": 86370,
+        "mean": 110602
+      },
+      "by_age": {
+        "18-24": {
+          "median": 46473,
+          "mean": 54838
+        },
+        "25-34": {
+          "median": 31663,
+          "mean": 37251
+        },
+        "35-44": {
+          "median": 37251,
+          "mean": 43956
+        },
+        "45-54": {
+          "median": 49655,
+          "mean": 58593
+        },
+        "55-64": {
+          "median": 47172,
+          "mean": 55614
+        },
+        "65+": {
+          "median": 64362,
+          "mean": 75947
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 41467,
+          "mean": 48931
+        },
+        "Female": {
+          "median": 47452,
+          "mean": 55994
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 47503,
+          "mean": 60831
+        },
+        "Married": {
+          "median": 107962,
+          "mean": 138252
+        },
+        "Divorced": {
+          "median": 52685,
+          "mean": 67467
+        },
+        "Widowed": {
+          "median": 45776,
+          "mean": 58619
+        }
+      },
+      "cost_of_living_index": 123.8
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "overall": {
+        "median": 59609,
+        "mean": 82992
+      },
+      "by_age": {
+        "18-24": {
+          "median": 40038,
+          "mean": 47244
+        },
+        "25-34": {
+          "median": 28592,
+          "mean": 33638
+        },
+        "35-44": {
+          "median": 33638,
+          "mean": 39692
+        },
+        "45-54": {
+          "median": 41048,
+          "mean": 48436
+        },
+        "55-64": {
+          "median": 38995,
+          "mean": 45973
+        },
+        "65+": {
+          "median": 54356,
+          "mean": 64140
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34038,
+          "mean": 40164
+        },
+        "Female": {
+          "median": 42444,
+          "mean": 50084
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 32784,
+          "mean": 45645
+        },
+        "Married": {
+          "median": 74511,
+          "mean": 103740
+        },
+        "Divorced": {
+          "median": 36361,
+          "mean": 50625
+        },
+        "Widowed": {
+          "median": 31592,
+          "mean": 43985
+        }
+      },
+      "cost_of_living_index": 88.0
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "overall": {
+        "median": 56335,
+        "mean": 79592
+      },
+      "by_age": {
+        "18-24": {
+          "median": 37955,
+          "mean": 44786
+        },
+        "25-34": {
+          "median": 28773,
+          "mean": 33851
+        },
+        "35-44": {
+          "median": 33851,
+          "mean": 39944
+        },
+        "45-54": {
+          "median": 38959,
+          "mean": 45972
+        },
+        "55-64": {
+          "median": 37011,
+          "mean": 43634
+        },
+        "65+": {
+          "median": 50461,
+          "mean": 59543
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 33734,
+          "mean": 39806
+        },
+        "Female": {
+          "median": 40109,
+          "mean": 47329
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 30984,
+          "mean": 43775
+        },
+        "Married": {
+          "median": 70418,
+          "mean": 99490
+        },
+        "Divorced": {
+          "median": 34364,
+          "mean": 48551
+        },
+        "Widowed": {
+          "median": 29857,
+          "mean": 42183
+        }
+      },
+      "cost_of_living_index": 88.7
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "overall": {
+        "median": 72581,
+        "mean": 98568
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41581,
+          "mean": 49065
+        },
+        "25-34": {
+          "median": 30094,
+          "mean": 35405
+        },
+        "35-44": {
+          "median": 35405,
+          "mean": 41777
+        },
+        "45-54": {
+          "median": 42825,
+          "mean": 50533
+        },
+        "55-64": {
+          "median": 40683,
+          "mean": 47964
+        },
+        "65+": {
+          "median": 56187,
+          "mean": 66301
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37000,
+          "mean": 43660
+        },
+        "Female": {
+          "median": 42873,
+          "mean": 50590
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 39919,
+          "mean": 54212
+        },
+        "Married": {
+          "median": 90726,
+          "mean": 123210
+        },
+        "Divorced": {
+          "median": 44274,
+          "mean": 60126
+        },
+        "Widowed": {
+          "median": 38467,
+          "mean": 52241
+        }
+      },
+      "cost_of_living_index": 111.5
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "overall": {
+        "median": 91905,
+        "mean": 130717
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44047,
+          "mean": 51976
+        },
+        "25-34": {
+          "median": 30942,
+          "mean": 36403
+        },
+        "35-44": {
+          "median": 36403,
+          "mean": 42955
+        },
+        "45-54": {
+          "median": 45492,
+          "mean": 53680
+        },
+        "55-64": {
+          "median": 43217,
+          "mean": 50951
+        },
+        "65+": {
+          "median": 65422,
+          "mean": 77197
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 38257,
+          "mean": 45143
+        },
+        "Female": {
+          "median": 45704,
+          "mean": 53931
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 50547,
+          "mean": 71894
+        },
+        "Married": {
+          "median": 114881,
+          "mean": 163396
+        },
+        "Divorced": {
+          "median": 56062,
+          "mean": 79737
+        },
+        "Widowed": {
+          "median": 48709,
+          "mean": 69280
+        }
+      },
+      "cost_of_living_index": 144.8
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "overall": {
+        "median": 87598,
+        "mean": 117508
+      },
+      "by_age": {
+        "18-24": {
+          "median": 48982,
+          "mean": 57798
+        },
+        "25-34": {
+          "median": 35473,
+          "mean": 41733
+        },
+        "35-44": {
+          "median": 41733,
+          "mean": 49245
+        },
+        "45-54": {
+          "median": 46849,
+          "mean": 55282
+        },
+        "55-64": {
+          "median": 44507,
+          "mean": 52471
+        },
+        "65+": {
+          "median": 61549,
+          "mean": 72628
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40963,
+          "mean": 48336
+        },
+        "Female": {
+          "median": 50746,
+          "mean": 59881
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 48178,
+          "mean": 64629
+        },
+        "Married": {
+          "median": 109497,
+          "mean": 146885
+        },
+        "Divorced": {
+          "median": 53434,
+          "mean": 71679
+        },
+        "Widowed": {
+          "median": 46426,
+          "mean": 62279
+        }
+      },
+      "cost_of_living_index": 102.0
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "overall": {
+        "median": 90213,
+        "mean": 130600
+      },
+      "by_age": {
+        "18-24": {
+          "median": 48779,
+          "mean": 57559
+        },
+        "25-34": {
+          "median": 32526,
+          "mean": 38267
+        },
+        "35-44": {
+          "median": 38267,
+          "mean": 45155
+        },
+        "45-54": {
+          "median": 48747,
+          "mean": 57522
+        },
+        "55-64": {
+          "median": 46310,
+          "mean": 54597
+        },
+        "65+": {
+          "median": 66463,
+          "mean": 78426
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40130,
+          "mean": 47353
+        },
+        "Female": {
+          "median": 50398,
+          "mean": 59470
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 49617,
+          "mean": 71830
+        },
+        "Married": {
+          "median": 112766,
+          "mean": 163250
+        },
+        "Divorced": {
+          "median": 55029,
+          "mean": 79666
+        },
+        "Widowed": {
+          "median": 47812,
+          "mean": 69218
+        }
+      },
+      "cost_of_living_index": 112.3
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "overall": {
+        "median": 101722,
+        "mean": 150292
+      },
+      "by_age": {
+        "18-24": {
+          "median": 59861,
+          "mean": 70635
+        },
+        "25-34": {
+          "median": 30389,
+          "mean": 35752
+        },
+        "35-44": {
+          "median": 35752,
+          "mean": 42187
+        },
+        "45-54": {
+          "median": 42359,
+          "mean": 49983
+        },
+        "55-64": {
+          "median": 40241,
+          "mean": 47442
+        },
+        "65+": {
+          "median": 68459,
+          "mean": 80781
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37713,
+          "mean": 44501
+        },
+        "Female": {
+          "median": 54268,
+          "mean": 64036
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 55947,
+          "mean": 82660
+        },
+        "Married": {
+          "median": 127152,
+          "mean": 187865
+        },
+        "Divorced": {
+          "median": 62050,
+          "mean": 91678
+        },
+        "Widowed": {
+          "median": 53912,
+          "mean": 79654
+        }
+      },
+      "cost_of_living_index": 141.9
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "overall": {
+        "median": 79325,
+        "mean": 104599
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44470,
+          "mean": 52475
+        },
+        "25-34": {
+          "median": 32219,
+          "mean": 37905
+        },
+        "35-44": {
+          "median": 37905,
+          "mean": 44727
+        },
+        "45-54": {
+          "median": 45229,
+          "mean": 53370
+        },
+        "55-64": {
+          "median": 42968,
+          "mean": 50657
+        },
+        "65+": {
+          "median": 59095,
+          "mean": 69732
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 38557,
+          "mean": 45497
+        },
+        "Female": {
+          "median": 46512,
+          "mean": 54884
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 43628,
+          "mean": 57529
+        },
+        "Married": {
+          "median": 99156,
+          "mean": 130748
+        },
+        "Divorced": {
+          "median": 48388,
+          "mean": 63805
+        },
+        "Widowed": {
+          "median": 42042,
+          "mean": 55437
+        }
+      },
+      "cost_of_living_index": 100.8
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "overall": {
+        "median": 67917,
+        "mean": 96992
+      },
+      "by_age": {
+        "18-24": {
+          "median": 37572,
+          "mean": 44335
+        },
+        "25-34": {
+          "median": 27843,
+          "mean": 32756
+        },
+        "35-44": {
+          "median": 32756,
+          "mean": 38652
+        },
+        "45-54": {
+          "median": 39390,
+          "mean": 46480
+        },
+        "55-64": {
+          "median": 37420,
+          "mean": 44116
+        },
+        "65+": {
+          "median": 51190,
+          "mean": 60404
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 33878,
+          "mean": 39976
+        },
+        "Female": {
+          "median": 39267,
+          "mean": 46335
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 37354,
+          "mean": 53345
+        },
+        "Married": {
+          "median": 84896,
+          "mean": 121240
+        },
+        "Divorced": {
+          "median": 41429,
+          "mean": 59165
+        },
+        "Widowed": {
+          "median": 35996,
+          "mean": 51405
+        }
+      },
+      "cost_of_living_index": 102.8
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "overall": {
+        "median": 71355,
+        "mean": 99345
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41616,
+          "mean": 49107
+        },
+        "25-34": {
+          "median": 29378,
+          "mean": 34563
+        },
+        "35-44": {
+          "median": 34563,
+          "mean": 40784
+        },
+        "45-54": {
+          "median": 41197,
+          "mean": 48612
+        },
+        "55-64": {
+          "median": 39137,
+          "mean": 46140
+        },
+        "65+": {
+          "median": 57113,
+          "mean": 67393
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 35324,
+          "mean": 41683
+        },
+        "Female": {
+          "median": 42926,
+          "mean": 50653
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 39245,
+          "mean": 54639
+        },
+        "Married": {
+          "median": 89193,
+          "mean": 124181
+        },
+        "Divorced": {
+          "median": 43526,
+          "mean": 60600
+        },
+        "Widowed": {
+          "median": 37818,
+          "mean": 52652
+        }
+      },
+      "cost_of_living_index": 91.3
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "overall": {
+        "median": 94814,
+        "mean": 122902
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44549,
+          "mean": 52567
+        },
+        "25-34": {
+          "median": 32843,
+          "mean": 38639
+        },
+        "35-44": {
+          "median": 38639,
+          "mean": 45594
+        },
+        "45-54": {
+          "median": 46175,
+          "mean": 54487
+        },
+        "55-64": {
+          "median": 43866,
+          "mean": 51716
+        },
+        "65+": {
+          "median": 57392,
+          "mean": 67722
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 39682,
+          "mean": 46825
+        },
+        "Female": {
+          "median": 46559,
+          "mean": 54940
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 52147,
+          "mean": 67596
+        },
+        "Married": {
+          "median": 118517,
+          "mean": 153627
+        },
+        "Divorced": {
+          "median": 57836,
+          "mean": 74970
+        },
+        "Widowed": {
+          "median": 50251,
+          "mean": 65138
+        }
+      },
+      "cost_of_living_index": 186.9
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "overall": {
+        "median": 70571,
+        "mean": 92053
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44938,
+          "mean": 53027
+        },
+        "25-34": {
+          "median": 33271,
+          "mean": 39143
+        },
+        "35-44": {
+          "median": 39143,
+          "mean": 46189
+        },
+        "45-54": {
+          "median": 45299,
+          "mean": 53453
+        },
+        "55-64": {
+          "median": 43034,
+          "mean": 50735
+        },
+        "65+": {
+          "median": 56904,
+          "mean": 67146
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 39108,
+          "mean": 46147
+        },
+        "Female": {
+          "median": 47146,
+          "mean": 55632
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 38814,
+          "mean": 50629
+        },
+        "Married": {
+          "median": 88213,
+          "mean": 115066
+        },
+        "Divorced": {
+          "median": 43048,
+          "mean": 56152
+        },
+        "Widowed": {
+          "median": 37402,
+          "mean": 48788
+        }
+      },
+      "cost_of_living_index": 89.7
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "overall": {
+        "median": 70214,
+        "mean": 92779
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41445,
+          "mean": 48905
+        },
+        "25-34": {
+          "median": 31311,
+          "mean": 36837
+        },
+        "35-44": {
+          "median": 36837,
+          "mean": 43468
+        },
+        "45-54": {
+          "median": 41107,
+          "mean": 48506
+        },
+        "55-64": {
+          "median": 39052,
+          "mean": 46040
+        },
+        "65+": {
+          "median": 51288,
+          "mean": 60519
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 35610,
+          "mean": 42020
+        },
+        "Female": {
+          "median": 43983,
+          "mean": 51899
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 38617,
+          "mean": 51028
+        },
+        "Married": {
+          "median": 87767,
+          "mean": 115973
+        },
+        "Divorced": {
+          "median": 42830,
+          "mean": 56595
+        },
+        "Widowed": {
+          "median": 37213,
+          "mean": 49172
+        }
+      },
+      "cost_of_living_index": 102.0
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "overall": {
+        "median": 78433,
+        "mean": 108873
+      },
+      "by_age": {
+        "18-24": {
+          "median": 45579,
+          "mean": 53783
+        },
+        "25-34": {
+          "median": 31376,
+          "mean": 36913
+        },
+        "35-44": {
+          "median": 36913,
+          "mean": 43557
+        },
+        "45-54": {
+          "median": 45156,
+          "mean": 53284
+        },
+        "55-64": {
+          "median": 42898,
+          "mean": 50575
+        },
+        "65+": {
+          "median": 62026,
+          "mean": 73190
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37942,
+          "mean": 44771
+        },
+        "Female": {
+          "median": 47157,
+          "mean": 55645
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 43138,
+          "mean": 59880
+        },
+        "Married": {
+          "median": 98041,
+          "mean": 136091
+        },
+        "Divorced": {
+          "median": 47844,
+          "mean": 66412
+        },
+        "Widowed": {
+          "median": 41569,
+          "mean": 57702
+        }
+      },
+      "cost_of_living_index": 94.4
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "overall": {
+        "median": 67173,
+        "mean": 88804
+      },
+      "by_age": {
+        "18-24": {
+          "median": 43202,
+          "mean": 50978
+        },
+        "25-34": {
+          "median": 31749,
+          "mean": 37352
+        },
+        "35-44": {
+          "median": 37352,
+          "mean": 44075
+        },
+        "45-54": {
+          "median": 44584,
+          "mean": 52609
+        },
+        "55-64": {
+          "median": 42355,
+          "mean": 49934
+        },
+        "65+": {
+          "median": 56733,
+          "mean": 66945
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37412,
+          "mean": 44146
+        },
+        "Female": {
+          "median": 46013,
+          "mean": 54296
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36945,
+          "mean": 48842
+        },
+        "Married": {
+          "median": 83966,
+          "mean": 111005
+        },
+        "Divorced": {
+          "median": 40975,
+          "mean": 54170
+        },
+        "Widowed": {
+          "median": 35601,
+          "mean": 47066
+        }
+      },
+      "cost_of_living_index": 90.5
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "overall": {
+        "median": 69747,
+        "mean": 94262
+      },
+      "by_age": {
+        "18-24": {
+          "median": 43714,
+          "mean": 51582
+        },
+        "25-34": {
+          "median": 31421,
+          "mean": 36966
+        },
+        "35-44": {
+          "median": 36966,
+          "mean": 43619
+        },
+        "45-54": {
+          "median": 43177,
+          "mean": 50949
+        },
+        "55-64": {
+          "median": 41018,
+          "mean": 48358
+        },
+        "65+": {
+          "median": 55310,
+          "mean": 65266
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 36952,
+          "mean": 43603
+        },
+        "Female": {
+          "median": 45619,
+          "mean": 53831
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 38360,
+          "mean": 51844
+        },
+        "Married": {
+          "median": 87183,
+          "mean": 117827
+        },
+        "Divorced": {
+          "median": 42545,
+          "mean": 57499
+        },
+        "Widowed": {
+          "median": 36965,
+          "mean": 49958
+        }
+      },
+      "cost_of_living_index": 87.0
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "overall": {
+        "median": 60183,
+        "mean": 83093
+      },
+      "by_age": {
+        "18-24": {
+          "median": 38603,
+          "mean": 45552
+        },
+        "25-34": {
+          "median": 27830,
+          "mean": 32741
+        },
+        "35-44": {
+          "median": 32741,
+          "mean": 38634
+        },
+        "45-54": {
+          "median": 41094,
+          "mean": 48491
+        },
+        "55-64": {
+          "median": 39039,
+          "mean": 46025
+        },
+        "65+": {
+          "median": 53636,
+          "mean": 63291
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34026,
+          "mean": 40151
+        },
+        "Female": {
+          "median": 40933,
+          "mean": 48301
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 33100,
+          "mean": 45701
+        },
+        "Married": {
+          "median": 75228,
+          "mean": 103866
+        },
+        "Divorced": {
+          "median": 36711,
+          "mean": 50686
+        },
+        "Widowed": {
+          "median": 31896,
+          "mean": 44039
+        }
+      },
+      "cost_of_living_index": 93.0
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "overall": {
+        "median": 57852,
+        "mean": 83169
+      },
+      "by_age": {
+        "18-24": {
+          "median": 40742,
+          "mean": 48076
+        },
+        "25-34": {
+          "median": 29168,
+          "mean": 34316
+        },
+        "35-44": {
+          "median": 34316,
+          "mean": 40492
+        },
+        "45-54": {
+          "median": 43246,
+          "mean": 51030
+        },
+        "55-64": {
+          "median": 41084,
+          "mean": 48436
+        },
+        "65+": {
+          "median": 55152,
+          "mean": 65079
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 33996,
+          "mean": 40116
+        },
+        "Female": {
+          "median": 44873,
+          "mean": 52950
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 31818,
+          "mean": 45742
+        },
+        "Married": {
+          "median": 72315,
+          "mean": 103961
+        },
+        "Divorced": {
+          "median": 35289,
+          "mean": 50733
+        },
+        "Widowed": {
+          "median": 30661,
+          "mean": 44079
+        }
+      },
+      "cost_of_living_index": 92.2
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "overall": {
+        "median": 96505,
+        "mean": 134567
+      },
+      "by_age": {
+        "18-24": {
+          "median": 52461,
+          "mean": 61904
+        },
+        "25-34": {
+          "median": 35168,
+          "mean": 41374
+        },
+        "35-44": {
+          "median": 41374,
+          "mean": 48821
+        },
+        "45-54": {
+          "median": 50799,
+          "mean": 59943
+        },
+        "55-64": {
+          "median": 48259,
+          "mean": 56895
+        },
+        "65+": {
+          "median": 67387,
+          "mean": 79517
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 42240,
+          "mean": 49843
+        },
+        "Female": {
+          "median": 54183,
+          "mean": 63936
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 53077,
+          "mean": 74011
+        },
+        "Married": {
+          "median": 120631,
+          "mean": 168208
+        },
+        "Divorced": {
+          "median": 58868,
+          "mean": 82085
+        },
+        "Widowed": {
+          "median": 51147,
+          "mean": 71320
+        }
+      },
+      "cost_of_living_index": 145.9
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "overall": {
+        "median": 98461,
+        "mean": 129642
+      },
+      "by_age": {
+        "18-24": {
+          "median": 50786,
+          "mean": 59928
+        },
+        "25-34": {
+          "median": 34796,
+          "mean": 40937
+        },
+        "35-44": {
+          "median": 40937,
+          "mean": 48305
+        },
+        "45-54": {
+          "median": 49869,
+          "mean": 58845
+        },
+        "55-64": {
+          "median": 47375,
+          "mean": 55853
+        },
+        "65+": {
+          "median": 67902,
+          "mean": 80124
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 42182,
+          "mean": 49775
+        },
+        "Female": {
+          "median": 52212,
+          "mean": 61610
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 54153,
+          "mean": 71303
+        },
+        "Married": {
+          "median": 123076,
+          "mean": 162052
+        },
+        "Divorced": {
+          "median": 60061,
+          "mean": 79081
+        },
+        "Widowed": {
+          "median": 52184,
+          "mean": 68710
+        }
+      },
+      "cost_of_living_index": 115.3
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "overall": {
+        "median": 68251,
+        "mean": 91598
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41561,
+          "mean": 49041
+        },
+        "25-34": {
+          "median": 31469,
+          "mean": 37023
+        },
+        "35-44": {
+          "median": 37023,
+          "mean": 43687
+        },
+        "45-54": {
+          "median": 42839,
+          "mean": 50550
+        },
+        "55-64": {
+          "median": 40697,
+          "mean": 47979
+        },
+        "65+": {
+          "median": 52340,
+          "mean": 61761
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 36848,
+          "mean": 43481
+        },
+        "Female": {
+          "median": 44100,
+          "mean": 52038
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 37538,
+          "mean": 50378
+        },
+        "Married": {
+          "median": 85313,
+          "mean": 114497
+        },
+        "Divorced": {
+          "median": 41633,
+          "mean": 55874
+        },
+        "Widowed": {
+          "median": 36173,
+          "mean": 48546
+        }
+      },
+      "cost_of_living_index": 112.1
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "overall": {
+        "median": 68505,
+        "mean": 92835
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41935,
+          "mean": 49483
+        },
+        "25-34": {
+          "median": 29157,
+          "mean": 34303
+        },
+        "35-44": {
+          "median": 34303,
+          "mean": 40478
+        },
+        "45-54": {
+          "median": 41928,
+          "mean": 49475
+        },
+        "55-64": {
+          "median": 39831,
+          "mean": 46959
+        },
+        "65+": {
+          "median": 57433,
+          "mean": 67770
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34993,
+          "mean": 41292
+        },
+        "Female": {
+          "median": 43784,
+          "mean": 51665
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 37677,
+          "mean": 51059
+        },
+        "Married": {
+          "median": 85631,
+          "mean": 116043
+        },
+        "Divorced": {
+          "median": 41788,
+          "mean": 56629
+        },
+        "Widowed": {
+          "median": 36307,
+          "mean": 49202
+        }
+      },
+      "cost_of_living_index": 90.4
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "overall": {
+        "median": 84313,
+        "mean": 111340
+      },
+      "by_age": {
+        "18-24": {
+          "median": 47226,
+          "mean": 55726
+        },
+        "25-34": {
+          "median": 33322,
+          "mean": 39203
+        },
+        "35-44": {
+          "median": 39203,
+          "mean": 46260
+        },
+        "45-54": {
+          "median": 47247,
+          "mean": 55752
+        },
+        "55-64": {
+          "median": 44885,
+          "mean": 52917
+        },
+        "65+": {
+          "median": 62979,
+          "mean": 74315
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40382,
+          "mean": 47651
+        },
+        "Female": {
+          "median": 48735,
+          "mean": 57507
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 46372,
+          "mean": 61237
+        },
+        "Married": {
+          "median": 105391,
+          "mean": 139175
+        },
+        "Divorced": {
+          "median": 51430,
+          "mean": 67917
+        },
+        "Widowed": {
+          "median": 44685,
+          "mean": 59010
+        }
+      },
+      "cost_of_living_index": 95.1
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "overall": {
+        "median": 65920,
+        "mean": 89952
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41039,
+          "mean": 48426
+        },
+        "25-34": {
+          "median": 29723,
+          "mean": 34969
+        },
+        "35-44": {
+          "median": 34969,
+          "mean": 41263
+        },
+        "45-54": {
+          "median": 42131,
+          "mean": 49715
+        },
+        "55-64": {
+          "median": 40024,
+          "mean": 47187
+        },
+        "65+": {
+          "median": 54208,
+          "mean": 63966
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 35369,
+          "mean": 41735
+        },
+        "Female": {
+          "median": 43391,
+          "mean": 51201
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36256,
+          "mean": 49473
+        },
+        "Married": {
+          "median": 82400,
+          "mean": 112440
+        },
+        "Divorced": {
+          "median": 40211,
+          "mean": 54870
+        },
+        "Widowed": {
+          "median": 34937,
+          "mean": 47674
+        }
+      },
+      "cost_of_living_index": 88.7
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "overall": {
+        "median": 52985,
+        "mean": 74149
+      },
+      "by_age": {
+        "18-24": {
+          "median": 36220,
+          "mean": 42739
+        },
+        "25-34": {
+          "median": 27115,
+          "mean": 31901
+        },
+        "35-44": {
+          "median": 31901,
+          "mean": 37643
+        },
+        "45-54": {
+          "median": 38832,
+          "mean": 45822
+        },
+        "55-64": {
+          "median": 36890,
+          "mean": 43492
+        },
+        "65+": {
+          "median": 48797,
+          "mean": 57580
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 31777,
+          "mean": 37496
+        },
+        "Female": {
+          "median": 39525,
+          "mean": 46639
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 29141,
+          "mean": 40781
+        },
+        "Married": {
+          "median": 66231,
+          "mean": 92686
+        },
+        "Divorced": {
+          "median": 32320,
+          "mean": 45230
+        },
+        "Widowed": {
+          "median": 28082,
+          "mean": 39298
+        }
+      },
+      "cost_of_living_index": 87.9
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "overall": {
+        "median": 66341,
+        "mean": 90141
+      },
+      "by_age": {
+        "18-24": {
+          "median": 39225,
+          "mean": 46286
+        },
+        "25-34": {
+          "median": 28994,
+          "mean": 34111
+        },
+        "35-44": {
+          "median": 34111,
+          "mean": 40251
+        },
+        "45-54": {
+          "median": 40656,
+          "mean": 47974
+        },
+        "55-64": {
+          "median": 38623,
+          "mean": 45535
+        },
+        "65+": {
+          "median": 48618,
+          "mean": 57369
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 33824,
+          "mean": 39912
+        },
+        "Female": {
+          "median": 42171,
+          "mean": 49762
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36487,
+          "mean": 49577
+        },
+        "Married": {
+          "median": 82926,
+          "mean": 112676
+        },
+        "Divorced": {
+          "median": 40468,
+          "mean": 54986
+        },
+        "Widowed": {
+          "median": 35160,
+          "mean": 47774
+        }
+      },
+      "cost_of_living_index": 94.9
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "overall": {
+        "median": 66186,
+        "mean": 92877
+      },
+      "by_age": {
+        "18-24": {
+          "median": 39834,
+          "mean": 47004
+        },
+        "25-34": {
+          "median": 28276,
+          "mean": 33267
+        },
+        "35-44": {
+          "median": 33267,
+          "mean": 39255
+        },
+        "45-54": {
+          "median": 40110,
+          "mean": 47330
+        },
+        "55-64": {
+          "median": 38104,
+          "mean": 44923
+        },
+        "65+": {
+          "median": 53134,
+          "mean": 62698
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34316,
+          "mean": 40493
+        },
+        "Female": {
+          "median": 41158,
+          "mean": 48566
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36402,
+          "mean": 51082
+        },
+        "Married": {
+          "median": 82732,
+          "mean": 116096
+        },
+        "Divorced": {
+          "median": 40373,
+          "mean": 56654
+        },
+        "Widowed": {
+          "median": 35078,
+          "mean": 49224
+        }
+      },
+      "cost_of_living_index": 97.8
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "overall": {
+        "median": 73959,
+        "mean": 97220
+      },
+      "by_age": {
+        "18-24": {
+          "median": 47021,
+          "mean": 55485
+        },
+        "25-34": {
+          "median": 35806,
+          "mean": 42125
+        },
+        "35-44": {
+          "median": 42125,
+          "mean": 49707
+        },
+        "45-54": {
+          "median": 47648,
+          "mean": 56224
+        },
+        "55-64": {
+          "median": 45265,
+          "mean": 53365
+        },
+        "65+": {
+          "median": 58192,
+          "mean": 68666
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 41504,
+          "mean": 48975
+        },
+        "Female": {
+          "median": 49692,
+          "mean": 58636
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 40677,
+          "mean": 53471
+        },
+        "Married": {
+          "median": 92448,
+          "mean": 121525
+        },
+        "Divorced": {
+          "median": 45114,
+          "mean": 59304
+        },
+        "Widowed": {
+          "median": 39198,
+          "mean": 51526
+        }
+      },
+      "cost_of_living_index": 91.9
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "overall": {
+        "median": 71722,
+        "mean": 95547
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44676,
+          "mean": 52718
+        },
+        "25-34": {
+          "median": 31999,
+          "mean": 37646
+        },
+        "35-44": {
+          "median": 37646,
+          "mean": 44422
+        },
+        "45-54": {
+          "median": 44495,
+          "mean": 52504
+        },
+        "55-64": {
+          "median": 42270,
+          "mean": 49834
+        },
+        "65+": {
+          "median": 56504,
+          "mean": 66675
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 38286,
+          "mean": 45177
+        },
+        "Female": {
+          "median": 46259,
+          "mean": 54586
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 39447,
+          "mean": 52550
+        },
+        "Married": {
+          "median": 89652,
+          "mean": 119433
+        },
+        "Divorced": {
+          "median": 43750,
+          "mean": 58283
+        },
+        "Widowed": {
+          "median": 38012,
+          "mean": 50639
+        }
+      },
+      "cost_of_living_index": 93.1
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "overall": {
+        "median": 90845,
+        "mean": 118117
+      },
+      "by_age": {
+        "18-24": {
+          "median": 50139,
+          "mean": 59164
+        },
+        "25-34": {
+          "median": 35907,
+          "mean": 42244
+        },
+        "35-44": {
+          "median": 42244,
+          "mean": 49848
+        },
+        "45-54": {
+          "median": 50068,
+          "mean": 59080
+        },
+        "55-64": {
+          "median": 47564,
+          "mean": 56076
+        },
+        "65+": {
+          "median": 64095,
+          "mean": 75632
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 42640,
+          "mean": 50315
+        },
+        "Female": {
+          "median": 52327,
+          "mean": 61746
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 49964,
+          "mean": 64964
+        },
+        "Married": {
+          "median": 113556,
+          "mean": 147646
+        },
+        "Divorced": {
+          "median": 55415,
+          "mean": 72051
+        },
+        "Widowed": {
+          "median": 48147,
+          "mean": 62602
+        }
+      },
+      "cost_of_living_index": 112.6
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "overall": {
+        "median": 97126,
+        "mean": 135170
+      },
+      "by_age": {
+        "18-24": {
+          "median": 50330,
+          "mean": 59389
+        },
+        "25-34": {
+          "median": 32408,
+          "mean": 38128
+        },
+        "35-44": {
+          "median": 38128,
+          "mean": 44991
+        },
+        "45-54": {
+          "median": 48686,
+          "mean": 57449
+        },
+        "55-64": {
+          "median": 46251,
+          "mean": 54528
+        },
+        "65+": {
+          "median": 68330,
+          "mean": 80629
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40303,
+          "mean": 47558
+        },
+        "Female": {
+          "median": 51125,
+          "mean": 60328
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 53419,
+          "mean": 74343
+        },
+        "Married": {
+          "median": 121407,
+          "mean": 168962
+        },
+        "Divorced": {
+          "median": 59246,
+          "mean": 82453
+        },
+        "Widowed": {
+          "median": 51476,
+          "mean": 71640
+        }
+      },
+      "cost_of_living_index": 114.6
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "overall": {
+        "median": 58722,
+        "mean": 81035
+      },
+      "by_age": {
+        "18-24": {
+          "median": 35412,
+          "mean": 41786
+        },
+        "25-34": {
+          "median": 26701,
+          "mean": 31413
+        },
+        "35-44": {
+          "median": 31413,
+          "mean": 37067
+        },
+        "45-54": {
+          "median": 37447,
+          "mean": 44188
+        },
+        "55-64": {
+          "median": 35575,
+          "mean": 41941
+        },
+        "65+": {
+          "median": 49007,
+          "mean": 57828
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 31636,
+          "mean": 37330
+        },
+        "Female": {
+          "median": 37879,
+          "mean": 44697
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 32297,
+          "mean": 44569
+        },
+        "Married": {
+          "median": 73402,
+          "mean": 101293
+        },
+        "Divorced": {
+          "median": 35820,
+          "mean": 49431
+        },
+        "Widowed": {
+          "median": 31122,
+          "mean": 42948
+        }
+      },
+      "cost_of_living_index": 93.3
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "overall": {
+        "median": 71646,
+        "mean": 97954
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41314,
+          "mean": 48750
+        },
+        "25-34": {
+          "median": 31774,
+          "mean": 37382
+        },
+        "35-44": {
+          "median": 37382,
+          "mean": 44110
+        },
+        "45-54": {
+          "median": 43240,
+          "mean": 51023
+        },
+        "55-64": {
+          "median": 41078,
+          "mean": 48428
+        },
+        "65+": {
+          "median": 53751,
+          "mean": 63426
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 38418,
+          "mean": 45333
+        },
+        "Female": {
+          "median": 42872,
+          "mean": 50589
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 39405,
+          "mean": 53874
+        },
+        "Married": {
+          "median": 89557,
+          "mean": 122442
+        },
+        "Divorced": {
+          "median": 43704,
+          "mean": 59751
+        },
+        "Widowed": {
+          "median": 37972,
+          "mean": 51915
+        }
+      },
+      "cost_of_living_index": 101.3
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "overall": {
+        "median": 81386,
+        "mean": 120882
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44325,
+          "mean": 52304
+        },
+        "25-34": {
+          "median": 30467,
+          "mean": 35844
+        },
+        "35-44": {
+          "median": 35844,
+          "mean": 42295
+        },
+        "45-54": {
+          "median": 45905,
+          "mean": 54167
+        },
+        "55-64": {
+          "median": 43609,
+          "mean": 51413
+        },
+        "65+": {
+          "median": 63024,
+          "mean": 74368
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37822,
+          "mean": 44630
+        },
+        "Female": {
+          "median": 46227,
+          "mean": 54547
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 44762,
+          "mean": 66485
+        },
+        "Married": {
+          "median": 101732,
+          "mean": 151102
+        },
+        "Divorced": {
+          "median": 49645,
+          "mean": 73738
+        },
+        "Widowed": {
+          "median": 43134,
+          "mean": 64067
+        }
+      },
+      "cost_of_living_index": 123.3
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "overall": {
+        "median": 66990,
+        "mean": 90958
+      },
+      "by_age": {
+        "18-24": {
+          "median": 42064,
+          "mean": 49636
+        },
+        "25-34": {
+          "median": 30353,
+          "mean": 35710
+        },
+        "35-44": {
+          "median": 35710,
+          "mean": 42137
+        },
+        "45-54": {
+          "median": 43493,
+          "mean": 51322
+        },
+        "55-64": {
+          "median": 41318,
+          "mean": 48712
+        },
+        "65+": {
+          "median": 57506,
+          "mean": 67857
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 36066,
+          "mean": 42558
+        },
+        "Female": {
+          "median": 44778,
+          "mean": 52838
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36844,
+          "mean": 50026
+        },
+        "Married": {
+          "median": 83737,
+          "mean": 113697
+        },
+        "Divorced": {
+          "median": 40863,
+          "mean": 55484
+        },
+        "Widowed": {
+          "median": 35504,
+          "mean": 48207
+        }
+      },
+      "cost_of_living_index": 94.2
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "overall": {
+        "median": 61364,
+        "mean": 84402
+      },
+      "by_age": {
+        "18-24": {
+          "median": 40083,
+          "mean": 47298
+        },
+        "25-34": {
+          "median": 29851,
+          "mean": 35119
+        },
+        "35-44": {
+          "median": 35119,
+          "mean": 41441
+        },
+        "45-54": {
+          "median": 41998,
+          "mean": 49558
+        },
+        "55-64": {
+          "median": 39898,
+          "mean": 47038
+        },
+        "65+": {
+          "median": 52614,
+          "mean": 62085
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34997,
+          "mean": 41296
+        },
+        "Female": {
+          "median": 43137,
+          "mean": 50901
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 33750,
+          "mean": 46421
+        },
+        "Married": {
+          "median": 76705,
+          "mean": 105502
+        },
+        "Divorced": {
+          "median": 37432,
+          "mean": 51485
+        },
+        "Widowed": {
+          "median": 32522,
+          "mean": 44733
+        }
+      },
+      "cost_of_living_index": 85.7
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "overall": {
+        "median": 76632,
+        "mean": 103329
+      },
+      "by_age": {
+        "18-24": {
+          "median": 43370,
+          "mean": 51177
+        },
+        "25-34": {
+          "median": 30969,
+          "mean": 36435
+        },
+        "35-44": {
+          "median": 36435,
+          "mean": 42993
+        },
+        "45-54": {
+          "median": 42978,
+          "mean": 50714
+        },
+        "55-64": {
+          "median": 40829,
+          "mean": 48135
+        },
+        "65+": {
+          "median": 56694,
+          "mean": 66898
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37149,
+          "mean": 43835
+        },
+        "Female": {
+          "median": 44707,
+          "mean": 52754
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 42147,
+          "mean": 56830
+        },
+        "Married": {
+          "median": 95790,
+          "mean": 129161
+        },
+        "Divorced": {
+          "median": 46745,
+          "mean": 63030
+        },
+        "Widowed": {
+          "median": 40614,
+          "mean": 54764
+        }
+      },
+      "cost_of_living_index": 112.0
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "overall": {
+        "median": 73170,
+        "mean": 100836
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44367,
+          "mean": 52353
+        },
+        "25-34": {
+          "median": 31834,
+          "mean": 37452
+        },
+        "35-44": {
+          "median": 37452,
+          "mean": 44193
+        },
+        "45-54": {
+          "median": 45319,
+          "mean": 53476
+        },
+        "55-64": {
+          "median": 43053,
+          "mean": 50757
+        },
+        "65+": {
+          "median": 59029,
+          "mean": 69654
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37683,
+          "mean": 44466
+        },
+        "Female": {
+          "median": 47075,
+          "mean": 55548
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 40243,
+          "mean": 55459
+        },
+        "Married": {
+          "median": 91462,
+          "mean": 126045
+        },
+        "Divorced": {
+          "median": 44633,
+          "mean": 61509
+        },
+        "Widowed": {
+          "median": 38780,
+          "mean": 53443
+        }
+      },
+      "cost_of_living_index": 95.1
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "overall": {
+        "median": 81370,
+        "mean": 106510
+      },
+      "by_age": {
+        "18-24": {
+          "median": 46843,
+          "mean": 55274
+        },
+        "25-34": {
+          "median": 35187,
+          "mean": 41396
+        },
+        "35-44": {
+          "median": 41396,
+          "mean": 48847
+        },
+        "45-54": {
+          "median": 47790,
+          "mean": 56392
+        },
+        "55-64": {
+          "median": 45400,
+          "mean": 53525
+        },
+        "65+": {
+          "median": 61466,
+          "mean": 72529
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40920,
+          "mean": 48285
+        },
+        "Female": {
+          "median": 49766,
+          "mean": 58724
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 44753,
+          "mean": 58580
+        },
+        "Married": {
+          "median": 101712,
+          "mean": 133137
+        },
+        "Divorced": {
+          "median": 49635,
+          "mean": 64971
+        },
+        "Widowed": {
+          "median": 43126,
+          "mean": 56450
+        }
+      },
+      "cost_of_living_index": 112.2
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "overall": {
+        "median": 63623,
+        "mean": 88488
+      },
+      "by_age": {
+        "18-24": {
+          "median": 39190,
+          "mean": 46244
+        },
+        "25-34": {
+          "median": 28079,
+          "mean": 33035
+        },
+        "35-44": {
+          "median": 33035,
+          "mean": 38981
+        },
+        "45-54": {
+          "median": 40840,
+          "mean": 48191
+        },
+        "55-64": {
+          "median": 38798,
+          "mean": 45741
+        },
+        "65+": {
+          "median": 53756,
+          "mean": 63432
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34076,
+          "mean": 40210
+        },
+        "Female": {
+          "median": 41300,
+          "mean": 48734
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 34992,
+          "mean": 48668
+        },
+        "Married": {
+          "median": 79528,
+          "mean": 110610
+        },
+        "Divorced": {
+          "median": 38810,
+          "mean": 53977
+        },
+        "Widowed": {
+          "median": 33720,
+          "mean": 46898
+        }
+      },
+      "cost_of_living_index": 95.9
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "overall": {
+        "median": 69457,
+        "mean": 90705
+      },
+      "by_age": {
+        "18-24": {
+          "median": 41587,
+          "mean": 49073
+        },
+        "25-34": {
+          "median": 30719,
+          "mean": 36141
+        },
+        "35-44": {
+          "median": 36141,
+          "mean": 42646
+        },
+        "45-54": {
+          "median": 43150,
+          "mean": 50917
+        },
+        "55-64": {
+          "median": 40992,
+          "mean": 48328
+        },
+        "65+": {
+          "median": 53054,
+          "mean": 62604
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 36852,
+          "mean": 43485
+        },
+        "Female": {
+          "median": 43733,
+          "mean": 51605
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 38201,
+          "mean": 49887
+        },
+        "Married": {
+          "median": 86821,
+          "mean": 113381
+        },
+        "Divorced": {
+          "median": 42368,
+          "mean": 55330
+        },
+        "Widowed": {
+          "median": 36812,
+          "mean": 48073
+        }
+      },
+      "cost_of_living_index": 92.2
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "overall": {
+        "median": 64035,
+        "mean": 89266
+      },
+      "by_age": {
+        "18-24": {
+          "median": 39963,
+          "mean": 47156
+        },
+        "25-34": {
+          "median": 28960,
+          "mean": 34071
+        },
+        "35-44": {
+          "median": 34071,
+          "mean": 40204
+        },
+        "45-54": {
+          "median": 40960,
+          "mean": 48332
+        },
+        "55-64": {
+          "median": 38912,
+          "mean": 45875
+        },
+        "65+": {
+          "median": 53584,
+          "mean": 63229
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 34947,
+          "mean": 41237
+        },
+        "Female": {
+          "median": 41715,
+          "mean": 49224
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 35219,
+          "mean": 49096
+        },
+        "Married": {
+          "median": 80043,
+          "mean": 111582
+        },
+        "Divorced": {
+          "median": 39061,
+          "mean": 54452
+        },
+        "Widowed": {
+          "median": 33938,
+          "mean": 47310
+        }
+      },
+      "cost_of_living_index": 90.5
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "overall": {
+        "median": 73035,
+        "mean": 102197
+      },
+      "by_age": {
+        "18-24": {
+          "median": 42256,
+          "mean": 49862
+        },
+        "25-34": {
+          "median": 29897,
+          "mean": 35173
+        },
+        "35-44": {
+          "median": 35173,
+          "mean": 41504
+        },
+        "45-54": {
+          "median": 43631,
+          "mean": 51485
+        },
+        "55-64": {
+          "median": 41449,
+          "mean": 48867
+        },
+        "65+": {
+          "median": 59834,
+          "mean": 70604
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 36273,
+          "mean": 42802
+        },
+        "Female": {
+          "median": 44434,
+          "mean": 52432
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 40169,
+          "mean": 56208
+        },
+        "Married": {
+          "median": 91293,
+          "mean": 127746
+        },
+        "Divorced": {
+          "median": 44551,
+          "mean": 62340
+        },
+        "Widowed": {
+          "median": 38708,
+          "mean": 54164
+        }
+      },
+      "cost_of_living_index": 92.7
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "overall": {
+        "median": 86833,
+        "mean": 111415
+      },
+      "by_age": {
+        "18-24": {
+          "median": 48269,
+          "mean": 56957
+        },
+        "25-34": {
+          "median": 34325,
+          "mean": 40383
+        },
+        "35-44": {
+          "median": 40383,
+          "mean": 47651
+        },
+        "45-54": {
+          "median": 46605,
+          "mean": 54993
+        },
+        "55-64": {
+          "median": 44274,
+          "mean": 52197
+        },
+        "65+": {
+          "median": 58213,
+          "mean": 68691
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 39591,
+          "mean": 46718
+        },
+        "Female": {
+          "median": 50579,
+          "mean": 59684
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 47758,
+          "mean": 61278
+        },
+        "Married": {
+          "median": 108541,
+          "mean": 139268
+        },
+        "Divorced": {
+          "median": 52968,
+          "mean": 67963
+        },
+        "Widowed": {
+          "median": 46021,
+          "mean": 59049
+        }
+      },
+      "cost_of_living_index": 104.9
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "overall": {
+        "median": 87249,
+        "mean": 120553
+      },
+      "by_age": {
+        "18-24": {
+          "median": 46825,
+          "mean": 55253
+        },
+        "25-34": {
+          "median": 31325,
+          "mean": 36853
+        },
+        "35-44": {
+          "median": 36853,
+          "mean": 43486
+        },
+        "45-54": {
+          "median": 45609,
+          "mean": 53818
+        },
+        "55-64": {
+          "median": 43328,
+          "mean": 51082
+        },
+        "65+": {
+          "median": 63379,
+          "mean": 74787
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 37833,
+          "mean": 44643
+        },
+        "Female": {
+          "median": 48357,
+          "mean": 57062
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 47986,
+          "mean": 66304
+        },
+        "Married": {
+          "median": 109061,
+          "mean": 150691
+        },
+        "Divorced": {
+          "median": 53221,
+          "mean": 73537
+        },
+        "Widowed": {
+          "median": 46241,
+          "mean": 63893
+        }
+      },
+      "cost_of_living_index": 100.7
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "overall": {
+        "median": 74014,
+        "mean": 97809
+      },
+      "by_age": {
+        "18-24": {
+          "median": 42974,
+          "mean": 50709
+        },
+        "25-34": {
+          "median": 32067,
+          "mean": 37727
+        },
+        "35-44": {
+          "median": 37727,
+          "mean": 44517
+        },
+        "45-54": {
+          "median": 43212,
+          "mean": 50990
+        },
+        "55-64": {
+          "median": 41051,
+          "mean": 48398
+        },
+        "65+": {
+          "median": 52448,
+          "mean": 61888
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 38384,
+          "mean": 45293
+        },
+        "Female": {
+          "median": 44224,
+          "mean": 52184
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 40707,
+          "mean": 53794
+        },
+        "Married": {
+          "median": 92517,
+          "mean": 122261
+        },
+        "Divorced": {
+          "median": 45148,
+          "mean": 59663
+        },
+        "Widowed": {
+          "median": 39227,
+          "mean": 51838
+        }
+      },
+      "cost_of_living_index": 114.4
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "overall": {
+        "median": 90325,
+        "mean": 122879
+      },
+      "by_age": {
+        "18-24": {
+          "median": 50792,
+          "mean": 59935
+        },
+        "25-34": {
+          "median": 34949,
+          "mean": 41116
+        },
+        "35-44": {
+          "median": 41116,
+          "mean": 48517
+        },
+        "45-54": {
+          "median": 49787,
+          "mean": 58749
+        },
+        "55-64": {
+          "median": 47298,
+          "mean": 55762
+        },
+        "65+": {
+          "median": 67210,
+          "mean": 79307
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 42072,
+          "mean": 49644
+        },
+        "Female": {
+          "median": 52392,
+          "mean": 61822
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 49678,
+          "mean": 67583
+        },
+        "Married": {
+          "median": 112906,
+          "mean": 153598
+        },
+        "Divorced": {
+          "median": 55098,
+          "mean": 74956
+        },
+        "Widowed": {
+          "median": 47872,
+          "mean": 65125
+        }
+      },
+      "cost_of_living_index": 114.2
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "overall": {
+        "median": 72458,
+        "mean": 94995
+      },
+      "by_age": {
+        "18-24": {
+          "median": 45215,
+          "mean": 53354
+        },
+        "25-34": {
+          "median": 33291,
+          "mean": 39166
+        },
+        "35-44": {
+          "median": 39166,
+          "mean": 46215
+        },
+        "45-54": {
+          "median": 46128,
+          "mean": 54431
+        },
+        "55-64": {
+          "median": 43821,
+          "mean": 51663
+        },
+        "65+": {
+          "median": 58663,
+          "mean": 69222
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 39477,
+          "mean": 46583
+        },
+        "Female": {
+          "median": 47528,
+          "mean": 56083
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 39851,
+          "mean": 52247
+        },
+        "Married": {
+          "median": 90572,
+          "mean": 118743
+        },
+        "Divorced": {
+          "median": 44199,
+          "mean": 57946
+        },
+        "Widowed": {
+          "median": 38402,
+          "mean": 50347
+        }
+      },
+      "cost_of_living_index": 97.0
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "overall": {
+        "median": 55217,
+        "mean": 75574
+      },
+      "by_age": {
+        "18-24": {
+          "median": 37220,
+          "mean": 43920
+        },
+        "25-34": {
+          "median": 27881,
+          "mean": 32801
+        },
+        "35-44": {
+          "median": 32801,
+          "mean": 38705
+        },
+        "45-54": {
+          "median": 41394,
+          "mean": 48844
+        },
+        "55-64": {
+          "median": 39324,
+          "mean": 46361
+        },
+        "65+": {
+          "median": 50132,
+          "mean": 59156
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 32853,
+          "mean": 38766
+        },
+        "Female": {
+          "median": 41424,
+          "mean": 48880
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 30369,
+          "mean": 41565
+        },
+        "Married": {
+          "median": 69021,
+          "mean": 94467
+        },
+        "Divorced": {
+          "median": 33682,
+          "mean": 46100
+        },
+        "Widowed": {
+          "median": 29265,
+          "mean": 40054
+        }
+      },
+      "cost_of_living_index": 84.1
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "overall": {
+        "median": 72495,
+        "mean": 94900
+      },
+      "by_age": {
+        "18-24": {
+          "median": 45136,
+          "mean": 53261
+        },
+        "25-34": {
+          "median": 35581,
+          "mean": 41860
+        },
+        "35-44": {
+          "median": 41860,
+          "mean": 49394
+        },
+        "45-54": {
+          "median": 48223,
+          "mean": 56903
+        },
+        "55-64": {
+          "median": 45811,
+          "mean": 54009
+        },
+        "65+": {
+          "median": 57549,
+          "mean": 67907
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 38292,
+          "mean": 45184
+        },
+        "Female": {
+          "median": 51854,
+          "mean": 61187
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 39872,
+          "mean": 52195
+        },
+        "Married": {
+          "median": 90618,
+          "mean": 118625
+        },
+        "Divorced": {
+          "median": 44221,
+          "mean": 57889
+        },
+        "Widowed": {
+          "median": 38422,
+          "mean": 50297
+        }
+      },
+      "cost_of_living_index": 95.5
+    }
+  ],
+  "metadata": {
+    "version": "2024.1",
+    "last_updated": "2024-12-28",
+    "source": "BLS OEWS, Census ACS, MERIC Cost of Living (2024), AI/Automation Risk Data",
+    "source_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+  }
+}
