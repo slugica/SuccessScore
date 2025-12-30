@@ -1,0 +1,33 @@
+{
+  "occupations": [
+    {"soc_code": "11", "ai_risk": 30, "robotics_risk": 15, "overall_risk": 22.5},
+    {"soc_code": "12", "ai_risk": 35, "robotics_risk": 20, "overall_risk": 27.5},
+    {"soc_code": "21", "ai_risk": 45, "robotics_risk": 25, "overall_risk": 35.0},
+    {"soc_code": "22", "ai_risk": 25, "robotics_risk": 15, "overall_risk": 20.0},
+    {"soc_code": "23", "ai_risk": 35, "robotics_risk": 10, "overall_risk": 22.5},
+    {"soc_code": "24", "ai_risk": 50, "robotics_risk": 20, "overall_risk": 35.0},
+    {"soc_code": "31", "ai_risk": 55, "robotics_risk": 35, "overall_risk": 45.0},
+    {"soc_code": "32", "ai_risk": 30, "robotics_risk": 25, "overall_risk": 27.5},
+    {"soc_code": "33", "ai_risk": 25, "robotics_risk": 30, "overall_risk": 27.5},
+    {"soc_code": "34", "ai_risk": 45, "robotics_risk": 20, "overall_risk": 32.5},
+    {"soc_code": "35", "ai_risk": 55, "robotics_risk": 25, "overall_risk": 40.0},
+    {"soc_code": "41", "ai_risk": 70, "robotics_risk": 30, "overall_risk": 50.0},
+    {"soc_code": "42", "ai_risk": 75, "robotics_risk": 25, "overall_risk": 50.0},
+    {"soc_code": "51", "ai_risk": 35, "robotics_risk": 55, "overall_risk": 45.0},
+    {"soc_code": "52", "ai_risk": 40, "robotics_risk": 65, "overall_risk": 52.5},
+    {"soc_code": "53", "ai_risk": 30, "robotics_risk": 60, "overall_risk": 45.0},
+    {"soc_code": "54", "ai_risk": 50, "robotics_risk": 70, "overall_risk": 60.0},
+    {"soc_code": "61", "ai_risk": 20, "robotics_risk": 35, "overall_risk": 27.5},
+    {"soc_code": "62", "ai_risk": 30, "robotics_risk": 40, "overall_risk": 35.0},
+    {"soc_code": "63", "ai_risk": 35, "robotics_risk": 35, "overall_risk": 35.0},
+    {"soc_code": "71", "ai_risk": 60, "robotics_risk": 40, "overall_risk": 50.0},
+    {"soc_code": "72", "ai_risk": 65, "robotics_risk": 35, "overall_risk": 50.0},
+    {"soc_code": "81", "ai_risk": 45, "robotics_risk": 75, "overall_risk": 60.0},
+    {"soc_code": "82", "ai_risk": 40, "robotics_risk": 70, "overall_risk": 55.0},
+    {"soc_code": "91", "ai_risk": 35, "robotics_risk": 65, "overall_risk": 50.0},
+    {"soc_code": "92", "ai_risk": 55, "robotics_risk": 60, "overall_risk": 57.5}
+  ],
+  "data_source": "OECD Automation Risk Estimates & UK Labour Market Analysis 2024",
+  "methodology": "Risk percentages based on OECD automation potential framework adapted for SOC 2020",
+  "last_updated": "2024-12-30"
+}

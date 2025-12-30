@@ -1,0 +1,295 @@
+{
+  "regions": [
+    {
+      "code": "LON",
+      "name": "London",
+      "country_code": "uk",
+      "overall": {
+        "median": 47455,
+        "mean": 52000,
+        "top_10_percent": 85000,
+        "sample_size": 500000
+      },
+      "by_age": {
+        "18-21": {"median": 28000, "mean": 29000},
+        "22-29": {"median": 38000, "mean": 42000},
+        "30-39": {"median": 50000, "mean": 56000},
+        "40-49": {"median": 52000, "mean": 58000},
+        "50-59": {"median": 50000, "mean": 56000},
+        "60+": {"median": 45000, "mean": 50000}
+      },
+      "by_gender": {
+        "Male": {"median": 51000, "mean": 57000},
+        "Female": {"median": 44000, "mean": 48000}
+      },
+      "cost_of_living_index": 130.0
+    },
+    {
+      "code": "SE",
+      "name": "South East",
+      "country_code": "uk",
+      "overall": {
+        "median": 40508,
+        "mean": 44000,
+        "top_10_percent": 75000,
+        "sample_size": 350000
+      },
+      "by_age": {
+        "18-21": {"median": 24000, "mean": 25000},
+        "22-29": {"median": 32000, "mean": 35000},
+        "30-39": {"median": 42000, "mean": 46000},
+        "40-49": {"median": 44000, "mean": 48000},
+        "50-59": {"median": 43000, "mean": 47000},
+        "60+": {"median": 38000, "mean": 42000}
+      },
+      "by_gender": {
+        "Male": {"median": 43000, "mean": 47000},
+        "Female": {"median": 37000, "mean": 40000}
+      },
+      "cost_of_living_index": 115.0
+    },
+    {
+      "code": "EE",
+      "name": "East of England",
+      "country_code": "uk",
+      "overall": {
+        "median": 39728,
+        "mean": 43000,
+        "top_10_percent": 72000,
+        "sample_size": 250000
+      },
+      "by_age": {
+        "18-21": {"median": 23000, "mean": 24000},
+        "22-29": {"median": 31000, "mean": 34000},
+        "30-39": {"median": 41000, "mean": 45000},
+        "40-49": {"median": 43000, "mean": 47000},
+        "50-59": {"median": 42000, "mean": 46000},
+        "60+": {"median": 37000, "mean": 40000}
+      },
+      "by_gender": {
+        "Male": {"median": 42000, "mean": 46000},
+        "Female": {"median": 36000, "mean": 39000}
+      },
+      "cost_of_living_index": 110.0
+    },
+    {
+      "code": "SCT",
+      "name": "Scotland",
+      "country_code": "uk",
+      "overall": {
+        "median": 38480,
+        "mean": 42000,
+        "top_10_percent": 70000,
+        "sample_size": 200000
+      },
+      "by_age": {
+        "18-21": {"median": 22000, "mean": 23000},
+        "22-29": {"median": 30000, "mean": 33000},
+        "30-39": {"median": 40000, "mean": 44000},
+        "40-49": {"median": 42000, "mean": 46000},
+        "50-59": {"median": 41000, "mean": 45000},
+        "60+": {"median": 36000, "mean": 39000}
+      },
+      "by_gender": {
+        "Male": {"median": 41000, "mean": 45000},
+        "Female": {"median": 35000, "mean": 38000}
+      },
+      "cost_of_living_index": 95.0
+    },
+    {
+      "code": "WM",
+      "name": "West Midlands",
+      "country_code": "uk",
+      "overall": {
+        "median": 35880,
+        "mean": 39000,
+        "top_10_percent": 65000,
+        "sample_size": 180000
+      },
+      "by_age": {
+        "18-21": {"median": 21000, "mean": 22000},
+        "22-29": {"median": 28000, "mean": 31000},
+        "30-39": {"median": 37000, "mean": 40000},
+        "40-49": {"median": 39000, "mean": 42000},
+        "50-59": {"median": 38000, "mean": 41000},
+        "60+": {"median": 33000, "mean": 36000}
+      },
+      "by_gender": {
+        "Male": {"median": 38000, "mean": 41000},
+        "Female": {"median": 32000, "mean": 35000}
+      },
+      "cost_of_living_index": 92.0
+    },
+    {
+      "code": "EM",
+      "name": "East Midlands",
+      "country_code": "uk",
+      "overall": {
+        "median": 35600,
+        "mean": 38500,
+        "top_10_percent": 64000,
+        "sample_size": 160000
+      },
+      "by_age": {
+        "18-21": {"median": 20500, "mean": 21500},
+        "22-29": {"median": 27500, "mean": 30500},
+        "30-39": {"median": 36500, "mean": 39500},
+        "40-49": {"median": 38500, "mean": 41500},
+        "50-59": {"median": 37500, "mean": 40500},
+        "60+": {"median": 32500, "mean": 35500}
+      },
+      "by_gender": {
+        "Male": {"median": 37500, "mean": 40500},
+        "Female": {"median": 31500, "mean": 34500}
+      },
+      "cost_of_living_index": 90.0
+    },
+    {
+      "code": "YH",
+      "name": "Yorkshire and The Humber",
+      "country_code": "uk",
+      "overall": {
+        "median": 35464,
+        "mean": 38000,
+        "top_10_percent": 63000,
+        "sample_size": 170000
+      },
+      "by_age": {
+        "18-21": {"median": 20000, "mean": 21000},
+        "22-29": {"median": 27000, "mean": 30000},
+        "30-39": {"median": 36000, "mean": 39000},
+        "40-49": {"median": 38000, "mean": 41000},
+        "50-59": {"median": 37000, "mean": 40000},
+        "60+": {"median": 32000, "mean": 35000}
+      },
+      "by_gender": {
+        "Male": {"median": 37000, "mean": 40000},
+        "Female": {"median": 31000, "mean": 34000}
+      },
+      "cost_of_living_index": 88.0
+    },
+    {
+      "code": "NW",
+      "name": "North West",
+      "country_code": "uk",
+      "overall": {
+        "median": 35100,
+        "mean": 38000,
+        "top_10_percent": 63000,
+        "sample_size": 220000
+      },
+      "by_age": {
+        "18-21": {"median": 20000, "mean": 21000},
+        "22-29": {"median": 27000, "mean": 30000},
+        "30-39": {"median": 36000, "mean": 39000},
+        "40-49": {"median": 38000, "mean": 41000},
+        "50-59": {"median": 37000, "mean": 40000},
+        "60+": {"median": 32000, "mean": 35000}
+      },
+      "by_gender": {
+        "Male": {"median": 37000, "mean": 40000},
+        "Female": {"median": 31000, "mean": 34000}
+      },
+      "cost_of_living_index": 90.0
+    },
+    {
+      "code": "SW",
+      "name": "South West",
+      "country_code": "uk",
+      "overall": {
+        "median": 34840,
+        "mean": 37500,
+        "top_10_percent": 62000,
+        "sample_size": 180000
+      },
+      "by_age": {
+        "18-21": {"median": 19500, "mean": 20500},
+        "22-29": {"median": 26500, "mean": 29500},
+        "30-39": {"median": 35500, "mean": 38500},
+        "40-49": {"median": 37500, "mean": 40500},
+        "50-59": {"median": 36500, "mean": 39500},
+        "60+": {"median": 31500, "mean": 34500}
+      },
+      "by_gender": {
+        "Male": {"median": 36500, "mean": 39500},
+        "Female": {"median": 30500, "mean": 33500}
+      },
+      "cost_of_living_index": 105.0
+    },
+    {
+      "code": "WLS",
+      "name": "Wales",
+      "country_code": "uk",
+      "overall": {
+        "median": 34476,
+        "mean": 37000,
+        "top_10_percent": 61000,
+        "sample_size": 100000
+      },
+      "by_age": {
+        "18-21": {"median": 19000, "mean": 20000},
+        "22-29": {"median": 26000, "mean": 29000},
+        "30-39": {"median": 35000, "mean": 38000},
+        "40-49": {"median": 37000, "mean": 40000},
+        "50-59": {"median": 36000, "mean": 39000},
+        "60+": {"median": 31000, "mean": 34000}
+      },
+      "by_gender": {
+        "Male": {"median": 36000, "mean": 39000},
+        "Female": {"median": 30000, "mean": 33000}
+      },
+      "cost_of_living_index": 87.0
+    },
+    {
+      "code": "NE",
+      "name": "North East",
+      "country_code": "uk",
+      "overall": {
+        "median": 32960,
+        "mean": 35500,
+        "top_10_percent": 58000,
+        "sample_size": 80000
+      },
+      "by_age": {
+        "18-21": {"median": 18500, "mean": 19500},
+        "22-29": {"median": 25000, "mean": 28000},
+        "30-39": {"median": 33500, "mean": 36500},
+        "40-49": {"median": 35500, "mean": 38500},
+        "50-59": {"median": 34500, "mean": 37500},
+        "60+": {"median": 29500, "mean": 32500}
+      },
+      "by_gender": {
+        "Male": {"median": 34500, "mean": 37500},
+        "Female": {"median": 28500, "mean": 31500}
+      },
+      "cost_of_living_index": 85.0
+    },
+    {
+      "code": "NIR",
+      "name": "Northern Ireland",
+      "country_code": "uk",
+      "overall": {
+        "median": 33000,
+        "mean": 35500,
+        "top_10_percent": 58000,
+        "sample_size": 60000
+      },
+      "by_age": {
+        "18-21": {"median": 18500, "mean": 19500},
+        "22-29": {"median": 25000, "mean": 28000},
+        "30-39": {"median": 33500, "mean": 36500},
+        "40-49": {"median": 35500, "mean": 38500},
+        "50-59": {"median": 34500, "mean": 37500},
+        "60+": {"median": 29500, "mean": 32500}
+      },
+      "by_gender": {
+        "Male": {"median": 34500, "mean": 37500},
+        "Female": {"median": 28500, "mean": 31500}
+      },
+      "cost_of_living_index": 86.0
+    }
+  ],
+  "data_source": "ONS Annual Survey of Hours and Earnings (ASHE) 2024",
+  "last_updated": "2024-10-29",
+  "currency": "GBP"
+}

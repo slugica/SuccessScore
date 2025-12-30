@@ -24,83 +24,120 @@ enum DataLoaderError: Error {
     }
 }
 
+// MARK: - Country-specific Data Container
+
+struct CountryDataSet {
+    var occupationsData: BLSOEWSData?
+    var regionData: RegionIncomeData?
+    var nationalData: NationalStatisticsData?
+    var automationRiskData: AutomationRiskData?
+}
+
 class DataLoader {
     static let shared = DataLoader()
 
-    private var occupationsData: BLSOEWSData?
-    private var stateData: StateIncomeData?
-    private var nationalData: NationalStatisticsData?
-    private var metadata: DataMetadata?
-    private var automationRiskData: AutomationRiskData?
+    // Multi-country support
+    private var countriesMetadata: CountriesMetadata?
+    private var countryDataSets: [String: CountryDataSet] = [:]
+    private var currentCountryCode: String = "us"
+
+    // Legacy properties for backward compatibility
+    private var occupationsData: BLSOEWSData? {
+        countryDataSets[currentCountryCode]?.occupationsData
+    }
+    private var stateData: StateIncomeData? {
+        countryDataSets[currentCountryCode]?.regionData
+    }
+    private var nationalData: NationalStatisticsData? {
+        countryDataSets[currentCountryCode]?.nationalData
+    }
+    private var automationRiskData: AutomationRiskData? {
+        countryDataSets[currentCountryCode]?.automationRiskData
+    }
+    private var metadata: DataMetadata? {
+        countryDataSets[currentCountryCode]?.occupationsData?.metadata
+    }
 
     private init() {}
+
+    // MARK: - Country Management
+
+    func setCurrentCountry(_ countryCode: String) {
+        currentCountryCode = countryCode
+    }
+
+    func getCurrentCountry() -> String {
+        currentCountryCode
+    }
+
+    func getAvailableCountries() -> [Country] {
+        countriesMetadata?.countries.filter { $0.isActive } ?? []
+    }
 
     // MARK: - Load All Data
 
     func loadAllData() async throws {
+        // Load countries metadata first
+        try await loadCountriesMetadata()
+
+        // Load data for current country
+        try await loadCountryData(countryCode: currentCountryCode)
+    }
+
+    func loadCountryData(countryCode: String) async throws {
         try await withThrowingTaskGroup(of: Void.self) { group in
+            var dataSet = CountryDataSet()
+
             group.addTask {
-                self.occupationsData = try await self.loadOccupationsData()
+                dataSet.occupationsData = try await self.loadOccupationsData(countryCode: countryCode)
             }
 
             group.addTask {
-                self.stateData = try await self.loadStateData()
+                dataSet.regionData = try await self.loadRegionData(countryCode: countryCode)
             }
 
             group.addTask {
-                self.nationalData = try await self.loadNationalData()
+                dataSet.nationalData = try await self.loadNationalData(countryCode: countryCode)
             }
 
             group.addTask {
-                self.metadata = try await self.loadMetadata()
-            }
-
-            group.addTask {
-                self.automationRiskData = try await self.loadAutomationRiskData()
+                dataSet.automationRiskData = try await self.loadAutomationRiskData(countryCode: countryCode)
             }
 
             try await group.waitForAll()
+
+            countryDataSets[countryCode] = dataSet
         }
     }
 
-    // MARK: - Individual Loaders
-
-    private func loadOccupationsData() async throws -> BLSOEWSData {
-        try await load(filename: "bls_oews_occupations", extension: "json")
+    private func loadCountriesMetadata() async throws {
+        countriesMetadata = try await load(filename: "countries_metadata", extension: "json", subdirectory: nil)
     }
 
-    private func loadStateData() async throws -> StateIncomeData {
-        try await load(filename: "state_income_data", extension: "json")
+    // MARK: - Individual Loaders (Country-specific)
+
+    private func loadOccupationsData(countryCode: String) async throws -> BLSOEWSData {
+        let filename = countryCode == "us" ? "bls_oews_occupations" : "occupations"
+        return try await load(filename: filename, extension: "json", subdirectory: countryCode)
     }
 
-    private func loadNationalData() async throws -> NationalStatisticsData {
-        try await load(filename: "national_statistics", extension: "json")
+    private func loadRegionData(countryCode: String) async throws -> RegionIncomeData {
+        let filename = countryCode == "us" ? "state_income_data" : "regions"
+        return try await load(filename: filename, extension: "json", subdirectory: countryCode)
     }
 
-    private func loadMetadata() async throws -> DataMetadata {
-        let fullData: [String: DataMetadata] = try await load(filename: "metadata", extension: "json")
-        guard let metadata = fullData["app_version"] != nil ? try? JSONDecoder().decode(DataMetadata.self, from: JSONEncoder().encode(fullData)) : nil else {
-            // If the structure is different, extract from the JSON
-            let url = try getFileURL(filename: "metadata", extension: "json")
-            let data = try Data(contentsOf: url)
-            let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
-            let version = json?["data_version"] as? String ?? "1.0.0"
-            let lastUpdated = json?["last_updated"] as? String ?? "2024-09-15"
-            let sources = json?["sources"] as? [[String: Any]]
-            let source = (sources?.first?["full_name"] as? String) ?? "BLS OEWS, Census ACS, MERIC Cost of Living (2024), AI/Automation Risk Data"
-            return DataMetadata(version: version, lastUpdated: lastUpdated, source: source)
-        }
-        return metadata
+    private func loadNationalData(countryCode: String) async throws -> NationalStatisticsData {
+        try await load(filename: "national_statistics", extension: "json", subdirectory: countryCode)
     }
 
-    private func loadAutomationRiskData() async throws -> AutomationRiskData {
-        try await load(filename: "automation_risk_data", extension: "json")
+    private func loadAutomationRiskData(countryCode: String) async throws -> AutomationRiskData {
+        try await load(filename: "automation_risk_data", extension: "json", subdirectory: countryCode)
     }
 
     // MARK: - Generic JSON Loader
 
-    private func load<T: Decodable>(filename: String, extension ext: String) async throws -> T {
-        let url = try getFileURL(filename: filename, extension: ext)
+    private func load<T: Decodable>(filename: String, extension ext: String, subdirectory: String?) async throws -> T {
+        let url = try getFileURL(filename: filename, extension: ext, subdirectory: subdirectory)
         let data = try Data(contentsOf: url)
 
         let decoder = JSONDecoder()
@@ -112,81 +149,118 @@ class DataLoader {
         }
     }
 
-    private func getFileURL(filename: String, extension ext: String) throws -> URL {
-        guard let url = Bundle.main.url(forResource: filename, withExtension: ext, subdirectory: "Data/JSON") ??
+    private func getFileURL(filename: String, extension ext: String, subdirectory: String? = nil) throws -> URL {
+        var searchPath: String
+        if let subdirectory = subdirectory {
+            searchPath = "Data/JSON/\(subdirectory)"
+        } else {
+            searchPath = "Data/JSON"
+        }
+
+        guard let url = Bundle.main.url(forResource: filename, withExtension: ext, subdirectory: searchPath) ??
                         Bundle.main.url(forResource: filename, withExtension: ext) else {
-            throw DataLoaderError.fileNotFound("\(filename).\(ext)")
+            throw DataLoaderError.fileNotFound("\(filename).\(ext) in \(searchPath)")
         }
         return url
     }
 
-    // MARK: - Data Accessors
+    // MARK: - Data Accessors (Country-aware)
 
-    func getOccupationData(for socCode: String) -> OccupationData? {
-        return occupationsData?.occupations.first { $0.socCode == socCode }
+    func getOccupationData(for socCode: String, countryCode: String? = nil) -> OccupationData? {
+        let country = countryCode ?? currentCountryCode
+        return countryDataSets[country]?.occupationsData?.occupations.first { $0.socCode == socCode }
+    }
+
+    func getRegionData(for regionCode: String, countryCode: String? = nil) -> RegionData? {
+        let country = countryCode ?? currentCountryCode
+        return countryDataSets[country]?.regionData?.regions.first { $0.code == regionCode }
     }
 
     func getStateData(for state: USState) -> StateData? {
-        return stateData?.states.first { $0.code == state.rawValue }
+        return getRegionData(for: state.rawValue, countryCode: "us")
     }
 
-    func getNationalData() -> NationalStats? {
-        return nationalData?.national
+    func getNationalData(countryCode: String? = nil) -> NationalStats? {
+        let country = countryCode ?? currentCountryCode
+        return countryDataSets[country]?.nationalData?.national
     }
 
-    func getAllOccupations() -> [OccupationData] {
-        let allOccupations = occupationsData?.occupations ?? []
+    func getAllOccupations(countryCode: String? = nil) -> [OccupationData] {
+        let country = countryCode ?? currentCountryCode
+        let allOccupations = countryDataSets[country]?.occupationsData?.occupations ?? []
 
-        // Filter out aggregate SOC codes (ending in 0) to avoid duplicates
-        // Keep only detailed codes (ending in 1-9)
-        // Example: 29-1140 is aggregate, 29-1141 is detailed
-        return allOccupations.filter { occupation in
-            let socCode = occupation.socCode
-            // Get the last character of SOC code
-            guard let lastChar = socCode.last else { return true }
-            // Keep if last digit is not 0
-            return lastChar != "0"
+        // For US, filter out aggregate SOC codes (ending in 0)
+        if country == "us" {
+            return allOccupations.filter { occupation in
+                let socCode = occupation.socCode
+                guard let lastChar = socCode.last else { return true }
+                return lastChar != "0"
+            }
         }
+
+        // For other countries, return all occupations
+        return allOccupations
+    }
+
+    func getAllRegions(countryCode: String? = nil) -> [RegionData] {
+        let country = countryCode ?? currentCountryCode
+        return countryDataSets[country]?.regionData?.regions ?? []
     }
 
     func getAllStates() -> [StateData] {
-        return stateData?.states ?? []
+        return getAllRegions(countryCode: "us")
     }
 
     func getDataMetadata() -> DataMetadata? {
         return metadata
     }
 
-    func getAutomationRisk(for socCode: String) -> OccupationRisk? {
-        return automationRiskData?.automationRisks.first { $0.socCode == socCode }
+    func getAutomationRisk(for socCode: String, countryCode: String? = nil) -> OccupationRisk? {
+        let country = countryCode ?? currentCountryCode
+        return countryDataSets[country]?.automationRiskData?.automationRisks.first { $0.socCode == socCode }
     }
 
-    func getAutomationRiskMetadata() -> RiskMetadata? {
-        return automationRiskData?.metadata
+    func getAutomationRiskMetadata(countryCode: String? = nil) -> RiskMetadata? {
+        let country = countryCode ?? currentCountryCode
+        return countryDataSets[country]?.automationRiskData?.metadata
     }
 
     // MARK: - Occupation Categories
 
-    func getOccupationCategories() -> [String: [OccupationData]] {
-        let all = getAllOccupations()
+    func getOccupationCategories(countryCode: String? = nil) -> [String: [OccupationData]] {
+        let all = getAllOccupations(countryCode: countryCode)
         return Dictionary(grouping: all) { $0.category }
     }
 
-    func getOccupationsForCategory(_ category: String) -> [OccupationData] {
-        return getAllOccupations().filter { $0.category == category }
+    func getOccupationsForCategory(_ category: String, countryCode: String? = nil) -> [OccupationData] {
+        return getAllOccupations(countryCode: countryCode).filter { $0.category == category }
     }
 
     // MARK: - Helper for Age Range
 
-    func getAgeRangeKey(for age: Int) -> String {
-        switch age {
-        case 16...19: return "16-19"
-        case 20...24: return "20-24"
-        case 25...34: return "25-34"
-        case 35...44: return "35-44"
-        case 45...54: return "45-54"
-        case 55...64: return "55-64"
-        default: return "65+"
+    func getAgeRangeKey(for age: Int, countryCode: String? = nil) -> String {
+        let country = countryCode ?? currentCountryCode
+
+        // Different age groupings per country
+        if country == "uk" {
+            switch age {
+            case 18...21: return "18-21"
+            case 22...29: return "22-29"
+            case 30...39: return "30-39"
+            case 40...49: return "40-49"
+            case 50...59: return "50-59"
+            default: return "60+"
+            }
+        } else { // US
+            switch age {
+            case 16...19: return "16-19"
+            case 20...24: return "20-24"
+            case 25...34: return "25-34"
+            case 35...44: return "35-44"
+            case 45...54: return "45-54"
+            case 55...64: return "55-64"
+            default: return "65+"
+            }
         }
     }
 
@@ -194,5 +268,12 @@ class DataLoader {
 
     var isDataLoaded: Bool {
         return occupationsData != nil && stateData != nil && nationalData != nil
+    }
+
+    func isCountryDataLoaded(_ countryCode: String) -> Bool {
+        guard let dataSet = countryDataSets[countryCode] else { return false }
+        return dataSet.occupationsData != nil &&
+               dataSet.regionData != nil &&
+               dataSet.nationalData != nil
     }
 }

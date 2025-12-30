@@ -7,9 +7,28 @@
 
 import Foundation
 
+// MARK: - Universal Region Model
+
+struct Region: Codable, Identifiable, Hashable {
+    let code: String
+    let name: String
+    let countryCode: String
+
+    var id: String { code }
+
+    enum CodingKeys: String, CodingKey {
+        case code
+        case name
+        case countryCode = "country_code"
+    }
+}
+
+// MARK: - User Profile
+
 struct UserProfile: Codable {
+    var countryCode: String
+    var region: Region
     var zipCode: String
-    var state: USState
     var city: String
     var age: Int
     var annualIncome: Double
@@ -19,9 +38,24 @@ struct UserProfile: Codable {
     var maritalStatus: MaritalStatus
     var occupation: OccupationCategory
 
+    // Legacy property for backward compatibility
+    var state: USState {
+        get {
+            if countryCode == "us", let usState = USState(rawValue: region.code) {
+                return usState
+            }
+            return .california
+        }
+        set {
+            region = Region(code: newValue.rawValue, name: newValue.fullName, countryCode: "us")
+            countryCode = "us"
+        }
+    }
+
     init() {
+        self.countryCode = "us"
+        self.region = Region(code: "CA", name: "California", countryCode: "us")
         self.zipCode = ""
-        self.state = .california
         self.city = ""
         self.age = 30
         self.annualIncome = 0
@@ -29,7 +63,21 @@ struct UserProfile: Codable {
         self.numberOfChildren = 0
         self.gender = .notSelected
         self.maritalStatus = .notSelected
-        self.occupation = OccupationCategory(socCode: "", title: "", category: "")
+        self.occupation = OccupationCategory(socCode: "", title: "", category: "", countryCode: "us")
+    }
+
+    init(countryCode: String, region: Region) {
+        self.countryCode = countryCode
+        self.region = region
+        self.zipCode = ""
+        self.city = ""
+        self.age = 30
+        self.annualIncome = 0
+        self.householdIncome = 0
+        self.numberOfChildren = 0
+        self.gender = .notSelected
+        self.maritalStatus = .notSelected
+        self.occupation = OccupationCategory(socCode: "", title: "", category: "", countryCode: countryCode)
     }
 
     // Computed properties
@@ -216,6 +264,29 @@ struct OccupationCategory: Codable, Identifiable, Hashable {
     let socCode: String
     let title: String
     let category: String
+    let countryCode: String
 
-    var id: String { socCode }
+    var id: String { "\(countryCode)_\(socCode)" }
+
+    enum CodingKeys: String, CodingKey {
+        case socCode = "soc_code"
+        case title
+        case category
+        case countryCode = "country_code"
+    }
+
+    // Legacy initializer for backward compatibility
+    init(socCode: String, title: String, category: String) {
+        self.socCode = socCode
+        self.title = title
+        self.category = category
+        self.countryCode = "us"
+    }
+
+    init(socCode: String, title: String, category: String, countryCode: String) {
+        self.socCode = socCode
+        self.title = title
+        self.category = category
+        self.countryCode = countryCode
+    }
 }

@@ -1,0 +1,45 @@
+{
+  "countries": [
+    {
+      "code": "us",
+      "name": "United States",
+      "flag": "🇺🇸",
+      "currency": "USD",
+      "currency_symbol": "$",
+      "occupation_system": "SOC 2018",
+      "region_type": "State",
+      "region_count": 51,
+      "occupation_count": 822,
+      "has_data": true,
+      "is_active": true
+    },
+    {
+      "code": "uk",
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "currency": "GBP",
+      "currency_symbol": "£",
+      "occupation_system": "SOC 2020 (2-digit)",
+      "region_type": "Region",
+      "region_count": 12,
+      "occupation_count": 25,
+      "has_data": true,
+      "is_active": true
+    },
+    {
+      "code": "canada",
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "currency": "CAD",
+      "currency_symbol": "$",
+      "occupation_system": "NOC 2021",
+      "region_type": "Province",
+      "region_count": 13,
+      "occupation_count": 0,
+      "has_data": false,
+      "is_active": false
+    }
+  ],
+  "version": "1.0",
+  "last_updated": "2025-12-30"
+}

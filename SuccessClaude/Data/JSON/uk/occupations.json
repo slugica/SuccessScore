@@ -1,0 +1,295 @@
+{
+  "occupations": [
+    {
+      "soc_code": "11",
+      "title": "Corporate managers and directors",
+      "category": "Managers, directors and senior officials",
+      "national_stats": {
+        "median": 55000,
+        "mean": 65000,
+        "top_10_percent": 110000,
+        "sample_size": 80000
+      }
+    },
+    {
+      "soc_code": "12",
+      "title": "Other managers and proprietors",
+      "category": "Managers, directors and senior officials",
+      "national_stats": {
+        "median": 38000,
+        "mean": 45000,
+        "top_10_percent": 75000,
+        "sample_size": 120000
+      }
+    },
+    {
+      "soc_code": "21",
+      "title": "Science, research, engineering and technology professionals",
+      "category": "Professional occupations",
+      "national_stats": {
+        "median": 48000,
+        "mean": 52000,
+        "top_10_percent": 85000,
+        "sample_size": 100000
+      }
+    },
+    {
+      "soc_code": "22",
+      "title": "Health professionals",
+      "category": "Professional occupations",
+      "national_stats": {
+        "median": 52000,
+        "mean": 58000,
+        "top_10_percent": 95000,
+        "sample_size": 90000
+      }
+    },
+    {
+      "soc_code": "23",
+      "title": "Teaching and other educational professionals",
+      "category": "Professional occupations",
+      "national_stats": {
+        "median": 42000,
+        "mean": 45000,
+        "top_10_percent": 65000,
+        "sample_size": 150000
+      }
+    },
+    {
+      "soc_code": "24",
+      "title": "Business, media and public service professionals",
+      "category": "Professional occupations",
+      "national_stats": {
+        "median": 46000,
+        "mean": 52000,
+        "top_10_percent": 85000,
+        "sample_size": 180000
+      }
+    },
+    {
+      "soc_code": "31",
+      "title": "Science, engineering and technology associate professionals",
+      "category": "Associate professional occupations",
+      "national_stats": {
+        "median": 40000,
+        "mean": 43000,
+        "top_10_percent": 65000,
+        "sample_size": 70000
+      }
+    },
+    {
+      "soc_code": "32",
+      "title": "Health and social care associate professionals",
+      "category": "Associate professional occupations",
+      "national_stats": {
+        "median": 35000,
+        "mean": 37000,
+        "top_10_percent": 52000,
+        "sample_size": 110000
+      }
+    },
+    {
+      "soc_code": "33",
+      "title": "Protective service occupations",
+      "category": "Associate professional occupations",
+      "national_stats": {
+        "median": 38000,
+        "mean": 40000,
+        "top_10_percent": 55000,
+        "sample_size": 50000
+      }
+    },
+    {
+      "soc_code": "34",
+      "title": "Culture, media and sports occupations",
+      "category": "Associate professional occupations",
+      "national_stats": {
+        "median": 32000,
+        "mean": 36000,
+        "top_10_percent": 58000,
+        "sample_size": 60000
+      }
+    },
+    {
+      "soc_code": "35",
+      "title": "Business and public service associate professionals",
+      "category": "Associate professional occupations",
+      "national_stats": {
+        "median": 37000,
+        "mean": 40000,
+        "top_10_percent": 60000,
+        "sample_size": 140000
+      }
+    },
+    {
+      "soc_code": "41",
+      "title": "Administrative occupations",
+      "category": "Administrative and secretarial occupations",
+      "national_stats": {
+        "median": 28000,
+        "mean": 30000,
+        "top_10_percent": 42000,
+        "sample_size": 200000
+      }
+    },
+    {
+      "soc_code": "42",
+      "title": "Secretarial and related occupations",
+      "category": "Administrative and secretarial occupations",
+      "national_stats": {
+        "median": 26000,
+        "mean": 28000,
+        "top_10_percent": 38000,
+        "sample_size": 80000
+      }
+    },
+    {
+      "soc_code": "51",
+      "title": "Skilled agricultural and related trades",
+      "category": "Skilled trades occupations",
+      "national_stats": {
+        "median": 27000,
+        "mean": 29000,
+        "top_10_percent": 42000,
+        "sample_size": 40000
+      }
+    },
+    {
+      "soc_code": "52",
+      "title": "Skilled metal, electrical and electronic trades",
+      "category": "Skilled trades occupations",
+      "national_stats": {
+        "median": 35000,
+        "mean": 37000,
+        "top_10_percent": 52000,
+        "sample_size": 90000
+      }
+    },
+    {
+      "soc_code": "53",
+      "title": "Skilled construction and building trades",
+      "category": "Skilled trades occupations",
+      "national_stats": {
+        "median": 34000,
+        "mean": 36000,
+        "top_10_percent": 50000,
+        "sample_size": 100000
+      }
+    },
+    {
+      "soc_code": "54",
+      "title": "Textiles, printing and other skilled trades",
+      "category": "Skilled trades occupations",
+      "national_stats": {
+        "median": 29000,
+        "mean": 31000,
+        "top_10_percent": 44000,
+        "sample_size": 50000
+      }
+    },
+    {
+      "soc_code": "61",
+      "title": "Caring personal service occupations",
+      "category": "Caring, leisure and other service occupations",
+      "national_stats": {
+        "median": 22000,
+        "mean": 23000,
+        "top_10_percent": 32000,
+        "sample_size": 180000
+      }
+    },
+    {
+      "soc_code": "62",
+      "title": "Leisure, travel and related personal service occupations",
+      "category": "Caring, leisure and other service occupations",
+      "national_stats": {
+        "median": 23000,
+        "mean": 25000,
+        "top_10_percent": 35000,
+        "sample_size": 70000
+      }
+    },
+    {
+      "soc_code": "63",
+      "title": "Community and civil enforcement occupations",
+      "category": "Caring, leisure and other service occupations",
+      "national_stats": {
+        "median": 30000,
+        "mean": 32000,
+        "top_10_percent": 45000,
+        "sample_size": 40000
+      }
+    },
+    {
+      "soc_code": "71",
+      "title": "Sales occupations",
+      "category": "Sales and customer service occupations",
+      "national_stats": {
+        "median": 24000,
+        "mean": 27000,
+        "top_10_percent": 42000,
+        "sample_size": 150000
+      }
+    },
+    {
+      "soc_code": "72",
+      "title": "Customer service occupations",
+      "category": "Sales and customer service occupations",
+      "national_stats": {
+        "median": 25000,
+        "mean": 27000,
+        "top_10_percent": 38000,
+        "sample_size": 100000
+      }
+    },
+    {
+      "soc_code": "81",
+      "title": "Process, plant and machine operatives",
+      "category": "Process, plant and machine operatives",
+      "national_stats": {
+        "median": 28000,
+        "mean": 30000,
+        "top_10_percent": 42000,
+        "sample_size": 110000
+      }
+    },
+    {
+      "soc_code": "82",
+      "title": "Transport and mobile machine drivers and operatives",
+      "category": "Process, plant and machine operatives",
+      "national_stats": {
+        "median": 30000,
+        "mean": 32000,
+        "top_10_percent": 45000,
+        "sample_size": 130000
+      }
+    },
+    {
+      "soc_code": "91",
+      "title": "Elementary trades and related occupations",
+      "category": "Elementary occupations",
+      "national_stats": {
+        "median": 21000,
+        "mean": 22000,
+        "top_10_percent": 29000,
+        "sample_size": 140000
+      }
+    },
+    {
+      "soc_code": "92",
+      "title": "Elementary administration and service occupations",
+      "category": "Elementary occupations",
+      "national_stats": {
+        "median": 20000,
+        "mean": 21000,
+        "top_10_percent": 27000,
+        "sample_size": 200000
+      }
+    }
+  ],
+  "data_source": "ONS Annual Survey of Hours and Earnings (ASHE) 2024 - SOC 2020",
+  "classification": "Standard Occupational Classification 2020 (2-digit sub-major groups)",
+  "total_occupations": 26,
+  "last_updated": "2024-10-29",
+  "currency": "GBP"
+}

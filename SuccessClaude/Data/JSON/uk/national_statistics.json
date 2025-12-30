@@ -1,0 +1,32 @@
+{
+  "overall": {
+    "median": 37430,
+    "mean": 40500,
+    "top_10_percent": 70000,
+    "top_25_percent": 52000,
+    "bottom_25_percent": 25000,
+    "sample_size": 2800000
+  },
+  "by_age": {
+    "18-21": {"median": 21000, "mean": 22000, "sample_size": 150000},
+    "22-29": {"median": 30000, "mean": 32000, "sample_size": 500000},
+    "30-39": {"median": 40000, "mean": 44000, "sample_size": 650000},
+    "40-49": {"median": 42000, "mean": 46000, "sample_size": 600000},
+    "50-59": {"median": 40000, "mean": 44000, "sample_size": 550000},
+    "60+": {"median": 35000, "mean": 38000, "sample_size": 350000}
+  },
+  "by_gender": {
+    "Male": {"median": 40000, "mean": 44000, "sample_size": 1400000},
+    "Female": {"median": 34000, "mean": 37000, "sample_size": 1400000}
+  },
+  "by_marital_status": {
+    "Single": {"median": 32000, "mean": 35000, "sample_size": 900000},
+    "Married": {"median": 42000, "mean": 46000, "sample_size": 1500000},
+    "Divorced": {"median": 36000, "mean": 39000, "sample_size": 300000},
+    "Widowed": {"median": 33000, "mean": 36000, "sample_size": 100000}
+  },
+  "data_source": "ONS Annual Survey of Hours and Earnings (ASHE) 2024",
+  "reference_year": 2024,
+  "currency": "GBP",
+  "last_updated": "2024-10-29"
+}

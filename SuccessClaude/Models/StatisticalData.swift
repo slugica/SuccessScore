@@ -7,6 +7,50 @@
 
 import Foundation
 
+// MARK: - Country Data Structures
+
+struct CountriesMetadata: Codable {
+    let countries: [Country]
+    let version: String
+    let lastUpdated: String
+
+    enum CodingKeys: String, CodingKey {
+        case countries
+        case version
+        case lastUpdated = "last_updated"
+    }
+}
+
+struct Country: Codable, Identifiable {
+    let code: String
+    let name: String
+    let flag: String
+    let currency: String
+    let currencySymbol: String
+    let occupationSystem: String
+    let regionType: String
+    let regionCount: Int
+    let occupationCount: Int
+    let hasData: Bool
+    let isActive: Bool
+
+    var id: String { code }
+
+    enum CodingKeys: String, CodingKey {
+        case code
+        case name
+        case flag
+        case currency
+        case currencySymbol = "currency_symbol"
+        case occupationSystem = "occupation_system"
+        case regionType = "region_type"
+        case regionCount = "region_count"
+        case occupationCount = "occupation_count"
+        case hasData = "has_data"
+        case isActive = "is_active"
+    }
+}
+
 // MARK: - BLS OEWS Data Structures
 
 struct BLSOEWSData: Codable {
@@ -49,27 +93,38 @@ struct IncomeStats: Codable {
     let mean: Double
 }
 
-// MARK: - State Income Data Structures
+// MARK: - Region Income Data Structures (Universal for all countries)
 
-struct StateIncomeData: Codable {
-    let states: [StateData]
-    let metadata: DataMetadata
+struct RegionIncomeData: Codable {
+    let regions: [RegionData]
+    let metadata: DataMetadata?
+    let dataSource: String?
+    let currency: String?
+
+    enum CodingKeys: String, CodingKey {
+        case regions
+        case metadata
+        case dataSource = "data_source"
+        case currency
+    }
 }
 
-struct StateData: Codable, Identifiable {
+struct RegionData: Codable, Identifiable {
     let code: String
     let name: String
-    let overall: IncomeStats
+    let countryCode: String?
+    let overall: RegionIncomeStats
     let byAge: [String: IncomeStats]
     let byGender: [String: IncomeStats]
-    let byMaritalStatus: [String: IncomeStats]
-    let costOfLivingIndex: Double // Index where 100 = US average
+    let byMaritalStatus: [String: IncomeStats]?
+    let costOfLivingIndex: Double
 
     var id: String { code }
 
     enum CodingKeys: String, CodingKey {
         case code
         case name
+        case countryCode = "country_code"
         case overall
         case byAge = "by_age"
         case byGender = "by_gender"
@@ -77,6 +132,24 @@ struct StateData: Codable, Identifiable {
         case costOfLivingIndex = "cost_of_living_index"
     }
 }
+
+struct RegionIncomeStats: Codable {
+    let median: Double
+    let mean: Double
+    let top10Percent: Double?
+    let sampleSize: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case median
+        case mean
+        case top10Percent = "top_10_percent"
+        case sampleSize = "sample_size"
+    }
+}
+
+// MARK: - Legacy Type Aliases (for backward compatibility)
+typealias StateIncomeData = RegionIncomeData
+typealias StateData = RegionData
 
 // MARK: - National Statistics Data Structures
 
