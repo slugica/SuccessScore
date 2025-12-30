@@ -225,11 +225,14 @@ class UserInputViewModel: ObservableObject {
         defer { isLoading = false }
 
         do {
-            async let loadAllData = dataLoader.loadAllData()
-            async let loadZIPData = zipCodeService.loadData()
+            // Only load countries metadata on initial load
+            // Country-specific data will be loaded when country is selected
+            try await dataLoader.loadCountriesMetadata()
 
-            try await loadAllData
-            try await loadZIPData
+            // Load ZIP code data (only needed for US)
+            if userProfile.countryCode == "us" {
+                try await zipCodeService.loadData()
+            }
         } catch {
             print("Failed to load data: \(error)")
         }

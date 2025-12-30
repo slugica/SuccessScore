@@ -110,7 +110,7 @@ class DataLoader {
         }
     }
 
-    private func loadCountriesMetadata() async throws {
+    func loadCountriesMetadata() async throws {
         countriesMetadata = try await load(filename: "countries_metadata", extension: "json", subdirectory: nil)
     }
 
