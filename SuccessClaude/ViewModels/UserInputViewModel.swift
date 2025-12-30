@@ -12,6 +12,7 @@ import Combine
 @MainActor
 class UserInputViewModel: ObservableObject {
     @Published var userProfile = UserProfile()
+    @Published var selectedCountry: Country?
     @Published var isFormValid = false
     @Published var validationErrors: [String: String] = [:]
     @Published var isLoading = false
@@ -25,18 +26,50 @@ class UserInputViewModel: ObservableObject {
         self.zipCodeService = zipCodeService
     }
 
+    // MARK: - Country Management
+
+    var availableCountries: [Country] {
+        dataLoader.getAvailableCountries()
+    }
+
+    func setCountry(_ country: Country) async {
+        selectedCountry = country
+        userProfile.countryCode = country.code
+
+        // Load country data if not already loaded
+        if !dataLoader.isCountryDataLoaded(country.code) {
+            isLoading = true
+            do {
+                try await dataLoader.loadCountryData(countryCode: country.code)
+                dataLoader.setCurrentCountry(country.code)
+            } catch {
+                print("Error loading country data: \(error)")
+            }
+            isLoading = false
+        } else {
+            dataLoader.setCurrentCountry(country.code)
+        }
+    }
+
     // MARK: - Data Access
 
     var availableStates: [USState] {
         USState.allCases
     }
 
+    var availableRegions: [Region] {
+        dataLoader.getAllRegions(countryCode: userProfile.countryCode).map { regionData in
+            Region(code: regionData.code, name: regionData.name, countryCode: regionData.countryCode ?? userProfile.countryCode)
+        }
+    }
+
     var availableOccupations: [OccupationCategory] {
-        dataLoader.getAllOccupations().map { occupation in
+        dataLoader.getAllOccupations(countryCode: userProfile.countryCode).map { occupation in
             OccupationCategory(
                 socCode: occupation.socCode,
                 title: occupation.title,
-                category: occupation.category
+                category: occupation.category,
+                countryCode: userProfile.countryCode
             )
         }
     }

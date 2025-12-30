@@ -24,29 +24,70 @@ struct UserInputFormView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 0) {
-                // Progress bar
-                progressBar
+            if viewModel.selectedCountry == nil {
+                // Step 1: Country Selection
+                countrySelectionView
+            } else {
+                // Step 2: Main Form
+                VStack(spacing: 0) {
+                    // Progress bar
+                    progressBar
 
-                ZStack {
-                    formContent
+                    ZStack {
+                        formContent
 
-                    NavigationLink(destination: StatisticsResultsView(viewModel: statisticsViewModel), isActive: $navigateToResults) {
-                        EmptyView()
+                        NavigationLink(destination: StatisticsResultsView(viewModel: statisticsViewModel), isActive: $navigateToResults) {
+                            EmptyView()
+                        }
+                    }
+                }
+                .navigationTitle("Income Comparison")
+                .navigationBarTitleDisplayMode(.large)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button("Change Country") {
+                            viewModel.selectedCountry = nil
+                        }
                     }
                 }
             }
-            .navigationTitle("Income Comparison")
-            .navigationBarTitleDisplayMode(.large)
-            .task {
-                await viewModel.loadData()
-            }
-            .alert("Data Not Available", isPresented: $showErrorAlert) {
-                Button("OK", role: .cancel) { }
-            } message: {
-                Text(errorMessage)
+        }
+        .task {
+            await viewModel.loadData()
+        }
+        .alert("Data Not Available", isPresented: $showErrorAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(errorMessage)
+        }
+    }
+
+    private var countrySelectionView: some View {
+        ZStack {
+            if viewModel.isLoading {
+                VStack {
+                    ProgressView()
+                    Text("Loading data...")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .padding(.top, 8)
+                }
+            } else {
+                CountryPickerView(
+                    selectedCountry: $viewModel.selectedCountry,
+                    countries: viewModel.availableCountries
+                )
+                .onChange(of: viewModel.selectedCountry) { newCountry in
+                    if let country = newCountry {
+                        Task {
+                            await viewModel.setCountry(country)
+                        }
+                    }
+                }
             }
         }
+        .navigationTitle("Select Country")
+        .navigationBarTitleDisplayMode(.large)
     }
 
     private var formContent: some View {
@@ -84,28 +125,59 @@ struct UserInputFormView: View {
 
     private var locationSection: some View {
         Section {
-            TextField("92694", text: $viewModel.userProfile.zipCode)
-                .keyboardType(.numberPad)
-                .onChange(of: viewModel.userProfile.zipCode) { newValue in
-                    hasEditedZipCode = true
-                    viewModel.updateZIPCode(newValue)
+            if viewModel.userProfile.countryCode == "us" {
+                // US: ZIP Code lookup
+                TextField("92694", text: $viewModel.userProfile.zipCode)
+                    .keyboardType(.numberPad)
+                    .onChange(of: viewModel.userProfile.zipCode) { newValue in
+                        hasEditedZipCode = true
+                        viewModel.updateZIPCode(newValue)
+                    }
+
+                if !viewModel.zipCodeLookupMessage.isEmpty {
+                    HStack {
+                        Image(systemName: viewModel.zipCodeLookupMessage == "ZIP code not found" ? "xmark.circle.fill" : "checkmark.circle.fill")
+                            .foregroundColor(viewModel.zipCodeLookupMessage == "ZIP code not found" ? .red : .green)
+
+                        Text(viewModel.zipCodeLookupMessage)
+                            .font(.caption)
+                            .foregroundColor(viewModel.zipCodeLookupMessage == "ZIP code not found" ? .red : .green)
+                    }
                 }
 
-            if !viewModel.zipCodeLookupMessage.isEmpty {
-                HStack {
-                    Image(systemName: viewModel.zipCodeLookupMessage == "ZIP code not found" ? "xmark.circle.fill" : "checkmark.circle.fill")
-                        .foregroundColor(viewModel.zipCodeLookupMessage == "ZIP code not found" ? .red : .green)
-
-                    Text(viewModel.zipCodeLookupMessage)
+                if hasEditedZipCode, viewModel.userProfile.zipCode.count >= 5, let error = viewModel.validationErrors["zipCode"] {
+                    Text(error)
                         .font(.caption)
-                        .foregroundColor(viewModel.zipCodeLookupMessage == "ZIP code not found" ? .red : .green)
+                        .foregroundColor(.red)
                 }
-            }
+            } else {
+                // UK and other countries: Manual region selection
+                NavigationLink {
+                    RegionPickerView(
+                        selectedRegion: Binding(
+                            get: { viewModel.userProfile.region },
+                            set: { if let newRegion = $0 { viewModel.userProfile.region = newRegion } }
+                        ),
+                        regions: viewModel.availableRegions,
+                        regionType: viewModel.selectedCountry?.regionType ?? "Region"
+                    )
+                } label: {
+                    HStack {
+                        Text(viewModel.selectedCountry?.regionType ?? "Region")
+                            .foregroundColor(.primary)
+                        Spacer()
+                        if viewModel.userProfile.region.code.isEmpty {
+                            Text("Select")
+                                .foregroundColor(.secondary)
+                        } else {
+                            Text(viewModel.userProfile.region.name)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
 
-            if hasEditedZipCode, viewModel.userProfile.zipCode.count >= 5, let error = viewModel.validationErrors["zipCode"] {
-                Text(error)
-                    .font(.caption)
-                    .foregroundColor(.red)
+                TextField("City", text: $viewModel.userProfile.city)
+                    .autocapitalization(.words)
             }
         } header: {
             sectionHeader(
@@ -114,8 +186,13 @@ struct UserInputFormView: View {
                 isComplete: viewModel.isLocationComplete
             )
         } footer: {
-            Text("Enter your 5-digit ZIP code. City and state will be auto-filled.")
-                .font(.caption)
+            if viewModel.userProfile.countryCode == "us" {
+                Text("Enter your 5-digit ZIP code. City and state will be auto-filled.")
+                    .font(.caption)
+            } else {
+                Text("Select your \(viewModel.selectedCountry?.regionType.lowercased() ?? "region") and enter your city.")
+                    .font(.caption)
+            }
         }
     }
 

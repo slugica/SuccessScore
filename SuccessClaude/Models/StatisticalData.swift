@@ -21,7 +21,7 @@ struct CountriesMetadata: Codable {
     }
 }
 
-struct Country: Codable, Identifiable {
+struct Country: Codable, Identifiable, Equatable {
     let code: String
     let name: String
     let flag: String
