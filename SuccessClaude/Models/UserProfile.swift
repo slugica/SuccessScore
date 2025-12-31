@@ -104,6 +104,41 @@ struct UserProfile: Codable {
     var effectiveIncome: Double {
         return isMarried ? householdIncome : annualIncome
     }
+
+    /// OECD Modified Equivalence Scale for household income comparison
+    /// - First adult = 1.0
+    /// - Additional adults (spouse) = 0.5
+    /// - Each child = 0.3
+    var equivalenceScale: Double {
+        if isMarried {
+            // 1.0 (you) + 0.5 (spouse) + 0.3 * numberOfChildren
+            return 1.0 + 0.5 + (0.3 * Double(numberOfChildren))
+        } else {
+            return 1.0
+        }
+    }
+
+    /// Equivalised income using OECD scale - used for comparing living standards
+    /// across households of different sizes (standard methodology used by ABS)
+    var equivalisedIncome: Double {
+        if isMarried && householdIncome > 0 {
+            return householdIncome / equivalenceScale
+        } else {
+            return annualIncome
+        }
+    }
+
+    /// Income to use for statistical comparisons (Success Score, percentile rankings)
+    /// - For Australia: Uses equivalised income for fair household comparison
+    /// - For US: Uses effective income (household for married, personal for single)
+    /// - For others: Uses effective income
+    var comparisonIncome: Double {
+        if countryCode == "au" && isMarried && householdIncome > 0 {
+            return equivalisedIncome
+        } else {
+            return effectiveIncome
+        }
+    }
 }
 
 enum Gender: String, Codable, CaseIterable, Identifiable {

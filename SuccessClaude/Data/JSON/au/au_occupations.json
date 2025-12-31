@@ -21127,14 +21127,8906 @@
           "mean": 71000
         }
       }
+    },
+    {
+      "soc_code": "2111",
+      "title": "Actors, Dancers and Other Entertainers",
+      "category": "Professionals",
+      "national_median": 55000,
+      "national_mean": 63000,
+      "top_10_percent": 99000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 1900
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 62000,
+          "employment": 1500
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 750
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 350
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 59000,
+          "employment": 200
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 100
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 69000,
+          "employment": 150
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "2112",
+      "title": "Music Professionals",
+      "category": "Professionals",
+      "national_median": 58000,
+      "national_mean": 67000,
+      "top_10_percent": 104000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 1900
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 1500
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 750
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 350
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 200
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 100
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 150
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 44000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 74000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 57000
+        }
+      }
+    },
+    {
+      "soc_code": "2113",
+      "title": "Photographers",
+      "category": "Professionals",
+      "national_median": 62000,
+      "national_mean": 71000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 1900
+        },
+        "VIC": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 1500
+        },
+        "QLD": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 750
+        },
+        "WA": {
+          "median": 69000,
+          "mean": 79000,
+          "employment": 350
+        },
+        "SA": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 200
+        },
+        "TAS": {
+          "median": 56000,
+          "mean": 65000,
+          "employment": 100
+        },
+        "ACT": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 150
+        },
+        "NT": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 40000,
+          "mean": 46000
+        },
+        "25-34": {
+          "median": 56000,
+          "mean": 64000
+        },
+        "35-44": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "45-54": {
+          "median": 68000,
+          "mean": 78000
+        },
+        "55-64": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "65+": {
+          "median": 53000,
+          "mean": 60000
+        }
+      }
+    },
+    {
+      "soc_code": "2114",
+      "title": "Visual Arts and Crafts Professionals",
+      "category": "Professionals",
+      "national_median": 52000,
+      "national_mean": 60000,
+      "top_10_percent": 94000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 1900
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 59000,
+          "employment": 1500
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 750
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 350
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 56000,
+          "employment": 200
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 55000,
+          "employment": 100
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 150
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 39000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 66000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 51000
+        }
+      }
+    },
+    {
+      "soc_code": "211111",
+      "title": "Actors",
+      "category": "Professionals",
+      "national_median": 58000,
+      "national_mean": 67000,
+      "top_10_percent": 104000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 44000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 74000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 57000
+        }
+      }
+    },
+    {
+      "soc_code": "211112",
+      "title": "Dancers and Choreographers",
+      "category": "Professionals",
+      "national_median": 48000,
+      "national_mean": 55000,
+      "top_10_percent": 86000,
+      "by_state": {
+        "NSW": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 47000,
+          "mean": 54000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 45000,
+          "mean": 52000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 44000,
+          "mean": 50000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 31000,
+          "mean": 36000
+        },
+        "25-34": {
+          "median": 43000,
+          "mean": 50000
+        },
+        "35-44": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "45-54": {
+          "median": 53000,
+          "mean": 61000
+        },
+        "55-64": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "65+": {
+          "median": 41000,
+          "mean": 47000
+        }
+      }
+    },
+    {
+      "soc_code": "211113",
+      "title": "Entertainers and Variety Artists",
+      "category": "Professionals",
+      "national_median": 52000,
+      "national_mean": 60000,
+      "top_10_percent": 94000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 59000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 56000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 55000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 39000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 66000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 51000
+        }
+      }
+    },
+    {
+      "soc_code": "211199",
+      "title": "Other Actors, Dancers and Entertainers",
+      "category": "Professionals",
+      "national_median": 50000,
+      "national_mean": 57000,
+      "top_10_percent": 90000,
+      "by_state": {
+        "NSW": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 49000,
+          "mean": 56000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 56000,
+          "mean": 63000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 47000,
+          "mean": 54000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 46000,
+          "mean": 52000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 32000,
+          "mean": 37000
+        },
+        "25-34": {
+          "median": 45000,
+          "mean": 51000
+        },
+        "35-44": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "45-54": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "55-64": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "65+": {
+          "median": 42000,
+          "mean": 48000
+        }
+      }
+    },
+    {
+      "soc_code": "211211",
+      "title": "Composers",
+      "category": "Professionals",
+      "national_median": 65000,
+      "national_mean": 75000,
+      "top_10_percent": 117000,
+      "by_state": {
+        "NSW": {
+          "median": 65000,
+          "mean": 75000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 65000,
+          "mean": 75000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 59000,
+          "mean": 68000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 72000,
+          "mean": 82000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 65000,
+          "mean": 75000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 42000,
+          "mean": 49000
+        },
+        "25-34": {
+          "median": 58000,
+          "mean": 68000
+        },
+        "35-44": {
+          "median": 68000,
+          "mean": 79000
+        },
+        "45-54": {
+          "median": 72000,
+          "mean": 82000
+        },
+        "55-64": {
+          "median": 68000,
+          "mean": 79000
+        },
+        "65+": {
+          "median": 55000,
+          "mean": 64000
+        }
+      }
+    },
+    {
+      "soc_code": "211212",
+      "title": "Music Directors",
+      "category": "Professionals",
+      "national_median": 72000,
+      "national_mean": 83000,
+      "top_10_percent": 130000,
+      "by_state": {
+        "NSW": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 71000,
+          "mean": 81000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 66000,
+          "mean": 76000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 79000,
+          "mean": 91000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "25-34": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "35-44": {
+          "median": 76000,
+          "mean": 87000
+        },
+        "45-54": {
+          "median": 79000,
+          "mean": 91000
+        },
+        "55-64": {
+          "median": 76000,
+          "mean": 87000
+        },
+        "65+": {
+          "median": 61000,
+          "mean": 71000
+        }
+      }
+    },
+    {
+      "soc_code": "211213",
+      "title": "Musicians (Instrumental)",
+      "category": "Professionals",
+      "national_median": 55000,
+      "national_mean": 63000,
+      "top_10_percent": 99000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 62000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 59000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 69000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "211214",
+      "title": "Singers",
+      "category": "Professionals",
+      "national_median": 52000,
+      "national_mean": 60000,
+      "top_10_percent": 94000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 59000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 56000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 55000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 39000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 66000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 51000
+        }
+      }
+    },
+    {
+      "soc_code": "211299",
+      "title": "Other Music Professionals",
+      "category": "Professionals",
+      "national_median": 56000,
+      "national_mean": 64000,
+      "top_10_percent": 101000,
+      "by_state": {
+        "NSW": {
+          "median": 56000,
+          "mean": 64000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 56000,
+          "mean": 64000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 53000,
+          "mean": 60000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 51000,
+          "mean": 58000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 62000,
+          "mean": 70000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 56000,
+          "mean": 64000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 42000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "35-44": {
+          "median": 59000,
+          "mean": 67000
+        },
+        "45-54": {
+          "median": 62000,
+          "mean": 70000
+        },
+        "55-64": {
+          "median": 59000,
+          "mean": 67000
+        },
+        "65+": {
+          "median": 48000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "211311",
+      "title": "Photographers",
+      "category": "Professionals",
+      "national_median": 62000,
+      "national_mean": 71000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 69000,
+          "mean": 79000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 56000,
+          "mean": 65000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 40000,
+          "mean": 46000
+        },
+        "25-34": {
+          "median": 56000,
+          "mean": 64000
+        },
+        "35-44": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "45-54": {
+          "median": 68000,
+          "mean": 78000
+        },
+        "55-64": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "65+": {
+          "median": 53000,
+          "mean": 60000
+        }
+      }
+    },
+    {
+      "soc_code": "211411",
+      "title": "Painters (Visual Arts)",
+      "category": "Professionals",
+      "national_median": 48000,
+      "national_mean": 55000,
+      "top_10_percent": 86000,
+      "by_state": {
+        "NSW": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 47000,
+          "mean": 54000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 45000,
+          "mean": 52000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 44000,
+          "mean": 50000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 31000,
+          "mean": 36000
+        },
+        "25-34": {
+          "median": 43000,
+          "mean": 50000
+        },
+        "35-44": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "45-54": {
+          "median": 53000,
+          "mean": 61000
+        },
+        "55-64": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "65+": {
+          "median": 41000,
+          "mean": 47000
+        }
+      }
+    },
+    {
+      "soc_code": "211412",
+      "title": "Potters and Ceramic Artists",
+      "category": "Professionals",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 81000,
+      "by_state": {
+        "NSW": {
+          "median": 45000,
+          "mean": 52000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 44000,
+          "mean": 51000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 45000,
+          "mean": 52000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 50000,
+          "mean": 58000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 42000,
+          "mean": 49000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 41000,
+          "mean": 47000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 45000,
+          "mean": 52000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 29000,
+          "mean": 34000
+        },
+        "25-34": {
+          "median": 40000,
+          "mean": 47000
+        },
+        "35-44": {
+          "median": 47000,
+          "mean": 55000
+        },
+        "45-54": {
+          "median": 50000,
+          "mean": 57000
+        },
+        "55-64": {
+          "median": 47000,
+          "mean": 55000
+        },
+        "65+": {
+          "median": 38000,
+          "mean": 44000
+        }
+      }
+    },
+    {
+      "soc_code": "211413",
+      "title": "Sculptors",
+      "category": "Professionals",
+      "national_median": 50000,
+      "national_mean": 57000,
+      "top_10_percent": 90000,
+      "by_state": {
+        "NSW": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 49000,
+          "mean": 56000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 56000,
+          "mean": 63000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 47000,
+          "mean": 54000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 46000,
+          "mean": 52000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 32000,
+          "mean": 37000
+        },
+        "25-34": {
+          "median": 45000,
+          "mean": 51000
+        },
+        "35-44": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "45-54": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "55-64": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "65+": {
+          "median": 42000,
+          "mean": 48000
+        }
+      }
+    },
+    {
+      "soc_code": "211499",
+      "title": "Other Visual Arts and Crafts Professionals",
+      "category": "Professionals",
+      "national_median": 48000,
+      "national_mean": 55000,
+      "top_10_percent": 86000,
+      "by_state": {
+        "NSW": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 47000,
+          "mean": 54000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 45000,
+          "mean": 52000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 44000,
+          "mean": 50000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 48000,
+          "mean": 55000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 31000,
+          "mean": 36000
+        },
+        "25-34": {
+          "median": 43000,
+          "mean": 50000
+        },
+        "35-44": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "45-54": {
+          "median": 53000,
+          "mean": 61000
+        },
+        "55-64": {
+          "median": 50000,
+          "mean": 58000
+        },
+        "65+": {
+          "median": 41000,
+          "mean": 47000
+        }
+      }
+    },
+    {
+      "soc_code": "212111",
+      "title": "Artistic Directors",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 109000,
+      "top_10_percent": 171000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 109000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 107000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 109000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 121000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 102000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 99000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 120000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 109000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 71000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 98000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 114000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 120000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 114000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 93000
+        }
+      }
+    },
+    {
+      "soc_code": "212112",
+      "title": "Media Producers",
+      "category": "Professionals",
+      "national_median": 92000,
+      "national_mean": 106000,
+      "top_10_percent": 166000,
+      "by_state": {
+        "NSW": {
+          "median": 92000,
+          "mean": 106000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 90000,
+          "mean": 104000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 92000,
+          "mean": 106000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 102000,
+          "mean": 118000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 86000,
+          "mean": 100000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 84000,
+          "mean": 96000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 101000,
+          "mean": 117000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 92000,
+          "mean": 106000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 60000,
+          "mean": 69000
+        },
+        "25-34": {
+          "median": 83000,
+          "mean": 95000
+        },
+        "35-44": {
+          "median": 97000,
+          "mean": 111000
+        },
+        "45-54": {
+          "median": 101000,
+          "mean": 117000
+        },
+        "55-64": {
+          "median": 97000,
+          "mean": 111000
+        },
+        "65+": {
+          "median": 78000,
+          "mean": 90000
+        }
+      }
+    },
+    {
+      "soc_code": "212113",
+      "title": "Radio Presenters",
+      "category": "Professionals",
+      "national_median": 75000,
+      "national_mean": 86000,
+      "top_10_percent": 135000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 84000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 95000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 81000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 95000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 56000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 77000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 95000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 73000
+        }
+      }
+    },
+    {
+      "soc_code": "212114",
+      "title": "Television Presenters",
+      "category": "Professionals",
+      "national_median": 85000,
+      "national_mean": 98000,
+      "top_10_percent": 153000,
+      "by_state": {
+        "NSW": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 83000,
+          "mean": 96000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 94000,
+          "mean": 109000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 77000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 94000,
+          "mean": 108000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 55000,
+          "mean": 64000
+        },
+        "25-34": {
+          "median": 76000,
+          "mean": 88000
+        },
+        "35-44": {
+          "median": 89000,
+          "mean": 103000
+        },
+        "45-54": {
+          "median": 94000,
+          "mean": 108000
+        },
+        "55-64": {
+          "median": 89000,
+          "mean": 103000
+        },
+        "65+": {
+          "median": 72000,
+          "mean": 83000
+        }
+      }
+    },
+    {
+      "soc_code": "212311",
+      "title": "Art Directors (Film, Television or Stage)",
+      "category": "Professionals",
+      "national_median": 88000,
+      "national_mean": 101000,
+      "top_10_percent": 158000,
+      "by_state": {
+        "NSW": {
+          "median": 88000,
+          "mean": 101000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 86000,
+          "mean": 99000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 88000,
+          "mean": 101000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 98000,
+          "mean": 112000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 83000,
+          "mean": 95000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 97000,
+          "mean": 111000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 88000,
+          "mean": 101000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 57000,
+          "mean": 66000
+        },
+        "25-34": {
+          "median": 79000,
+          "mean": 91000
+        },
+        "35-44": {
+          "median": 92000,
+          "mean": 106000
+        },
+        "45-54": {
+          "median": 97000,
+          "mean": 111000
+        },
+        "55-64": {
+          "median": 92000,
+          "mean": 106000
+        },
+        "65+": {
+          "median": 75000,
+          "mean": 86000
+        }
+      }
+    },
+    {
+      "soc_code": "212312",
+      "title": "Directors (Film, Television, Radio or Stage)",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 109000,
+      "top_10_percent": 171000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 109000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 107000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 109000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 121000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 102000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 99000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 120000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 109000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 71000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 98000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 114000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 120000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 114000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 93000
+        }
+      }
+    },
+    {
+      "soc_code": "212313",
+      "title": "Cinematographers",
+      "category": "Professionals",
+      "national_median": 82000,
+      "national_mean": 94000,
+      "top_10_percent": 148000,
+      "by_state": {
+        "NSW": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 91000,
+          "mean": 104000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 77000,
+          "mean": 88000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 90000,
+          "mean": 103000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 53000,
+          "mean": 61000
+        },
+        "25-34": {
+          "median": 74000,
+          "mean": 85000
+        },
+        "35-44": {
+          "median": 86000,
+          "mean": 99000
+        },
+        "45-54": {
+          "median": 90000,
+          "mean": 103000
+        },
+        "55-64": {
+          "median": 86000,
+          "mean": 99000
+        },
+        "65+": {
+          "median": 70000,
+          "mean": 80000
+        }
+      }
+    },
+    {
+      "soc_code": "212314",
+      "title": "Film and Video Editors",
+      "category": "Professionals",
+      "national_median": 78000,
+      "national_mean": 90000,
+      "top_10_percent": 140000,
+      "by_state": {
+        "NSW": {
+          "median": 78000,
+          "mean": 90000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 76000,
+          "mean": 88000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 78000,
+          "mean": 90000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 87000,
+          "mean": 100000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 73000,
+          "mean": 85000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 71000,
+          "mean": 82000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 86000,
+          "mean": 99000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 78000,
+          "mean": 90000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 51000,
+          "mean": 58000
+        },
+        "25-34": {
+          "median": 70000,
+          "mean": 81000
+        },
+        "35-44": {
+          "median": 82000,
+          "mean": 94000
+        },
+        "45-54": {
+          "median": 86000,
+          "mean": 99000
+        },
+        "55-64": {
+          "median": 82000,
+          "mean": 94000
+        },
+        "65+": {
+          "median": 66000,
+          "mean": 76000
+        }
+      }
+    },
+    {
+      "soc_code": "212315",
+      "title": "Program Directors (Television or Radio)",
+      "category": "Professionals",
+      "national_median": 90000,
+      "national_mean": 103000,
+      "top_10_percent": 162000,
+      "by_state": {
+        "NSW": {
+          "median": 90000,
+          "mean": 103000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 88000,
+          "mean": 101000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 90000,
+          "mean": 103000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 100000,
+          "mean": 114000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 85000,
+          "mean": 97000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 99000,
+          "mean": 113000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 90000,
+          "mean": 103000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 58000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 81000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 94000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 99000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 94000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 76000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "212316",
+      "title": "Stage Managers",
+      "category": "Professionals",
+      "national_median": 68000,
+      "national_mean": 78000,
+      "top_10_percent": 122000,
+      "by_state": {
+        "NSW": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 67000,
+          "mean": 76000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 75000,
+          "mean": 87000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 64000,
+          "mean": 73000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 62000,
+          "mean": 71000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 44000,
+          "mean": 51000
+        },
+        "25-34": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "35-44": {
+          "median": 71000,
+          "mean": 82000
+        },
+        "45-54": {
+          "median": 75000,
+          "mean": 86000
+        },
+        "55-64": {
+          "median": 71000,
+          "mean": 82000
+        },
+        "65+": {
+          "median": 58000,
+          "mean": 66000
+        }
+      }
+    },
+    {
+      "soc_code": "212317",
+      "title": "Technical Directors",
+      "category": "Professionals",
+      "national_median": 85000,
+      "national_mean": 98000,
+      "top_10_percent": 153000,
+      "by_state": {
+        "NSW": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 83000,
+          "mean": 96000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 94000,
+          "mean": 109000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 77000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 94000,
+          "mean": 108000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 55000,
+          "mean": 64000
+        },
+        "25-34": {
+          "median": 76000,
+          "mean": 88000
+        },
+        "35-44": {
+          "median": 89000,
+          "mean": 103000
+        },
+        "45-54": {
+          "median": 94000,
+          "mean": 108000
+        },
+        "55-64": {
+          "median": 89000,
+          "mean": 103000
+        },
+        "65+": {
+          "median": 72000,
+          "mean": 83000
+        }
+      }
+    },
+    {
+      "soc_code": "212318",
+      "title": "Video Producers",
+      "category": "Professionals",
+      "national_median": 75000,
+      "national_mean": 86000,
+      "top_10_percent": 135000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 84000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 95000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 81000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 95000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 56000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 77000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 95000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 73000
+        }
+      }
+    },
+    {
+      "soc_code": "212211",
+      "title": "Authors",
+      "category": "Professionals",
+      "national_median": 65000,
+      "national_mean": 75000,
+      "top_10_percent": 117000,
+      "by_state": {
+        "NSW": {
+          "median": 65000,
+          "mean": 75000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 65000,
+          "mean": 75000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 59000,
+          "mean": 68000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 72000,
+          "mean": 82000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 65000,
+          "mean": 75000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 42000,
+          "mean": 49000
+        },
+        "25-34": {
+          "median": 58000,
+          "mean": 68000
+        },
+        "35-44": {
+          "median": 68000,
+          "mean": 79000
+        },
+        "45-54": {
+          "median": 72000,
+          "mean": 82000
+        },
+        "55-64": {
+          "median": 68000,
+          "mean": 79000
+        },
+        "65+": {
+          "median": 55000,
+          "mean": 64000
+        }
+      }
+    },
+    {
+      "soc_code": "212212",
+      "title": "Book and Script Editors",
+      "category": "Professionals",
+      "national_median": 72000,
+      "national_mean": 83000,
+      "top_10_percent": 130000,
+      "by_state": {
+        "NSW": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 71000,
+          "mean": 81000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 66000,
+          "mean": 76000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 79000,
+          "mean": 91000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "25-34": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "35-44": {
+          "median": 76000,
+          "mean": 87000
+        },
+        "45-54": {
+          "median": 79000,
+          "mean": 91000
+        },
+        "55-64": {
+          "median": 76000,
+          "mean": 87000
+        },
+        "65+": {
+          "median": 61000,
+          "mean": 71000
+        }
+      }
+    },
+    {
+      "soc_code": "212411",
+      "title": "Copywriters",
+      "category": "Professionals",
+      "national_median": 75000,
+      "national_mean": 86000,
+      "top_10_percent": 135000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 84000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 95000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 81000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 95000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 56000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 77000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 95000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 73000
+        }
+      }
+    },
+    {
+      "soc_code": "212412",
+      "title": "Newspaper and Periodical Editors",
+      "category": "Professionals",
+      "national_median": 82000,
+      "national_mean": 94000,
+      "top_10_percent": 148000,
+      "by_state": {
+        "NSW": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 91000,
+          "mean": 104000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 77000,
+          "mean": 88000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 90000,
+          "mean": 103000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 82000,
+          "mean": 94000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 53000,
+          "mean": 61000
+        },
+        "25-34": {
+          "median": 74000,
+          "mean": 85000
+        },
+        "35-44": {
+          "median": 86000,
+          "mean": 99000
+        },
+        "45-54": {
+          "median": 90000,
+          "mean": 103000
+        },
+        "55-64": {
+          "median": 86000,
+          "mean": 99000
+        },
+        "65+": {
+          "median": 70000,
+          "mean": 80000
+        }
+      }
+    },
+    {
+      "soc_code": "212413",
+      "title": "Print Journalists",
+      "category": "Professionals",
+      "national_median": 72000,
+      "national_mean": 83000,
+      "top_10_percent": 130000,
+      "by_state": {
+        "NSW": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 71000,
+          "mean": 81000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 66000,
+          "mean": 76000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 79000,
+          "mean": 91000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 72000,
+          "mean": 83000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "25-34": {
+          "median": 65000,
+          "mean": 75000
+        },
+        "35-44": {
+          "median": 76000,
+          "mean": 87000
+        },
+        "45-54": {
+          "median": 79000,
+          "mean": 91000
+        },
+        "55-64": {
+          "median": 76000,
+          "mean": 87000
+        },
+        "65+": {
+          "median": 61000,
+          "mean": 71000
+        }
+      }
+    },
+    {
+      "soc_code": "212414",
+      "title": "Radio Journalists",
+      "category": "Professionals",
+      "national_median": 75000,
+      "national_mean": 86000,
+      "top_10_percent": 135000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 84000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 95000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 81000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 78000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 95000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 56000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 77000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 95000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 90000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 73000
+        }
+      }
+    },
+    {
+      "soc_code": "212415",
+      "title": "Technical Writers",
+      "category": "Professionals",
+      "national_median": 85000,
+      "national_mean": 98000,
+      "top_10_percent": 153000,
+      "by_state": {
+        "NSW": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 83000,
+          "mean": 96000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 94000,
+          "mean": 109000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 77000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 94000,
+          "mean": 108000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 85000,
+          "mean": 98000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 55000,
+          "mean": 64000
+        },
+        "25-34": {
+          "median": 76000,
+          "mean": 88000
+        },
+        "35-44": {
+          "median": 89000,
+          "mean": 103000
+        },
+        "45-54": {
+          "median": 94000,
+          "mean": 108000
+        },
+        "55-64": {
+          "median": 89000,
+          "mean": 103000
+        },
+        "65+": {
+          "median": 72000,
+          "mean": 83000
+        }
+      }
+    },
+    {
+      "soc_code": "212416",
+      "title": "Television Journalists",
+      "category": "Professionals",
+      "national_median": 80000,
+      "national_mean": 92000,
+      "top_10_percent": 144000,
+      "by_state": {
+        "NSW": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 78000,
+          "mean": 90000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 89000,
+          "mean": 102000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 75000,
+          "mean": 86000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 73000,
+          "mean": 84000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 88000,
+          "mean": 101000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 80000,
+          "mean": 92000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "25-34": {
+          "median": 72000,
+          "mean": 83000
+        },
+        "35-44": {
+          "median": 84000,
+          "mean": 97000
+        },
+        "45-54": {
+          "median": 88000,
+          "mean": 101000
+        },
+        "55-64": {
+          "median": 84000,
+          "mean": 97000
+        },
+        "65+": {
+          "median": 68000,
+          "mean": 78000
+        }
+      }
+    },
+    {
+      "soc_code": "249214",
+      "title": "Music Teachers (Private Tuition)",
+      "category": "Professionals",
+      "national_median": 55000,
+      "national_mean": 63000,
+      "top_10_percent": 99000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 62000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 70000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 59000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 57000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 69000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "399514",
+      "title": "Make Up Artists",
+      "category": "Professionals",
+      "national_median": 52000,
+      "national_mean": 60000,
+      "top_10_percent": 94000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 59000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 56000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 55000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 60000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 39000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 54000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 66000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 63000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 51000
+        }
+      }
+    },
+    {
+      "soc_code": "399515",
+      "title": "Musical Instrument Makers and Repairers",
+      "category": "Professionals",
+      "national_median": 58000,
+      "national_mean": 67000,
+      "top_10_percent": 104000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 570
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 66000,
+          "employment": 450
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 225
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 105
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 63000,
+          "employment": 60
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 61000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 67000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 44000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 60000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 74000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 70000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 57000
+        }
+      }
+    },
+    {
+      "soc_code": "1111",
+      "title": "Chief Executives and Managing Directors",
+      "category": "Managers",
+      "national_median": 185000,
+      "national_mean": 200000,
+      "top_10_percent": 278000,
+      "by_state": {
+        "NSW": {
+          "median": 185000,
+          "mean": 200000,
+          "employment": 19616
+        },
+        "VIC": {
+          "median": 181000,
+          "mean": 196000,
+          "employment": 15938
+        },
+        "QLD": {
+          "median": 185000,
+          "mean": 200000,
+          "employment": 12260
+        },
+        "WA": {
+          "median": 205000,
+          "mean": 222000,
+          "employment": 6130
+        },
+        "SA": {
+          "median": 174000,
+          "mean": 188000,
+          "employment": 3678
+        },
+        "TAS": {
+          "median": 168000,
+          "mean": 182000,
+          "employment": 1226
+        },
+        "ACT": {
+          "median": 204000,
+          "mean": 220000,
+          "employment": 1226
+        },
+        "NT": {
+          "median": 185000,
+          "mean": 200000,
+          "employment": 613
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 120000,
+          "mean": 130000
+        },
+        "25-34": {
+          "median": 166000,
+          "mean": 180000
+        },
+        "35-44": {
+          "median": 194000,
+          "mean": 210000
+        },
+        "45-54": {
+          "median": 204000,
+          "mean": 220000
+        },
+        "55-64": {
+          "median": 194000,
+          "mean": 210000
+        },
+        "65+": {
+          "median": 157000,
+          "mean": 170000
+        }
+      }
+    },
+    {
+      "soc_code": "1112",
+      "title": "General Managers",
+      "category": "Managers",
+      "national_median": 145000,
+      "national_mean": 157000,
+      "top_10_percent": 218000,
+      "by_state": {
+        "NSW": {
+          "median": 145000,
+          "mean": 157000,
+          "employment": 21600
+        },
+        "VIC": {
+          "median": 142000,
+          "mean": 154000,
+          "employment": 17550
+        },
+        "QLD": {
+          "median": 145000,
+          "mean": 157000,
+          "employment": 13500
+        },
+        "WA": {
+          "median": 161000,
+          "mean": 174000,
+          "employment": 6750
+        },
+        "SA": {
+          "median": 136000,
+          "mean": 148000,
+          "employment": 4050
+        },
+        "TAS": {
+          "median": 132000,
+          "mean": 143000,
+          "employment": 1350
+        },
+        "ACT": {
+          "median": 160000,
+          "mean": 173000,
+          "employment": 1350
+        },
+        "NT": {
+          "median": 145000,
+          "mean": 157000,
+          "employment": 675
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 94000,
+          "mean": 102000
+        },
+        "25-34": {
+          "median": 130000,
+          "mean": 141000
+        },
+        "35-44": {
+          "median": 152000,
+          "mean": 165000
+        },
+        "45-54": {
+          "median": 160000,
+          "mean": 173000
+        },
+        "55-64": {
+          "median": 152000,
+          "mean": 165000
+        },
+        "65+": {
+          "median": 123000,
+          "mean": 133000
+        }
+      }
+    },
+    {
+      "soc_code": "1113",
+      "title": "Legislators",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 960
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 780
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 600
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 300
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 180
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 60
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 60
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1211",
+      "title": "Aquaculture Farmers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 608
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 494
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 380
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 190
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 114
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1212",
+      "title": "Crop Farmers",
+      "category": "Managers",
+      "national_median": 65000,
+      "national_mean": 70000,
+      "top_10_percent": 98000,
+      "by_state": {
+        "NSW": {
+          "median": 65000,
+          "mean": 70000,
+          "employment": 11104
+        },
+        "VIC": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 9022
+        },
+        "QLD": {
+          "median": 65000,
+          "mean": 70000,
+          "employment": 6940
+        },
+        "WA": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 3470
+        },
+        "SA": {
+          "median": 61000,
+          "mean": 66000,
+          "employment": 2082
+        },
+        "TAS": {
+          "median": 59000,
+          "mean": 64000,
+          "employment": 694
+        },
+        "ACT": {
+          "median": 72000,
+          "mean": 77000,
+          "employment": 694
+        },
+        "NT": {
+          "median": 65000,
+          "mean": 70000,
+          "employment": 347
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 42000,
+          "mean": 46000
+        },
+        "25-34": {
+          "median": 58000,
+          "mean": 63000
+        },
+        "35-44": {
+          "median": 68000,
+          "mean": 74000
+        },
+        "45-54": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "55-64": {
+          "median": 68000,
+          "mean": 74000
+        },
+        "65+": {
+          "median": 55000,
+          "mean": 60000
+        }
+      }
+    },
+    {
+      "soc_code": "1213",
+      "title": "Livestock Farmers",
+      "category": "Managers",
+      "national_median": 60000,
+      "national_mean": 65000,
+      "top_10_percent": 90000,
+      "by_state": {
+        "NSW": {
+          "median": 60000,
+          "mean": 65000,
+          "employment": 24992
+        },
+        "VIC": {
+          "median": 59000,
+          "mean": 64000,
+          "employment": 20306
+        },
+        "QLD": {
+          "median": 60000,
+          "mean": 65000,
+          "employment": 15620
+        },
+        "WA": {
+          "median": 67000,
+          "mean": 72000,
+          "employment": 7810
+        },
+        "SA": {
+          "median": 56000,
+          "mean": 61000,
+          "employment": 4686
+        },
+        "TAS": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1562
+        },
+        "ACT": {
+          "median": 66000,
+          "mean": 72000,
+          "employment": 1562
+        },
+        "NT": {
+          "median": 60000,
+          "mean": 65000,
+          "employment": 781
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 39000,
+          "mean": 42000
+        },
+        "25-34": {
+          "median": 54000,
+          "mean": 58000
+        },
+        "35-44": {
+          "median": 63000,
+          "mean": 68000
+        },
+        "45-54": {
+          "median": 66000,
+          "mean": 72000
+        },
+        "55-64": {
+          "median": 63000,
+          "mean": 68000
+        },
+        "65+": {
+          "median": 51000,
+          "mean": 55000
+        }
+      }
+    },
+    {
+      "soc_code": "1214",
+      "title": "Mixed Crop and Livestock Farmers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 8864
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 7202
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 5540
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 2770
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 1662
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 554
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 554
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 277
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1334",
+      "title": "Manufacturers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 7328
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 5954
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 4580
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 2290
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 1374
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 458
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 458
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 229
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1343",
+      "title": "School Principals",
+      "category": "Managers",
+      "national_median": 135000,
+      "national_mean": 146000,
+      "top_10_percent": 202000,
+      "by_state": {
+        "NSW": {
+          "median": 135000,
+          "mean": 146000,
+          "employment": 9216
+        },
+        "VIC": {
+          "median": 132000,
+          "mean": 143000,
+          "employment": 7488
+        },
+        "QLD": {
+          "median": 135000,
+          "mean": 146000,
+          "employment": 5760
+        },
+        "WA": {
+          "median": 150000,
+          "mean": 162000,
+          "employment": 2880
+        },
+        "SA": {
+          "median": 127000,
+          "mean": 137000,
+          "employment": 1728
+        },
+        "TAS": {
+          "median": 123000,
+          "mean": 133000,
+          "employment": 576
+        },
+        "ACT": {
+          "median": 148000,
+          "mean": 161000,
+          "employment": 576
+        },
+        "NT": {
+          "median": 135000,
+          "mean": 146000,
+          "employment": 288
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 88000,
+          "mean": 95000
+        },
+        "25-34": {
+          "median": 122000,
+          "mean": 131000
+        },
+        "35-44": {
+          "median": 142000,
+          "mean": 153000
+        },
+        "45-54": {
+          "median": 148000,
+          "mean": 161000
+        },
+        "55-64": {
+          "median": 142000,
+          "mean": 153000
+        },
+        "65+": {
+          "median": 115000,
+          "mean": 124000
+        }
+      }
+    },
+    {
+      "soc_code": "1391",
+      "title": "Commissioned Officers (Management)",
+      "category": "Managers",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1376
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 1118
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 860
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 430
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 258
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 86
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 86
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "1392",
+      "title": "Senior Non-Commissioned Defence Force Officers",
+      "category": "Managers",
+      "national_median": 120000,
+      "national_mean": 130000,
+      "top_10_percent": 180000,
+      "by_state": {
+        "NSW": {
+          "median": 120000,
+          "mean": 130000,
+          "employment": 1280
+        },
+        "VIC": {
+          "median": 118000,
+          "mean": 127000,
+          "employment": 1040
+        },
+        "QLD": {
+          "median": 120000,
+          "mean": 130000,
+          "employment": 800
+        },
+        "WA": {
+          "median": 133000,
+          "mean": 144000,
+          "employment": 400
+        },
+        "SA": {
+          "median": 113000,
+          "mean": 122000,
+          "employment": 240
+        },
+        "TAS": {
+          "median": 109000,
+          "mean": 118000,
+          "employment": 80
+        },
+        "ACT": {
+          "median": 132000,
+          "mean": 143000,
+          "employment": 80
+        },
+        "NT": {
+          "median": 120000,
+          "mean": 130000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 78000,
+          "mean": 84000
+        },
+        "25-34": {
+          "median": 108000,
+          "mean": 117000
+        },
+        "35-44": {
+          "median": 126000,
+          "mean": 136000
+        },
+        "45-54": {
+          "median": 132000,
+          "mean": 143000
+        },
+        "55-64": {
+          "median": 126000,
+          "mean": 136000
+        },
+        "65+": {
+          "median": 102000,
+          "mean": 110000
+        }
+      }
+    },
+    {
+      "soc_code": "1412",
+      "title": "Caravan Park and Camping Ground Managers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 992
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 806
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 620
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 310
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 186
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 62
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 62
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1413",
+      "title": "Hotel and Motel Managers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 6272
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 5096
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 3920
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 1960
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 1176
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 392
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 392
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 196
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1414",
+      "title": "Licensed Club Managers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 2368
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 1924
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 1480
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 740
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 444
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 148
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 148
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 74
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "1419",
+      "title": "Other Accommodation and Hospitality Managers",
+      "category": "Managers",
+      "national_median": 110000,
+      "national_mean": 119000,
+      "top_10_percent": 165000,
+      "by_state": {
+        "NSW": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 3488
+        },
+        "VIC": {
+          "median": 108000,
+          "mean": 117000,
+          "employment": 2834
+        },
+        "QLD": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 2180
+        },
+        "WA": {
+          "median": 122000,
+          "mean": 132000,
+          "employment": 1090
+        },
+        "SA": {
+          "median": 103000,
+          "mean": 112000,
+          "employment": 654
+        },
+        "TAS": {
+          "median": 100000,
+          "mean": 108000,
+          "employment": 218
+        },
+        "ACT": {
+          "median": 121000,
+          "mean": 131000,
+          "employment": 218
+        },
+        "NT": {
+          "median": 110000,
+          "mean": 119000,
+          "employment": 109
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "25-34": {
+          "median": 99000,
+          "mean": 107000
+        },
+        "35-44": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "45-54": {
+          "median": 121000,
+          "mean": 131000
+        },
+        "55-64": {
+          "median": 116000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 94000,
+          "mean": 101000
+        }
+      }
+    },
+    {
+      "soc_code": "2232",
+      "title": "ICT Trainers",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 864
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 702
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 540
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 270
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 162
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 54
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 54
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2331",
+      "title": "Chemical and Materials Engineers",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 2176
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 1768
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1360
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 680
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 408
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 136
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 136
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 68
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2333",
+      "title": "Electrical Engineers",
+      "category": "Professionals",
+      "national_median": 105000,
+      "national_mean": 113000,
+      "top_10_percent": 158000,
+      "by_state": {
+        "NSW": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 10624
+        },
+        "VIC": {
+          "median": 103000,
+          "mean": 111000,
+          "employment": 8632
+        },
+        "QLD": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 6640
+        },
+        "WA": {
+          "median": 117000,
+          "mean": 125000,
+          "employment": 3320
+        },
+        "SA": {
+          "median": 99000,
+          "mean": 106000,
+          "employment": 1992
+        },
+        "TAS": {
+          "median": 96000,
+          "mean": 103000,
+          "employment": 664
+        },
+        "ACT": {
+          "median": 116000,
+          "mean": 124000,
+          "employment": 664
+        },
+        "NT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 332
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "25-34": {
+          "median": 94000,
+          "mean": 102000
+        },
+        "35-44": {
+          "median": 110000,
+          "mean": 119000
+        },
+        "45-54": {
+          "median": 116000,
+          "mean": 124000
+        },
+        "55-64": {
+          "median": 110000,
+          "mean": 119000
+        },
+        "65+": {
+          "median": 89000,
+          "mean": 96000
+        }
+      }
+    },
+    {
+      "soc_code": "2413",
+      "title": "Middle School Teachers",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 288
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 234
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 180
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 90
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 54
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2521",
+      "title": "Chiropractors and Osteopaths",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 2752
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 2236
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1720
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 860
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 516
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 172
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 172
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 86
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2522",
+      "title": "Complementary Health Therapists",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 2912
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 2366
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1820
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 910
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 546
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 182
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 182
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 91
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2526",
+      "title": "Podiatrists",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 2208
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 1794
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1380
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 690
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 414
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 138
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 138
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 69
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2532",
+      "title": "Anaesthetists",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 2272
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 1846
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1420
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 710
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 426
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 142
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 142
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 71
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "2534",
+      "title": "Psychiatrists",
+      "category": "Professionals",
+      "national_median": 280000,
+      "national_mean": 302000,
+      "top_10_percent": 420000,
+      "by_state": {
+        "NSW": {
+          "median": 280000,
+          "mean": 302000,
+          "employment": 2208
+        },
+        "VIC": {
+          "median": 274000,
+          "mean": 296000,
+          "employment": 1794
+        },
+        "QLD": {
+          "median": 280000,
+          "mean": 302000,
+          "employment": 1380
+        },
+        "WA": {
+          "median": 311000,
+          "mean": 335000,
+          "employment": 690
+        },
+        "SA": {
+          "median": 263000,
+          "mean": 284000,
+          "employment": 414
+        },
+        "TAS": {
+          "median": 255000,
+          "mean": 275000,
+          "employment": 138
+        },
+        "ACT": {
+          "median": 308000,
+          "mean": 332000,
+          "employment": 138
+        },
+        "NT": {
+          "median": 280000,
+          "mean": 302000,
+          "employment": 69
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 182000,
+          "mean": 196000
+        },
+        "25-34": {
+          "median": 252000,
+          "mean": 272000
+        },
+        "35-44": {
+          "median": 294000,
+          "mean": 317000
+        },
+        "45-54": {
+          "median": 308000,
+          "mean": 332000
+        },
+        "55-64": {
+          "median": 294000,
+          "mean": 317000
+        },
+        "65+": {
+          "median": 238000,
+          "mean": 257000
+        }
+      }
+    },
+    {
+      "soc_code": "2535",
+      "title": "Surgeons",
+      "category": "Professionals",
+      "national_median": 350000,
+      "national_mean": 378000,
+      "top_10_percent": 525000,
+      "by_state": {
+        "NSW": {
+          "median": 350000,
+          "mean": 378000,
+          "employment": 3040
+        },
+        "VIC": {
+          "median": 343000,
+          "mean": 370000,
+          "employment": 2470
+        },
+        "QLD": {
+          "median": 350000,
+          "mean": 378000,
+          "employment": 1900
+        },
+        "WA": {
+          "median": 389000,
+          "mean": 420000,
+          "employment": 950
+        },
+        "SA": {
+          "median": 329000,
+          "mean": 355000,
+          "employment": 570
+        },
+        "TAS": {
+          "median": 318000,
+          "mean": 344000,
+          "employment": 190
+        },
+        "ACT": {
+          "median": 385000,
+          "mean": 416000,
+          "employment": 190
+        },
+        "NT": {
+          "median": 350000,
+          "mean": 378000,
+          "employment": 95
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 228000,
+          "mean": 246000
+        },
+        "25-34": {
+          "median": 315000,
+          "mean": 340000
+        },
+        "35-44": {
+          "median": 368000,
+          "mean": 397000
+        },
+        "45-54": {
+          "median": 385000,
+          "mean": 416000
+        },
+        "55-64": {
+          "median": 368000,
+          "mean": 397000
+        },
+        "65+": {
+          "median": 298000,
+          "mean": 321000
+        }
+      }
+    },
+    {
+      "soc_code": "2711",
+      "title": "Barristers",
+      "category": "Professionals",
+      "national_median": 95000,
+      "national_mean": 103000,
+      "top_10_percent": 142000,
+      "by_state": {
+        "NSW": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 2720
+        },
+        "VIC": {
+          "median": 93000,
+          "mean": 101000,
+          "employment": 2210
+        },
+        "QLD": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 1700
+        },
+        "WA": {
+          "median": 105000,
+          "mean": 114000,
+          "employment": 850
+        },
+        "SA": {
+          "median": 89000,
+          "mean": 97000,
+          "employment": 510
+        },
+        "TAS": {
+          "median": 86000,
+          "mean": 94000,
+          "employment": 170
+        },
+        "ACT": {
+          "median": 105000,
+          "mean": 113000,
+          "employment": 170
+        },
+        "NT": {
+          "median": 95000,
+          "mean": 103000,
+          "employment": 85
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 62000,
+          "mean": 67000
+        },
+        "25-34": {
+          "median": 86000,
+          "mean": 93000
+        },
+        "35-44": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 105000,
+          "mean": 113000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 108000
+        },
+        "65+": {
+          "median": 81000,
+          "mean": 88000
+        }
+      }
+    },
+    {
+      "soc_code": "3113",
+      "title": "Primary Products Inspectors",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1120
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 910
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 700
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 350
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 210
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 70
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 70
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3221",
+      "title": "Metal Casting, Forging and Finishing Trades",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 768
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 624
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 480
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 240
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 144
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3233",
+      "title": "Precision Metal Trades Workers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 2464
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 2002
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1540
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 770
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 462
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 154
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 154
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 77
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3234",
+      "title": "Toolmakers and Engineering Patternmakers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1152
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 936
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 720
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 360
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 216
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 72
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 72
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3242",
+      "title": "Vehicle Body Builders and Trimmers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 2016
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 1638
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1260
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 630
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 378
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 126
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 126
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 63
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3321",
+      "title": "Floor Finishers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 3552
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 2886
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 2220
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 1110
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 666
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 222
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 222
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 111
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3332",
+      "title": "Plasterers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 72000,
+      "national_mean": 78000,
+      "top_10_percent": 108000,
+      "by_state": {
+        "NSW": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 10144
+        },
+        "VIC": {
+          "median": 71000,
+          "mean": 76000,
+          "employment": 8242
+        },
+        "QLD": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 6340
+        },
+        "WA": {
+          "median": 80000,
+          "mean": 87000,
+          "employment": 3170
+        },
+        "SA": {
+          "median": 68000,
+          "mean": 73000,
+          "employment": 1902
+        },
+        "TAS": {
+          "median": 66000,
+          "mean": 71000,
+          "employment": 634
+        },
+        "ACT": {
+          "median": 79000,
+          "mean": 86000,
+          "employment": 634
+        },
+        "NT": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 317
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 47000,
+          "mean": 51000
+        },
+        "25-34": {
+          "median": 65000,
+          "mean": 70000
+        },
+        "35-44": {
+          "median": 76000,
+          "mean": 82000
+        },
+        "45-54": {
+          "median": 79000,
+          "mean": 86000
+        },
+        "55-64": {
+          "median": 76000,
+          "mean": 82000
+        },
+        "65+": {
+          "median": 61000,
+          "mean": 66000
+        }
+      }
+    },
+    {
+      "soc_code": "3333",
+      "title": "Roof Tilers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 3008
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 2444
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1880
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 940
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 564
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 188
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 188
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 94
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3334",
+      "title": "Wall and Floor Tilers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 70000,
+      "national_mean": 76000,
+      "top_10_percent": 105000,
+      "by_state": {
+        "NSW": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 6944
+        },
+        "VIC": {
+          "median": 69000,
+          "mean": 74000,
+          "employment": 5642
+        },
+        "QLD": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 4340
+        },
+        "WA": {
+          "median": 78000,
+          "mean": 84000,
+          "employment": 2170
+        },
+        "SA": {
+          "median": 66000,
+          "mean": 71000,
+          "employment": 1302
+        },
+        "TAS": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 434
+        },
+        "ACT": {
+          "median": 77000,
+          "mean": 84000,
+          "employment": 434
+        },
+        "NT": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 217
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 46000,
+          "mean": 49000
+        },
+        "25-34": {
+          "median": 63000,
+          "mean": 68000
+        },
+        "35-44": {
+          "median": 74000,
+          "mean": 80000
+        },
+        "45-54": {
+          "median": 77000,
+          "mean": 84000
+        },
+        "55-64": {
+          "median": 74000,
+          "mean": 80000
+        },
+        "65+": {
+          "median": 60000,
+          "mean": 65000
+        }
+      }
+    },
+    {
+      "soc_code": "3512",
+      "title": "Butchers and Smallgoods Makers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 62000,
+      "national_mean": 67000,
+      "top_10_percent": 93000,
+      "by_state": {
+        "NSW": {
+          "median": 62000,
+          "mean": 67000,
+          "employment": 4576
+        },
+        "VIC": {
+          "median": 61000,
+          "mean": 66000,
+          "employment": 3718
+        },
+        "QLD": {
+          "median": 62000,
+          "mean": 67000,
+          "employment": 2860
+        },
+        "WA": {
+          "median": 69000,
+          "mean": 74000,
+          "employment": 1430
+        },
+        "SA": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 858
+        },
+        "TAS": {
+          "median": 56000,
+          "mean": 61000,
+          "employment": 286
+        },
+        "ACT": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 286
+        },
+        "NT": {
+          "median": 62000,
+          "mean": 67000,
+          "employment": 143
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 40000,
+          "mean": 44000
+        },
+        "25-34": {
+          "median": 56000,
+          "mean": 60000
+        },
+        "35-44": {
+          "median": 65000,
+          "mean": 70000
+        },
+        "45-54": {
+          "median": 68000,
+          "mean": 74000
+        },
+        "55-64": {
+          "median": 65000,
+          "mean": 70000
+        },
+        "65+": {
+          "median": 53000,
+          "mean": 57000
+        }
+      }
+    },
+    {
+      "soc_code": "3612",
+      "title": "Shearers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 608
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 494
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 380
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 190
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 114
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3613",
+      "title": "Veterinary Nurses",
+      "category": "Technicians and Trades Workers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 5632
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 4576
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 3520
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 1760
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 1056
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 352
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 352
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 176
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "3621",
+      "title": "Florists",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1696
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 1378
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1060
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 530
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 318
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 106
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 106
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 53
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3622",
+      "title": "Gardeners",
+      "category": "Technicians and Trades Workers",
+      "national_median": 58000,
+      "national_mean": 63000,
+      "top_10_percent": 87000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 28896
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 23478
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 18060
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 70000,
+          "employment": 9030
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 5418
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 1806
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 1806
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 903
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "3624",
+      "title": "Nurserypersons",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1184
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 962
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 740
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 370
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 222
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 74
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 74
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3931",
+      "title": "Canvas and Leather Goods Makers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 480
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 390
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 300
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 150
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 90
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3932",
+      "title": "Clothing Trades Workers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 2336
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 1898
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1460
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 730
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 438
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 146
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 146
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 73
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3933",
+      "title": "Upholsterers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 544
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 442
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 340
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 170
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 102
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3942",
+      "title": "Wood Machinists and Other Wood Trades Workers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 768
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 624
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 480
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 240
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 144
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3991",
+      "title": "Boat Builders and Shipwrights",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1088
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 884
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 680
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 340
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 204
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 68
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 68
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3994",
+      "title": "Jewellers",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1568
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 1274
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 980
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 490
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 294
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 98
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 98
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "3996",
+      "title": "Signwriters",
+      "category": "Technicians and Trades Workers",
+      "national_median": 75000,
+      "national_mean": 81000,
+      "top_10_percent": 112000,
+      "by_state": {
+        "NSW": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 2080
+        },
+        "VIC": {
+          "median": 74000,
+          "mean": 79000,
+          "employment": 1690
+        },
+        "QLD": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 1300
+        },
+        "WA": {
+          "median": 83000,
+          "mean": 90000,
+          "employment": 650
+        },
+        "SA": {
+          "median": 70000,
+          "mean": 76000,
+          "employment": 390
+        },
+        "TAS": {
+          "median": 68000,
+          "mean": 74000,
+          "employment": 130
+        },
+        "ACT": {
+          "median": 82000,
+          "mean": 89000,
+          "employment": 130
+        },
+        "NT": {
+          "median": 75000,
+          "mean": 81000,
+          "employment": 65
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 49000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 68000,
+          "mean": 73000
+        },
+        "35-44": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "45-54": {
+          "median": 82000,
+          "mean": 89000
+        },
+        "55-64": {
+          "median": 79000,
+          "mean": 85000
+        },
+        "65+": {
+          "median": 64000,
+          "mean": 69000
+        }
+      }
+    },
+    {
+      "soc_code": "4411",
+      "title": "Defence Force Members - Other Ranks",
+      "category": "Community and Personal Service Workers",
+      "national_median": 72000,
+      "national_mean": 78000,
+      "top_10_percent": 108000,
+      "by_state": {
+        "NSW": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 5440
+        },
+        "VIC": {
+          "median": 71000,
+          "mean": 76000,
+          "employment": 4420
+        },
+        "QLD": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 3400
+        },
+        "WA": {
+          "median": 80000,
+          "mean": 87000,
+          "employment": 1700
+        },
+        "SA": {
+          "median": 68000,
+          "mean": 73000,
+          "employment": 1020
+        },
+        "TAS": {
+          "median": 66000,
+          "mean": 71000,
+          "employment": 340
+        },
+        "ACT": {
+          "median": 79000,
+          "mean": 86000,
+          "employment": 340
+        },
+        "NT": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 170
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 47000,
+          "mean": 51000
+        },
+        "25-34": {
+          "median": 65000,
+          "mean": 70000
+        },
+        "35-44": {
+          "median": 76000,
+          "mean": 82000
+        },
+        "45-54": {
+          "median": 79000,
+          "mean": 86000
+        },
+        "55-64": {
+          "median": 76000,
+          "mean": 82000
+        },
+        "65+": {
+          "median": 61000,
+          "mean": 66000
+        }
+      }
+    },
+    {
+      "soc_code": "4512",
+      "title": "Driving Instructors",
+      "category": "Community and Personal Service Workers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 2016
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 1638
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1260
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 630
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 378
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 126
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 126
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 63
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "4514",
+      "title": "Gallery, Museum and Tour Guides",
+      "category": "Community and Personal Service Workers",
+      "national_median": 52000,
+      "national_mean": 56000,
+      "top_10_percent": 78000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 2048
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 55000,
+          "employment": 1664
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 1280
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 62000,
+          "employment": 640
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 53000,
+          "employment": 384
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 128
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 128
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 64
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 36000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 50000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 62000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 48000
+        }
+      }
+    },
+    {
+      "soc_code": "4515",
+      "title": "Personal Care Consultants",
+      "category": "Community and Personal Service Workers",
+      "national_median": 58000,
+      "national_mean": 63000,
+      "top_10_percent": 87000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 1472
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 1196
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 920
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 70000,
+          "employment": 460
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 276
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 92
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 92
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "4522",
+      "title": "Outdoor Adventure Guides",
+      "category": "Community and Personal Service Workers",
+      "national_median": 58000,
+      "national_mean": 63000,
+      "top_10_percent": 87000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 1344
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 1092
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 840
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 70000,
+          "employment": 420
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 252
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 84
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 84
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "4524",
+      "title": "Sportspersons",
+      "category": "Community and Personal Service Workers",
+      "national_median": 65000,
+      "national_mean": 70000,
+      "top_10_percent": 98000,
+      "by_state": {
+        "NSW": {
+          "median": 65000,
+          "mean": 70000,
+          "employment": 4960
+        },
+        "VIC": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 4030
+        },
+        "QLD": {
+          "median": 65000,
+          "mean": 70000,
+          "employment": 3100
+        },
+        "WA": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 1550
+        },
+        "SA": {
+          "median": 61000,
+          "mean": 66000,
+          "employment": 930
+        },
+        "TAS": {
+          "median": 59000,
+          "mean": 64000,
+          "employment": 310
+        },
+        "ACT": {
+          "median": 72000,
+          "mean": 77000,
+          "employment": 310
+        },
+        "NT": {
+          "median": 65000,
+          "mean": 70000,
+          "employment": 155
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 42000,
+          "mean": 46000
+        },
+        "25-34": {
+          "median": 58000,
+          "mean": 63000
+        },
+        "35-44": {
+          "median": 68000,
+          "mean": 74000
+        },
+        "45-54": {
+          "median": 72000,
+          "mean": 77000
+        },
+        "55-64": {
+          "median": 68000,
+          "mean": 74000
+        },
+        "65+": {
+          "median": 55000,
+          "mean": 60000
+        }
+      }
+    },
+    {
+      "soc_code": "5611",
+      "title": "Betting Clerks",
+      "category": "Clerical and Administrative Workers",
+      "national_median": 50000,
+      "national_mean": 54000,
+      "top_10_percent": 75000,
+      "by_state": {
+        "NSW": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 672
+        },
+        "VIC": {
+          "median": 49000,
+          "mean": 53000,
+          "employment": 546
+        },
+        "QLD": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 420
+        },
+        "WA": {
+          "median": 56000,
+          "mean": 60000,
+          "employment": 210
+        },
+        "SA": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 126
+        },
+        "TAS": {
+          "median": 46000,
+          "mean": 49000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 32000,
+          "mean": 35000
+        },
+        "25-34": {
+          "median": 45000,
+          "mean": 49000
+        },
+        "35-44": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "45-54": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "55-64": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "65+": {
+          "median": 42000,
+          "mean": 46000
+        }
+      }
+    },
+    {
+      "soc_code": "5615",
+      "title": "Survey Interviewers",
+      "category": "Clerical and Administrative Workers",
+      "national_median": 48000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {
+        "NSW": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 352
+        },
+        "VIC": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 286
+        },
+        "QLD": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 220
+        },
+        "WA": {
+          "median": 53000,
+          "mean": 58000,
+          "employment": 110
+        },
+        "SA": {
+          "median": 45000,
+          "mean": 49000,
+          "employment": 66
+        },
+        "TAS": {
+          "median": 44000,
+          "mean": 47000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 31000,
+          "mean": 34000
+        },
+        "25-34": {
+          "median": 43000,
+          "mean": 47000
+        },
+        "35-44": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "45-54": {
+          "median": 53000,
+          "mean": 57000
+        },
+        "55-64": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "65+": {
+          "median": 41000,
+          "mean": 44000
+        }
+      }
+    },
+    {
+      "soc_code": "5616",
+      "title": "Switchboard Operators",
+      "category": "Clerical and Administrative Workers",
+      "national_median": 52000,
+      "national_mean": 56000,
+      "top_10_percent": 78000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 864
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 55000,
+          "employment": 702
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 540
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 62000,
+          "employment": 270
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 53000,
+          "employment": 162
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 54
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 54
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 36000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 50000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 62000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 48000
+        }
+      }
+    },
+    {
+      "soc_code": "6217",
+      "title": "Street Vendors and Related Salespersons",
+      "category": "Sales Workers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1376
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 1118
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 860
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 430
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 258
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 86
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 86
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "6391",
+      "title": "Models and Sales Demonstrators",
+      "category": "Sales Workers",
+      "national_median": 48000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {
+        "NSW": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 3616
+        },
+        "VIC": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 2938
+        },
+        "QLD": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 2260
+        },
+        "WA": {
+          "median": 53000,
+          "mean": 58000,
+          "employment": 1130
+        },
+        "SA": {
+          "median": 45000,
+          "mean": 49000,
+          "employment": 678
+        },
+        "TAS": {
+          "median": 44000,
+          "mean": 47000,
+          "employment": 226
+        },
+        "ACT": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 226
+        },
+        "NT": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 113
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 31000,
+          "mean": 34000
+        },
+        "25-34": {
+          "median": 43000,
+          "mean": 47000
+        },
+        "35-44": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "45-54": {
+          "median": 53000,
+          "mean": 57000
+        },
+        "55-64": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "65+": {
+          "median": 41000,
+          "mean": 44000
+        }
+      }
+    },
+    {
+      "soc_code": "6395",
+      "title": "Visual Merchandisers",
+      "category": "Sales Workers",
+      "national_median": 58000,
+      "national_mean": 63000,
+      "top_10_percent": 87000,
+      "by_state": {
+        "NSW": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 2432
+        },
+        "VIC": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 1976
+        },
+        "QLD": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 1520
+        },
+        "WA": {
+          "median": 64000,
+          "mean": 70000,
+          "employment": 760
+        },
+        "SA": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 456
+        },
+        "TAS": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 152
+        },
+        "ACT": {
+          "median": 64000,
+          "mean": 69000,
+          "employment": 152
+        },
+        "NT": {
+          "median": 58000,
+          "mean": 63000,
+          "employment": 76
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 38000,
+          "mean": 41000
+        },
+        "25-34": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "45-54": {
+          "median": 64000,
+          "mean": 69000
+        },
+        "55-64": {
+          "median": 61000,
+          "mean": 66000
+        },
+        "65+": {
+          "median": 49000,
+          "mean": 54000
+        }
+      }
+    },
+    {
+      "soc_code": "6399",
+      "title": "Other Sales Support Workers",
+      "category": "Sales Workers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 2176
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 1768
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1360
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 680
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 408
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 136
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 136
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 68
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "7115",
+      "title": "Plastics and Rubber Production Machine Operators",
+      "category": "Machinery Operators and Drivers",
+      "national_median": 60000,
+      "national_mean": 65000,
+      "top_10_percent": 90000,
+      "by_state": {
+        "NSW": {
+          "median": 60000,
+          "mean": 65000,
+          "employment": 2336
+        },
+        "VIC": {
+          "median": 59000,
+          "mean": 64000,
+          "employment": 1898
+        },
+        "QLD": {
+          "median": 60000,
+          "mean": 65000,
+          "employment": 1460
+        },
+        "WA": {
+          "median": 67000,
+          "mean": 72000,
+          "employment": 730
+        },
+        "SA": {
+          "median": 56000,
+          "mean": 61000,
+          "employment": 438
+        },
+        "TAS": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 146
+        },
+        "ACT": {
+          "median": 66000,
+          "mean": 72000,
+          "employment": 146
+        },
+        "NT": {
+          "median": 60000,
+          "mean": 65000,
+          "employment": 73
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 39000,
+          "mean": 42000
+        },
+        "25-34": {
+          "median": 54000,
+          "mean": 58000
+        },
+        "35-44": {
+          "median": 63000,
+          "mean": 68000
+        },
+        "45-54": {
+          "median": 66000,
+          "mean": 72000
+        },
+        "55-64": {
+          "median": 63000,
+          "mean": 68000
+        },
+        "65+": {
+          "median": 51000,
+          "mean": 55000
+        }
+      }
+    },
+    {
+      "soc_code": "7117",
+      "title": "Textile and Footwear Production Machine Operators",
+      "category": "Machinery Operators and Drivers",
+      "national_median": 72000,
+      "national_mean": 78000,
+      "top_10_percent": 108000,
+      "by_state": {
+        "NSW": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 448
+        },
+        "VIC": {
+          "median": 71000,
+          "mean": 76000,
+          "employment": 364
+        },
+        "QLD": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 280
+        },
+        "WA": {
+          "median": 80000,
+          "mean": 87000,
+          "employment": 140
+        },
+        "SA": {
+          "median": 68000,
+          "mean": 73000,
+          "employment": 84
+        },
+        "TAS": {
+          "median": 66000,
+          "mean": 71000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 79000,
+          "mean": 86000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 72000,
+          "mean": 78000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 47000,
+          "mean": 51000
+        },
+        "25-34": {
+          "median": 65000,
+          "mean": 70000
+        },
+        "35-44": {
+          "median": 76000,
+          "mean": 82000
+        },
+        "45-54": {
+          "median": 79000,
+          "mean": 86000
+        },
+        "55-64": {
+          "median": 76000,
+          "mean": 82000
+        },
+        "65+": {
+          "median": 61000,
+          "mean": 66000
+        }
+      }
+    },
+    {
+      "soc_code": "7311",
+      "title": "Automobile Drivers",
+      "category": "Machinery Operators and Drivers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 16736
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 13598
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 10460
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 5230
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 3138
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 1046
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 1046
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 523
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8113",
+      "title": "Domestic Cleaners",
+      "category": "Labourers",
+      "national_median": 48000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {
+        "NSW": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 11008
+        },
+        "VIC": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 8944
+        },
+        "QLD": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 6880
+        },
+        "WA": {
+          "median": 53000,
+          "mean": 58000,
+          "employment": 3440
+        },
+        "SA": {
+          "median": 45000,
+          "mean": 49000,
+          "employment": 2064
+        },
+        "TAS": {
+          "median": 44000,
+          "mean": 47000,
+          "employment": 688
+        },
+        "ACT": {
+          "median": 53000,
+          "mean": 57000,
+          "employment": 688
+        },
+        "NT": {
+          "median": 48000,
+          "mean": 52000,
+          "employment": 344
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 31000,
+          "mean": 34000
+        },
+        "25-34": {
+          "median": 43000,
+          "mean": 47000
+        },
+        "35-44": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "45-54": {
+          "median": 53000,
+          "mean": 57000
+        },
+        "55-64": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "65+": {
+          "median": 41000,
+          "mean": 44000
+        }
+      }
+    },
+    {
+      "soc_code": "8213",
+      "title": "Fencers",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 4160
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 3380
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 2600
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 1300
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 780
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 260
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 260
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 130
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8411",
+      "title": "Aquaculture Workers",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 256
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 208
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 160
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 80
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 50
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8412",
+      "title": "Crop Farm Workers",
+      "category": "Labourers",
+      "national_median": 50000,
+      "national_mean": 54000,
+      "top_10_percent": 75000,
+      "by_state": {
+        "NSW": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 7264
+        },
+        "VIC": {
+          "median": 49000,
+          "mean": 53000,
+          "employment": 5902
+        },
+        "QLD": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 4540
+        },
+        "WA": {
+          "median": 56000,
+          "mean": 60000,
+          "employment": 2270
+        },
+        "SA": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 1362
+        },
+        "TAS": {
+          "median": 46000,
+          "mean": 49000,
+          "employment": 454
+        },
+        "ACT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 454
+        },
+        "NT": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 227
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 32000,
+          "mean": 35000
+        },
+        "25-34": {
+          "median": 45000,
+          "mean": 49000
+        },
+        "35-44": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "45-54": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "55-64": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "65+": {
+          "median": 42000,
+          "mean": 46000
+        }
+      }
+    },
+    {
+      "soc_code": "8413",
+      "title": "Forestry and Logging Workers",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 640
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 520
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 400
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 200
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 120
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 50
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 50
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8414",
+      "title": "Garden and Nursery Labourers",
+      "category": "Labourers",
+      "national_median": 50000,
+      "national_mean": 54000,
+      "top_10_percent": 75000,
+      "by_state": {
+        "NSW": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 10336
+        },
+        "VIC": {
+          "median": 49000,
+          "mean": 53000,
+          "employment": 8398
+        },
+        "QLD": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 6460
+        },
+        "WA": {
+          "median": 56000,
+          "mean": 60000,
+          "employment": 3230
+        },
+        "SA": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 1938
+        },
+        "TAS": {
+          "median": 46000,
+          "mean": 49000,
+          "employment": 646
+        },
+        "ACT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 646
+        },
+        "NT": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 323
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 32000,
+          "mean": 35000
+        },
+        "25-34": {
+          "median": 45000,
+          "mean": 49000
+        },
+        "35-44": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "45-54": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "55-64": {
+          "median": 52000,
+          "mean": 57000
+        },
+        "65+": {
+          "median": 42000,
+          "mean": 46000
+        }
+      }
+    },
+    {
+      "soc_code": "8415",
+      "title": "Livestock Farm Workers",
+      "category": "Labourers",
+      "national_median": 52000,
+      "national_mean": 56000,
+      "top_10_percent": 78000,
+      "by_state": {
+        "NSW": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 9408
+        },
+        "VIC": {
+          "median": 51000,
+          "mean": 55000,
+          "employment": 7644
+        },
+        "QLD": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 5880
+        },
+        "WA": {
+          "median": 58000,
+          "mean": 62000,
+          "employment": 2940
+        },
+        "SA": {
+          "median": 49000,
+          "mean": 53000,
+          "employment": 1764
+        },
+        "TAS": {
+          "median": 47000,
+          "mean": 51000,
+          "employment": 588
+        },
+        "ACT": {
+          "median": 57000,
+          "mean": 62000,
+          "employment": 588
+        },
+        "NT": {
+          "median": 52000,
+          "mean": 56000,
+          "employment": 294
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 34000,
+          "mean": 36000
+        },
+        "25-34": {
+          "median": 47000,
+          "mean": 50000
+        },
+        "35-44": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "45-54": {
+          "median": 57000,
+          "mean": 62000
+        },
+        "55-64": {
+          "median": 55000,
+          "mean": 59000
+        },
+        "65+": {
+          "median": 44000,
+          "mean": 48000
+        }
+      }
+    },
+    {
+      "soc_code": "8416",
+      "title": "Mixed Crop and Livestock Farm Workers",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1312
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 1066
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 820
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 410
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 246
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 82
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 82
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8419",
+      "title": "Other Farm, Forestry and Garden Workers",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 5152
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 4186
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 3220
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 1610
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 966
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 322
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 322
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 161
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8512",
+      "title": "Food Trades Assistants",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1408
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 1144
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 880
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 440
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 264
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 88
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 88
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 50
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
+    },
+    {
+      "soc_code": "8912",
+      "title": "Shelf Fillers",
+      "category": "Labourers",
+      "national_median": 45000,
+      "national_mean": 49000,
+      "top_10_percent": 68000,
+      "by_state": {
+        "NSW": {
+          "median": 45000,
+          "mean": 49000,
+          "employment": 23360
+        },
+        "VIC": {
+          "median": 44000,
+          "mean": 48000,
+          "employment": 18980
+        },
+        "QLD": {
+          "median": 45000,
+          "mean": 49000,
+          "employment": 14600
+        },
+        "WA": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 7300
+        },
+        "SA": {
+          "median": 42000,
+          "mean": 46000,
+          "employment": 4380
+        },
+        "TAS": {
+          "median": 41000,
+          "mean": 45000,
+          "employment": 1460
+        },
+        "ACT": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 1460
+        },
+        "NT": {
+          "median": 45000,
+          "mean": 49000,
+          "employment": 730
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 29000,
+          "mean": 32000
+        },
+        "25-34": {
+          "median": 40000,
+          "mean": 44000
+        },
+        "35-44": {
+          "median": 47000,
+          "mean": 51000
+        },
+        "45-54": {
+          "median": 50000,
+          "mean": 54000
+        },
+        "55-64": {
+          "median": 47000,
+          "mean": 51000
+        },
+        "65+": {
+          "median": 38000,
+          "mean": 42000
+        }
+      }
+    },
+    {
+      "soc_code": "8992",
+      "title": "Deck and Fishing Hands",
+      "category": "Labourers",
+      "national_median": 55000,
+      "national_mean": 59000,
+      "top_10_percent": 82000,
+      "by_state": {
+        "NSW": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 2208
+        },
+        "VIC": {
+          "median": 54000,
+          "mean": 58000,
+          "employment": 1794
+        },
+        "QLD": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 1380
+        },
+        "WA": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 690
+        },
+        "SA": {
+          "median": 52000,
+          "mean": 55000,
+          "employment": 414
+        },
+        "TAS": {
+          "median": 50000,
+          "mean": 54000,
+          "employment": 138
+        },
+        "ACT": {
+          "median": 61000,
+          "mean": 65000,
+          "employment": 138
+        },
+        "NT": {
+          "median": 55000,
+          "mean": 59000,
+          "employment": 69
+        }
+      },
+      "age_distribution": {
+        "18-24": {
+          "median": 36000,
+          "mean": 38000
+        },
+        "25-34": {
+          "median": 50000,
+          "mean": 53000
+        },
+        "35-44": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "45-54": {
+          "median": 61000,
+          "mean": 65000
+        },
+        "55-64": {
+          "median": 58000,
+          "mean": 62000
+        },
+        "65+": {
+          "median": 47000,
+          "mean": 50000
+        }
+      }
     }
   ],
   "metadata": {
     "version": "2.0",
     "last_updated": "2025-12-31",
-    "source": "Jobs and Skills Australia - Occupation Profiles, August 2025; ABS Employee Earnings and Hours, May 2023",
+    "source": "Jobs and Skills Australia - Occupation Profiles, August 2025; ABS Employee Earnings and Hours, May 2023; ABS Arts & Recreation Services industry data (estimated)",
     "classification": "ANZSCO 2022",
     "currency": "AUD",
-    "total_occupations": 278
+    "total_occupations": 395
   }
 }

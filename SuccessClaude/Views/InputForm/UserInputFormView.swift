@@ -333,8 +333,8 @@ struct UserInputFormView: View {
 
                     Divider()
 
-                    // Household Income (US only)
-                    if viewModel.userProfile.countryCode == "us" {
+                    // Household Income (US and AU)
+                    if viewModel.userProfile.countryCode == "us" || viewModel.userProfile.countryCode == "au" {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Total Household Income")
                                 .font(.subheadline)
@@ -373,7 +373,7 @@ struct UserInputFormView: View {
 
                         Divider()
 
-                        // Number of Children (US only)
+                        // Number of Children (US and AU)
                         Stepper("Children: \(viewModel.userProfile.numberOfChildren)", value: $viewModel.userProfile.numberOfChildren, in: 0...20)
                             .onChange(of: viewModel.userProfile.numberOfChildren) { newValue in
                                 viewModel.updateNumberOfChildren(newValue)
@@ -384,10 +384,24 @@ struct UserInputFormView: View {
                             .foregroundColor(.textSecondary)
 
                         if viewModel.userProfile.householdIncome > 0 && viewModel.userProfile.householdSize > 0 {
-                            Text("Per person: \(viewModel.userProfile.perCapitaIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "USD"))")
-                                .font(.caption)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.primaryAccent)
+                            if viewModel.userProfile.countryCode == "au" {
+                                // Australia: Show equivalised income (OECD scale)
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text("Equivalised income: \(viewModel.userProfile.equivalisedIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "AUD"))")
+                                        .font(.caption)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.primaryAccent)
+                                    Text("(OECD scale: 1 + 0.5×spouse + 0.3×children)")
+                                        .font(.caption2)
+                                        .foregroundColor(.textTertiary)
+                                }
+                            } else {
+                                // US: Show per capita income
+                                Text("Per person: \(viewModel.userProfile.perCapitaIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "USD"))")
+                                    .font(.caption)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.primaryAccent)
+                            }
                         }
                     }
                 }

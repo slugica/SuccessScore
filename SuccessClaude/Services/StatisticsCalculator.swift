@@ -86,7 +86,8 @@ class StatisticsCalculator {
             stats = regionData.overall.asIncomeStats
         }
 
-        let income = profile.effectiveIncome
+        // Use comparisonIncome for fair household comparison (uses equivalised income for AU)
+        let income = profile.comparisonIncome
         let percentile = calculatePercentile(income: income, median: stats.median, mean: stats.mean)
         let percentageDiff = ((income - stats.median) / stats.median) * 100
 
@@ -129,7 +130,8 @@ class StatisticsCalculator {
             )
         }
 
-        let income = profile.effectiveIncome
+        // Use comparisonIncome for fair household comparison (uses equivalised income for AU)
+        let income = profile.comparisonIncome
         let percentile = calculatePercentile(income: income, median: stats.median, mean: stats.mean)
         let percentageDiff = ((income - stats.median) / stats.median) * 100
 
@@ -313,7 +315,8 @@ class StatisticsCalculator {
         }
 
         let top10 = stats.mean * 1.8
-        let income = profile.effectiveIncome
+        // Use comparisonIncome for fair household comparison
+        let income = profile.comparisonIncome
         let gap = max(0, top10 - income)
         let gapPercentage = income > 0 ? (gap / income) * 100 : 100
 
@@ -394,7 +397,7 @@ class StatisticsCalculator {
             maleMedian: maleMedian,
             femaleMedian: femaleMedian,
             userGender: profile.gender,
-            userIncome: profile.effectiveIncome,
+            userIncome: profile.comparisonIncome,
             payGap: payGap
         )
     }
@@ -467,9 +470,9 @@ class StatisticsCalculator {
             throw StatisticsError.dataNotAvailable("Data not available")
         }
 
-        // Calculate national rank percentile
+        // Calculate national rank percentile (using comparisonIncome for fair comparison)
         let nationalPercentile = calculatePercentile(
-            income: profile.effectiveIncome,
+            income: profile.comparisonIncome,
             median: nationalStats.overall.medianHouseholdIncome,
             mean: nationalStats.overall.meanHouseholdIncome
         )
@@ -512,7 +515,8 @@ class StatisticsCalculator {
             throw StatisticsError.dataNotAvailable("National data not available")
         }
 
-        let actualIncome = profile.effectiveIncome
+        // Use comparisonIncome for purchasing power comparison
+        let actualIncome = profile.comparisonIncome
         let colIndex = regionData.costOfLivingIndex
 
         // Adjusted income: what your income would be worth in an average-cost state
