@@ -305,7 +305,8 @@ class DataLoader {
                 mapping = ukToUSSocMapping
             case "ca":
                 mapping = nocToSocMapping
-            case "au":
+            case "au", "nz":
+                // Both Australia and New Zealand use ANZSCO classification
                 mapping = anzscoToSocMapping
             default:
                 mapping = nil

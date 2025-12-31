@@ -3,9 +3,11 @@
     {
       "code": "AB",
       "name": "Alberta",
+      "country_code": "ca",
       "overall": {
         "median": 88500,
-        "mean": 99120
+        "mean": 99120,
+        "top_10_percent": 175230
       },
       "by_age": {
         "18-24": {
@@ -21,8 +23,8 @@
           "mean": 104076
         },
         "45-54": {
-          "median": 101774,
-          "mean": 113987
+          "median": 101775,
+          "mean": 113988
         },
         "55-64": {
           "median": 97350,
@@ -61,14 +63,16 @@
           "mean": 84252
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 102
     },
     {
       "code": "BC",
       "name": "British Columbia",
+      "country_code": "ca",
       "overall": {
         "median": 75000,
-        "mean": 84000
+        "mean": 84000,
+        "top_10_percent": 148500
       },
       "by_age": {
         "18-24": {
@@ -85,7 +89,7 @@
         },
         "45-54": {
           "median": 86250,
-          "mean": 96599
+          "mean": 96600
         },
         "55-64": {
           "median": 82500,
@@ -103,7 +107,7 @@
         },
         "Female": {
           "median": 66000,
-          "mean": 73920
+          "mean": 73919
         }
       },
       "by_marital_status": {
@@ -124,14 +128,16 @@
           "mean": 71400
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 115
     },
     {
       "code": "MB",
       "name": "Manitoba",
+      "country_code": "ca",
       "overall": {
         "median": 68000,
-        "mean": 76160
+        "mean": 76160,
+        "top_10_percent": 134640
       },
       "by_age": {
         "18-24": {
@@ -187,14 +193,16 @@
           "mean": 64736
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 92
     },
     {
       "code": "NB",
       "name": "New Brunswick",
+      "country_code": "ca",
       "overall": {
         "median": 62700,
-        "mean": 70224
+        "mean": 70224,
+        "top_10_percent": 124146
       },
       "by_age": {
         "18-24": {
@@ -229,7 +237,7 @@
         },
         "Female": {
           "median": 55176,
-          "mean": 61797
+          "mean": 61796
         }
       },
       "by_marital_status": {
@@ -250,14 +258,16 @@
           "mean": 59690
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 88
     },
     {
       "code": "NL",
       "name": "Newfoundland and Labrador",
+      "country_code": "ca",
       "overall": {
         "median": 65000,
-        "mean": 72800
+        "mean": 72800,
+        "top_10_percent": 128700
       },
       "by_age": {
         "18-24": {
@@ -292,7 +302,7 @@
         },
         "Female": {
           "median": 57200,
-          "mean": 64064
+          "mean": 64063
         }
       },
       "by_marital_status": {
@@ -313,14 +323,81 @@
           "mean": 61880
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 90
+    },
+    {
+      "code": "NT",
+      "name": "Northwest Territories",
+      "country_code": "ca",
+      "overall": {
+        "median": 102100,
+        "mean": 114352,
+        "top_10_percent": 202158
+      },
+      "by_age": {
+        "18-24": {
+          "median": 56155,
+          "mean": 62893
+        },
+        "25-34": {
+          "median": 86785,
+          "mean": 97199
+        },
+        "35-44": {
+          "median": 107205,
+          "mean": 120069
+        },
+        "45-54": {
+          "median": 117415,
+          "mean": 131504
+        },
+        "55-64": {
+          "median": 112310,
+          "mean": 125787
+        },
+        "65+": {
+          "median": 76575,
+          "mean": 85764
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 102100,
+          "mean": 114352
+        },
+        "Female": {
+          "median": 89848,
+          "mean": 100629
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 91890,
+          "mean": 102916
+        },
+        "Married": {
+          "median": 112310,
+          "mean": 125787
+        },
+        "Divorced": {
+          "median": 96995,
+          "mean": 108634
+        },
+        "Widowed": {
+          "median": 86785,
+          "mean": 97199
+        }
+      },
+      "cost_of_living_index": 125
     },
     {
       "code": "NS",
       "name": "Nova Scotia",
+      "country_code": "ca",
       "overall": {
         "median": 62900,
-        "mean": 70448
+        "mean": 70448,
+        "top_10_percent": 124542
       },
       "by_age": {
         "18-24": {
@@ -376,77 +453,16 @@
           "mean": 59880
         }
       },
-      "cost_of_living_index": 100
-    },
-    {
-      "code": "NT",
-      "name": "Northwest Territories",
-      "overall": {
-        "median": 102100,
-        "mean": 114352
-      },
-      "by_age": {
-        "18-24": {
-          "median": 56155,
-          "mean": 62893
-        },
-        "25-34": {
-          "median": 86785,
-          "mean": 97199
-        },
-        "35-44": {
-          "median": 107205,
-          "mean": 120069
-        },
-        "45-54": {
-          "median": 117414,
-          "mean": 131504
-        },
-        "55-64": {
-          "median": 112310,
-          "mean": 125787
-        },
-        "65+": {
-          "median": 76575,
-          "mean": 85764
-        }
-      },
-      "by_gender": {
-        "Male": {
-          "median": 102100,
-          "mean": 114352
-        },
-        "Female": {
-          "median": 89848,
-          "mean": 100629
-        }
-      },
-      "by_marital_status": {
-        "Single": {
-          "median": 91890,
-          "mean": 102916
-        },
-        "Married": {
-          "median": 112310,
-          "mean": 125787
-        },
-        "Divorced": {
-          "median": 96995,
-          "mean": 108634
-        },
-        "Widowed": {
-          "median": 86785,
-          "mean": 97199
-        }
-      },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 91
     },
     {
       "code": "NU",
       "name": "Nunavut",
+      "country_code": "ca",
       "overall": {
         "median": 90800,
-        "mean": 101696
+        "mean": 101696,
+        "top_10_percent": 179784
       },
       "by_age": {
         "18-24": {
@@ -462,7 +478,7 @@
           "mean": 106780
         },
         "45-54": {
-          "median": 104419,
+          "median": 104420,
           "mean": 116950
         },
         "55-64": {
@@ -502,18 +518,20 @@
           "mean": 86441
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 140
     },
     {
       "code": "ON",
       "name": "Ontario",
+      "country_code": "ca",
       "overall": {
         "median": 78600,
-        "mean": 88032
+        "mean": 88032,
+        "top_10_percent": 155628
       },
       "by_age": {
         "18-24": {
-          "median": 43230,
+          "median": 43229,
           "mean": 48417
         },
         "25-34": {
@@ -521,30 +539,30 @@
           "mean": 74827
         },
         "35-44": {
-          "median": 82530,
+          "median": 82529,
           "mean": 92433
         },
         "45-54": {
-          "median": 90390,
+          "median": 90389,
           "mean": 101236
         },
         "55-64": {
-          "median": 86460,
+          "median": 86459,
           "mean": 96835
         },
         "65+": {
-          "median": 58950,
+          "median": 58949,
           "mean": 66024
         }
       },
       "by_gender": {
         "Male": {
-          "median": 78600,
-          "mean": 88032
+          "median": 78599,
+          "mean": 88031
         },
         "Female": {
           "median": 69168,
-          "mean": 77468
+          "mean": 77467
         }
       },
       "by_marital_status": {
@@ -553,7 +571,7 @@
           "mean": 79228
         },
         "Married": {
-          "median": 86460,
+          "median": 86459,
           "mean": 96835
         },
         "Divorced": {
@@ -565,14 +583,16 @@
           "mean": 74827
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 108
     },
     {
       "code": "PE",
       "name": "Prince Edward Island",
+      "country_code": "ca",
       "overall": {
         "median": 60000,
-        "mean": 67200
+        "mean": 67200,
+        "top_10_percent": 118800
       },
       "by_age": {
         "18-24": {
@@ -607,7 +627,7 @@
         },
         "Female": {
           "median": 52800,
-          "mean": 59136
+          "mean": 59135
         }
       },
       "by_marital_status": {
@@ -628,14 +648,16 @@
           "mean": 57120
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 87
     },
     {
       "code": "QC",
       "name": "Quebec",
+      "country_code": "ca",
       "overall": {
         "median": 66000,
-        "mean": 73920
+        "mean": 73920,
+        "top_10_percent": 130680
       },
       "by_age": {
         "18-24": {
@@ -691,14 +713,16 @@
           "mean": 62832
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 95
     },
     {
       "code": "SK",
       "name": "Saskatchewan",
+      "country_code": "ca",
       "overall": {
         "median": 70000,
-        "mean": 78400
+        "mean": 78400,
+        "top_10_percent": 138600
       },
       "by_age": {
         "18-24": {
@@ -733,7 +757,7 @@
         },
         "Female": {
           "median": 61600,
-          "mean": 68992
+          "mean": 68991
         }
       },
       "by_marital_status": {
@@ -754,14 +778,16 @@
           "mean": 66640
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 90
     },
     {
       "code": "YT",
       "name": "Yukon",
+      "country_code": "ca",
       "overall": {
         "median": 84500,
-        "mean": 94640
+        "mean": 94640,
+        "top_10_percent": 167310
       },
       "by_age": {
         "18-24": {
@@ -777,8 +803,8 @@
           "mean": 99372
         },
         "45-54": {
-          "median": 97174,
-          "mean": 108835
+          "median": 97175,
+          "mean": 108836
         },
         "55-64": {
           "median": 92950,
@@ -796,7 +822,7 @@
         },
         "Female": {
           "median": 74360,
-          "mean": 83283
+          "mean": 83282
         }
       },
       "by_marital_status": {
@@ -817,15 +843,12 @@
           "mean": 80444
         }
       },
-      "cost_of_living_index": 100
+      "cost_of_living_index": 115
     }
   ],
   "metadata": {
     "version": "1.0",
     "last_updated": "2024-12-30",
-    "source": "Statistics Canada",
-    "description": "Provincial income statistics",
-    "currency": "CAD",
-    "year": 2023
+    "source": "Statistics Canada, Canadian Income Survey 2023"
   }
 }

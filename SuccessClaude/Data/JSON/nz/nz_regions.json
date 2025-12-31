@@ -1,0 +1,1050 @@
+{
+  "regions": [
+    {
+      "code": "AUK",
+      "name": "Auckland",
+      "country_code": "nz",
+      "overall": {
+        "median": 56160,
+        "mean": 62640,
+        "top_10_percent": 118800
+      },
+      "by_age": {
+        "18-24": {
+          "median": 36720,
+          "mean": 39960
+        },
+        "25-34": {
+          "median": 59400,
+          "mean": 64800
+        },
+        "35-44": {
+          "median": 72360,
+          "mean": 79920
+        },
+        "45-54": {
+          "median": 74520,
+          "mean": 82080
+        },
+        "55-64": {
+          "median": 70200,
+          "mean": 77760
+        },
+        "65+": {
+          "median": 49680,
+          "mean": 55080
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 72360,
+          "mean": 77760
+        },
+        "Female": {
+          "median": 64800,
+          "mean": 69120
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 51840,
+          "mean": 57240
+        },
+        "Married": {
+          "median": 64800,
+          "mean": 72360
+        },
+        "Divorced": {
+          "median": 55080,
+          "mean": 60480
+        },
+        "Widowed": {
+          "median": 49680,
+          "mean": 55080
+        }
+      },
+      "cost_of_living_index": 108
+    },
+    {
+      "code": "WGN",
+      "name": "Wellington",
+      "country_code": "nz",
+      "overall": {
+        "median": 57200,
+        "mean": 63800,
+        "top_10_percent": 121000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 37400,
+          "mean": 40700
+        },
+        "25-34": {
+          "median": 60500,
+          "mean": 66000
+        },
+        "35-44": {
+          "median": 73700,
+          "mean": 81400
+        },
+        "45-54": {
+          "median": 75900,
+          "mean": 83600
+        },
+        "55-64": {
+          "median": 71500,
+          "mean": 79200
+        },
+        "65+": {
+          "median": 50600,
+          "mean": 56100
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 73700,
+          "mean": 79200
+        },
+        "Female": {
+          "median": 66000,
+          "mean": 70400
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 52800,
+          "mean": 58300
+        },
+        "Married": {
+          "median": 66000,
+          "mean": 73700
+        },
+        "Divorced": {
+          "median": 56100,
+          "mean": 61600
+        },
+        "Widowed": {
+          "median": 50600,
+          "mean": 56100
+        }
+      },
+      "cost_of_living_index": 105
+    },
+    {
+      "code": "CAN",
+      "name": "Canterbury",
+      "country_code": "nz",
+      "overall": {
+        "median": 52000,
+        "mean": 58000,
+        "top_10_percent": 110000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 34000,
+          "mean": 37000
+        },
+        "25-34": {
+          "median": 55000,
+          "mean": 60000
+        },
+        "35-44": {
+          "median": 67000,
+          "mean": 74000
+        },
+        "45-54": {
+          "median": 69000,
+          "mean": 76000
+        },
+        "55-64": {
+          "median": 65000,
+          "mean": 72000
+        },
+        "65+": {
+          "median": 46000,
+          "mean": 51000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 67000,
+          "mean": 72000
+        },
+        "Female": {
+          "median": 60000,
+          "mean": 64000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 48000,
+          "mean": 53000
+        },
+        "Married": {
+          "median": 60000,
+          "mean": 67000
+        },
+        "Divorced": {
+          "median": 51000,
+          "mean": 56000
+        },
+        "Widowed": {
+          "median": 46000,
+          "mean": 51000
+        }
+      },
+      "cost_of_living_index": 100
+    },
+    {
+      "code": "WKO",
+      "name": "Waikato",
+      "country_code": "nz",
+      "overall": {
+        "median": 49400,
+        "mean": 55100,
+        "top_10_percent": 104500
+      },
+      "by_age": {
+        "18-24": {
+          "median": 32300,
+          "mean": 35150
+        },
+        "25-34": {
+          "median": 52250,
+          "mean": 57000
+        },
+        "35-44": {
+          "median": 63650,
+          "mean": 70300
+        },
+        "45-54": {
+          "median": 65550,
+          "mean": 72200
+        },
+        "55-64": {
+          "median": 61750,
+          "mean": 68400
+        },
+        "65+": {
+          "median": 43700,
+          "mean": 48450
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 63650,
+          "mean": 68400
+        },
+        "Female": {
+          "median": 57000,
+          "mean": 60800
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 45600,
+          "mean": 50350
+        },
+        "Married": {
+          "median": 57000,
+          "mean": 63650
+        },
+        "Divorced": {
+          "median": 48450,
+          "mean": 53200
+        },
+        "Widowed": {
+          "median": 43700,
+          "mean": 48450
+        }
+      },
+      "cost_of_living_index": 95
+    },
+    {
+      "code": "BOP",
+      "name": "Bay of Plenty",
+      "country_code": "nz",
+      "overall": {
+        "median": 49920,
+        "mean": 55680,
+        "top_10_percent": 105600
+      },
+      "by_age": {
+        "18-24": {
+          "median": 32640,
+          "mean": 35520
+        },
+        "25-34": {
+          "median": 52800,
+          "mean": 57600
+        },
+        "35-44": {
+          "median": 64320,
+          "mean": 71040
+        },
+        "45-54": {
+          "median": 66240,
+          "mean": 72960
+        },
+        "55-64": {
+          "median": 62400,
+          "mean": 69120
+        },
+        "65+": {
+          "median": 44160,
+          "mean": 48960
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 64320,
+          "mean": 69120
+        },
+        "Female": {
+          "median": 57600,
+          "mean": 61440
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 46080,
+          "mean": 50880
+        },
+        "Married": {
+          "median": 57600,
+          "mean": 64320
+        },
+        "Divorced": {
+          "median": 48960,
+          "mean": 53760
+        },
+        "Widowed": {
+          "median": 44160,
+          "mean": 48960
+        }
+      },
+      "cost_of_living_index": 98
+    },
+    {
+      "code": "OTA",
+      "name": "Otago",
+      "country_code": "nz",
+      "overall": {
+        "median": 48880,
+        "mean": 54520,
+        "top_10_percent": 103400
+      },
+      "by_age": {
+        "18-24": {
+          "median": 31960,
+          "mean": 34780
+        },
+        "25-34": {
+          "median": 51700,
+          "mean": 56400
+        },
+        "35-44": {
+          "median": 62980,
+          "mean": 69560
+        },
+        "45-54": {
+          "median": 64859,
+          "mean": 71440
+        },
+        "55-64": {
+          "median": 61100,
+          "mean": 67680
+        },
+        "65+": {
+          "median": 43240,
+          "mean": 47940
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 62980,
+          "mean": 67680
+        },
+        "Female": {
+          "median": 56400,
+          "mean": 60160
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 45120,
+          "mean": 49820
+        },
+        "Married": {
+          "median": 56400,
+          "mean": 62980
+        },
+        "Divorced": {
+          "median": 47940,
+          "mean": 52640
+        },
+        "Widowed": {
+          "median": 43240,
+          "mean": 47940
+        }
+      },
+      "cost_of_living_index": 96
+    },
+    {
+      "code": "MWT",
+      "name": "Manawatu-Whanganui",
+      "country_code": "nz",
+      "overall": {
+        "median": 45760,
+        "mean": 51040,
+        "top_10_percent": 96800
+      },
+      "by_age": {
+        "18-24": {
+          "median": 29920,
+          "mean": 32560
+        },
+        "25-34": {
+          "median": 48400,
+          "mean": 52800
+        },
+        "35-44": {
+          "median": 58960,
+          "mean": 65120
+        },
+        "45-54": {
+          "median": 60720,
+          "mean": 66880
+        },
+        "55-64": {
+          "median": 57200,
+          "mean": 63360
+        },
+        "65+": {
+          "median": 40480,
+          "mean": 44880
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 58960,
+          "mean": 63360
+        },
+        "Female": {
+          "median": 52800,
+          "mean": 56320
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 42240,
+          "mean": 46640
+        },
+        "Married": {
+          "median": 52800,
+          "mean": 58960
+        },
+        "Divorced": {
+          "median": 44880,
+          "mean": 49280
+        },
+        "Widowed": {
+          "median": 40480,
+          "mean": 44880
+        }
+      },
+      "cost_of_living_index": 90
+    },
+    {
+      "code": "HKB",
+      "name": "Hawke's Bay",
+      "country_code": "nz",
+      "overall": {
+        "median": 46800,
+        "mean": 52200,
+        "top_10_percent": 99000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 30600,
+          "mean": 33300
+        },
+        "25-34": {
+          "median": 49500,
+          "mean": 54000
+        },
+        "35-44": {
+          "median": 60300,
+          "mean": 66600
+        },
+        "45-54": {
+          "median": 62100,
+          "mean": 68400
+        },
+        "55-64": {
+          "median": 58500,
+          "mean": 64800
+        },
+        "65+": {
+          "median": 41400,
+          "mean": 45900
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 60300,
+          "mean": 64800
+        },
+        "Female": {
+          "median": 54000,
+          "mean": 57600
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 43200,
+          "mean": 47700
+        },
+        "Married": {
+          "median": 54000,
+          "mean": 60300
+        },
+        "Divorced": {
+          "median": 45900,
+          "mean": 50400
+        },
+        "Widowed": {
+          "median": 41400,
+          "mean": 45900
+        }
+      },
+      "cost_of_living_index": 92
+    },
+    {
+      "code": "NTL",
+      "name": "Northland",
+      "country_code": "nz",
+      "overall": {
+        "median": 45240,
+        "mean": 50460,
+        "top_10_percent": 95700
+      },
+      "by_age": {
+        "18-24": {
+          "median": 29580,
+          "mean": 32190
+        },
+        "25-34": {
+          "median": 47850,
+          "mean": 52200
+        },
+        "35-44": {
+          "median": 58290,
+          "mean": 64380
+        },
+        "45-54": {
+          "median": 60030,
+          "mean": 66120
+        },
+        "55-64": {
+          "median": 56550,
+          "mean": 62640
+        },
+        "65+": {
+          "median": 40020,
+          "mean": 44370
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 58290,
+          "mean": 62640
+        },
+        "Female": {
+          "median": 52200,
+          "mean": 55680
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 41760,
+          "mean": 46110
+        },
+        "Married": {
+          "median": 52200,
+          "mean": 58290
+        },
+        "Divorced": {
+          "median": 44370,
+          "mean": 48720
+        },
+        "Widowed": {
+          "median": 40020,
+          "mean": 44370
+        }
+      },
+      "cost_of_living_index": 93
+    },
+    {
+      "code": "TKI",
+      "name": "Taranaki",
+      "country_code": "nz",
+      "overall": {
+        "median": 47840,
+        "mean": 53360,
+        "top_10_percent": 101200
+      },
+      "by_age": {
+        "18-24": {
+          "median": 31280,
+          "mean": 34040
+        },
+        "25-34": {
+          "median": 50600,
+          "mean": 55200
+        },
+        "35-44": {
+          "median": 61640,
+          "mean": 68080
+        },
+        "45-54": {
+          "median": 63480,
+          "mean": 69920
+        },
+        "55-64": {
+          "median": 59800,
+          "mean": 66240
+        },
+        "65+": {
+          "median": 42320,
+          "mean": 46920
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 61640,
+          "mean": 66240
+        },
+        "Female": {
+          "median": 55200,
+          "mean": 58880
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 44160,
+          "mean": 48760
+        },
+        "Married": {
+          "median": 55200,
+          "mean": 61640
+        },
+        "Divorced": {
+          "median": 46920,
+          "mean": 51520
+        },
+        "Widowed": {
+          "median": 42320,
+          "mean": 46920
+        }
+      },
+      "cost_of_living_index": 91
+    },
+    {
+      "code": "STL",
+      "name": "Southland",
+      "country_code": "nz",
+      "overall": {
+        "median": 46800,
+        "mean": 52200,
+        "top_10_percent": 99000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 30600,
+          "mean": 33300
+        },
+        "25-34": {
+          "median": 49500,
+          "mean": 54000
+        },
+        "35-44": {
+          "median": 60300,
+          "mean": 66600
+        },
+        "45-54": {
+          "median": 62100,
+          "mean": 68400
+        },
+        "55-64": {
+          "median": 58500,
+          "mean": 64800
+        },
+        "65+": {
+          "median": 41400,
+          "mean": 45900
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 60300,
+          "mean": 64800
+        },
+        "Female": {
+          "median": 54000,
+          "mean": 57600
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 43200,
+          "mean": 47700
+        },
+        "Married": {
+          "median": 54000,
+          "mean": 60300
+        },
+        "Divorced": {
+          "median": 45900,
+          "mean": 50400
+        },
+        "Widowed": {
+          "median": 41400,
+          "mean": 45900
+        }
+      },
+      "cost_of_living_index": 88
+    },
+    {
+      "code": "GIS",
+      "name": "Gisborne",
+      "country_code": "nz",
+      "overall": {
+        "median": 44200,
+        "mean": 49300,
+        "top_10_percent": 93500
+      },
+      "by_age": {
+        "18-24": {
+          "median": 28900,
+          "mean": 31450
+        },
+        "25-34": {
+          "median": 46750,
+          "mean": 51000
+        },
+        "35-44": {
+          "median": 56950,
+          "mean": 62900
+        },
+        "45-54": {
+          "median": 58650,
+          "mean": 64600
+        },
+        "55-64": {
+          "median": 55250,
+          "mean": 61200
+        },
+        "65+": {
+          "median": 39100,
+          "mean": 43350
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 56950,
+          "mean": 61200
+        },
+        "Female": {
+          "median": 51000,
+          "mean": 54400
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 40800,
+          "mean": 45050
+        },
+        "Married": {
+          "median": 51000,
+          "mean": 56950
+        },
+        "Divorced": {
+          "median": 43350,
+          "mean": 47600
+        },
+        "Widowed": {
+          "median": 39100,
+          "mean": 43350
+        }
+      },
+      "cost_of_living_index": 89
+    },
+    {
+      "code": "TAS",
+      "name": "Tasman",
+      "country_code": "nz",
+      "overall": {
+        "median": 47320,
+        "mean": 52780,
+        "top_10_percent": 100100
+      },
+      "by_age": {
+        "18-24": {
+          "median": 30940,
+          "mean": 33670
+        },
+        "25-34": {
+          "median": 50050,
+          "mean": 54600
+        },
+        "35-44": {
+          "median": 60970,
+          "mean": 67340
+        },
+        "45-54": {
+          "median": 62790,
+          "mean": 69160
+        },
+        "55-64": {
+          "median": 59150,
+          "mean": 65520
+        },
+        "65+": {
+          "median": 41860,
+          "mean": 46410
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 60970,
+          "mean": 65520
+        },
+        "Female": {
+          "median": 54600,
+          "mean": 58240
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 43680,
+          "mean": 48230
+        },
+        "Married": {
+          "median": 54600,
+          "mean": 60970
+        },
+        "Divorced": {
+          "median": 46410,
+          "mean": 50960
+        },
+        "Widowed": {
+          "median": 41860,
+          "mean": 46410
+        }
+      },
+      "cost_of_living_index": 94
+    },
+    {
+      "code": "NSN",
+      "name": "Nelson",
+      "country_code": "nz",
+      "overall": {
+        "median": 48360,
+        "mean": 53940,
+        "top_10_percent": 102300
+      },
+      "by_age": {
+        "18-24": {
+          "median": 31620,
+          "mean": 34410
+        },
+        "25-34": {
+          "median": 51150,
+          "mean": 55800
+        },
+        "35-44": {
+          "median": 62310,
+          "mean": 68820
+        },
+        "45-54": {
+          "median": 64170,
+          "mean": 70680
+        },
+        "55-64": {
+          "median": 60450,
+          "mean": 66960
+        },
+        "65+": {
+          "median": 42780,
+          "mean": 47430
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 62310,
+          "mean": 66960
+        },
+        "Female": {
+          "median": 55800,
+          "mean": 59520
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 44640,
+          "mean": 49290
+        },
+        "Married": {
+          "median": 55800,
+          "mean": 62310
+        },
+        "Divorced": {
+          "median": 47430,
+          "mean": 52080
+        },
+        "Widowed": {
+          "median": 42780,
+          "mean": 47430
+        }
+      },
+      "cost_of_living_index": 97
+    },
+    {
+      "code": "MBH",
+      "name": "Marlborough",
+      "country_code": "nz",
+      "overall": {
+        "median": 47840,
+        "mean": 53360,
+        "top_10_percent": 101200
+      },
+      "by_age": {
+        "18-24": {
+          "median": 31280,
+          "mean": 34040
+        },
+        "25-34": {
+          "median": 50600,
+          "mean": 55200
+        },
+        "35-44": {
+          "median": 61640,
+          "mean": 68080
+        },
+        "45-54": {
+          "median": 63480,
+          "mean": 69920
+        },
+        "55-64": {
+          "median": 59800,
+          "mean": 66240
+        },
+        "65+": {
+          "median": 42320,
+          "mean": 46920
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 61640,
+          "mean": 66240
+        },
+        "Female": {
+          "median": 55200,
+          "mean": 58880
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 44160,
+          "mean": 48760
+        },
+        "Married": {
+          "median": 55200,
+          "mean": 61640
+        },
+        "Divorced": {
+          "median": 46920,
+          "mean": 51520
+        },
+        "Widowed": {
+          "median": 42320,
+          "mean": 46920
+        }
+      },
+      "cost_of_living_index": 95
+    },
+    {
+      "code": "WTC",
+      "name": "West Coast",
+      "country_code": "nz",
+      "overall": {
+        "median": 44720,
+        "mean": 49880,
+        "top_10_percent": 94600
+      },
+      "by_age": {
+        "18-24": {
+          "median": 29240,
+          "mean": 31820
+        },
+        "25-34": {
+          "median": 47300,
+          "mean": 51600
+        },
+        "35-44": {
+          "median": 57620,
+          "mean": 63640
+        },
+        "45-54": {
+          "median": 59340,
+          "mean": 65360
+        },
+        "55-64": {
+          "median": 55900,
+          "mean": 61920
+        },
+        "65+": {
+          "median": 39560,
+          "mean": 43860
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 57620,
+          "mean": 61920
+        },
+        "Female": {
+          "median": 51600,
+          "mean": 55040
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 41280,
+          "mean": 45580
+        },
+        "Married": {
+          "median": 51600,
+          "mean": 57620
+        },
+        "Divorced": {
+          "median": 43860,
+          "mean": 48160
+        },
+        "Widowed": {
+          "median": 39560,
+          "mean": 43860
+        }
+      },
+      "cost_of_living_index": 87
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-31",
+    "source": "Stats NZ - Estimated from national statistics",
+    "country_code": "nz"
+  }
+}

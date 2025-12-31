@@ -51,8 +51,21 @@
       "occupation_count": 395,
       "has_data": true,
       "is_active": true
+    },
+    {
+      "code": "nz",
+      "name": "New Zealand",
+      "flag": "🇳🇿",
+      "currency": "NZD",
+      "currency_symbol": "NZ$",
+      "occupation_system": "ANZSCO 2006",
+      "region_type": "Region",
+      "region_count": 16,
+      "occupation_count": 395,
+      "has_data": true,
+      "is_active": true
     }
   ],
-  "version": "1.0",
-  "last_updated": "2025-12-30"
+  "version": "1.1",
+  "last_updated": "2025-12-31"
 }

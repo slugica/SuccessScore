@@ -1,0 +1,72 @@
+{
+  "national": {
+    "overall": {
+      "median_household_income": 52000,
+      "median_individual_income": 52000,
+      "mean_household_income": 58000,
+      "top_10_percent": 110000
+    },
+    "by_age": {
+      "18-24": {
+        "median": 34000,
+        "mean": 37000
+      },
+      "25-34": {
+        "median": 55000,
+        "mean": 60000
+      },
+      "35-44": {
+        "median": 67000,
+        "mean": 74000
+      },
+      "45-54": {
+        "median": 69000,
+        "mean": 76000
+      },
+      "55-64": {
+        "median": 65000,
+        "mean": 72000
+      },
+      "65+": {
+        "median": 46000,
+        "mean": 51000
+      }
+    },
+    "by_gender": {
+      "Male": {
+        "median": 67000,
+        "mean": 72000
+      },
+      "Female": {
+        "median": 60000,
+        "mean": 64000
+      }
+    },
+    "by_marital_status": {
+      "Single": {
+        "median": 48000,
+        "mean": 53000
+      },
+      "Married": {
+        "median": 60000,
+        "mean": 67000
+      },
+      "Divorced": {
+        "median": 51000,
+        "mean": 56000
+      },
+      "Widowed": {
+        "median": 46000,
+        "mean": 51000
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-31",
+    "source": "Stats NZ - Labour Market Statistics (Income), June 2025",
+    "description": "National income statistics for New Zealand",
+    "currency": "NZD",
+    "year": 2025
+  }
+}

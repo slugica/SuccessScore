@@ -34,6 +34,9 @@ struct TaxCalculator {
         case "au":
             return calculateAustralianTax(grossIncome: grossIncome, region: region)
 
+        case "nz":
+            return calculateNewZealandTax(grossIncome: grossIncome, region: region)
+
         default:
             return createEmptyResult(grossIncome: grossIncome, countryCode: countryCode, region: region)
         }
@@ -547,6 +550,77 @@ struct TaxCalculator {
         // Low income threshold: $26,000 (singles), $41,089 (families)
         // For simplicity, we'll apply the 2% levy to all income
         return income * 0.02
+    }
+
+    // MARK: - New Zealand Tax Calculation
+
+    private static func calculateNewZealandTax(
+        grossIncome: Double,
+        region: Region
+    ) -> AfterTaxIncomeResult {
+        let incomeTax = calculateNZIncomeTax(income: grossIncome)
+        let accLevy = calculateNZACCLevy(income: grossIncome)
+
+        let totalTax = incomeTax + accLevy
+        let afterTaxIncome = grossIncome - totalTax
+        let effectiveTaxRate = grossIncome > 0 ? (totalTax / grossIncome) * 100 : 0
+
+        return AfterTaxIncomeResult(
+            grossIncome: grossIncome,
+            countryCode: "nz",
+            region: region,
+            components: [
+                TaxComponent(name: "PAYE Income Tax", amount: incomeTax, rate: grossIncome > 0 ? (incomeTax / grossIncome) * 100 : 0),
+                TaxComponent(name: "ACC Earner Levy", amount: accLevy, rate: grossIncome > 0 ? (accLevy / grossIncome) * 100 : 0)
+            ],
+            totalTax: totalTax,
+            afterTaxIncome: afterTaxIncome,
+            effectiveTaxRate: effectiveTaxRate
+        )
+    }
+
+    private static func calculateNZIncomeTax(income: Double) -> Double {
+        // New Zealand PAYE Tax Brackets 2024-25
+        // $0 - $14,000: 10.5%
+        // $14,001 - $48,000: 17.5%
+        // $48,001 - $70,000: 30%
+        // $70,001 - $180,000: 33%
+        // $180,001+: 39%
+
+        if income <= 14_000 {
+            return income * 0.105
+        } else if income <= 48_000 {
+            let bracket1 = 14_000 * 0.105
+            let bracket2 = (income - 14_000) * 0.175
+            return bracket1 + bracket2
+        } else if income <= 70_000 {
+            let bracket1 = 14_000 * 0.105
+            let bracket2 = (48_000 - 14_000) * 0.175
+            let bracket3 = (income - 48_000) * 0.30
+            return bracket1 + bracket2 + bracket3
+        } else if income <= 180_000 {
+            let bracket1 = 14_000 * 0.105
+            let bracket2 = (48_000 - 14_000) * 0.175
+            let bracket3 = (70_000 - 48_000) * 0.30
+            let bracket4 = (income - 70_000) * 0.33
+            return bracket1 + bracket2 + bracket3 + bracket4
+        } else {
+            let bracket1 = 14_000 * 0.105
+            let bracket2 = (48_000 - 14_000) * 0.175
+            let bracket3 = (70_000 - 48_000) * 0.30
+            let bracket4 = (180_000 - 70_000) * 0.33
+            let bracket5 = (income - 180_000) * 0.39
+            return bracket1 + bracket2 + bracket3 + bracket4 + bracket5
+        }
+    }
+
+    private static func calculateNZACCLevy(income: Double) -> Double {
+        // ACC Earner Levy 2024-25: 1.39% on earnings up to $142,283
+        let maxEarnings = 142_283.0
+        let rate = 0.0139
+
+        let leviableIncome = min(income, maxEarnings)
+        return leviableIncome * rate
     }
 
     // MARK: - Helper
