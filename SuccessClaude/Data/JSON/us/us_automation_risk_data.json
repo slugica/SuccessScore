@@ -10791,6 +10791,30 @@
       "ai_risk": 20,
       "robotics_risk": 75,
       "overall_risk": 42.0
+    },
+    {
+      "soc_code": "55-0000",
+      "title": "Military Occupations",
+      "category": "Military",
+      "ai_risk": 35,
+      "robotics_risk": 40,
+      "overall_risk": 37.0
+    },
+    {
+      "soc_code": "45-3000",
+      "title": "Fishing and Hunting Workers",
+      "category": "Farming, Fishing, and Forestry",
+      "ai_risk": 25,
+      "robotics_risk": 45,
+      "overall_risk": 33.0
+    },
+    {
+      "soc_code": "29-1211",
+      "title": "Physicians and Surgeons",
+      "category": "Healthcare",
+      "ai_risk": 40,
+      "robotics_risk": 30,
+      "overall_risk": 36.0
     }
   ],
   "metadata": {

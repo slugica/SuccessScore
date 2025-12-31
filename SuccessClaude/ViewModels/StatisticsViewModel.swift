@@ -106,10 +106,16 @@ class StatisticsViewModel: ObservableObject {
     }
 
     var automationRisk: OccupationRisk? {
-        guard let snapshot = statisticsSnapshot else { return nil }
+        guard let snapshot = statisticsSnapshot else {
+            print("🔴 automationRisk: no snapshot")
+            return nil
+        }
         let socCode = snapshot.userProfile.occupation.socCode
         let countryCode = snapshot.userProfile.countryCode
-        return dataLoader.getAutomationRisk(for: socCode, countryCode: countryCode)
+        print("🔵 automationRisk: requesting for SOC=\(socCode), country=\(countryCode)")
+        let result = dataLoader.getAutomationRisk(for: socCode, countryCode: countryCode)
+        print("🔵 automationRisk result: \(result != nil ? "FOUND" : "NIL")")
+        return result
     }
 
     var earnedBadges: [Badge] {

@@ -41,10 +41,11 @@ class DataLoader {
     private var countryDataSets: [String: CountryDataSet] = [:]
     private var currentCountryCode: String = "us"
 
-    // SOC code mapping (UK → US, NOC → SOC, ANZSCO → SOC, etc.)
+    // SOC code mapping (UK → US, NOC → SOC, ANZSCO → SOC, KldB → SOC, etc.)
     private var ukToUSSocMapping: SOCMapping?
     private var nocToSocMapping: SOCMapping?
     private var anzscoToSocMapping: SOCMapping?
+    private var kldbToSocMapping: SOCMapping?
 
     // Legacy properties for backward compatibility
     private var occupationsData: BLSOEWSData? {
@@ -88,6 +89,11 @@ class DataLoader {
         // Load SOC mapping
         try await loadSOCMapping()
 
+        // Always load US data first (needed for automation risk for all countries)
+        if currentCountryCode != "us" {
+            try await loadCountryData(countryCode: "us")
+        }
+
         // Load data for current country
         try await loadCountryData(countryCode: currentCountryCode)
     }
@@ -117,12 +123,28 @@ class DataLoader {
             print("⚠️ Failed to load national data: \(error)")
         }
 
-        // Load automation risk data only for US (used universally)
+        // Load automation risk data for US (used universally for all countries)
         if countryCode == "us" {
             do {
                 dataSet.automationRiskData = try await loadAutomationRiskData(countryCode: countryCode)
             } catch {
                 print("⚠️ Failed to load automation risk data: \(error)")
+            }
+        } else {
+            // For non-US countries, ensure US automation data is loaded
+            if countryDataSets["us"]?.automationRiskData == nil {
+                do {
+                    let usAutomationData = try await loadAutomationRiskData(countryCode: "us")
+                    if var usDataSet = countryDataSets["us"] {
+                        usDataSet.automationRiskData = usAutomationData
+                        countryDataSets["us"] = usDataSet
+                    } else {
+                        countryDataSets["us"] = CountryDataSet(automationRiskData: usAutomationData)
+                    }
+                    print("✅ Loaded US automation data for non-US country")
+                } catch {
+                    print("⚠️ Failed to load US automation risk data: \(error)")
+                }
             }
         }
 
@@ -147,6 +169,10 @@ class DataLoader {
         // Load ANZSCO → SOC mapping for Australia
         anzscoToSocMapping = try await load(filename: "anzsco_to_soc_mapping", extension: "json", subdirectory: nil)
         print("🗺️ ANZSCO→SOC mapping loaded: \(anzscoToSocMapping?.mappings.count ?? 0) mappings")
+
+        // Load KldB → SOC mapping for Germany
+        kldbToSocMapping = try await load(filename: "kldb_to_soc_mapping", extension: "json", subdirectory: nil)
+        print("🗺️ KldB→SOC mapping loaded: \(kldbToSocMapping?.mappings.count ?? 0) mappings")
     }
 
     // MARK: - Individual Loaders (Country-specific)
@@ -308,6 +334,9 @@ class DataLoader {
             case "au", "nz":
                 // Both Australia and New Zealand use ANZSCO classification
                 mapping = anzscoToSocMapping
+            case "de":
+                // Germany uses KldB 2010 classification
+                mapping = kldbToSocMapping
             default:
                 mapping = nil
             }
