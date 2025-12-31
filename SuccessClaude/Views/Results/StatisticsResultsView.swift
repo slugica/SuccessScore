@@ -25,6 +25,12 @@ struct StatisticsResultsView: View {
             return "C$"
         case "uk":
             return "£"
+        case "au":
+            return "A$"
+        case "nz":
+            return "NZ$"
+        case "de":
+            return "€"
         default:
             return "$"
         }
@@ -38,6 +44,12 @@ struct StatisticsResultsView: View {
             return "Canada"
         case "uk":
             return "United Kingdom"
+        case "au":
+            return "Australia"
+        case "nz":
+            return "New Zealand"
+        case "de":
+            return "Germany"
         default:
             return "Country"
         }
