@@ -37,6 +37,9 @@ struct TaxCalculator {
         case "nz":
             return calculateNewZealandTax(grossIncome: grossIncome, region: region)
 
+        case "de":
+            return calculateGermanTax(grossIncome: grossIncome, region: region)
+
         default:
             return createEmptyResult(grossIncome: grossIncome, countryCode: countryCode, region: region)
         }
@@ -621,6 +624,108 @@ struct TaxCalculator {
 
         let leviableIncome = min(income, maxEarnings)
         return leviableIncome * rate
+    }
+
+    // MARK: - German Tax Calculation
+
+    private static func calculateGermanTax(
+        grossIncome: Double,
+        region: Region
+    ) -> AfterTaxIncomeResult {
+        let incomeTax = calculateGermanIncomeTax(income: grossIncome)
+        let solidaritySurcharge = calculateSolidaritySurcharge(incomeTax: incomeTax)
+        let socialInsurance = calculateGermanSocialInsurance(income: grossIncome)
+
+        let totalTax = incomeTax + solidaritySurcharge + socialInsurance
+        let afterTaxIncome = grossIncome - totalTax
+        let effectiveTaxRate = grossIncome > 0 ? (totalTax / grossIncome) * 100 : 0
+
+        return AfterTaxIncomeResult(
+            grossIncome: grossIncome,
+            countryCode: "de",
+            region: region,
+            components: [
+                TaxComponent(name: "Einkommensteuer (Income Tax)", amount: incomeTax, rate: grossIncome > 0 ? (incomeTax / grossIncome) * 100 : 0),
+                TaxComponent(name: "Solidaritätszuschlag", amount: solidaritySurcharge, rate: grossIncome > 0 ? (solidaritySurcharge / grossIncome) * 100 : 0),
+                TaxComponent(name: "Sozialversicherung (Social Insurance)", amount: socialInsurance, rate: grossIncome > 0 ? (socialInsurance / grossIncome) * 100 : 0)
+            ],
+            totalTax: totalTax,
+            afterTaxIncome: afterTaxIncome,
+            effectiveTaxRate: effectiveTaxRate
+        )
+    }
+
+    private static func calculateGermanIncomeTax(income: Double) -> Double {
+        // German Income Tax 2024 (Einkommensteuer)
+        // Tax-free allowance: €11,604
+        // Progressive zones with formula-based calculation
+
+        let grundfreibetrag = 11_604.0  // Tax-free allowance
+
+        if income <= grundfreibetrag {
+            return 0
+        }
+
+        // Zone 2: €11,605 - €17,005 (14% to 24%)
+        if income <= 17_005 {
+            let y = (income - grundfreibetrag) / 10_000
+            return (979.18 * y + 1400) * y
+        }
+
+        // Zone 3: €17,006 - €66,760 (24% to 42%)
+        if income <= 66_760 {
+            let z = (income - 17_005) / 10_000
+            return (192.59 * z + 2397) * z + 966.53
+        }
+
+        // Zone 4: €66,761 - €277,825 (42%)
+        if income <= 277_825 {
+            return 0.42 * income - 10_602.13
+        }
+
+        // Zone 5: €277,826+ (45%)
+        return 0.45 * income - 18_936.88
+    }
+
+    private static func calculateSolidaritySurcharge(incomeTax: Double) -> Double {
+        // Solidaritätszuschlag: 5.5% of income tax
+        // Only applies if income tax exceeds €18,130 (singles)
+        // Phased in between €18,130 and €33,951
+
+        if incomeTax <= 18_130 {
+            return 0
+        }
+
+        if incomeTax <= 33_951 {
+            // Phase-in zone: marginal rate of 11.9%
+            return (incomeTax - 18_130) * 0.119
+        }
+
+        // Full rate: 5.5% of income tax
+        return incomeTax * 0.055
+    }
+
+    private static func calculateGermanSocialInsurance(income: Double) -> Double {
+        // German Social Insurance 2024 (employee portion)
+        // Pension (Renten): 9.3% up to €90,600
+        // Unemployment (Arbeitslosen): 1.3% up to €90,600
+        // Health (Kranken): ~8.15% up to €62,100
+        // Care (Pflege): 1.7% (or 2.3% if childless over 23) up to €62,100
+
+        let pensionCap = 90_600.0
+        let healthCap = 62_100.0
+
+        let pensionRate = 0.093
+        let unemploymentRate = 0.013
+        let healthRate = 0.0815  // Average including supplementary
+        let careRate = 0.017
+
+        let pension = min(income, pensionCap) * pensionRate
+        let unemployment = min(income, pensionCap) * unemploymentRate
+        let health = min(income, healthCap) * healthRate
+        let care = min(income, healthCap) * careRate
+
+        return pension + unemployment + health + care
     }
 
     // MARK: - Helper

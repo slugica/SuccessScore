@@ -1,0 +1,1050 @@
+{
+  "regions": [
+    {
+      "code": "BW",
+      "name": "Baden-W\u00fcrttemberg",
+      "country_code": "de",
+      "overall": {
+        "median": 49874,
+        "mean": 63393,
+        "top_10_percent": 139464
+      },
+      "by_age": {
+        "18-24": {
+          "median": 32418,
+          "mean": 41205
+        },
+        "25-34": {
+          "median": 44886,
+          "mean": 57053
+        },
+        "35-44": {
+          "median": 54861,
+          "mean": 69732
+        },
+        "45-54": {
+          "median": 57355,
+          "mean": 72901
+        },
+        "55-64": {
+          "median": 54861,
+          "mean": 69732
+        },
+        "65+": {
+          "median": 42392,
+          "mean": 53884
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 53863,
+          "mean": 68464
+        },
+        "Female": {
+          "median": 45884,
+          "mean": 58321
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 47380,
+          "mean": 60223
+        },
+        "Married": {
+          "median": 53863,
+          "mean": 68464
+        },
+        "Divorced": {
+          "median": 49874,
+          "mean": 63393
+        },
+        "Widowed": {
+          "median": 44886,
+          "mean": 57053
+        }
+      },
+      "cost_of_living_index": 105
+    },
+    {
+      "code": "BY",
+      "name": "Bayern",
+      "country_code": "de",
+      "overall": {
+        "median": 49000,
+        "mean": 62280,
+        "top_10_percent": 137016
+      },
+      "by_age": {
+        "18-24": {
+          "median": 31850,
+          "mean": 40482
+        },
+        "25-34": {
+          "median": 44100,
+          "mean": 56052
+        },
+        "35-44": {
+          "median": 53900,
+          "mean": 68508
+        },
+        "45-54": {
+          "median": 56349,
+          "mean": 71622
+        },
+        "55-64": {
+          "median": 53900,
+          "mean": 68508
+        },
+        "65+": {
+          "median": 41650,
+          "mean": 52938
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 52920,
+          "mean": 67262
+        },
+        "Female": {
+          "median": 45080,
+          "mean": 57297
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 46550,
+          "mean": 59166
+        },
+        "Married": {
+          "median": 52920,
+          "mean": 67262
+        },
+        "Divorced": {
+          "median": 49000,
+          "mean": 62280
+        },
+        "Widowed": {
+          "median": 44100,
+          "mean": 56052
+        }
+      },
+      "cost_of_living_index": 108
+    },
+    {
+      "code": "BE",
+      "name": "Berlin",
+      "country_code": "de",
+      "overall": {
+        "median": 44625,
+        "mean": 56720,
+        "top_10_percent": 124784
+      },
+      "by_age": {
+        "18-24": {
+          "median": 29006,
+          "mean": 36868
+        },
+        "25-34": {
+          "median": 40162,
+          "mean": 51048
+        },
+        "35-44": {
+          "median": 49087,
+          "mean": 62392
+        },
+        "45-54": {
+          "median": 51318,
+          "mean": 65227
+        },
+        "55-64": {
+          "median": 49087,
+          "mean": 62392
+        },
+        "65+": {
+          "median": 37931,
+          "mean": 48212
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 48195,
+          "mean": 61257
+        },
+        "Female": {
+          "median": 41055,
+          "mean": 52182
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 42393,
+          "mean": 53884
+        },
+        "Married": {
+          "median": 48195,
+          "mean": 61257
+        },
+        "Divorced": {
+          "median": 44625,
+          "mean": 56720
+        },
+        "Widowed": {
+          "median": 40162,
+          "mean": 51048
+        }
+      },
+      "cost_of_living_index": 102
+    },
+    {
+      "code": "BB",
+      "name": "Brandenburg",
+      "country_code": "de",
+      "overall": {
+        "median": 38500,
+        "mean": 48935,
+        "top_10_percent": 107657
+      },
+      "by_age": {
+        "18-24": {
+          "median": 25025,
+          "mean": 31807
+        },
+        "25-34": {
+          "median": 34650,
+          "mean": 44041
+        },
+        "35-44": {
+          "median": 42350,
+          "mean": 53828
+        },
+        "45-54": {
+          "median": 44275,
+          "mean": 56275
+        },
+        "55-64": {
+          "median": 42350,
+          "mean": 53828
+        },
+        "65+": {
+          "median": 32725,
+          "mean": 41594
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 41580,
+          "mean": 52849
+        },
+        "Female": {
+          "median": 35420,
+          "mean": 45020
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36575,
+          "mean": 46488
+        },
+        "Married": {
+          "median": 41580,
+          "mean": 52849
+        },
+        "Divorced": {
+          "median": 38500,
+          "mean": 48935
+        },
+        "Widowed": {
+          "median": 34650,
+          "mean": 44041
+        }
+      },
+      "cost_of_living_index": 90
+    },
+    {
+      "code": "HB",
+      "name": "Bremen",
+      "country_code": "de",
+      "overall": {
+        "median": 45937,
+        "mean": 58388,
+        "top_10_percent": 128453
+      },
+      "by_age": {
+        "18-24": {
+          "median": 29859,
+          "mean": 37952
+        },
+        "25-34": {
+          "median": 41343,
+          "mean": 52549
+        },
+        "35-44": {
+          "median": 50530,
+          "mean": 64226
+        },
+        "45-54": {
+          "median": 52827,
+          "mean": 67146
+        },
+        "55-64": {
+          "median": 50530,
+          "mean": 64226
+        },
+        "65+": {
+          "median": 39046,
+          "mean": 49629
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 49611,
+          "mean": 63059
+        },
+        "Female": {
+          "median": 42262,
+          "mean": 53716
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 43640,
+          "mean": 55468
+        },
+        "Married": {
+          "median": 49611,
+          "mean": 63059
+        },
+        "Divorced": {
+          "median": 45937,
+          "mean": 58388
+        },
+        "Widowed": {
+          "median": 41343,
+          "mean": 52549
+        }
+      },
+      "cost_of_living_index": 98
+    },
+    {
+      "code": "HH",
+      "name": "Hamburg",
+      "country_code": "de",
+      "overall": {
+        "median": 51625,
+        "mean": 65617,
+        "top_10_percent": 144357
+      },
+      "by_age": {
+        "18-24": {
+          "median": 33556,
+          "mean": 42651
+        },
+        "25-34": {
+          "median": 46462,
+          "mean": 59055
+        },
+        "35-44": {
+          "median": 56787,
+          "mean": 72178
+        },
+        "45-54": {
+          "median": 59368,
+          "mean": 75459
+        },
+        "55-64": {
+          "median": 56787,
+          "mean": 72178
+        },
+        "65+": {
+          "median": 43881,
+          "mean": 55774
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 55755,
+          "mean": 70866
+        },
+        "Female": {
+          "median": 47495,
+          "mean": 60367
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 49043,
+          "mean": 62336
+        },
+        "Married": {
+          "median": 55755,
+          "mean": 70866
+        },
+        "Divorced": {
+          "median": 51625,
+          "mean": 65617
+        },
+        "Widowed": {
+          "median": 46462,
+          "mean": 59055
+        }
+      },
+      "cost_of_living_index": 110
+    },
+    {
+      "code": "HE",
+      "name": "Hessen",
+      "country_code": "de",
+      "overall": {
+        "median": 50312,
+        "mean": 63949,
+        "top_10_percent": 140687
+      },
+      "by_age": {
+        "18-24": {
+          "median": 32702,
+          "mean": 41566
+        },
+        "25-34": {
+          "median": 45280,
+          "mean": 57554
+        },
+        "35-44": {
+          "median": 55343,
+          "mean": 70343
+        },
+        "45-54": {
+          "median": 57858,
+          "mean": 73541
+        },
+        "55-64": {
+          "median": 55343,
+          "mean": 70343
+        },
+        "65+": {
+          "median": 42765,
+          "mean": 54356
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 54336,
+          "mean": 69064
+        },
+        "Female": {
+          "median": 46287,
+          "mean": 58833
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 47796,
+          "mean": 60751
+        },
+        "Married": {
+          "median": 54336,
+          "mean": 69064
+        },
+        "Divorced": {
+          "median": 50312,
+          "mean": 63949
+        },
+        "Widowed": {
+          "median": 45280,
+          "mean": 57554
+        }
+      },
+      "cost_of_living_index": 107
+    },
+    {
+      "code": "MV",
+      "name": "Mecklenburg-Vorpommern",
+      "country_code": "de",
+      "overall": {
+        "median": 37187,
+        "mean": 47266,
+        "top_10_percent": 103985
+      },
+      "by_age": {
+        "18-24": {
+          "median": 24171,
+          "mean": 30722
+        },
+        "25-34": {
+          "median": 33468,
+          "mean": 42539
+        },
+        "35-44": {
+          "median": 40905,
+          "mean": 51992
+        },
+        "45-54": {
+          "median": 42765,
+          "mean": 54355
+        },
+        "55-64": {
+          "median": 40905,
+          "mean": 51992
+        },
+        "65+": {
+          "median": 31608,
+          "mean": 40176
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40161,
+          "mean": 51047
+        },
+        "Female": {
+          "median": 34212,
+          "mean": 43484
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 35327,
+          "mean": 44902
+        },
+        "Married": {
+          "median": 40161,
+          "mean": 51047
+        },
+        "Divorced": {
+          "median": 37187,
+          "mean": 47266
+        },
+        "Widowed": {
+          "median": 33468,
+          "mean": 42539
+        }
+      },
+      "cost_of_living_index": 88
+    },
+    {
+      "code": "NI",
+      "name": "Niedersachsen",
+      "country_code": "de",
+      "overall": {
+        "median": 44625,
+        "mean": 56720,
+        "top_10_percent": 124784
+      },
+      "by_age": {
+        "18-24": {
+          "median": 29006,
+          "mean": 36868
+        },
+        "25-34": {
+          "median": 40162,
+          "mean": 51048
+        },
+        "35-44": {
+          "median": 49087,
+          "mean": 62392
+        },
+        "45-54": {
+          "median": 51318,
+          "mean": 65227
+        },
+        "55-64": {
+          "median": 49087,
+          "mean": 62392
+        },
+        "65+": {
+          "median": 37931,
+          "mean": 48212
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 48195,
+          "mean": 61257
+        },
+        "Female": {
+          "median": 41055,
+          "mean": 52182
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 42393,
+          "mean": 53884
+        },
+        "Married": {
+          "median": 48195,
+          "mean": 61257
+        },
+        "Divorced": {
+          "median": 44625,
+          "mean": 56720
+        },
+        "Widowed": {
+          "median": 40162,
+          "mean": 51048
+        }
+      },
+      "cost_of_living_index": 96
+    },
+    {
+      "code": "NW",
+      "name": "Nordrhein-Westfalen",
+      "country_code": "de",
+      "overall": {
+        "median": 46375,
+        "mean": 58944,
+        "top_10_percent": 129676
+      },
+      "by_age": {
+        "18-24": {
+          "median": 30143,
+          "mean": 38313
+        },
+        "25-34": {
+          "median": 41737,
+          "mean": 53049
+        },
+        "35-44": {
+          "median": 51012,
+          "mean": 64838
+        },
+        "45-54": {
+          "median": 53331,
+          "mean": 67785
+        },
+        "55-64": {
+          "median": 51012,
+          "mean": 64838
+        },
+        "65+": {
+          "median": 39418,
+          "mean": 50102
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 50085,
+          "mean": 63659
+        },
+        "Female": {
+          "median": 42665,
+          "mean": 54228
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 44056,
+          "mean": 55996
+        },
+        "Married": {
+          "median": 50085,
+          "mean": 63659
+        },
+        "Divorced": {
+          "median": 46375,
+          "mean": 58944
+        },
+        "Widowed": {
+          "median": 41737,
+          "mean": 53049
+        }
+      },
+      "cost_of_living_index": 100
+    },
+    {
+      "code": "RP",
+      "name": "Rheinland-Pfalz",
+      "country_code": "de",
+      "overall": {
+        "median": 43750,
+        "mean": 55608,
+        "top_10_percent": 122337
+      },
+      "by_age": {
+        "18-24": {
+          "median": 28437,
+          "mean": 36145
+        },
+        "25-34": {
+          "median": 39375,
+          "mean": 50047
+        },
+        "35-44": {
+          "median": 48125,
+          "mean": 61168
+        },
+        "45-54": {
+          "median": 50312,
+          "mean": 63949
+        },
+        "55-64": {
+          "median": 48125,
+          "mean": 61168
+        },
+        "65+": {
+          "median": 37187,
+          "mean": 47266
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 47250,
+          "mean": 60056
+        },
+        "Female": {
+          "median": 40250,
+          "mean": 51159
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 41562,
+          "mean": 52827
+        },
+        "Married": {
+          "median": 47250,
+          "mean": 60056
+        },
+        "Divorced": {
+          "median": 43750,
+          "mean": 55608
+        },
+        "Widowed": {
+          "median": 39375,
+          "mean": 50047
+        }
+      },
+      "cost_of_living_index": 95
+    },
+    {
+      "code": "SL",
+      "name": "Saarland",
+      "country_code": "de",
+      "overall": {
+        "median": 42875,
+        "mean": 54495,
+        "top_10_percent": 119889
+      },
+      "by_age": {
+        "18-24": {
+          "median": 27868,
+          "mean": 35421
+        },
+        "25-34": {
+          "median": 38587,
+          "mean": 49045
+        },
+        "35-44": {
+          "median": 47162,
+          "mean": 59944
+        },
+        "45-54": {
+          "median": 49306,
+          "mean": 62669
+        },
+        "55-64": {
+          "median": 47162,
+          "mean": 59944
+        },
+        "65+": {
+          "median": 36443,
+          "mean": 46320
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 46305,
+          "mean": 58854
+        },
+        "Female": {
+          "median": 39445,
+          "mean": 50135
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 40731,
+          "mean": 51770
+        },
+        "Married": {
+          "median": 46305,
+          "mean": 58854
+        },
+        "Divorced": {
+          "median": 42875,
+          "mean": 54495
+        },
+        "Widowed": {
+          "median": 38587,
+          "mean": 49045
+        }
+      },
+      "cost_of_living_index": 92
+    },
+    {
+      "code": "SN",
+      "name": "Sachsen",
+      "country_code": "de",
+      "overall": {
+        "median": 38062,
+        "mean": 48378,
+        "top_10_percent": 106431
+      },
+      "by_age": {
+        "18-24": {
+          "median": 24740,
+          "mean": 31445
+        },
+        "25-34": {
+          "median": 34255,
+          "mean": 43540
+        },
+        "35-44": {
+          "median": 41868,
+          "mean": 53215
+        },
+        "45-54": {
+          "median": 43771,
+          "mean": 55634
+        },
+        "55-64": {
+          "median": 41868,
+          "mean": 53215
+        },
+        "65+": {
+          "median": 32352,
+          "mean": 41121
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 41106,
+          "mean": 52248
+        },
+        "Female": {
+          "median": 35017,
+          "mean": 44507
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 36158,
+          "mean": 45959
+        },
+        "Married": {
+          "median": 41106,
+          "mean": 52248
+        },
+        "Divorced": {
+          "median": 38062,
+          "mean": 48378
+        },
+        "Widowed": {
+          "median": 34255,
+          "mean": 43540
+        }
+      },
+      "cost_of_living_index": 89
+    },
+    {
+      "code": "ST",
+      "name": "Sachsen-Anhalt",
+      "country_code": "de",
+      "overall": {
+        "median": 36750,
+        "mean": 46710,
+        "top_10_percent": 102762
+      },
+      "by_age": {
+        "18-24": {
+          "median": 23887,
+          "mean": 30361
+        },
+        "25-34": {
+          "median": 33075,
+          "mean": 42039
+        },
+        "35-44": {
+          "median": 40425,
+          "mean": 51381
+        },
+        "45-54": {
+          "median": 42262,
+          "mean": 53716
+        },
+        "55-64": {
+          "median": 40425,
+          "mean": 51381
+        },
+        "65+": {
+          "median": 31237,
+          "mean": 39703
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 39690,
+          "mean": 50446
+        },
+        "Female": {
+          "median": 33810,
+          "mean": 42973
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 34912,
+          "mean": 44374
+        },
+        "Married": {
+          "median": 39690,
+          "mean": 50446
+        },
+        "Divorced": {
+          "median": 36750,
+          "mean": 46710
+        },
+        "Widowed": {
+          "median": 33075,
+          "mean": 42039
+        }
+      },
+      "cost_of_living_index": 87
+    },
+    {
+      "code": "SH",
+      "name": "Schleswig-Holstein",
+      "country_code": "de",
+      "overall": {
+        "median": 43750,
+        "mean": 55608,
+        "top_10_percent": 122337
+      },
+      "by_age": {
+        "18-24": {
+          "median": 28437,
+          "mean": 36145
+        },
+        "25-34": {
+          "median": 39375,
+          "mean": 50047
+        },
+        "35-44": {
+          "median": 48125,
+          "mean": 61168
+        },
+        "45-54": {
+          "median": 50312,
+          "mean": 63949
+        },
+        "55-64": {
+          "median": 48125,
+          "mean": 61168
+        },
+        "65+": {
+          "median": 37187,
+          "mean": 47266
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 47250,
+          "mean": 60056
+        },
+        "Female": {
+          "median": 40250,
+          "mean": 51159
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 41562,
+          "mean": 52827
+        },
+        "Married": {
+          "median": 47250,
+          "mean": 60056
+        },
+        "Divorced": {
+          "median": 43750,
+          "mean": 55608
+        },
+        "Widowed": {
+          "median": 39375,
+          "mean": 50047
+        }
+      },
+      "cost_of_living_index": 97
+    },
+    {
+      "code": "TH",
+      "name": "Th\u00fcringen",
+      "country_code": "de",
+      "overall": {
+        "median": 37625,
+        "mean": 47822,
+        "top_10_percent": 105208
+      },
+      "by_age": {
+        "18-24": {
+          "median": 24456,
+          "mean": 31084
+        },
+        "25-34": {
+          "median": 33862,
+          "mean": 43039
+        },
+        "35-44": {
+          "median": 41387,
+          "mean": 52604
+        },
+        "45-54": {
+          "median": 43268,
+          "mean": 54995
+        },
+        "55-64": {
+          "median": 41387,
+          "mean": 52604
+        },
+        "65+": {
+          "median": 31981,
+          "mean": 40648
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 40635,
+          "mean": 51647
+        },
+        "Female": {
+          "median": 34615,
+          "mean": 43996
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 35743,
+          "mean": 45430
+        },
+        "Married": {
+          "median": 40635,
+          "mean": 51647
+        },
+        "Divorced": {
+          "median": 37625,
+          "mean": 47822
+        },
+        "Widowed": {
+          "median": 33862,
+          "mean": 43039
+        }
+      },
+      "cost_of_living_index": 88
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-31",
+    "source": "Statistisches Bundesamt (Destatis), Bundesagentur f\u00fcr Arbeit",
+    "country_code": "de"
+  }
+}

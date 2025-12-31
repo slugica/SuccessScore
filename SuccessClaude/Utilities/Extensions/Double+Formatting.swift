@@ -68,6 +68,10 @@ extension Double {
             return "£"
         case "au":
             return "A$"
+        case "nz":
+            return "NZ$"
+        case "de":
+            return "€"
         default:
             return "$"
         }

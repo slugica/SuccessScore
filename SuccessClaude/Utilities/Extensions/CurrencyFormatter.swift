@@ -40,10 +40,10 @@ extension Double {
         switch countryCode {
         case "us": return "$"
         case "ca": return "C$"
-        case "canada": return "C$"
         case "uk": return "£"
         case "au": return "A$"
-        case "australia": return "A$"
+        case "nz": return "NZ$"
+        case "de": return "€"
         default: return "$"
         }
     }
@@ -54,10 +54,10 @@ extension String {
         switch countryCode {
         case "us": return "$"
         case "ca": return "C$"
-        case "canada": return "C$"
         case "uk": return "£"
         case "au": return "A$"
-        case "australia": return "A$"
+        case "nz": return "NZ$"
+        case "de": return "€"
         default: return "$"
         }
     }

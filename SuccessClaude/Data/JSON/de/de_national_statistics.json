@@ -1,0 +1,72 @@
+{
+  "national": {
+    "overall": {
+      "median_household_income": 43750,
+      "median_individual_income": 43750,
+      "mean_household_income": 55608,
+      "top_10_percent": 95000
+    },
+    "by_age": {
+      "18-24": {
+        "median": 28438,
+        "mean": 36145
+      },
+      "25-34": {
+        "median": 39375,
+        "mean": 50047
+      },
+      "35-44": {
+        "median": 48125,
+        "mean": 61169
+      },
+      "45-54": {
+        "median": 50313,
+        "mean": 63949
+      },
+      "55-64": {
+        "median": 48125,
+        "mean": 61169
+      },
+      "65+": {
+        "median": 37188,
+        "mean": 47267
+      }
+    },
+    "by_gender": {
+      "Male": {
+        "median": 47250,
+        "mean": 60057
+      },
+      "Female": {
+        "median": 40250,
+        "mean": 51159
+      }
+    },
+    "by_marital_status": {
+      "Single": {
+        "median": 41563,
+        "mean": 52828
+      },
+      "Married": {
+        "median": 47250,
+        "mean": 60057
+      },
+      "Divorced": {
+        "median": 43750,
+        "mean": 55608
+      },
+      "Widowed": {
+        "median": 39375,
+        "mean": 50047
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-31",
+    "source": "Statistisches Bundesamt (Destatis) 2024",
+    "description": "National income statistics for Germany",
+    "currency": "EUR",
+    "year": 2024
+  }
+}
