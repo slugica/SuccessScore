@@ -1,0 +1,72 @@
+{
+  "national": {
+    "overall": {
+      "median_household_income": 72000,
+      "median_individual_income": 72000,
+      "mean_household_income": 80640,
+      "top_10_percent": 158400
+    },
+    "by_age": {
+      "18-24": {
+        "median": 39600,
+        "mean": 44352
+      },
+      "25-34": {
+        "median": 61200,
+        "mean": 68544
+      },
+      "35-44": {
+        "median": 75600,
+        "mean": 84672
+      },
+      "45-54": {
+        "median": 82800,
+        "mean": 92736
+      },
+      "55-64": {
+        "median": 79200,
+        "mean": 88704
+      },
+      "65+": {
+        "median": 54000,
+        "mean": 60480
+      }
+    },
+    "by_gender": {
+      "Male": {
+        "median": 72000,
+        "mean": 80640
+      },
+      "Female": {
+        "median": 63360,
+        "mean": 70963
+      }
+    },
+    "by_marital_status": {
+      "Single": {
+        "median": 64800,
+        "mean": 72576
+      },
+      "Married": {
+        "median": 79200,
+        "mean": 88704
+      },
+      "Divorced": {
+        "median": 68400,
+        "mean": 76608
+      },
+      "Widowed": {
+        "median": 61200,
+        "mean": 68544
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-12-30",
+    "source": "Statistics Canada",
+    "description": "National income statistics for Canada",
+    "currency": "CAD",
+    "year": 2023
+  }
+}

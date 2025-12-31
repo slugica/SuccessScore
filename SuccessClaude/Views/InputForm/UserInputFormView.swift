@@ -41,6 +41,15 @@ struct UserInputFormView: View {
                         }
                     }
                 }
+                .id(viewModel.userProfile.countryCode) // Force view recreation when country changes
+                .onChange(of: viewModel.userProfile.countryCode) { newCountryCode in
+                    // Clear income fields when country changes
+                    personalIncomeText = ""
+                    householdIncomeText = ""
+                    hasEditedZipCode = false
+                    hasSelectedOccupation = false
+                    hasEditedDemographics = false
+                }
                 .navigationTitle("Income Comparison")
                 .navigationBarTitleDisplayMode(.large)
                 .toolbar {
@@ -54,6 +63,15 @@ struct UserInputFormView: View {
         }
         .task {
             await viewModel.loadData()
+        }
+        .onChange(of: viewModel.selectedCountry) { oldValue, newValue in
+            print("🎯 TOP LEVEL onChange triggered! old: \(oldValue?.code ?? "nil"), new: \(newValue?.code ?? "nil")")
+            if let country = newValue {
+                Task {
+                    print("🎯 Calling setCountry for: \(country.code)")
+                    await viewModel.setCountry(country)
+                }
+            }
         }
         .alert("Data Not Available", isPresented: $showErrorAlert) {
             Button("OK", role: .cancel) { }
@@ -77,13 +95,6 @@ struct UserInputFormView: View {
                     selectedCountry: $viewModel.selectedCountry,
                     countries: viewModel.availableCountries
                 )
-                .onChange(of: viewModel.selectedCountry) { newCountry in
-                    if let country = newCountry {
-                        Task {
-                            await viewModel.setCountry(country)
-                        }
-                    }
-                }
             }
         }
         .navigationTitle("Select Country")
@@ -124,7 +135,8 @@ struct UserInputFormView: View {
     // MARK: - Sections
 
     private var locationSection: some View {
-        Section {
+        let _ = print("🗺️ locationSection: countryCode = \(viewModel.userProfile.countryCode)")
+        return Section {
             if viewModel.userProfile.countryCode == "us" {
                 // US: ZIP Code lookup
                 TextField("92694", text: $viewModel.userProfile.zipCode)
@@ -151,7 +163,7 @@ struct UserInputFormView: View {
                         .foregroundColor(.red)
                 }
             } else {
-                // UK and other countries: Manual region selection
+                // UK and other countries: Manual region selection only
                 NavigationLink {
                     RegionPickerView(
                         selectedRegion: Binding(
@@ -175,9 +187,6 @@ struct UserInputFormView: View {
                         }
                     }
                 }
-
-                TextField("City", text: $viewModel.userProfile.city)
-                    .autocapitalization(.words)
             }
         } header: {
             sectionHeader(
@@ -190,7 +199,7 @@ struct UserInputFormView: View {
                 Text("Enter your 5-digit ZIP code. City and state will be auto-filled.")
                     .font(.caption)
             } else {
-                Text("Select your \(viewModel.selectedCountry?.regionType.lowercased() ?? "region") and enter your city.")
+                Text("Select your \(viewModel.selectedCountry?.regionType.lowercased() ?? "region").")
                     .font(.caption)
             }
         }
@@ -210,14 +219,29 @@ struct UserInputFormView: View {
                     .foregroundColor(.red)
             }
 
-            Picker("Gender", selection: $viewModel.userProfile.gender) {
-                ForEach(Gender.allCases) { gender in
-                    Text(gender.localizedName).tag(gender)
+            HStack {
+                Text("Gender")
+                Spacer()
+                Menu {
+                    ForEach(Gender.allCases.filter { $0 != .notSelected }) { gender in
+                        Button(gender.localizedName) {
+                            viewModel.userProfile.gender = gender
+                            hasEditedDemographics = true
+                            viewModel.updateGender(gender)
+                        }
+                    }
+                } label: {
+                    HStack(spacing: 4) {
+                        if viewModel.userProfile.gender == .notSelected {
+                            Text("Select Gender")
+                        } else {
+                            Text(viewModel.userProfile.gender.localizedName)
+                        }
+                        Image(systemName: "chevron.up.chevron.down")
+                            .font(.caption2)
+                    }
+                    .foregroundColor(.secondary)
                 }
-            }
-            .onChange(of: viewModel.userProfile.gender) { newValue in
-                hasEditedDemographics = true
-                viewModel.updateGender(newValue)
             }
 
             if hasEditedDemographics, let error = viewModel.validationErrors["gender"] {
@@ -226,14 +250,29 @@ struct UserInputFormView: View {
                     .foregroundColor(.red)
             }
 
-            Picker("Marital Status", selection: $viewModel.userProfile.maritalStatus) {
-                ForEach(MaritalStatus.allCases) { status in
-                    Text(status.localizedName).tag(status)
+            HStack {
+                Text("Marital Status")
+                Spacer()
+                Menu {
+                    ForEach(MaritalStatus.allCases.filter { $0 != .notSelected }) { status in
+                        Button(status.localizedName) {
+                            viewModel.userProfile.maritalStatus = status
+                            hasEditedDemographics = true
+                            viewModel.updateMaritalStatus(status)
+                        }
+                    }
+                } label: {
+                    HStack(spacing: 4) {
+                        if viewModel.userProfile.maritalStatus == .notSelected {
+                            Text("Select Status")
+                        } else {
+                            Text(viewModel.userProfile.maritalStatus.localizedName)
+                        }
+                        Image(systemName: "chevron.up.chevron.down")
+                            .font(.caption2)
+                    }
+                    .foregroundColor(.secondary)
                 }
-            }
-            .onChange(of: viewModel.userProfile.maritalStatus) { newValue in
-                hasEditedDemographics = true
-                viewModel.updateMaritalStatus(newValue)
             }
 
             if hasEditedDemographics, let error = viewModel.validationErrors["maritalStatus"] {
@@ -263,7 +302,7 @@ struct UserInputFormView: View {
                             .foregroundColor(.textPrimary)
 
                         HStack {
-                            Text("$")
+                            Text(viewModel.selectedCountry?.currencySymbol ?? "$")
                                 .foregroundColor(.textSecondary)
 
                             TextField("150000", text: $personalIncomeText)
@@ -280,7 +319,7 @@ struct UserInputFormView: View {
                         }
 
                         if viewModel.userProfile.annualIncome > 0 {
-                            Text(viewModel.userProfile.annualIncome.asCurrency)
+                            Text(viewModel.userProfile.annualIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "USD"))
                                 .font(.caption)
                                 .foregroundColor(.textSecondary)
                         }
@@ -294,66 +333,68 @@ struct UserInputFormView: View {
 
                     Divider()
 
-                    // Household Income
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Total Household Income")
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                            .foregroundColor(.textPrimary)
+                    // Household Income (US only)
+                    if viewModel.userProfile.countryCode == "us" {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Total Household Income")
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                                .foregroundColor(.textPrimary)
 
-                        HStack {
-                            Text("$")
-                                .foregroundColor(.textSecondary)
+                            HStack {
+                                Text(viewModel.selectedCountry?.currencySymbol ?? "$")
+                                    .foregroundColor(.textSecondary)
 
-                            TextField("200000", text: $householdIncomeText)
-                                .keyboardType(.numberPad)
-                                .focused($isInputFocused)
-                                .onChange(of: householdIncomeText) { newValue in
-                                    if let income = Double(newValue.filter { $0.isNumber }) {
-                                        viewModel.userProfile.householdIncome = income
-                                    } else {
-                                        viewModel.userProfile.householdIncome = 0
+                                TextField("200000", text: $householdIncomeText)
+                                    .keyboardType(.numberPad)
+                                    .focused($isInputFocused)
+                                    .onChange(of: householdIncomeText) { newValue in
+                                        if let income = Double(newValue.filter { $0.isNumber }) {
+                                            viewModel.userProfile.householdIncome = income
+                                        } else {
+                                            viewModel.userProfile.householdIncome = 0
+                                        }
+                                        viewModel.validateForm()
                                     }
-                                    viewModel.validateForm()
-                                }
+                            }
+
+                            if viewModel.userProfile.householdIncome > 0 {
+                                Text(viewModel.userProfile.householdIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "USD"))
+                                    .font(.caption)
+                                    .foregroundColor(.textSecondary)
+                            }
+
+                            if !householdIncomeText.isEmpty, let error = viewModel.validationErrors["householdIncome"] {
+                                Text(error)
+                                    .font(.caption)
+                                    .foregroundColor(.red)
+                            }
                         }
 
-                        if viewModel.userProfile.householdIncome > 0 {
-                            Text(viewModel.userProfile.householdIncome.asCurrency)
-                                .font(.caption)
-                                .foregroundColor(.textSecondary)
-                        }
+                        Divider()
 
-                        if !householdIncomeText.isEmpty, let error = viewModel.validationErrors["householdIncome"] {
-                            Text(error)
-                                .font(.caption)
-                                .foregroundColor(.red)
-                        }
-                    }
+                        // Number of Children (US only)
+                        Stepper("Children: \(viewModel.userProfile.numberOfChildren)", value: $viewModel.userProfile.numberOfChildren, in: 0...20)
+                            .onChange(of: viewModel.userProfile.numberOfChildren) { newValue in
+                                viewModel.updateNumberOfChildren(newValue)
+                            }
 
-                    Divider()
-
-                    // Number of Children
-                    Stepper("Children: \(viewModel.userProfile.numberOfChildren)", value: $viewModel.userProfile.numberOfChildren, in: 0...20)
-                        .onChange(of: viewModel.userProfile.numberOfChildren) { newValue in
-                            viewModel.updateNumberOfChildren(newValue)
-                        }
-
-                    Text("Household size: \(viewModel.userProfile.householdSize) people (you + spouse + \(viewModel.userProfile.numberOfChildren) children)")
-                        .font(.caption)
-                        .foregroundColor(.textSecondary)
-
-                    if viewModel.userProfile.householdIncome > 0 && viewModel.userProfile.householdSize > 0 {
-                        Text("Per person: \(viewModel.userProfile.perCapitaIncome.asCurrency)")
+                        Text("Household size: \(viewModel.userProfile.householdSize) people (you + spouse + \(viewModel.userProfile.numberOfChildren) children)")
                             .font(.caption)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.primaryAccent)
+                            .foregroundColor(.textSecondary)
+
+                        if viewModel.userProfile.householdIncome > 0 && viewModel.userProfile.householdSize > 0 {
+                            Text("Per person: \(viewModel.userProfile.perCapitaIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "USD"))")
+                                .font(.caption)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.primaryAccent)
+                        }
                     }
                 }
             } else {
                 // Personal Income for single/divorced/widowed
                 HStack {
-                    Text("$")
+                    Text(viewModel.selectedCountry?.currencySymbol ?? "$")
                         .foregroundColor(.textSecondary)
 
                     TextField("75000", text: $personalIncomeText)
@@ -370,7 +411,7 @@ struct UserInputFormView: View {
                 }
 
                 if viewModel.userProfile.annualIncome > 0 {
-                    Text(viewModel.userProfile.annualIncome.asCurrency)
+                    Text(viewModel.userProfile.annualIncome.formatted(currency: viewModel.selectedCountry?.currency ?? "USD"))
                         .font(.caption)
                         .foregroundColor(.textSecondary)
                 }

@@ -33,21 +33,41 @@ class UserInputViewModel: ObservableObject {
     }
 
     func setCountry(_ country: Country) async {
+        print("🌍 setCountry called with: \(country.code) - \(country.name)")
+
         selectedCountry = country
-        userProfile.countryCode = country.code
+
+        // Create FRESH UserProfile for new country (clear all previous data)
+        var newProfile = UserProfile()
+        newProfile.countryCode = country.code
+        print("🌍 Setting countryCode to: \(country.code)")
+
+        // Set default region based on country
+        if country.code == "us" {
+            newProfile.region = Region(code: "CA", name: "California", countryCode: "us")
+        } else {
+            newProfile.region = Region(code: "", name: "", countryCode: country.code)
+        }
+
+        // Reassign entire struct to trigger @Published
+        userProfile = newProfile
+        print("🌍 userProfile reset for new country. countryCode is now: \(userProfile.countryCode)")
 
         // Load country data if not already loaded
         if !dataLoader.isCountryDataLoaded(country.code) {
             isLoading = true
+            print("🌍 Loading country data for \(country.code)...")
             do {
                 try await dataLoader.loadCountryData(countryCode: country.code)
                 dataLoader.setCurrentCountry(country.code)
+                print("🌍 Country data loaded successfully for \(country.code)")
             } catch {
-                print("Error loading country data: \(error)")
+                print("❌ Error loading country data: \(error)")
             }
             isLoading = false
         } else {
             dataLoader.setCurrentCountry(country.code)
+            print("🌍 Country data already loaded for \(country.code)")
         }
     }
 
@@ -58,13 +78,24 @@ class UserInputViewModel: ObservableObject {
     }
 
     var availableRegions: [Region] {
-        dataLoader.getAllRegions(countryCode: userProfile.countryCode).map { regionData in
+        print("🔍 availableRegions called for country: \(userProfile.countryCode)")
+        let rawRegions = dataLoader.getAllRegions(countryCode: userProfile.countryCode)
+        print("🔍 DataLoader returned: \(rawRegions.count) raw regions")
+        let regions = rawRegions.map { regionData in
             Region(code: regionData.code, name: regionData.name, countryCode: regionData.countryCode ?? userProfile.countryCode)
         }
+        print("📍 availableRegions for \(userProfile.countryCode): \(regions.count) regions")
+        if regions.count > 0 {
+            print("  Sample regions: \(regions.prefix(3).map { $0.name })")
+        }
+        return regions
     }
 
     var availableOccupations: [OccupationCategory] {
-        dataLoader.getAllOccupations(countryCode: userProfile.countryCode).map { occupation in
+        print("🔍 availableOccupations called for country: \(userProfile.countryCode)")
+        let rawOccupations = dataLoader.getAllOccupations(countryCode: userProfile.countryCode)
+        print("🔍 DataLoader returned: \(rawOccupations.count) raw occupations")
+        let occupations = rawOccupations.map { occupation in
             OccupationCategory(
                 socCode: occupation.socCode,
                 title: occupation.title,
@@ -72,6 +103,17 @@ class UserInputViewModel: ObservableObject {
                 countryCode: userProfile.countryCode
             )
         }
+        print("💼 availableOccupations for \(userProfile.countryCode): \(occupations.count) occupations")
+
+        // Show first 3 as examples
+        if !occupations.isEmpty {
+            print("  📋 First 3 occupations:")
+            for (index, occ) in occupations.prefix(3).enumerated() {
+                print("    \(index+1). [\(occ.socCode)] \(occ.title)")
+            }
+        }
+
+        return occupations
     }
 
     var occupationsByCategory: [String: [OccupationCategory]] {
@@ -87,11 +129,30 @@ class UserInputViewModel: ObservableObject {
     func validateForm() {
         validationErrors.removeAll()
 
-        // Validate ZIP code
-        if userProfile.zipCode.trimmingCharacters(in: .whitespaces).isEmpty {
-            validationErrors["zipCode"] = NSLocalizedString("error.zipCode.required", value: "ZIP code is required", comment: "")
-        } else if !zipCodeService.isValidZIPCode(userProfile.zipCode) {
-            validationErrors["zipCode"] = NSLocalizedString("error.zipCode.invalid", value: "Invalid ZIP code or not in our database", comment: "")
+        #if DEBUG
+        // Uncomment for debugging validation issues
+        // print("🔍 VALIDATION START for country: \(userProfile.countryCode)")
+        // print("  - Location: region=\(userProfile.region.code), city=\(userProfile.city)")
+        // print("  - Age: \(userProfile.age)")
+        // print("  - Gender: \(userProfile.gender)")
+        // print("  - Marital: \(userProfile.maritalStatus)")
+        // print("  - Income: \(userProfile.annualIncome), Household: \(userProfile.householdIncome)")
+        // print("  - Occupation: socCode=[\(userProfile.occupation.socCode)], title=[\(userProfile.occupation.title)]")
+        #endif
+
+        // Validate location based on country
+        if userProfile.countryCode == "us" {
+            // US: Validate ZIP code
+            if userProfile.zipCode.trimmingCharacters(in: .whitespaces).isEmpty {
+                validationErrors["zipCode"] = NSLocalizedString("error.zipCode.required", value: "ZIP code is required", comment: "")
+            } else if !zipCodeService.isValidZIPCode(userProfile.zipCode) {
+                validationErrors["zipCode"] = NSLocalizedString("error.zipCode.invalid", value: "Invalid ZIP code or not in our database", comment: "")
+            }
+        } else {
+            // Other countries: Validate region only
+            if userProfile.region.code.isEmpty {
+                validationErrors["region"] = NSLocalizedString("error.region.required", value: "Region is required", comment: "")
+            }
         }
 
         // Validate age
@@ -118,10 +179,13 @@ class UserInputViewModel: ObservableObject {
                 validationErrors["income"] = NSLocalizedString("error.income.max", value: "Personal income seems unusually high", comment: "")
             }
 
-            if userProfile.householdIncome <= 0 {
-                validationErrors["householdIncome"] = NSLocalizedString("error.householdIncome.required", value: "Household income must be greater than 0", comment: "")
-            } else if userProfile.householdIncome > 20_000_000 {
-                validationErrors["householdIncome"] = NSLocalizedString("error.householdIncome.max", value: "Household income seems unusually high", comment: "")
+            // Validate household income only for US (UK doesn't use it)
+            if userProfile.countryCode == "us" {
+                if userProfile.householdIncome <= 0 {
+                    validationErrors["householdIncome"] = NSLocalizedString("error.householdIncome.required", value: "Household income must be greater than 0", comment: "")
+                } else if userProfile.householdIncome > 20_000_000 {
+                    validationErrors["householdIncome"] = NSLocalizedString("error.householdIncome.max", value: "Household income seems unusually high", comment: "")
+                }
             }
         } else {
             // For single/divorced/widowed: validate personal income only
@@ -138,6 +202,19 @@ class UserInputViewModel: ObservableObject {
         }
 
         isFormValid = validationErrors.isEmpty
+
+        #if DEBUG
+        // Uncomment for debugging validation issues
+        // print("🔍 VALIDATION END:")
+        // print("  - Errors count: \(validationErrors.count)")
+        // if !validationErrors.isEmpty {
+        //     print("  - Errors:")
+        //     for (key, error) in validationErrors {
+        //         print("    • \(key): \(error)")
+        //     }
+        // }
+        // print("  - isFormValid: \(isFormValid)")
+        #endif
     }
 
     // MARK: - Form Helpers
@@ -225,24 +302,45 @@ class UserInputViewModel: ObservableObject {
         defer { isLoading = false }
 
         do {
-            // Only load countries metadata on initial load
-            // Country-specific data will be loaded when country is selected
+            print("📂 loadData started...")
+            // Load countries metadata
             try await dataLoader.loadCountriesMetadata()
+            print("📂 Countries metadata loaded")
+
+            // Load SOC mapping
+            try await dataLoader.loadSOCMapping()
+            print("📂 SOC mapping loaded")
+
+            // Load data for default country (US)
+            if !dataLoader.isCountryDataLoaded(userProfile.countryCode) {
+                print("📂 Loading data for default country: \(userProfile.countryCode)")
+                try await dataLoader.loadCountryData(countryCode: userProfile.countryCode)
+                dataLoader.setCurrentCountry(userProfile.countryCode)
+            }
 
             // Load ZIP code data (only needed for US)
             if userProfile.countryCode == "us" {
                 try await zipCodeService.loadData()
+                print("📂 ZIP code data loaded")
             }
+
+            print("📂 loadData completed!")
         } catch {
-            print("Failed to load data: \(error)")
+            print("❌ Failed to load data: \(error)")
         }
     }
 
     // MARK: - Progress Tracking
 
     var isLocationComplete: Bool {
-        !userProfile.zipCode.isEmpty &&
-        zipCodeService.isValidZIPCode(userProfile.zipCode)
+        if userProfile.countryCode == "us" {
+            // US: Validate ZIP code
+            return !userProfile.zipCode.isEmpty &&
+                   zipCodeService.isValidZIPCode(userProfile.zipCode)
+        } else {
+            // Other countries: Validate region only
+            return !userProfile.region.code.isEmpty
+        }
     }
 
     var isDemographicsComplete: Bool {
@@ -265,7 +363,7 @@ class UserInputViewModel: ObservableObject {
     }
 
     var isOccupationComplete: Bool {
-        userProfile.occupation != nil
+        !userProfile.occupation.socCode.isEmpty
     }
 
     var completedSections: Int {

@@ -10,6 +10,7 @@ import Charts
 
 struct CareerForecastView: View {
     let careerForecast: CareerForecast
+    var currencySymbol: String = "$"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -37,7 +38,7 @@ struct CareerForecastView: View {
                 Image(systemName: "trophy.fill")
                     .foregroundColor(.yellow)
 
-                Text("Peak earnings at age \(careerForecast.peakAge): \(careerForecast.peakIncome.asCurrency)")
+                Text("Peak earnings at age \(careerForecast.peakAge): \(careerForecast.peakIncome.asCurrency(symbol: currencySymbol))")
                     .font(.subheadline)
                     .fontWeight(.medium)
                     .foregroundColor(.textPrimary)
@@ -110,7 +111,7 @@ struct CareerForecastView: View {
                         .symbol(.circle)
                         .symbolSize(200)
                         .annotation(position: .trailing, alignment: .center) {
-                            Text(careerForecast.userIncome.asCurrency)
+                            Text(careerForecast.userIncome.asCurrency(symbol: currencySymbol))
                                 .font(.caption2)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
@@ -159,7 +160,7 @@ struct CareerForecastView: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(isCurrentAgeGroup(ageGroup) ? .green : .textSecondary)
 
-                            Text(ageGroup.median.asCurrency)
+                            Text(ageGroup.median.asCurrency(symbol: currencySymbol))
                                 .font(.caption2)
                                 .foregroundColor(.textPrimary)
                         }
@@ -208,11 +209,11 @@ struct CareerForecastView: View {
 
     private func formatShortCurrency(_ value: Double) -> String {
         if value >= 1_000_000 {
-            return String(format: "$%.1fM", value / 1_000_000)
+            return String(format: "\(currencySymbol)%.1fM", value / 1_000_000)
         } else if value >= 1_000 {
-            return String(format: "$%.0fK", value / 1_000)
+            return String(format: "\(currencySymbol)%.0fK", value / 1_000)
         } else {
-            return String(format: "$%.0f", value)
+            return String(format: "\(currencySymbol)%.0f", value)
         }
     }
 }

@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct AfterTaxDetailView: View {
-    let afterTaxIncome: AfterTaxIncome
+    let afterTaxIncome: AfterTaxIncomeResult
     let userProfile: UserProfile
+
+    private var currencySymbol: String {
+        switch userProfile.countryCode {
+        case "us":
+            return "$"
+        case "uk":
+            return "£"
+        default:
+            return "$"
+        }
+    }
 
     var body: some View {
         ScrollView {
             VStack(spacing: Theme.paddingLarge) {
-                // Reuse existing AfterTaxComparisonView
-                AfterTaxComparisonView(afterTaxIncome: afterTaxIncome)
+                // Use country-aware AfterTaxComparisonViewV2
+                AfterTaxComparisonViewV2(
+                    afterTaxIncome: afterTaxIncome,
+                    currencySymbol: currencySymbol
+                )
             }
             .padding()
         }
@@ -28,15 +42,18 @@ struct AfterTaxDetailView: View {
 #Preview {
     NavigationStack {
         AfterTaxDetailView(
-            afterTaxIncome: AfterTaxIncome(
+            afterTaxIncome: AfterTaxIncomeResult(
                 grossIncome: 100000,
-                federalTax: 15000,
-                stateTax: 5000,
-                ficaTax: 7650,
+                countryCode: "us",
+                region: Region(code: "CA", name: "California", countryCode: "us"),
+                components: [
+                    TaxComponent(name: "Federal Tax", amount: 15000, rate: 15.0),
+                    TaxComponent(name: "California State Tax", amount: 5000, rate: 5.0),
+                    TaxComponent(name: "FICA", amount: 7650, rate: 7.65)
+                ],
                 totalTax: 27650,
                 afterTaxIncome: 72350,
-                effectiveTaxRate: 27.65,
-                state: .california
+                effectiveTaxRate: 27.65
             ),
             userProfile: UserProfile()
         )

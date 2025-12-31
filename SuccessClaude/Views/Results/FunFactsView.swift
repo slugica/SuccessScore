@@ -9,6 +9,18 @@ import SwiftUI
 
 struct FunFactsView: View {
     let funFacts: FunFacts
+    var countryCode: String = "us"
+
+    private var countryName: String {
+        switch countryCode {
+        case "us":
+            return "the US"
+        case "uk":
+            return "the UK"
+        default:
+            return "the country"
+        }
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -31,12 +43,12 @@ struct FunFactsView: View {
                     icon: "flag.fill",
                     iconColor: .blue,
                     title: "National Ranking",
-                    fact: "You earn more than \(String(format: "%.0f", funFacts.nationalRankPercentile))% of people in the US",
+                    fact: "You earn more than \(String(format: "%.0f", funFacts.nationalRankPercentile))% of people in \(countryName)",
                     detail: "Top \(String(format: "%.0f", 100 - funFacts.nationalRankPercentile))% nationally"
                 )
 
-                // Occupation employment
-                if let occEmployment = funFacts.occupationEmployment {
+                // Occupation employment (only show if data available)
+                if let occEmployment = funFacts.occupationEmployment, occEmployment > 0 {
                     FactCard(
                         icon: "person.3.fill",
                         iconColor: .green,
@@ -46,12 +58,12 @@ struct FunFactsView: View {
                     )
                 }
 
-                // State employment
-                if let stateEmployment = funFacts.stateEmployment {
+                // State/Region employment (only show if data available)
+                if let stateEmployment = funFacts.stateEmployment, stateEmployment > 0 {
                     FactCard(
                         icon: "map.fill",
                         iconColor: .orange,
-                        title: "In Your State",
+                        title: "In Your Region",
                         fact: "\(formatNumber(stateEmployment)) people in your profession",
                         detail: nil
                     )

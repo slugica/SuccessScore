@@ -10,6 +10,7 @@ import SwiftUI
 struct PathToTop10View: View {
     let pathToTop10: PathToTop10
     let title: String
+    var currencySymbol: String = "$"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -45,11 +46,11 @@ struct PathToTop10View: View {
                             .foregroundColor(.green)
                     }
 
-                    Text("Your income: \(pathToTop10.currentIncome.asCurrency)")
+                    Text("Your income: \(pathToTop10.currentIncome.asCurrency(symbol: currencySymbol))")
                         .font(.caption)
                         .foregroundColor(.textSecondary)
 
-                    Text("Top 10% threshold: \(pathToTop10.top10Threshold.asCurrency)")
+                    Text("Top 10% threshold: \(pathToTop10.top10Threshold.asCurrency(symbol: currencySymbol))")
                         .font(.caption)
                         .foregroundColor(.textSecondary)
                 }
@@ -100,7 +101,7 @@ struct PathToTop10View: View {
                                     .font(.caption)
                                     .foregroundColor(.textSecondary)
 
-                                Text(pathToTop10.currentIncome.asCurrency)
+                                Text(pathToTop10.currentIncome.asCurrency(symbol: currencySymbol))
                                     .font(.body)
                                     .fontWeight(.semibold)
                                     .foregroundColor(.textPrimary)
@@ -118,7 +119,7 @@ struct PathToTop10View: View {
                                     .font(.caption)
                                     .foregroundColor(.textSecondary)
 
-                                Text(pathToTop10.top10Threshold.asCurrency)
+                                Text(pathToTop10.top10Threshold.asCurrency(symbol: currencySymbol))
                                     .font(.body)
                                     .fontWeight(.semibold)
                                     .foregroundColor(.primaryAccent)
@@ -130,7 +131,7 @@ struct PathToTop10View: View {
                                 .font(.caption)
                                 .foregroundColor(.textSecondary)
 
-                            Text(pathToTop10.gapAmount.asCurrency)
+                            Text(pathToTop10.gapAmount.asCurrency(symbol: currencySymbol))
                                 .font(.body)
                                 .fontWeight(.bold)
                                 .foregroundColor(.orange)

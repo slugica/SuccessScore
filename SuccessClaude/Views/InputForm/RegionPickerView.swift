@@ -45,6 +45,10 @@ struct RegionPickerView: View {
             .navigationTitle("Select \(regionType)")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .onAppear {
+            // Закрываем клавиатуру с предыдущего экрана
+            hideKeyboard()
+        }
     }
 }
 

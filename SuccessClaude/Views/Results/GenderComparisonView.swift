@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GenderComparisonView: View {
     let genderComparison: GenderComparison
+    var currencySymbol: String = "$"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -19,11 +20,11 @@ struct GenderComparisonView: View {
                     .foregroundColor(.primaryAccent)
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Gender Comparison")
+                    Text("Gender Pay Gap")
                         .font(.headline)
                         .foregroundColor(.textPrimary)
 
-                    Text(genderComparison.category)
+                    Text("\(genderComparison.category) • All occupations")
                         .font(.caption)
                         .foregroundColor(.textSecondary)
                 }
@@ -40,7 +41,8 @@ struct GenderComparisonView: View {
                             median: maleMedian,
                             maxMedian: max(maleMedian, genderComparison.femaleMedian ?? 0),
                             isUserGender: genderComparison.userGender == .male,
-                            userIncome: genderComparison.userIncome
+                            userIncome: genderComparison.userIncome,
+                            currencySymbol: currencySymbol
                         )
                     }
 
@@ -50,7 +52,8 @@ struct GenderComparisonView: View {
                             median: femaleMedian,
                             maxMedian: max(genderComparison.maleMedian ?? 0, femaleMedian),
                             isUserGender: genderComparison.userGender == .female,
-                            userIncome: genderComparison.userIncome
+                            userIncome: genderComparison.userIncome,
+                            currencySymbol: currencySymbol
                         )
                     }
 
@@ -63,7 +66,7 @@ struct GenderComparisonView: View {
                                 .foregroundColor(.orange)
 
                             VStack(alignment: .leading, spacing: 2) {
-                                Text("Gender Pay Gap")
+                                Text("Gender Pay Gap in Region")
                                     .font(.caption)
                                     .fontWeight(.semibold)
                                     .foregroundColor(.textSecondary)
@@ -87,6 +90,18 @@ struct GenderComparisonView: View {
                                 .fill(Color.orange.opacity(0.1))
                         )
                     }
+
+                    // Explanation
+                    HStack(spacing: 6) {
+                        Image(systemName: "info.circle")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        Text("Median income for all workers in \(genderComparison.category), across all professions")
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                    }
+                    .padding(.top, 4)
                 }
             } else {
                 Text("Gender comparison data not available for this category")
@@ -110,6 +125,7 @@ struct GenderBarView: View {
     let maxMedian: Double
     let isUserGender: Bool
     let userIncome: Double
+    var currencySymbol: String = "$"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -127,7 +143,7 @@ struct GenderBarView: View {
 
                 Spacer()
 
-                Text(median.asCurrency)
+                Text(median.asCurrency(symbol: currencySymbol))
                     .font(.subheadline)
                     .fontWeight(.bold)
                     .foregroundColor(.textPrimary)
@@ -165,7 +181,7 @@ struct GenderBarView: View {
                         .fill(Color.green)
                         .frame(width: 6, height: 6)
 
-                    Text("Your income: \(userIncome.asCurrency)")
+                    Text("Your income: \(userIncome.asCurrency(symbol: currencySymbol))")
                         .font(.caption2)
                         .foregroundColor(.textSecondary)
                 }

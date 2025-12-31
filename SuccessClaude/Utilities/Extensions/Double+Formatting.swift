@@ -10,25 +10,66 @@ import Foundation
 extension Double {
     /// Format as currency (e.g., $75,000)
     var asCurrency: String {
+        asCurrency(symbol: "$")
+    }
+
+    /// Format as currency with custom symbol (e.g., £75,000)
+    func asCurrency(symbol: String) -> String {
         let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.locale = Locale(identifier: "en_US")
+        formatter.numberStyle = .decimal
         formatter.maximumFractionDigits = 0
-        return formatter.string(from: NSNumber(value: self)) ?? "$0"
+        formatter.groupingSeparator = ","
+        formatter.usesGroupingSeparator = true
+
+        let formattedNumber = formatter.string(from: NSNumber(value: self)) ?? "0"
+        return "\(symbol)\(formattedNumber)"
+    }
+
+    /// Format as currency with country-specific symbol (e.g., $75,000, C$75,000, £75,000)
+    func asCurrency(countryCode: String) -> String {
+        let symbol = Self.currencySymbol(for: countryCode)
+        return asCurrency(symbol: symbol)
     }
 
     /// Format as compact currency (e.g., $75K, $1.2M)
     var asCompactCurrency: String {
+        asCompactCurrency(symbol: "$")
+    }
+
+    /// Format as compact currency with custom symbol (e.g., £75K, £1.2M)
+    func asCompactCurrency(symbol: String) -> String {
         let absValue = abs(self)
         let sign = self < 0 ? "-" : ""
 
         switch absValue {
         case 1_000_000...:
-            return String(format: "%@$%.1fM", sign, absValue / 1_000_000)
+            return String(format: "%@%@%.1fM", sign, symbol, absValue / 1_000_000)
         case 1_000...:
-            return String(format: "%@$%.0fK", sign, absValue / 1_000)
+            return String(format: "%@%@%.0fK", sign, symbol, absValue / 1_000)
         default:
-            return String(format: "%@$%.0f", sign, absValue)
+            return String(format: "%@%@%.0f", sign, symbol, absValue)
+        }
+    }
+
+    /// Format as compact currency with country-specific symbol (e.g., $75K, C$75K, £75K)
+    func asCompactCurrency(countryCode: String) -> String {
+        let symbol = Self.currencySymbol(for: countryCode)
+        return asCompactCurrency(symbol: symbol)
+    }
+
+    /// Get currency symbol for country code
+    private static func currencySymbol(for countryCode: String) -> String {
+        switch countryCode.lowercased() {
+        case "us":
+            return "$"
+        case "ca":
+            return "C$"
+        case "uk":
+            return "£"
+        case "au":
+            return "A$"
+        default:
+            return "$"
         }
     }
 

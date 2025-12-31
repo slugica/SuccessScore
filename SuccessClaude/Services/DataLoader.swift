@@ -41,6 +41,11 @@ class DataLoader {
     private var countryDataSets: [String: CountryDataSet] = [:]
     private var currentCountryCode: String = "us"
 
+    // SOC code mapping (UK → US, NOC → SOC, ANZSCO → SOC, etc.)
+    private var ukToUSSocMapping: SOCMapping?
+    private var nocToSocMapping: SOCMapping?
+    private var anzscoToSocMapping: SOCMapping?
+
     // Legacy properties for backward compatibility
     private var occupationsData: BLSOEWSData? {
         countryDataSets[currentCountryCode]?.occupationsData
@@ -80,45 +85,86 @@ class DataLoader {
         // Load countries metadata first
         try await loadCountriesMetadata()
 
+        // Load SOC mapping
+        try await loadSOCMapping()
+
         // Load data for current country
         try await loadCountryData(countryCode: currentCountryCode)
     }
 
     func loadCountryData(countryCode: String) async throws {
-        try await withThrowingTaskGroup(of: Void.self) { group in
-            var dataSet = CountryDataSet()
+        print("📦 loadCountryData called for: \(countryCode)")
 
-            group.addTask {
-                dataSet.occupationsData = try await self.loadOccupationsData(countryCode: countryCode)
-            }
+        // Create empty dataset
+        var dataSet = CountryDataSet()
 
-            group.addTask {
-                dataSet.regionData = try await self.loadRegionData(countryCode: countryCode)
-            }
-
-            group.addTask {
-                dataSet.nationalData = try await self.loadNationalData(countryCode: countryCode)
-            }
-
-            group.addTask {
-                dataSet.automationRiskData = try await self.loadAutomationRiskData(countryCode: countryCode)
-            }
-
-            try await group.waitForAll()
-
-            countryDataSets[countryCode] = dataSet
+        // Load data sequentially - continue even if some fail
+        do {
+            dataSet.occupationsData = try await loadOccupationsData(countryCode: countryCode)
+        } catch {
+            print("⚠️ Failed to load occupations: \(error)")
         }
+
+        do {
+            dataSet.regionData = try await loadRegionData(countryCode: countryCode)
+        } catch {
+            print("⚠️ Failed to load regions: \(error)")
+        }
+
+        do {
+            dataSet.nationalData = try await loadNationalData(countryCode: countryCode)
+        } catch {
+            print("⚠️ Failed to load national data: \(error)")
+        }
+
+        // Load automation risk data only for US (used universally)
+        if countryCode == "us" {
+            do {
+                dataSet.automationRiskData = try await loadAutomationRiskData(countryCode: countryCode)
+            } catch {
+                print("⚠️ Failed to load automation risk data: \(error)")
+            }
+        }
+
+        // Store the dataset even if some data failed to load
+        countryDataSets[countryCode] = dataSet
+        print("✅ loadCountryData completed for: \(countryCode)")
     }
 
     func loadCountriesMetadata() async throws {
         countriesMetadata = try await load(filename: "countries_metadata", extension: "json", subdirectory: nil)
     }
 
+    func loadSOCMapping() async throws {
+        // Load UK → US SOC mapping
+        ukToUSSocMapping = try await load(filename: "uk_to_us_soc_mapping", extension: "json", subdirectory: nil)
+        print("🗺️ UK→US SOC mapping loaded: \(ukToUSSocMapping?.mappings.count ?? 0) mappings")
+
+        // Load NOC → SOC mapping for Canada
+        nocToSocMapping = try await load(filename: "noc_to_soc_mapping", extension: "json", subdirectory: nil)
+        print("🗺️ NOC→SOC mapping loaded: \(nocToSocMapping?.mappings.count ?? 0) mappings")
+
+        // Load ANZSCO → SOC mapping for Australia
+        anzscoToSocMapping = try await load(filename: "anzsco_to_soc_mapping", extension: "json", subdirectory: nil)
+        print("🗺️ ANZSCO→SOC mapping loaded: \(anzscoToSocMapping?.mappings.count ?? 0) mappings")
+    }
+
     // MARK: - Individual Loaders (Country-specific)
 
     private func loadOccupationsData(countryCode: String) async throws -> BLSOEWSData {
-        let filename = "\(countryCode)_" + (countryCode == "us" ? "bls_oews_occupations" : "occupations")
-        return try await load(filename: filename, extension: "json", subdirectory: countryCode)
+        let filename: String
+        switch countryCode {
+        case "us":
+            filename = "\(countryCode)_bls_oews_occupations"
+        case "uk":
+            filename = "\(countryCode)_occupations_full"
+        default:
+            filename = "\(countryCode)_occupations"
+        }
+        print("🔍 Loading occupations: \(filename).json for country: \(countryCode)")
+        let data = try await load(filename: filename, extension: "json", subdirectory: countryCode) as BLSOEWSData
+        print("✅ Loaded \(data.occupations.count) occupations for \(countryCode)")
+        return data
     }
 
     private func loadRegionData(countryCode: String) async throws -> RegionIncomeData {
@@ -139,6 +185,7 @@ class DataLoader {
     private func load<T: Decodable>(filename: String, extension ext: String, subdirectory: String?) async throws -> T {
         let url = try getFileURL(filename: filename, extension: ext, subdirectory: subdirectory)
         let data = try Data(contentsOf: url)
+        print("📊 Loaded file size: \(data.count) bytes from \(url.lastPathComponent)")
 
         let decoder = JSONDecoder()
         do {
@@ -150,18 +197,45 @@ class DataLoader {
     }
 
     private func getFileURL(filename: String, extension ext: String, subdirectory: String? = nil) throws -> URL {
-        var searchPath: String
-        if let subdirectory = subdirectory {
-            searchPath = "Data/JSON/\(subdirectory)"
-        } else {
-            searchPath = "Data/JSON"
+        print("🔍 Searching for file: \(filename).\(ext) in subdirectory: \(subdirectory ?? "none")")
+
+        // Debug: List all JSON files in bundle
+        if let bundlePath = Bundle.main.resourcePath {
+            print("📦 Bundle path: \(bundlePath)")
+            if let files = try? FileManager.default.contentsOfDirectory(atPath: bundlePath) {
+                let jsonFiles = files.filter { $0.hasSuffix(".json") }
+                print("📄 JSON files in bundle: \(jsonFiles.count) files")
+                for file in jsonFiles.prefix(5) {
+                    print("   - \(file)")
+                }
+            }
         }
 
-        guard let url = Bundle.main.url(forResource: filename, withExtension: ext, subdirectory: searchPath) ??
-                        Bundle.main.url(forResource: filename, withExtension: ext) else {
-            throw DataLoaderError.fileNotFound("\(filename).\(ext) in \(searchPath)")
+        // Try to find file directly in bundle first (Xcode flattens folder structure)
+        if let url = Bundle.main.url(forResource: filename, withExtension: ext) {
+            print("✅ Found file at: \(url.lastPathComponent)")
+            return url
+        } else {
+            print("❌ NOT found in bundle root: \(filename).\(ext)")
         }
-        return url
+
+        // Fallback: try with subdirectory path
+        if let subdirectory = subdirectory {
+            let searchPath = "Data/JSON/\(subdirectory)"
+            if let url = Bundle.main.url(forResource: filename, withExtension: ext, subdirectory: searchPath) {
+                print("✅ Found file at: \(url.lastPathComponent) in \(searchPath)")
+                return url
+            }
+        }
+
+        // Last fallback: try Data/JSON directory
+        if let url = Bundle.main.url(forResource: filename, withExtension: ext, subdirectory: "Data/JSON") {
+            print("✅ Found file at: \(url.lastPathComponent) in Data/JSON")
+            return url
+        }
+
+        print("❌ File NOT FOUND: \(filename).\(ext)")
+        throw DataLoaderError.fileNotFound("\(filename).\(ext)")
     }
 
     // MARK: - Data Accessors (Country-aware)
@@ -217,12 +291,56 @@ class DataLoader {
 
     func getAutomationRisk(for socCode: String, countryCode: String? = nil) -> OccupationRisk? {
         let country = countryCode ?? currentCountryCode
-        return countryDataSets[country]?.automationRiskData?.automationRisks.first { $0.socCode == socCode }
+        print("🤖 Looking for automation risk: SOC=\(socCode), country=\(country)")
+
+        // For non-US countries: use US automation data with appropriate SOC mapping
+        var targetSOCCode = socCode
+        var searchCountry = country
+
+        if country != "us" {
+            // Select appropriate mapping based on country
+            let mapping: SOCMapping?
+            switch country {
+            case "uk":
+                mapping = ukToUSSocMapping
+            case "ca":
+                mapping = nocToSocMapping
+            case "au":
+                mapping = anzscoToSocMapping
+            default:
+                mapping = nil
+            }
+
+            // Try to map to US SOC code
+            if let mappedCode = mapping?.mappings[socCode] {
+                targetSOCCode = mappedCode
+                searchCountry = "us"
+                print("🗺️ Mapped \(country) code \(socCode) → US SOC \(mappedCode)")
+            } else {
+                print("⚠️ No mapping found for \(country) code: \(socCode)")
+                return nil
+            }
+        }
+
+        // Get automation data (always use US data for risk assessment)
+        guard let automationData = countryDataSets["us"]?.automationRiskData else {
+            print("⚠️ No US automation data loaded")
+            return nil
+        }
+
+        // Find exact match in US data
+        if let match = automationData.automationRisks.first(where: { $0.socCode == targetSOCCode }) {
+            print("✅ Found automation risk for \(targetSOCCode): \(match.overallRisk)%")
+            return match
+        }
+
+        print("❌ No automation risk found for SOC code: \(targetSOCCode)")
+        return nil
     }
 
     func getAutomationRiskMetadata(countryCode: String? = nil) -> RiskMetadata? {
-        let country = countryCode ?? currentCountryCode
-        return countryDataSets[country]?.automationRiskData?.metadata
+        // Always return US metadata since we use US automation data for all countries
+        return countryDataSets["us"]?.automationRiskData?.metadata
     }
 
     // MARK: - Occupation Categories
@@ -242,7 +360,8 @@ class DataLoader {
         let country = countryCode ?? currentCountryCode
 
         // Different age groupings per country
-        if country == "uk" {
+        switch country {
+        case "uk":
             switch age {
             case 18...21: return "18-21"
             case 22...29: return "22-29"
@@ -251,7 +370,17 @@ class DataLoader {
             case 50...59: return "50-59"
             default: return "60+"
             }
-        } else { // US
+        case "ca", "au":
+            // Canada and Australia use the same age groupings
+            switch age {
+            case 18...24: return "18-24"
+            case 25...34: return "25-34"
+            case 35...44: return "35-44"
+            case 45...54: return "45-54"
+            case 55...64: return "55-64"
+            default: return "65+"
+            }
+        default: // US
             switch age {
             case 16...19: return "16-19"
             case 20...24: return "20-24"

@@ -1,0 +1,2806 @@
+{
+  "occupations": [
+    {
+      "soc_code": "1115",
+      "title": "Chief executives and senior officials",
+      "category": "Managers, directors and senior officials",
+      "national_median": 85000,
+      "national_mean": 120000,
+      "top_10_percent": 180000,
+      "by_state": {},
+      "age_distribution": {
+        "22-29": {"median": 45000, "mean": 52000},
+        "30-39": {"median": 75000, "mean": 95000},
+        "40-49": {"median": 95000, "mean": 130000},
+        "50-59": {"median": 100000, "mean": 145000},
+        "60+": {"median": 85000, "mean": 125000}
+      }
+    },
+    {
+      "soc_code": "1121",
+      "title": "Production managers and directors in manufacturing",
+      "category": "Managers, directors and senior officials",
+      "national_median": 48000,
+      "national_mean": 55000,
+      "top_10_percent": 75000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1122",
+      "title": "Production managers and directors in construction",
+      "category": "Managers, directors and senior officials",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1123",
+      "title": "Production managers and directors in mining and energy",
+      "category": "Managers, directors and senior officials",
+      "national_median": 55000,
+      "national_mean": 65000,
+      "top_10_percent": 95000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1131",
+      "title": "Financial managers and directors",
+      "category": "Managers, directors and senior officials",
+      "national_median": 60000,
+      "national_mean": 75000,
+      "top_10_percent": 110000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1132",
+      "title": "Marketing and sales directors",
+      "category": "Managers, directors and senior officials",
+      "national_median": 55000,
+      "national_mean": 68000,
+      "top_10_percent": 95000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1133",
+      "title": "Purchasing managers and directors",
+      "category": "Managers, directors and senior officials",
+      "national_median": 48000,
+      "national_mean": 56000,
+      "top_10_percent": 78000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1134",
+      "title": "Advertising and public relations directors",
+      "category": "Managers, directors and senior officials",
+      "national_median": 52000,
+      "national_mean": 62000,
+      "top_10_percent": 88000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1135",
+      "title": "Human resource managers and directors",
+      "category": "Managers, directors and senior officials",
+      "national_median": 50000,
+      "national_mean": 58000,
+      "top_10_percent": 82000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1136",
+      "title": "Information technology and telecommunications directors",
+      "category": "Managers, directors and senior officials",
+      "national_median": 65000,
+      "national_mean": 78000,
+      "top_10_percent": 105000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1161",
+      "title": "Managers and proprietors in health and care services",
+      "category": "Managers, directors and senior officials",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1172",
+      "title": "Senior police officers",
+      "category": "Managers, directors and senior officials",
+      "national_median": 68000,
+      "national_mean": 75000,
+      "top_10_percent": 95000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "1190",
+      "title": "Managers and proprietors in other services n.e.c.",
+      "category": "Managers, directors and senior officials",
+      "national_median": 35000,
+      "national_mean": 42000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2112",
+      "title": "Biological scientists and biochemists",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 44000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2113",
+      "title": "Physical scientists",
+      "category": "Professional occupations",
+      "national_median": 40000,
+      "national_mean": 46000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2114",
+      "title": "Social and humanities scientists",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 44000,
+      "top_10_percent": 60000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2119",
+      "title": "Natural and social science professionals n.e.c.",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2121",
+      "title": "Civil engineers",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2122",
+      "title": "Mechanical engineers",
+      "category": "Professional occupations",
+      "national_median": 44000,
+      "national_mean": 50000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2123",
+      "title": "Electrical engineers",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 70000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2124",
+      "title": "Electronics engineers",
+      "category": "Professional occupations",
+      "national_median": 46000,
+      "national_mean": 53000,
+      "top_10_percent": 72000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2126",
+      "title": "Design and development engineers",
+      "category": "Professional occupations",
+      "national_median": 44000,
+      "national_mean": 51000,
+      "top_10_percent": 70000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2127",
+      "title": "Production and process engineers",
+      "category": "Professional occupations",
+      "national_median": 43000,
+      "national_mean": 49000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2129",
+      "title": "Engineering professionals n.e.c.",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 70000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2135",
+      "title": "IT business analysts, architects and systems designers",
+      "category": "Professional occupations",
+      "national_median": 52000,
+      "national_mean": 60000,
+      "top_10_percent": 80000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2136",
+      "title": "Programmers and software development professionals",
+      "category": "Professional occupations",
+      "national_median": 50000,
+      "national_mean": 58000,
+      "top_10_percent": 78000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2137",
+      "title": "Web design and development professionals",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2139",
+      "title": "Information technology and telecommunications professionals n.e.c.",
+      "category": "Professional occupations",
+      "national_median": 48000,
+      "national_mean": 56000,
+      "top_10_percent": 75000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2142",
+      "title": "Environment professionals",
+      "category": "Professional occupations",
+      "national_median": 35000,
+      "national_mean": 40000,
+      "top_10_percent": 55000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2150",
+      "title": "Research and development managers",
+      "category": "Professional occupations",
+      "national_median": 55000,
+      "national_mean": 65000,
+      "top_10_percent": 88000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2211",
+      "title": "Medical practitioners",
+      "category": "Professional occupations",
+      "national_median": 68000,
+      "national_mean": 85000,
+      "top_10_percent": 125000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2212",
+      "title": "Psychologists",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2213",
+      "title": "Pharmacists",
+      "category": "Professional occupations",
+      "national_median": 48000,
+      "national_mean": 54000,
+      "top_10_percent": 70000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2214",
+      "title": "Ophthalmic opticians",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2215",
+      "title": "Dental practitioners",
+      "category": "Professional occupations",
+      "national_median": 72000,
+      "national_mean": 90000,
+      "top_10_percent": 135000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2216",
+      "title": "Veterinarians",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2231",
+      "title": "Nurses",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 42000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2232",
+      "title": "Midwives",
+      "category": "Professional occupations",
+      "national_median": 40000,
+      "national_mean": 44000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2311",
+      "title": "Higher education teaching professionals",
+      "category": "Professional occupations",
+      "national_median": 48000,
+      "national_mean": 55000,
+      "top_10_percent": 75000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2312",
+      "title": "Further education teaching professionals",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 42000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2313",
+      "title": "Secondary education teaching professionals",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 46000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2314",
+      "title": "Primary and nursery education teaching professionals",
+      "category": "Professional occupations",
+      "national_median": 40000,
+      "national_mean": 44000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2315",
+      "title": "Special needs education teaching professionals",
+      "category": "Professional occupations",
+      "national_median": 41000,
+      "national_mean": 45000,
+      "top_10_percent": 56000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2319",
+      "title": "Teaching and other educational professionals n.e.c.",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 42000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2412",
+      "title": "Barristers and judges",
+      "category": "Professional occupations",
+      "national_median": 85000,
+      "national_mean": 110000,
+      "top_10_percent": 165000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2413",
+      "title": "Solicitors",
+      "category": "Professional occupations",
+      "national_median": 58000,
+      "national_mean": 72000,
+      "top_10_percent": 105000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2419",
+      "title": "Legal professionals n.e.c.",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2421",
+      "title": "Chartered and certified accountants",
+      "category": "Professional occupations",
+      "national_median": 48000,
+      "national_mean": 58000,
+      "top_10_percent": 80000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2423",
+      "title": "Management consultants and business analysts",
+      "category": "Professional occupations",
+      "national_median": 52000,
+      "national_mean": 62000,
+      "top_10_percent": 85000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2425",
+      "title": "Actuaries, economists and statisticians",
+      "category": "Professional occupations",
+      "national_median": 55000,
+      "national_mean": 68000,
+      "top_10_percent": 95000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2426",
+      "title": "Business and financial project management professionals",
+      "category": "Professional occupations",
+      "national_median": 50000,
+      "national_mean": 58000,
+      "top_10_percent": 78000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2429",
+      "title": "Business, research and administrative professionals n.e.c.",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 52000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2431",
+      "title": "Architects",
+      "category": "Professional occupations",
+      "national_median": 44000,
+      "national_mean": 51000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2432",
+      "title": "Town planning officers",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2433",
+      "title": "Quantity surveyors",
+      "category": "Professional occupations",
+      "national_median": 46000,
+      "national_mean": 52000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2434",
+      "title": "Chartered surveyors (not quantity surveyors)",
+      "category": "Professional occupations",
+      "national_median": 48000,
+      "national_mean": 56000,
+      "top_10_percent": 75000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2442",
+      "title": "Social workers",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 42000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2443",
+      "title": "Probation officers",
+      "category": "Professional occupations",
+      "national_median": 37000,
+      "national_mean": 41000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2444",
+      "title": "Clergy",
+      "category": "Professional occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2451",
+      "title": "Librarians",
+      "category": "Professional occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2461",
+      "title": "Quality control and planning engineers",
+      "category": "Professional occupations",
+      "national_median": 44000,
+      "national_mean": 50000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2471",
+      "title": "Journalists, newspaper and periodical editors",
+      "category": "Professional occupations",
+      "national_median": 38000,
+      "national_mean": 46000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2472",
+      "title": "Public relations professionals",
+      "category": "Professional occupations",
+      "national_median": 42000,
+      "national_mean": 50000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "2473",
+      "title": "Advertising accounts managers and creative directors",
+      "category": "Professional occupations",
+      "national_median": 45000,
+      "national_mean": 54000,
+      "top_10_percent": 75000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3111",
+      "title": "Laboratory technicians",
+      "category": "Associate professional occupations",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3112",
+      "title": "Electrical and electronics technicians",
+      "category": "Associate professional occupations",
+      "national_median": 36000,
+      "national_mean": 41000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3113",
+      "title": "Engineering technicians",
+      "category": "Associate professional occupations",
+      "national_median": 38000,
+      "national_mean": 43000,
+      "top_10_percent": 55000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3114",
+      "title": "Building and civil engineering technicians",
+      "category": "Associate professional occupations",
+      "national_median": 37000,
+      "national_mean": 42000,
+      "top_10_percent": 53000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3115",
+      "title": "Quality assurance technicians",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3119",
+      "title": "Science, engineering and production technicians n.e.c.",
+      "category": "Associate professional occupations",
+      "national_median": 34000,
+      "national_mean": 39000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3121",
+      "title": "Architectural and town planning technicians",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 40000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3122",
+      "title": "Draughtspersons",
+      "category": "Associate professional occupations",
+      "national_median": 33000,
+      "national_mean": 38000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3131",
+      "title": "IT operations technicians",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 40000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3132",
+      "title": "IT user support technicians",
+      "category": "Associate professional occupations",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3211",
+      "title": "Nurses and midwives (associate professionals)",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 39000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3212",
+      "title": "Paramedics",
+      "category": "Associate professional occupations",
+      "national_median": 39000,
+      "national_mean": 43000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3213",
+      "title": "Ambulance staff (excluding paramedics)",
+      "category": "Associate professional occupations",
+      "national_median": 28000,
+      "national_mean": 31000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3217",
+      "title": "Pharmaceutical technicians",
+      "category": "Associate professional occupations",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3218",
+      "title": "Medical and dental technicians",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3312",
+      "title": "Police officers (sergeant and below)",
+      "category": "Associate professional occupations",
+      "national_median": 42000,
+      "national_mean": 45000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3313",
+      "title": "Fire service officers (watch manager and below)",
+      "category": "Associate professional occupations",
+      "national_median": 38000,
+      "national_mean": 42000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3314",
+      "title": "Prison service officers (below principal officer)",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 35000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3411",
+      "title": "Artists",
+      "category": "Associate professional occupations",
+      "national_median": 25000,
+      "national_mean": 30000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3412",
+      "title": "Authors, writers and translators",
+      "category": "Associate professional occupations",
+      "national_median": 28000,
+      "national_mean": 35000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3413",
+      "title": "Actors, entertainers and presenters",
+      "category": "Associate professional occupations",
+      "national_median": 22000,
+      "national_mean": 32000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3414",
+      "title": "Dancers and choreographers",
+      "category": "Associate professional occupations",
+      "national_median": 20000,
+      "national_mean": 26000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3415",
+      "title": "Musicians",
+      "category": "Associate professional occupations",
+      "national_median": 22000,
+      "national_mean": 28000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3416",
+      "title": "Arts officers, producers and directors",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 38000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3417",
+      "title": "Photographers, audio-visual and broadcasting equipment operators",
+      "category": "Associate professional occupations",
+      "national_median": 26000,
+      "national_mean": 32000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3421",
+      "title": "Graphic designers",
+      "category": "Associate professional occupations",
+      "national_median": 30000,
+      "national_mean": 35000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3422",
+      "title": "Product, clothing and related designers",
+      "category": "Associate professional occupations",
+      "national_median": 28000,
+      "national_mean": 34000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3511",
+      "title": "Air traffic controllers",
+      "category": "Associate professional occupations",
+      "national_median": 85000,
+      "national_mean": 95000,
+      "top_10_percent": 115000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3512",
+      "title": "Aircraft pilots and flight engineers",
+      "category": "Associate professional occupations",
+      "national_median": 78000,
+      "national_mean": 92000,
+      "top_10_percent": 125000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3513",
+      "title": "Ship and hovercraft officers",
+      "category": "Associate professional occupations",
+      "national_median": 48000,
+      "national_mean": 56000,
+      "top_10_percent": 75000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3520",
+      "title": "Legal associate professionals",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 42000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3531",
+      "title": "Estimators, valuers and assessors",
+      "category": "Associate professional occupations",
+      "national_median": 38000,
+      "national_mean": 44000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3532",
+      "title": "Brokers",
+      "category": "Associate professional occupations",
+      "national_median": 45000,
+      "national_mean": 62000,
+      "top_10_percent": 95000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3533",
+      "title": "Insurance underwriters",
+      "category": "Associate professional occupations",
+      "national_median": 42000,
+      "national_mean": 50000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3534",
+      "title": "Finance and investment analysts and advisers",
+      "category": "Associate professional occupations",
+      "national_median": 48000,
+      "national_mean": 62000,
+      "top_10_percent": 92000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3535",
+      "title": "Taxation experts",
+      "category": "Associate professional occupations",
+      "national_median": 44000,
+      "national_mean": 52000,
+      "top_10_percent": 72000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3536",
+      "title": "Importers and exporters",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 42000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3537",
+      "title": "Financial and accounting technicians",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 38000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3538",
+      "title": "Financial accounts managers",
+      "category": "Associate professional occupations",
+      "national_median": 40000,
+      "national_mean": 48000,
+      "top_10_percent": 65000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3539",
+      "title": "Business and related associate professionals n.e.c.",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 42000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3541",
+      "title": "Buyer and procurement officers",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 41000,
+      "top_10_percent": 55000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3542",
+      "title": "Business sales executives",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 45000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3543",
+      "title": "Marketing associate professionals",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 38000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3544",
+      "title": "Estate agents and auctioneers",
+      "category": "Associate professional occupations",
+      "national_median": 28000,
+      "national_mean": 38000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3545",
+      "title": "Sales accounts and business development managers",
+      "category": "Associate professional occupations",
+      "national_median": 40000,
+      "national_mean": 50000,
+      "top_10_percent": 72000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3546",
+      "title": "Conference and exhibition managers and organisers",
+      "category": "Associate professional occupations",
+      "national_median": 30000,
+      "national_mean": 36000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3550",
+      "title": "Conservation and environmental associate professionals",
+      "category": "Associate professional occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3561",
+      "title": "Public services associate professionals",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 37000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3562",
+      "title": "Human resources and industrial relations officers",
+      "category": "Associate professional occupations",
+      "national_median": 35000,
+      "national_mean": 41000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3563",
+      "title": "Vocational and industrial trainers and instructors",
+      "category": "Associate professional occupations",
+      "national_median": 30000,
+      "national_mean": 35000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3564",
+      "title": "Careers advisers and vocational guidance specialists",
+      "category": "Associate professional occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3565",
+      "title": "Inspectors of standards and regulations",
+      "category": "Associate professional occupations",
+      "national_median": 38000,
+      "national_mean": 43000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "3567",
+      "title": "Health and safety officers",
+      "category": "Associate professional occupations",
+      "national_median": 38000,
+      "national_mean": 43000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4111",
+      "title": "Civil Service administrative officers",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4112",
+      "title": "Local government administrative officers",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4113",
+      "title": "Officers of non-governmental organisations",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 26000,
+      "national_mean": 30000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4114",
+      "title": "Social security and other government benefits administrators",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 26000,
+      "national_mean": 29000,
+      "top_10_percent": 36000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4121",
+      "title": "Credit controllers",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 26000,
+      "national_mean": 30000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4122",
+      "title": "Accounts and wages clerks, bookkeepers and payroll managers",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4123",
+      "title": "Bank and post office clerks",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 34000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4124",
+      "title": "Finance officers",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 30000,
+      "national_mean": 35000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4131",
+      "title": "Records clerks and assistants",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4133",
+      "title": "Stock control clerks and assistants",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4134",
+      "title": "Transport and distribution clerks and assistants",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 34000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4135",
+      "title": "Library clerks and assistants",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 21000,
+      "national_mean": 24000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4138",
+      "title": "Human resources administrative occupations",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 26000,
+      "national_mean": 30000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4151",
+      "title": "Sales administrators",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 25000,
+      "national_mean": 29000,
+      "top_10_percent": 37000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4159",
+      "title": "Other administrative occupations n.e.c.",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 25000,
+      "national_mean": 29000,
+      "top_10_percent": 37000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4161",
+      "title": "Office managers",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 30000,
+      "national_mean": 35000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4162",
+      "title": "Office supervisors",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4211",
+      "title": "Medical secretaries",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4212",
+      "title": "Legal secretaries",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 26000,
+      "national_mean": 30000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4214",
+      "title": "Company secretaries",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 42000,
+      "national_mean": 50000,
+      "top_10_percent": 68000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4215",
+      "title": "Personal assistants and other secretaries",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4216",
+      "title": "Receptionists",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "4217",
+      "title": "Typists and related keyboard occupations",
+      "category": "Administrative and secretarial occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 31000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5111",
+      "title": "Farmers",
+      "category": "Skilled trades occupations",
+      "national_median": 25000,
+      "national_mean": 32000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5112",
+      "title": "Horticultural trades",
+      "category": "Skilled trades occupations",
+      "national_median": 22000,
+      "national_mean": 26000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5113",
+      "title": "Gardeners and landscape gardeners",
+      "category": "Skilled trades occupations",
+      "national_median": 23000,
+      "national_mean": 27000,
+      "top_10_percent": 36000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5114",
+      "title": "Groundsmen and greenkeepers",
+      "category": "Skilled trades occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5211",
+      "title": "Smiths and forge workers",
+      "category": "Skilled trades occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5212",
+      "title": "Moulders, core makers and die casters",
+      "category": "Skilled trades occupations",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 44000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5221",
+      "title": "Metal working production and maintenance fitters",
+      "category": "Skilled trades occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5222",
+      "title": "Tool makers, tool fitters and markers-out",
+      "category": "Skilled trades occupations",
+      "national_median": 34000,
+      "national_mean": 38000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5223",
+      "title": "Metal working machine operatives",
+      "category": "Skilled trades occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 41000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5224",
+      "title": "Precision instrument makers and repairers",
+      "category": "Skilled trades occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5231",
+      "title": "Vehicle technicians, mechanics and electricians",
+      "category": "Skilled trades occupations",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 44000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5232",
+      "title": "Vehicle body builders and repairers",
+      "category": "Skilled trades occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5234",
+      "title": "Vehicle paint technicians",
+      "category": "Skilled trades occupations",
+      "national_median": 26000,
+      "national_mean": 30000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5235",
+      "title": "Aircraft maintenance and related trades",
+      "category": "Skilled trades occupations",
+      "national_median": 42000,
+      "national_mean": 48000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5236",
+      "title": "Boat and ship builders and repairers",
+      "category": "Skilled trades occupations",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5237",
+      "title": "Rail and rolling stock builders and repairers",
+      "category": "Skilled trades occupations",
+      "national_median": 35000,
+      "national_mean": 39000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5241",
+      "title": "Electricians and electrical fitters",
+      "category": "Skilled trades occupations",
+      "national_median": 36000,
+      "national_mean": 40000,
+      "top_10_percent": 51000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5242",
+      "title": "Telecommunications engineers",
+      "category": "Skilled trades occupations",
+      "national_median": 34000,
+      "national_mean": 38000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5244",
+      "title": "TV, video and audio engineers",
+      "category": "Skilled trades occupations",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5245",
+      "title": "IT engineers",
+      "category": "Skilled trades occupations",
+      "national_median": 32000,
+      "national_mean": 37000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5249",
+      "title": "Electrical and electronic trades n.e.c.",
+      "category": "Skilled trades occupations",
+      "national_median": 33000,
+      "national_mean": 37000,
+      "top_10_percent": 47000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5311",
+      "title": "Steel erectors",
+      "category": "Skilled trades occupations",
+      "national_median": 36000,
+      "national_mean": 40000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5312",
+      "title": "Bricklayers and masons",
+      "category": "Skilled trades occupations",
+      "national_median": 32000,
+      "national_mean": 38000,
+      "top_10_percent": 52000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5313",
+      "title": "Roofers, roof tilers and slaters",
+      "category": "Skilled trades occupations",
+      "national_median": 30000,
+      "national_mean": 36000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5314",
+      "title": "Plumbers and heating and ventilating engineers",
+      "category": "Skilled trades occupations",
+      "national_median": 34000,
+      "national_mean": 40000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5315",
+      "title": "Carpenters and joiners",
+      "category": "Skilled trades occupations",
+      "national_median": 30000,
+      "national_mean": 35000,
+      "top_10_percent": 47000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5316",
+      "title": "Glaziers, window fabricators and fitters",
+      "category": "Skilled trades occupations",
+      "national_median": 28000,
+      "national_mean": 33000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5319",
+      "title": "Construction and building trades n.e.c.",
+      "category": "Skilled trades occupations",
+      "national_median": 30000,
+      "national_mean": 35000,
+      "top_10_percent": 47000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5321",
+      "title": "Plasterers",
+      "category": "Skilled trades occupations",
+      "national_median": 29000,
+      "national_mean": 34000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5322",
+      "title": "Floorers and wall tilers",
+      "category": "Skilled trades occupations",
+      "national_median": 27000,
+      "national_mean": 32000,
+      "top_10_percent": 44000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5323",
+      "title": "Painters and decorators",
+      "category": "Skilled trades occupations",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5411",
+      "title": "Weavers and knitters",
+      "category": "Skilled trades occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5421",
+      "title": "Upholsterers",
+      "category": "Skilled trades occupations",
+      "national_median": 24000,
+      "national_mean": 28000,
+      "top_10_percent": 37000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5422",
+      "title": "Footwear and leather working trades",
+      "category": "Skilled trades occupations",
+      "national_median": 21000,
+      "national_mean": 24000,
+      "top_10_percent": 31000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5423",
+      "title": "Tailors and dressmakers",
+      "category": "Skilled trades occupations",
+      "national_median": 22000,
+      "national_mean": 26000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5431",
+      "title": "Butchers",
+      "category": "Skilled trades occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5432",
+      "title": "Bakers and flour confectioners",
+      "category": "Skilled trades occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5433",
+      "title": "Chefs",
+      "category": "Skilled trades occupations",
+      "national_median": 24000,
+      "national_mean": 28000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "5434",
+      "title": "Cooks",
+      "category": "Skilled trades occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6111",
+      "title": "Nursing auxiliaries and assistants",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6112",
+      "title": "Ambulance staff (excluding paramedics)",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6113",
+      "title": "Dental nurses",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 22000,
+      "national_mean": 24000,
+      "top_10_percent": 29000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6121",
+      "title": "Care workers and home carers",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 26000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6122",
+      "title": "Senior care workers",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 23000,
+      "national_mean": 25000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6123",
+      "title": "Houseparents and residential wardens",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6131",
+      "title": "Veterinary nurses",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6139",
+      "title": "Animal care services occupations n.e.c.",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 19000,
+      "national_mean": 22000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6141",
+      "title": "Nursing auxiliaries and assistants",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6145",
+      "title": "Care escorts",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 26000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6146",
+      "title": "Undertakers and mortuary and crematorium assistants",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6211",
+      "title": "Sports players",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 28000,
+      "national_mean": 45000,
+      "top_10_percent": 95000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6212",
+      "title": "Sports coaches, instructors and officials",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 22000,
+      "national_mean": 27000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6214",
+      "title": "Fitness instructors",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 20000,
+      "national_mean": 23000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6219",
+      "title": "Sports and fitness occupations n.e.c.",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 21000,
+      "national_mean": 25000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6221",
+      "title": "Hairdressers and barbers",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 19000,
+      "national_mean": 22000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6222",
+      "title": "Beauticians and related occupations",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 18000,
+      "national_mean": 21000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6231",
+      "title": "Housekeepers and related occupations",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "6232",
+      "title": "Caretakers",
+      "category": "Caring, leisure and other service occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7111",
+      "title": "Sales and retail assistants",
+      "category": "Sales and customer service occupations",
+      "national_median": 19000,
+      "national_mean": 21000,
+      "top_10_percent": 26000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7112",
+      "title": "Retail cashiers and check-out operators",
+      "category": "Sales and customer service occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 24000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7113",
+      "title": "Telephone salespersons",
+      "category": "Sales and customer service occupations",
+      "national_median": 20000,
+      "national_mean": 23000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7114",
+      "title": "Pharmacy and other dispensing assistants",
+      "category": "Sales and customer service occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 26000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7115",
+      "title": "Vehicle and parts salespersons and advisers",
+      "category": "Sales and customer service occupations",
+      "national_median": 24000,
+      "national_mean": 30000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7119",
+      "title": "Sales and retail assistants n.e.c.",
+      "category": "Sales and customer service occupations",
+      "national_median": 19000,
+      "national_mean": 22000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7121",
+      "title": "Collector salespersons and credit agents",
+      "category": "Sales and customer service occupations",
+      "national_median": 22000,
+      "national_mean": 26000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7122",
+      "title": "Debt, rent and other cash collectors",
+      "category": "Sales and customer service occupations",
+      "national_median": 21000,
+      "national_mean": 24000,
+      "top_10_percent": 31000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7211",
+      "title": "Call and contact centre occupations",
+      "category": "Sales and customer service occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7213",
+      "title": "Telephonists",
+      "category": "Sales and customer service occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7214",
+      "title": "Communication operators",
+      "category": "Sales and customer service occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 31000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7215",
+      "title": "Market research interviewers",
+      "category": "Sales and customer service occupations",
+      "national_median": 19000,
+      "national_mean": 22000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7219",
+      "title": "Customer service occupations n.e.c.",
+      "category": "Sales and customer service occupations",
+      "national_median": 20000,
+      "national_mean": 23000,
+      "top_10_percent": 29000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "7220",
+      "title": "Customer service managers and supervisors",
+      "category": "Sales and customer service occupations",
+      "national_median": 27000,
+      "national_mean": 32000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8111",
+      "title": "Food, drink and tobacco process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8112",
+      "title": "Glass and ceramics process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 34000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8113",
+      "title": "Textile process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 31000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8114",
+      "title": "Chemical and related process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8115",
+      "title": "Rubber process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 25000,
+      "national_mean": 28000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8116",
+      "title": "Plastics process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 34000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8117",
+      "title": "Metal making and treating process operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8118",
+      "title": "Electroplaters",
+      "category": "Process, plant and machine operatives",
+      "national_median": 26000,
+      "national_mean": 29000,
+      "top_10_percent": 36000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8121",
+      "title": "Paper and wood machine operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 25000,
+      "national_mean": 28000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8122",
+      "title": "Coal mine operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 35000,
+      "national_mean": 40000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8123",
+      "title": "Quarry workers and related operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8124",
+      "title": "Energy plant operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 38000,
+      "national_mean": 43000,
+      "top_10_percent": 54000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8125",
+      "title": "Metal working machine operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 39000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8126",
+      "title": "Water and sewerage plant operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8129",
+      "title": "Process operatives n.e.c.",
+      "category": "Process, plant and machine operatives",
+      "national_median": 25000,
+      "national_mean": 28000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8131",
+      "title": "Assemblers (vehicles and metal goods)",
+      "category": "Process, plant and machine operatives",
+      "national_median": 26000,
+      "national_mean": 29000,
+      "top_10_percent": 36000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8132",
+      "title": "Assemblers (electrical and electronic products)",
+      "category": "Process, plant and machine operatives",
+      "national_median": 25000,
+      "national_mean": 28000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8133",
+      "title": "Routine inspectors and testers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 34000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8134",
+      "title": "Weighers, graders and sorters",
+      "category": "Process, plant and machine operatives",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8135",
+      "title": "Tyre, exhaust and windscreen fitters",
+      "category": "Process, plant and machine operatives",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8139",
+      "title": "Assemblers and routine operatives n.e.c.",
+      "category": "Process, plant and machine operatives",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8141",
+      "title": "Scaffolders, stagers and riggers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 46000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8142",
+      "title": "Road construction operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 39000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8143",
+      "title": "Rail construction and maintenance operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 30000,
+      "national_mean": 34000,
+      "top_10_percent": 42000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8149",
+      "title": "Construction operatives n.e.c.",
+      "category": "Process, plant and machine operatives",
+      "national_median": 26000,
+      "national_mean": 30000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8211",
+      "title": "Large goods vehicle drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 28000,
+      "national_mean": 32000,
+      "top_10_percent": 40000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8212",
+      "title": "Van drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8213",
+      "title": "Bus and coach drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 26000,
+      "national_mean": 29000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8214",
+      "title": "Taxi and cab drivers and chauffeurs",
+      "category": "Process, plant and machine operatives",
+      "national_median": 22000,
+      "national_mean": 26000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8215",
+      "title": "Driving instructors",
+      "category": "Process, plant and machine operatives",
+      "national_median": 24000,
+      "national_mean": 28000,
+      "top_10_percent": 38000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8221",
+      "title": "Crane drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 32000,
+      "national_mean": 36000,
+      "top_10_percent": 45000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8222",
+      "title": "Fork-lift truck drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 24000,
+      "national_mean": 27000,
+      "top_10_percent": 33000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8223",
+      "title": "Agricultural machinery drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 25000,
+      "national_mean": 28000,
+      "top_10_percent": 35000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8229",
+      "title": "Mobile machine drivers and operatives n.e.c.",
+      "category": "Process, plant and machine operatives",
+      "national_median": 27000,
+      "national_mean": 31000,
+      "top_10_percent": 39000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8231",
+      "title": "Train and tram drivers",
+      "category": "Process, plant and machine operatives",
+      "national_median": 48000,
+      "national_mean": 52000,
+      "top_10_percent": 62000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8232",
+      "title": "Marine and waterways transport operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 32000,
+      "national_mean": 38000,
+      "top_10_percent": 50000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8233",
+      "title": "Air transport operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 35000,
+      "national_mean": 42000,
+      "top_10_percent": 58000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "8234",
+      "title": "Rail transport operatives",
+      "category": "Process, plant and machine operatives",
+      "national_median": 35000,
+      "national_mean": 39000,
+      "top_10_percent": 48000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9111",
+      "title": "Farm workers",
+      "category": "Elementary occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9112",
+      "title": "Forestry workers",
+      "category": "Elementary occupations",
+      "national_median": 21000,
+      "national_mean": 24000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9113",
+      "title": "Fishing and other elementary agriculture occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 19000,
+      "national_mean": 22000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9119",
+      "title": "Elementary agricultural occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9120",
+      "title": "Elementary construction occupations",
+      "category": "Elementary occupations",
+      "national_median": 22000,
+      "national_mean": 25000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9132",
+      "title": "Industrial cleaning process occupations",
+      "category": "Elementary occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9134",
+      "title": "Packers, bottlers, canners and fillers",
+      "category": "Elementary occupations",
+      "national_median": 19000,
+      "national_mean": 21000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9139",
+      "title": "Elementary process plant occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9211",
+      "title": "Postal workers, mail sorters, messengers and couriers",
+      "category": "Elementary occupations",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9219",
+      "title": "Elementary administration occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 19000,
+      "national_mean": 21000,
+      "top_10_percent": 26000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9231",
+      "title": "Window cleaners",
+      "category": "Elementary occupations",
+      "national_median": 20000,
+      "national_mean": 23000,
+      "top_10_percent": 30000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9232",
+      "title": "Street cleaners",
+      "category": "Elementary occupations",
+      "national_median": 19000,
+      "national_mean": 21000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9233",
+      "title": "Cleaners and domestics",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 19000,
+      "top_10_percent": 23000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9234",
+      "title": "Launderers, dry cleaners and pressers",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 24000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9235",
+      "title": "Refuse and salvage occupations",
+      "category": "Elementary occupations",
+      "national_median": 23000,
+      "national_mean": 26000,
+      "top_10_percent": 32000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9239",
+      "title": "Elementary cleaning occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9241",
+      "title": "Security guards and related occupations",
+      "category": "Elementary occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9242",
+      "title": "Parking and civil enforcement occupations",
+      "category": "Elementary occupations",
+      "national_median": 22000,
+      "national_mean": 24000,
+      "top_10_percent": 29000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9244",
+      "title": "School midday and crossing patrol occupations",
+      "category": "Elementary occupations",
+      "national_median": 16000,
+      "national_mean": 18000,
+      "top_10_percent": 22000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9249",
+      "title": "Elementary security occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 27000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9251",
+      "title": "Shelf fillers",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 24000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9259",
+      "title": "Elementary sales occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9260",
+      "title": "Elementary storage occupations",
+      "category": "Elementary occupations",
+      "national_median": 21000,
+      "national_mean": 23000,
+      "top_10_percent": 28000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9271",
+      "title": "Hospital porters",
+      "category": "Elementary occupations",
+      "national_median": 20000,
+      "national_mean": 22000,
+      "top_10_percent": 26000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9272",
+      "title": "Kitchen and catering assistants",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 19000,
+      "top_10_percent": 23000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9273",
+      "title": "Waiters and waitresses",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9274",
+      "title": "Bar staff",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 24000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9275",
+      "title": "Leisure and theme park attendants",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    },
+    {
+      "soc_code": "9279",
+      "title": "Elementary personal services occupations n.e.c.",
+      "category": "Elementary occupations",
+      "national_median": 18000,
+      "national_mean": 20000,
+      "top_10_percent": 25000,
+      "by_state": {},
+      "age_distribution": {}
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-10-29",
+    "source": "ONS ASHE 2024 - SOC 2020 Table 14.1a",
+    "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ashetable14"
+  }
+}

@@ -11,6 +11,38 @@ struct StatisticsResultsView: View {
     @ObservedObject var viewModel: StatisticsViewModel
     @Environment(\.dismiss) private var dismiss
 
+    // MARK: - Country/Currency Support
+
+    private var countryCode: String {
+        viewModel.statisticsSnapshot?.userProfile.countryCode ?? "us"
+    }
+
+    private var currencySymbol: String {
+        switch countryCode {
+        case "us":
+            return "$"
+        case "ca":
+            return "C$"
+        case "uk":
+            return "£"
+        default:
+            return "$"
+        }
+    }
+
+    private var countryName: String {
+        switch countryCode {
+        case "us":
+            return "United States"
+        case "ca":
+            return "Canada"
+        case "uk":
+            return "United Kingdom"
+        default:
+            return "Country"
+        }
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: Theme.paddingLarge) {
@@ -90,7 +122,7 @@ struct StatisticsResultsView: View {
 
                     // Location + Age
                     HStack(spacing: 6) {
-                        Text("📍 \(snapshot.userProfile.state.fullName)")
+                        Text("📍 \(snapshot.userProfile.region.name)")
                             .font(.subheadline)
                             .foregroundColor(.textSecondary)
 
@@ -352,9 +384,9 @@ struct StatisticsResultsView: View {
         if let snapshot = viewModel.statisticsSnapshot,
            let afterTax = snapshot.afterTaxIncome {
             HStack(spacing: 20) {
-                PreviewStatItem(label: "Gross", value: afterTax.grossIncome.asCurrency)
-                PreviewStatItem(label: "Taxes", value: afterTax.totalTax.asCurrency, color: .red)
-                PreviewStatItem(label: "Net", value: afterTax.afterTaxIncome.asCurrency, color: .green)
+                PreviewStatItem(label: "Gross", value: afterTax.grossIncome.asCurrency(countryCode: countryCode))
+                PreviewStatItem(label: "Taxes", value: afterTax.totalTax.asCurrency(countryCode: countryCode), color: .red)
+                PreviewStatItem(label: "Net", value: afterTax.afterTaxIncome.asCurrency(countryCode: countryCode), color: .green)
             }
         }
     }
@@ -364,11 +396,11 @@ struct StatisticsResultsView: View {
         HStack(spacing: 16) {
             PreviewStatItem(
                 label: "Actual",
-                value: analysis.actualIncome.asCurrency
+                value: analysis.actualIncome.asCurrency(countryCode: countryCode)
             )
             PreviewStatItem(
                 label: "Adjusted",
-                value: analysis.adjustedIncome.asCurrency,
+                value: analysis.adjustedIncome.asCurrency(countryCode: countryCode),
                 color: purchasingPowerColor(analysis)
             )
             PreviewStatItem(
@@ -402,7 +434,7 @@ struct StatisticsResultsView: View {
         if let snapshot = viewModel.statisticsSnapshot,
            let forecast = snapshot.careerForecast {
             VStack(alignment: .leading, spacing: 4) {
-                Text("Peak at \(forecast.peakAge): \(forecast.peakIncome.asCurrency)")
+                Text("Peak at \(forecast.peakAge): \(forecast.peakIncome.asCurrency(countryCode: countryCode))")
                     .font(.caption)
                     .foregroundColor(.textPrimary)
             }
@@ -434,11 +466,11 @@ struct StatisticsResultsView: View {
               let afterTax = snapshot.afterTaxIncome else {
             return "Real take-home"
         }
-        return afterTax.afterTaxIncome.asCurrency
+        return afterTax.afterTaxIncome.asCurrency(countryCode: countryCode)
     }
 
     private func purchasingPowerSubtitle(_ analysis: PurchasingPowerAnalysis) -> String {
-        return analysis.adjustedIncome.asCurrency
+        return analysis.adjustedIncome.asCurrency(countryCode: countryCode)
     }
 
     private func purchasingPowerColor(_ analysis: PurchasingPowerAnalysis) -> Color {
@@ -464,7 +496,7 @@ struct StatisticsResultsView: View {
               let forecast = snapshot.careerForecast else {
             return "Future earnings"
         }
-        return "Peak: \(forecast.peakIncome.asCurrency)"
+        return "Peak: \(forecast.peakIncome.asCurrency(countryCode: countryCode))"
     }
 
     private var careerInsightsSubtitle: String {
@@ -487,7 +519,7 @@ struct StatisticsResultsView: View {
     private var purchasingPowerDestination: some View {
         if let snapshot = viewModel.statisticsSnapshot,
            let purchasingPower = snapshot.purchasingPowerAnalysis {
-            PurchasingPowerDetailView(analysis: purchasingPower)
+            PurchasingPowerDetailView(analysis: purchasingPower, currencySymbol: currencySymbol)
         }
     }
 
@@ -516,11 +548,14 @@ struct StatisticsResultsView: View {
     private var afterTaxSection: some View {
         if let snapshot = viewModel.statisticsSnapshot,
            let afterTaxIncome = snapshot.afterTaxIncome {
-            AfterTaxComparisonView(afterTaxIncome: afterTaxIncome)
-                .transition(.asymmetric(
-                    insertion: .move(edge: .top).combined(with: .opacity),
-                    removal: .move(edge: .top).combined(with: .opacity)
-                ))
+            AfterTaxComparisonViewV2(
+                afterTaxIncome: afterTaxIncome,
+                currencySymbol: currencySymbol
+            )
+            .transition(.asymmetric(
+                insertion: .move(edge: .top).combined(with: .opacity),
+                removal: .move(edge: .top).combined(with: .opacity)
+            ))
         }
     }
 
@@ -531,15 +566,15 @@ struct StatisticsResultsView: View {
         VStack(spacing: Theme.paddingMedium) {
             if let snapshot = viewModel.statisticsSnapshot {
                 if let pathState = snapshot.pathToTop10State {
-                    PathToTop10View(pathToTop10: pathState, title: "Path to Top 10% in State")
+                    PathToTop10View(pathToTop10: pathState, title: "Path to Top 10% in State", currencySymbol: currencySymbol)
                 }
 
                 if let pathOccupation = snapshot.pathToTop10Occupation {
-                    PathToTop10View(pathToTop10: pathOccupation, title: "Path to Top 10% in Profession")
+                    PathToTop10View(pathToTop10: pathOccupation, title: "Path to Top 10% in Profession", currencySymbol: currencySymbol)
                 }
 
                 if let careerForecast = snapshot.careerForecast {
-                    CareerForecastView(careerForecast: careerForecast)
+                    CareerForecastView(careerForecast: careerForecast, currencySymbol: currencySymbol)
                 }
             }
         }
@@ -557,7 +592,7 @@ struct StatisticsResultsView: View {
         if let snapshot = viewModel.statisticsSnapshot,
            let genderComparison = snapshot.genderComparison,
            genderComparison.hasData {
-            GenderComparisonView(genderComparison: genderComparison)
+            GenderComparisonView(genderComparison: genderComparison, currencySymbol: currencySymbol)
         }
     }
 
@@ -567,7 +602,7 @@ struct StatisticsResultsView: View {
     private var stateRankingSection: some View {
         if let snapshot = viewModel.statisticsSnapshot,
            let stateRanking = snapshot.stateRanking {
-            StateRankingView(stateRanking: stateRanking)
+            StateRankingView(stateRanking: stateRanking, countryCode: countryCode)
         }
     }
 
@@ -578,7 +613,7 @@ struct StatisticsResultsView: View {
         if let snapshot = viewModel.statisticsSnapshot,
            let similarOccupations = snapshot.similarOccupations,
            !similarOccupations.isEmpty {
-            SimilarOccupationsView(similarOccupations: similarOccupations)
+            SimilarOccupationsView(similarOccupations: similarOccupations, countryCode: countryCode)
         }
     }
 
@@ -639,15 +674,15 @@ struct StatisticsResultsView: View {
     private func incomeRangeText(for income: Double) -> String {
         // Create privacy-friendly income range
         let ranges: [(Double, Double, String)] = [
-            (0, 25000, "$0 - $25K"),
-            (25000, 35000, "$25K - $35K"),
-            (35000, 50000, "$35K - $50K"),
-            (50000, 75000, "$50K - $75K"),
-            (75000, 100000, "$75K - $100K"),
-            (100000, 150000, "$100K - $150K"),
-            (150000, 200000, "$150K - $200K"),
-            (200000, 250000, "$200K - $250K"),
-            (250000, .infinity, "$250K+")
+            (0, 25000, "\(currencySymbol)0 - \(currencySymbol)25K"),
+            (25000, 35000, "\(currencySymbol)25K - \(currencySymbol)35K"),
+            (35000, 50000, "\(currencySymbol)35K - \(currencySymbol)50K"),
+            (50000, 75000, "\(currencySymbol)50K - \(currencySymbol)75K"),
+            (75000, 100000, "\(currencySymbol)75K - \(currencySymbol)100K"),
+            (100000, 150000, "\(currencySymbol)100K - \(currencySymbol)150K"),
+            (150000, 200000, "\(currencySymbol)150K - \(currencySymbol)200K"),
+            (200000, 250000, "\(currencySymbol)200K - \(currencySymbol)250K"),
+            (250000, .infinity, "\(currencySymbol)250K+")
         ]
 
         for (min, max, label) in ranges {
@@ -656,7 +691,7 @@ struct StatisticsResultsView: View {
             }
         }
 
-        return "$0 - $25K"
+        return "\(currencySymbol)0 - \(currencySymbol)25K"
     }
 
     // MARK: - Career Insights Preview Card

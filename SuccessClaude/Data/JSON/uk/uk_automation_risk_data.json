@@ -1,33 +1,186 @@
 {
-  "occupations": [
-    {"soc_code": "11", "ai_risk": 30, "robotics_risk": 15, "overall_risk": 22.5},
-    {"soc_code": "12", "ai_risk": 35, "robotics_risk": 20, "overall_risk": 27.5},
-    {"soc_code": "21", "ai_risk": 45, "robotics_risk": 25, "overall_risk": 35.0},
-    {"soc_code": "22", "ai_risk": 25, "robotics_risk": 15, "overall_risk": 20.0},
-    {"soc_code": "23", "ai_risk": 35, "robotics_risk": 10, "overall_risk": 22.5},
-    {"soc_code": "24", "ai_risk": 50, "robotics_risk": 20, "overall_risk": 35.0},
-    {"soc_code": "31", "ai_risk": 55, "robotics_risk": 35, "overall_risk": 45.0},
-    {"soc_code": "32", "ai_risk": 30, "robotics_risk": 25, "overall_risk": 27.5},
-    {"soc_code": "33", "ai_risk": 25, "robotics_risk": 30, "overall_risk": 27.5},
-    {"soc_code": "34", "ai_risk": 45, "robotics_risk": 20, "overall_risk": 32.5},
-    {"soc_code": "35", "ai_risk": 55, "robotics_risk": 25, "overall_risk": 40.0},
-    {"soc_code": "41", "ai_risk": 70, "robotics_risk": 30, "overall_risk": 50.0},
-    {"soc_code": "42", "ai_risk": 75, "robotics_risk": 25, "overall_risk": 50.0},
-    {"soc_code": "51", "ai_risk": 35, "robotics_risk": 55, "overall_risk": 45.0},
-    {"soc_code": "52", "ai_risk": 40, "robotics_risk": 65, "overall_risk": 52.5},
-    {"soc_code": "53", "ai_risk": 30, "robotics_risk": 60, "overall_risk": 45.0},
-    {"soc_code": "54", "ai_risk": 50, "robotics_risk": 70, "overall_risk": 60.0},
-    {"soc_code": "61", "ai_risk": 20, "robotics_risk": 35, "overall_risk": 27.5},
-    {"soc_code": "62", "ai_risk": 30, "robotics_risk": 40, "overall_risk": 35.0},
-    {"soc_code": "63", "ai_risk": 35, "robotics_risk": 35, "overall_risk": 35.0},
-    {"soc_code": "71", "ai_risk": 60, "robotics_risk": 40, "overall_risk": 50.0},
-    {"soc_code": "72", "ai_risk": 65, "robotics_risk": 35, "overall_risk": 50.0},
-    {"soc_code": "81", "ai_risk": 45, "robotics_risk": 75, "overall_risk": 60.0},
-    {"soc_code": "82", "ai_risk": 40, "robotics_risk": 70, "overall_risk": 55.0},
-    {"soc_code": "91", "ai_risk": 35, "robotics_risk": 65, "overall_risk": 50.0},
-    {"soc_code": "92", "ai_risk": 55, "robotics_risk": 60, "overall_risk": 57.5}
+  "automation_risks": [
+    {
+      "soc_code": "11",
+      "title": "Corporate Managers and Directors",
+      "category": "Corporate Managers and Directors",
+      "ai_risk": 25.0,
+      "robotics_risk": 10.0,
+      "overall_risk": 15.0
+    },
+    {
+      "soc_code": "21",
+      "title": "Science, Research, Engineering and Technology Professionals",
+      "category": "Science, Research, Engineering and Technology Professionals",
+      "ai_risk": 22.0,
+      "robotics_risk": 12.0,
+      "overall_risk": 18.0
+    },
+    {
+      "soc_code": "24",
+      "title": "Business, Media and Public Service Professionals",
+      "category": "Business, Media and Public Service Professionals",
+      "ai_risk": 20.0,
+      "robotics_risk": 8.0,
+      "overall_risk": 12.0
+    },
+    {
+      "soc_code": "31",
+      "title": "Science, Engineering and Technology Associate Professionals",
+      "category": "Science, Engineering and Technology Associate Professionals",
+      "ai_risk": 40.0,
+      "robotics_risk": 30.0,
+      "overall_risk": 35.0
+    },
+    {
+      "soc_code": "32",
+      "title": "Health and Social Care Associate Professionals",
+      "category": "Health and Social Care Associate Professionals",
+      "ai_risk": 28.0,
+      "robotics_risk": 15.0,
+      "overall_risk": 20.0
+    },
+    {
+      "soc_code": "33",
+      "title": "Protective Service Occupations",
+      "category": "Protective Service Occupations",
+      "ai_risk": 24.0,
+      "robotics_risk": 10.0,
+      "overall_risk": 16.0
+    },
+    {
+      "soc_code": "34",
+      "title": "Culture, Media and Sports Occupations",
+      "category": "Culture, Media and Sports Occupations",
+      "ai_risk": 22.0,
+      "robotics_risk": 8.0,
+      "overall_risk": 14.0
+    },
+    {
+      "soc_code": "35",
+      "title": "Business and Public Service Associate Professionals",
+      "category": "Business and Public Service Associate Professionals",
+      "ai_risk": 18.0,
+      "robotics_risk": 5.0,
+      "overall_risk": 10.0
+    },
+    {
+      "soc_code": "41",
+      "title": "Administrative Occupations",
+      "category": "Administrative Occupations",
+      "ai_risk": 55.0,
+      "robotics_risk": 35.0,
+      "overall_risk": 45.0
+    },
+    {
+      "soc_code": "42",
+      "title": "Secretarial and Related Occupations",
+      "category": "Secretarial and Related Occupations",
+      "ai_risk": 50.0,
+      "robotics_risk": 30.0,
+      "overall_risk": 40.0
+    },
+    {
+      "soc_code": "51",
+      "title": "Skilled Agricultural and Related Trades",
+      "category": "Skilled Agricultural and Related Trades",
+      "ai_risk": 45.0,
+      "robotics_risk": 55.0,
+      "overall_risk": 50.0
+    },
+    {
+      "soc_code": "52",
+      "title": "Skilled Metal, Electrical and Electronic Trades",
+      "category": "Skilled Metal, Electrical and Electronic Trades",
+      "ai_risk": 30.0,
+      "robotics_risk": 20.0,
+      "overall_risk": 25.0
+    },
+    {
+      "soc_code": "53",
+      "title": "Skilled Construction and Building Trades",
+      "category": "Skilled Construction and Building Trades",
+      "ai_risk": 35.0,
+      "robotics_risk": 40.0,
+      "overall_risk": 38.0
+    },
+    {
+      "soc_code": "54",
+      "title": "Textiles, Printing and Other Skilled Trades",
+      "category": "Textiles, Printing and Other Skilled Trades",
+      "ai_risk": 28.0,
+      "robotics_risk": 18.0,
+      "overall_risk": 22.0
+    },
+    {
+      "soc_code": "61",
+      "title": "Caring Personal Service Occupations",
+      "category": "Caring Personal Service Occupations",
+      "ai_risk": 25.0,
+      "robotics_risk": 15.0,
+      "overall_risk": 20.0
+    },
+    {
+      "soc_code": "62",
+      "title": "Leisure, Travel and Related Personal Service Occupations",
+      "category": "Leisure, Travel and Related Personal Service Occupations",
+      "ai_risk": 22.0,
+      "robotics_risk": 12.0,
+      "overall_risk": 18.0
+    },
+    {
+      "soc_code": "71",
+      "title": "Sales Occupations",
+      "category": "Sales Occupations",
+      "ai_risk": 20.0,
+      "robotics_risk": 28.0,
+      "overall_risk": 24.0
+    },
+    {
+      "soc_code": "72",
+      "title": "Customer Service Occupations",
+      "category": "Customer Service Occupations",
+      "ai_risk": 35.0,
+      "robotics_risk": 50.0,
+      "overall_risk": 42.0
+    },
+    {
+      "soc_code": "81",
+      "title": "Process, Plant and Machine Operatives",
+      "category": "Process, Plant and Machine Operatives",
+      "ai_risk": 50.0,
+      "robotics_risk": 75.0,
+      "overall_risk": 65.0
+    },
+    {
+      "soc_code": "82",
+      "title": "Transport and Mobile Machine Drivers and Operatives",
+      "category": "Transport and Mobile Machine Drivers and Operatives",
+      "ai_risk": 55.0,
+      "robotics_risk": 78.0,
+      "overall_risk": 68.0
+    },
+    {
+      "soc_code": "91",
+      "title": "Elementary Trades and Related Occupations",
+      "category": "Elementary Trades and Related Occupations",
+      "ai_risk": 45.0,
+      "robotics_risk": 85.0,
+      "overall_risk": 70.0
+    },
+    {
+      "soc_code": "92",
+      "title": "Elementary Administration and Service Occupations",
+      "category": "Elementary Administration and Service Occupations",
+      "ai_risk": 48.0,
+      "robotics_risk": 88.0,
+      "overall_risk": 72.0
+    }
   ],
-  "data_source": "OECD Automation Risk Estimates & UK Labour Market Analysis 2024",
-  "methodology": "Risk percentages based on OECD automation potential framework adapted for SOC 2020",
-  "last_updated": "2024-12-30"
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-10-29",
+    "sources": ["UK Automation Risk Assessment 2024", "ONS SOC 2020"],
+    "note": "Based on ONS SOC 2020 classification and AI/Robotics impact analysis. Risk scores are estimated at category level (2-digit SOC codes)."
+  }
 }

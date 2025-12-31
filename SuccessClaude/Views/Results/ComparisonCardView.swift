@@ -10,6 +10,10 @@ import SwiftUI
 struct ComparisonCardView: View {
     let comparison: ComparisonResult
 
+    private var countryCode: String {
+        comparison.countryCode ?? "us"
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: Theme.paddingMedium) {
             headerSection
@@ -45,13 +49,13 @@ struct ComparisonCardView: View {
     private var metricsGrid: some View {
         VStack(spacing: Theme.paddingMedium) {
             HStack(spacing: Theme.paddingMedium) {
-                metricItem(title: "Your Income", value: comparison.userIncome.asCurrency, isHighlighted: true)
-                metricItem(title: "Median", value: comparison.medianIncome.asCurrency)
+                metricItem(title: "Your Income", value: comparison.userIncome.asCurrency(countryCode: countryCode), isHighlighted: true)
+                metricItem(title: "Median", value: comparison.medianIncome.asCurrency(countryCode: countryCode))
             }
 
             HStack(spacing: Theme.paddingMedium) {
-                metricItem(title: "Average", value: comparison.meanIncome.asCurrency)
-                metricItem(title: "Top 10%", value: comparison.top10Threshold.asCurrency)
+                metricItem(title: "Average", value: comparison.meanIncome.asCurrency(countryCode: countryCode))
+                metricItem(title: "Top 10%", value: comparison.top10Threshold.asCurrency(countryCode: countryCode))
             }
         }
     }
@@ -77,7 +81,7 @@ struct ComparisonCardView: View {
                             .font(.caption2)
                             .foregroundColor(.textTertiary)
 
-                        Text(perCapita.asCurrency)
+                        Text(perCapita.asCurrency(countryCode: countryCode))
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .foregroundColor(.primaryAccent)
@@ -198,7 +202,8 @@ struct ComparisonCardView: View {
                 percentageDifference: 13.3,
                 sampleSize: nil,
                 perCapitaIncome: 28333,
-                householdSize: 3
+                householdSize: 3,
+                countryCode: "us"
             )
         )
 
@@ -213,7 +218,8 @@ struct ComparisonCardView: View {
                 percentageDifference: -18.2,
                 sampleSize: nil,
                 perCapitaIncome: nil,
-                householdSize: nil
+                householdSize: nil,
+                countryCode: "us"
             )
         )
     }

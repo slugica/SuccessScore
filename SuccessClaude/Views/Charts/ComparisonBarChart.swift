@@ -119,7 +119,8 @@ struct ChartDataItem: Identifiable {
                 percentageDifference: 13.3,
                 sampleSize: nil,
                 perCapitaIncome: nil,
-                householdSize: nil
+                householdSize: nil,
+                countryCode: "us"
             ),
             ComparisonResult(
                 category: .national,
@@ -131,7 +132,8 @@ struct ChartDataItem: Identifiable {
                 percentageDifference: 32.8,
                 sampleSize: nil,
                 perCapitaIncome: nil,
-                householdSize: nil
+                householdSize: nil,
+                countryCode: "us"
             ),
             ComparisonResult(
                 category: .occupation(occupationTitle: "Software Developers"),
@@ -143,7 +145,8 @@ struct ChartDataItem: Identifiable {
                 percentageDifference: -34.6,
                 sampleSize: nil,
                 perCapitaIncome: nil,
-                householdSize: nil
+                householdSize: nil,
+                countryCode: "us"
             ),
             ComparisonResult(
                 category: .peers,
@@ -155,7 +158,8 @@ struct ChartDataItem: Identifiable {
                 percentageDifference: -26.1,
                 sampleSize: 4500,
                 perCapitaIncome: nil,
-                householdSize: nil
+                householdSize: nil,
+                countryCode: "us"
             )
         ]
     )

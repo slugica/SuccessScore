@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PurchasingPowerCardView: View {
     let analysis: PurchasingPowerAnalysis
+    var currencySymbol: String = "$"
 
     var body: some View {
         VStack(alignment: .leading, spacing: Theme.paddingMedium) {
@@ -64,13 +65,13 @@ struct PurchasingPowerCardView: View {
             HStack(spacing: Theme.paddingMedium) {
                 metricItem(
                     title: "Your Income",
-                    value: analysis.actualIncome.asCurrency,
+                    value: analysis.actualIncome.asCurrency(symbol: currencySymbol),
                     subtitle: "\(analysis.stateName)",
                     isHighlighted: false
                 )
                 metricItem(
                     title: "Equivalent Income",
-                    value: analysis.adjustedIncome.asCurrency,
+                    value: analysis.adjustedIncome.asCurrency(symbol: currencySymbol),
                     subtitle: "National Average Area",
                     isHighlighted: true
                 )
@@ -178,7 +179,7 @@ struct PurchasingPowerCardView: View {
 
     private var savingsImpactValue: String {
         let impact = abs(analysis.savingsImpact)
-        return impact > 1000 ? impact.asCurrency : "$0"
+        return impact > 1000 ? impact.asCurrency(symbol: currencySymbol) : "\(currencySymbol)0"
     }
 
     private var savingsImpactColor: Color {
@@ -195,9 +196,9 @@ struct PurchasingPowerCardView: View {
         let diff = analysis.adjustedIncome - analysis.actualIncome
 
         if analysis.costOfLivingIndex > 105 {
-            return "Living in \(analysis.stateName) costs \(String(format: "%.0f", analysis.costOfLivingIndex - 100))% more than average. Your \(analysis.actualIncome.asCurrency) has the same buying power as \(analysis.adjustedIncome.asCurrency) elsewhere."
+            return "Living in \(analysis.stateName) costs \(String(format: "%.0f", analysis.costOfLivingIndex - 100))% more than average. Your \(analysis.actualIncome.asCurrency(symbol: currencySymbol)) has the same buying power as \(analysis.adjustedIncome.asCurrency(symbol: currencySymbol)) elsewhere."
         } else if analysis.costOfLivingIndex < 95 {
-            return "Living in \(analysis.stateName) costs \(String(format: "%.0f", 100 - analysis.costOfLivingIndex))% less than average. Your \(analysis.actualIncome.asCurrency) goes further here!"
+            return "Living in \(analysis.stateName) costs \(String(format: "%.0f", 100 - analysis.costOfLivingIndex))% less than average. Your \(analysis.actualIncome.asCurrency(symbol: currencySymbol)) goes further here!"
         } else {
             return "Cost of living in \(analysis.stateName) is close to the national average."
         }

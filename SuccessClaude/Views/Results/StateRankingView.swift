@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StateRankingView: View {
     let stateRanking: StateRanking
+    var countryCode: String = "us"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -56,7 +57,8 @@ struct StateRankingView: View {
                 ForEach(stateRanking.topStates, id: \.stateCode) { stateInfo in
                     StateRankRow(
                         stateInfo: stateInfo,
-                        isUserState: stateInfo.stateCode == stateRanking.userState || stateInfo.stateName == stateRanking.userState
+                        isUserState: stateInfo.stateCode == stateRanking.userState || stateInfo.stateName == stateRanking.userState,
+                        countryCode: countryCode
                     )
 
                     if stateInfo.rank < stateRanking.topStates.count {
@@ -86,6 +88,7 @@ struct StateRankingView: View {
 struct StateRankRow: View {
     let stateInfo: StateIncomeInfo
     let isUserState: Bool
+    var countryCode: String = "us"
 
     var body: some View {
         HStack(spacing: 12) {
@@ -124,7 +127,7 @@ struct StateRankRow: View {
             Spacer()
 
             // Median income
-            Text(stateInfo.median.asCurrency)
+            Text(stateInfo.median.asCurrency(countryCode: countryCode))
                 .font(.body)
                 .fontWeight(.semibold)
                 .foregroundColor(isUserState ? .primaryAccent : .textPrimary)

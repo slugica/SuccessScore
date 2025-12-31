@@ -163,3 +163,24 @@ extension OccupationRisk {
         }
     }
 }
+
+// MARK: - SOC Code Mapping
+
+struct SOCMapping: Codable {
+    let mappings: [String: String]
+    let metadata: MappingMetadata
+}
+
+struct MappingMetadata: Codable {
+    let version: String
+    let lastUpdated: String
+    let description: String
+    let note: String
+
+    enum CodingKeys: String, CodingKey {
+        case version
+        case lastUpdated = "last_updated"
+        case description
+        case note
+    }
+}

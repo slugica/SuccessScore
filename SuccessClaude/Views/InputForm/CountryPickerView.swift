@@ -32,7 +32,9 @@ struct CountryPickerView: View {
                         country: country,
                         isSelected: selectedCountry?.code == country.code,
                         action: {
+                            print("🎯 Country card tapped: \(country.code) - \(country.name)")
                             selectedCountry = country
+                            print("🎯 selectedCountry updated to: \(selectedCountry?.code ?? "nil")")
                         }
                     )
                 }
@@ -91,7 +93,7 @@ struct CountryCard: View {
         selectedCountry: .constant(nil),
         countries: [
             Country(code: "us", name: "United States", flag: "🇺🇸", currency: "USD", currencySymbol: "$", occupationSystem: "SOC 2018", regionType: "State", regionCount: 51, occupationCount: 822, hasData: true, isActive: true),
-            Country(code: "uk", name: "United Kingdom", flag: "🇬🇧", currency: "GBP", currencySymbol: "£", occupationSystem: "SOC 2020", regionType: "Region", regionCount: 12, occupationCount: 26, hasData: true, isActive: true)
+            Country(code: "uk", name: "United Kingdom", flag: "🇬🇧", currency: "GBP", currencySymbol: "£", occupationSystem: "SOC 2020", regionType: "Region", regionCount: 12, occupationCount: 279, hasData: true, isActive: true)
         ]
     )
 }

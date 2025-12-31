@@ -15,6 +15,7 @@ struct AnimatedNumberView: View {
     let duration: Double
     let suffix: String
     let decimalPlaces: Int
+    let currencySymbol: String
 
     @State private var displayValue: Double = 0
 
@@ -32,7 +33,8 @@ struct AnimatedNumberView: View {
         color: Color = .primary,
         duration: Double = 1.0,
         suffix: String = "",
-        decimalPlaces: Int = 1
+        decimalPlaces: Int = 1,
+        currencySymbol: String = "$"
     ) {
         self.value = value
         self.format = format
@@ -41,6 +43,42 @@ struct AnimatedNumberView: View {
         self.duration = duration
         self.suffix = suffix
         self.decimalPlaces = decimalPlaces
+        self.currencySymbol = currencySymbol
+    }
+
+    // Convenience init with country code
+    init(
+        value: Double,
+        format: NumberFormat = .currency,
+        font: Font = .title,
+        color: Color = .primary,
+        duration: Double = 1.0,
+        suffix: String = "",
+        decimalPlaces: Int = 1,
+        countryCode: String
+    ) {
+        let symbol: String
+        switch countryCode.lowercased() {
+        case "us":
+            symbol = "$"
+        case "ca":
+            symbol = "C$"
+        case "uk":
+            symbol = "£"
+        default:
+            symbol = "$"
+        }
+
+        self.init(
+            value: value,
+            format: format,
+            font: font,
+            color: color,
+            duration: duration,
+            suffix: suffix,
+            decimalPlaces: decimalPlaces,
+            currencySymbol: symbol
+        )
     }
 
     var body: some View {
@@ -59,7 +97,7 @@ struct AnimatedNumberView: View {
         let baseValue: String
         switch format {
         case .currency:
-            baseValue = displayValue.asCurrency
+            baseValue = displayValue.asCurrency(symbol: currencySymbol)
         case .percentage:
             baseValue = String(format: "%.\(decimalPlaces)f%%", displayValue)
         case .ordinal:

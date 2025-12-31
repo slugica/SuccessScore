@@ -1,0 +1,522 @@
+{
+  "regions": [
+    {
+      "code": "NSW",
+      "name": "New South Wales",
+      "overall": {
+        "median": 78000,
+        "mean": 86000,
+        "top_10_percent": 165000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 50000,
+          "mean": 55000
+        },
+        "25-34": {
+          "median": 80000,
+          "mean": 88000
+        },
+        "35-44": {
+          "median": 98000,
+          "mean": 108000
+        },
+        "45-54": {
+          "median": 102000,
+          "mean": 112000
+        },
+        "55-64": {
+          "median": 95000,
+          "mean": 105000
+        },
+        "65+": {
+          "median": 68000,
+          "mean": 75000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 98000,
+          "mean": 108000
+        },
+        "Female": {
+          "median": 88000,
+          "mean": 97000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 72000,
+          "mean": 80000
+        },
+        "Married": {
+          "median": 88000,
+          "mean": 97000
+        },
+        "Divorced": {
+          "median": 75000,
+          "mean": 83000
+        },
+        "Widowed": {
+          "median": 68000,
+          "mean": 75000
+        }
+      },
+      "cost_of_living_index": 110
+    },
+    {
+      "code": "VIC",
+      "name": "Victoria",
+      "overall": {
+        "median": 75000,
+        "mean": 83000,
+        "top_10_percent": 158000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 48000,
+          "mean": 53000
+        },
+        "25-34": {
+          "median": 77000,
+          "mean": 85000
+        },
+        "35-44": {
+          "median": 95000,
+          "mean": 105000
+        },
+        "45-54": {
+          "median": 98000,
+          "mean": 108000
+        },
+        "55-64": {
+          "median": 92000,
+          "mean": 102000
+        },
+        "65+": {
+          "median": 65000,
+          "mean": 72000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 95000,
+          "mean": 105000
+        },
+        "Female": {
+          "median": 85000,
+          "mean": 94000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 70000,
+          "mean": 78000
+        },
+        "Married": {
+          "median": 85000,
+          "mean": 94000
+        },
+        "Divorced": {
+          "median": 72000,
+          "mean": 80000
+        },
+        "Widowed": {
+          "median": 65000,
+          "mean": 72000
+        }
+      },
+      "cost_of_living_index": 108
+    },
+    {
+      "code": "QLD",
+      "name": "Queensland",
+      "overall": {
+        "median": 72000,
+        "mean": 80000,
+        "top_10_percent": 152000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 46000,
+          "mean": 51000
+        },
+        "25-34": {
+          "median": 74000,
+          "mean": 82000
+        },
+        "35-44": {
+          "median": 92000,
+          "mean": 102000
+        },
+        "45-54": {
+          "median": 95000,
+          "mean": 105000
+        },
+        "55-64": {
+          "median": 88000,
+          "mean": 98000
+        },
+        "65+": {
+          "median": 62000,
+          "mean": 69000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 92000,
+          "mean": 102000
+        },
+        "Female": {
+          "median": 82000,
+          "mean": 91000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 68000,
+          "mean": 76000
+        },
+        "Married": {
+          "median": 82000,
+          "mean": 91000
+        },
+        "Divorced": {
+          "median": 70000,
+          "mean": 78000
+        },
+        "Widowed": {
+          "median": 62000,
+          "mean": 69000
+        }
+      },
+      "cost_of_living_index": 98
+    },
+    {
+      "code": "WA",
+      "name": "Western Australia",
+      "overall": {
+        "median": 85000,
+        "mean": 95000,
+        "top_10_percent": 175000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 55000,
+          "mean": 62000
+        },
+        "25-34": {
+          "median": 88000,
+          "mean": 98000
+        },
+        "35-44": {
+          "median": 108000,
+          "mean": 120000
+        },
+        "45-54": {
+          "median": 112000,
+          "mean": 125000
+        },
+        "55-64": {
+          "median": 105000,
+          "mean": 117000
+        },
+        "65+": {
+          "median": 72000,
+          "mean": 80000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 110000,
+          "mean": 122000
+        },
+        "Female": {
+          "median": 95000,
+          "mean": 105000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 78000,
+          "mean": 87000
+        },
+        "Married": {
+          "median": 95000,
+          "mean": 105000
+        },
+        "Divorced": {
+          "median": 82000,
+          "mean": 91000
+        },
+        "Widowed": {
+          "median": 72000,
+          "mean": 80000
+        }
+      },
+      "cost_of_living_index": 105
+    },
+    {
+      "code": "SA",
+      "name": "South Australia",
+      "overall": {
+        "median": 68000,
+        "mean": 76000,
+        "top_10_percent": 145000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 44000,
+          "mean": 49000
+        },
+        "25-34": {
+          "median": 70000,
+          "mean": 78000
+        },
+        "35-44": {
+          "median": 86000,
+          "mean": 96000
+        },
+        "45-54": {
+          "median": 90000,
+          "mean": 100000
+        },
+        "55-64": {
+          "median": 84000,
+          "mean": 94000
+        },
+        "65+": {
+          "median": 58000,
+          "mean": 65000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 88000,
+          "mean": 98000
+        },
+        "Female": {
+          "median": 78000,
+          "mean": 87000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 64000,
+          "mean": 72000
+        },
+        "Married": {
+          "median": 78000,
+          "mean": 87000
+        },
+        "Divorced": {
+          "median": 66000,
+          "mean": 74000
+        },
+        "Widowed": {
+          "median": 58000,
+          "mean": 65000
+        }
+      },
+      "cost_of_living_index": 92
+    },
+    {
+      "code": "TAS",
+      "name": "Tasmania",
+      "overall": {
+        "median": 65000,
+        "mean": 72000,
+        "top_10_percent": 135000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 42000,
+          "mean": 47000
+        },
+        "25-34": {
+          "median": 67000,
+          "mean": 75000
+        },
+        "35-44": {
+          "median": 82000,
+          "mean": 92000
+        },
+        "45-54": {
+          "median": 86000,
+          "mean": 96000
+        },
+        "55-64": {
+          "median": 80000,
+          "mean": 90000
+        },
+        "65+": {
+          "median": 55000,
+          "mean": 62000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 84000,
+          "mean": 94000
+        },
+        "Female": {
+          "median": 74000,
+          "mean": 83000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 61000,
+          "mean": 68000
+        },
+        "Married": {
+          "median": 74000,
+          "mean": 83000
+        },
+        "Divorced": {
+          "median": 63000,
+          "mean": 70000
+        },
+        "Widowed": {
+          "median": 55000,
+          "mean": 62000
+        }
+      },
+      "cost_of_living_index": 88
+    },
+    {
+      "code": "ACT",
+      "name": "Australian Capital Territory",
+      "overall": {
+        "median": 92000,
+        "mean": 102000,
+        "top_10_percent": 185000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 58000,
+          "mean": 65000
+        },
+        "25-34": {
+          "median": 95000,
+          "mean": 106000
+        },
+        "35-44": {
+          "median": 115000,
+          "mean": 128000
+        },
+        "45-54": {
+          "median": 120000,
+          "mean": 133000
+        },
+        "55-64": {
+          "median": 112000,
+          "mean": 125000
+        },
+        "65+": {
+          "median": 78000,
+          "mean": 87000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 115000,
+          "mean": 128000
+        },
+        "Female": {
+          "median": 100000,
+          "mean": 111000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 85000,
+          "mean": 95000
+        },
+        "Married": {
+          "median": 100000,
+          "mean": 111000
+        },
+        "Divorced": {
+          "median": 88000,
+          "mean": 98000
+        },
+        "Widowed": {
+          "median": 78000,
+          "mean": 87000
+        }
+      },
+      "cost_of_living_index": 112
+    },
+    {
+      "code": "NT",
+      "name": "Northern Territory",
+      "overall": {
+        "median": 82000,
+        "mean": 92000,
+        "top_10_percent": 168000
+      },
+      "by_age": {
+        "18-24": {
+          "median": 52000,
+          "mean": 58000
+        },
+        "25-34": {
+          "median": 85000,
+          "mean": 95000
+        },
+        "35-44": {
+          "median": 104000,
+          "mean": 116000
+        },
+        "45-54": {
+          "median": 108000,
+          "mean": 120000
+        },
+        "55-64": {
+          "median": 100000,
+          "mean": 112000
+        },
+        "65+": {
+          "median": 70000,
+          "mean": 78000
+        }
+      },
+      "by_gender": {
+        "Male": {
+          "median": 105000,
+          "mean": 117000
+        },
+        "Female": {
+          "median": 92000,
+          "mean": 103000
+        }
+      },
+      "by_marital_status": {
+        "Single": {
+          "median": 75000,
+          "mean": 84000
+        },
+        "Married": {
+          "median": 92000,
+          "mean": 103000
+        },
+        "Divorced": {
+          "median": 78000,
+          "mean": 87000
+        },
+        "Widowed": {
+          "median": 70000,
+          "mean": 78000
+        }
+      },
+      "cost_of_living_index": 115
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-30",
+    "source": "Australian Bureau of Statistics",
+    "currency": "AUD"
+  }
+}

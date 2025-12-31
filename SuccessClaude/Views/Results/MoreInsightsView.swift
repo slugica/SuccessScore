@@ -10,18 +10,35 @@ import SwiftUI
 struct MoreInsightsView: View {
     @ObservedObject var viewModel: StatisticsViewModel
 
+    private var countryCode: String {
+        viewModel.statisticsSnapshot?.userProfile.countryCode ?? "us"
+    }
+
+    private var currencySymbol: String {
+        switch countryCode {
+        case "us":
+            return "$"
+        case "ca":
+            return "C$"
+        case "uk":
+            return "£"
+        default:
+            return "$"
+        }
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: Theme.paddingLarge) {
                 if let snapshot = viewModel.statisticsSnapshot {
                     // Fun Facts
                     if let funFacts = snapshot.funFacts {
-                        FunFactsView(funFacts: funFacts)
+                        FunFactsView(funFacts: funFacts, countryCode: countryCode)
                     }
 
                     // Gender Comparison
                     if let genderComparison = snapshot.genderComparison {
-                        GenderComparisonView(genderComparison: genderComparison)
+                        GenderComparisonView(genderComparison: genderComparison, currencySymbol: currencySymbol)
                     }
 
                     // Age Comparison
@@ -31,7 +48,8 @@ struct MoreInsightsView: View {
                             userAge: snapshot.userProfile.age,
                             userIncome: snapshot.userProfile.annualIncome,
                             ageGroupMedian: ageGroup.median,
-                            ageGroupMean: ageGroup.mean
+                            ageGroupMean: ageGroup.mean,
+                            currencySymbol: currencySymbol
                         )
                     }
                 }
@@ -51,6 +69,7 @@ struct AgeComparisonCard: View {
     let userIncome: Double
     let ageGroupMedian: Double
     let ageGroupMean: Double
+    var currencySymbol: String = "$"
 
     var body: some View {
         VStack(alignment: .leading, spacing: Theme.paddingMedium) {
@@ -66,9 +85,9 @@ struct AgeComparisonCard: View {
 
             VStack(spacing: 12) {
                 StatRow(label: "Your Age", value: "\(userAge) years old")
-                StatRow(label: "Your Income", value: userIncome.asCurrency)
-                StatRow(label: "Age Group Median", value: ageGroupMedian.asCurrency)
-                StatRow(label: "Age Group Mean", value: ageGroupMean.asCurrency)
+                StatRow(label: "Your Income", value: userIncome.asCurrency(symbol: currencySymbol))
+                StatRow(label: "Age Group Median", value: ageGroupMedian.asCurrency(symbol: currencySymbol))
+                StatRow(label: "Age Group Mean", value: ageGroupMean.asCurrency(symbol: currencySymbol))
             }
 
             let percentDiff = ((userIncome - ageGroupMedian) / ageGroupMedian) * 100

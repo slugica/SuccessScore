@@ -1,0 +1,72 @@
+{
+  "national": {
+    "overall": {
+      "median_household_income": 74100,
+      "median_individual_income": 74100,
+      "mean_household_income": 82000,
+      "top_10_percent": 156000
+    },
+    "by_age": {
+      "18-24": {
+        "median": 48000,
+        "mean": 52000
+      },
+      "25-34": {
+        "median": 78000,
+        "mean": 85000
+      },
+      "35-44": {
+        "median": 95000,
+        "mean": 105000
+      },
+      "45-54": {
+        "median": 98000,
+        "mean": 108000
+      },
+      "55-64": {
+        "median": 92000,
+        "mean": 102000
+      },
+      "65+": {
+        "median": 65000,
+        "mean": 72000
+      }
+    },
+    "by_gender": {
+      "Male": {
+        "median": 95732,
+        "mean": 102000
+      },
+      "Female": {
+        "median": 84812,
+        "mean": 90000
+      }
+    },
+    "by_marital_status": {
+      "Single": {
+        "median": 68000,
+        "mean": 75000
+      },
+      "Married": {
+        "median": 85000,
+        "mean": 95000
+      },
+      "Divorced": {
+        "median": 72000,
+        "mean": 80000
+      },
+      "Widowed": {
+        "median": 65000,
+        "mean": 72000
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-30",
+    "source": "Australian Bureau of Statistics - Employee Earnings, August 2025",
+    "description": "National income statistics for Australia",
+    "currency": "AUD",
+    "year": 2025
+  }
+}

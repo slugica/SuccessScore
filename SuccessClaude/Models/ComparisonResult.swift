@@ -19,6 +19,7 @@ struct ComparisonResult: Identifiable {
     let sampleSize: Int?
     let perCapitaIncome: Double?
     let householdSize: Int?
+    let countryCode: String?  // For country-aware descriptions
 
     var isAboveMedian: Bool {
         userIncome >= medianIncome
@@ -51,7 +52,8 @@ struct ComparisonResult: Identifiable {
         case .state(let stateName):
             return NSLocalizedString("comparison.state.desc", value: "Compared to all earners in \(stateName)", comment: "State comparison description")
         case .national:
-            return NSLocalizedString("comparison.national.desc", value: "Compared to all earners in the United States", comment: "National comparison description")
+            let countryName = countryName(for: countryCode ?? "us")
+            return NSLocalizedString("comparison.national.desc", value: "Compared to all earners in \(countryName)", comment: "National comparison description")
         case .occupation(let occupationTitle):
             return NSLocalizedString("comparison.occupation.desc", value: "Compared to all \(occupationTitle) nationwide", comment: "Occupation comparison description")
         case .peers:
@@ -60,6 +62,17 @@ struct ComparisonResult: Identifiable {
             } else {
                 return NSLocalizedString("comparison.peers.desc.general", value: "Compared to people in your occupation with similar age", comment: "Peer comparison description general")
             }
+        }
+    }
+
+    private func countryName(for code: String) -> String {
+        switch code {
+        case "us":
+            return "the United States"
+        case "uk":
+            return "the United Kingdom"
+        default:
+            return "the country"
         }
     }
 }
@@ -193,7 +206,7 @@ struct StatisticsSnapshot {
     let stateRanking: StateRanking?
     let similarOccupations: [SimilarOccupation]?
     let funFacts: FunFacts?
-    let afterTaxIncome: AfterTaxIncome?
+    let afterTaxIncome: AfterTaxIncomeResult?
     let purchasingPowerAnalysis: PurchasingPowerAnalysis?
 
     var allComparisons: [ComparisonResult] {

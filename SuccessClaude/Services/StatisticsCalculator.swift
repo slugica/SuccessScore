@@ -17,10 +17,13 @@ class StatisticsCalculator {
     // MARK: - Main Calculation Method
 
     func generateStatisticsSnapshot(for profile: UserProfile) async throws -> StatisticsSnapshot {
+        print("📊 generateStatisticsSnapshot START for country: \(profile.countryCode), region: \(profile.region.code)")
+
         if !dataLoader.isDataLoaded {
             try await dataLoader.loadAllData()
         }
 
+        print("📊 Generating comparisons...")
         // Generate all comparisons in parallel
         async let stateComparison = generateStateComparison(for: profile)
         async let nationalComparison = generateNationalComparison(for: profile)
@@ -63,22 +66,24 @@ class StatisticsCalculator {
     // MARK: - Individual Comparisons
 
     private func generateStateComparison(for profile: UserProfile) async throws -> ComparisonResult {
-        guard let stateData = dataLoader.getStateData(for: profile.state) else {
-            throw StatisticsError.dataNotAvailable("State data not available")
+        print("📊 generateStateComparison for region: \(profile.region.code), country: \(profile.countryCode)")
+        guard let regionData = dataLoader.getRegionData(for: profile.region.code, countryCode: profile.countryCode) else {
+            print("❌ Region data not found for: \(profile.region.code), country: \(profile.countryCode)")
+            throw StatisticsError.dataNotAvailable("Region data not available")
         }
+        print("✅ Region data found for: \(profile.region.code)")
 
-        let ageRange = dataLoader.getAgeRangeKey(for: profile.age)
+        let ageRange = dataLoader.getAgeRangeKey(for: profile.age, countryCode: profile.countryCode)
         let maritalKey = profile.maritalStatus.rawValue
 
-        // Get the most specific data available - prioritize marital status for household comparisons
+            // Get the most specific data available - prioritize marital status for household comparisons
         let stats: IncomeStats
-        if let maritalStats = stateData.byMaritalStatus?[maritalKey] {
+        if let maritalStats = regionData.byMaritalStatus?[maritalKey] {
             // Use marital status specific data (better for household income comparisons)
             stats = maritalStats
-        } else if let ageStats = stateData.byAge[ageRange] {
-            stats = ageStats
         } else {
-            stats = stateData.overall.asIncomeStats
+            // Use overall region data for single/divorced/widowed
+            stats = regionData.overall.asIncomeStats
         }
 
         let income = profile.effectiveIncome
@@ -86,25 +91,29 @@ class StatisticsCalculator {
         let percentageDiff = ((income - stats.median) / stats.median) * 100
 
         return ComparisonResult(
-            category: .state(stateName: profile.state.fullName),
+            category: .state(stateName: profile.region.name),
             userIncome: income,
             medianIncome: stats.median,
             meanIncome: stats.mean,
-            top10Threshold: stats.mean * 1.8, // Approximation
+            top10Threshold: regionData.overall.top10Percent ?? (stats.mean * 1.8),
             percentile: percentile,
             percentageDifference: percentageDiff,
             sampleSize: nil,
             perCapitaIncome: profile.perCapitaIncome,
-            householdSize: profile.householdSize
+            householdSize: profile.householdSize,
+            countryCode: profile.countryCode
         )
     }
 
     private func generateNationalComparison(for profile: UserProfile) async throws -> ComparisonResult {
-        guard let nationalStats = dataLoader.getNationalData() else {
+        print("📊 generateNationalComparison for country: \(profile.countryCode)")
+        guard let nationalStats = dataLoader.getNationalData(countryCode: profile.countryCode) else {
+            print("❌ National data not found for country: \(profile.countryCode)")
             throw StatisticsError.dataNotAvailable("National data not available")
         }
+        print("✅ National data found for country: \(profile.countryCode)")
 
-        let ageRange = dataLoader.getAgeRangeKey(for: profile.age)
+        let ageRange = dataLoader.getAgeRangeKey(for: profile.age, countryCode: profile.countryCode)
         let maritalKey = profile.maritalStatus.rawValue
 
         // Get the most specific data available - prioritize marital status for household comparisons
@@ -112,9 +121,8 @@ class StatisticsCalculator {
         if let maritalStats = nationalStats.byMaritalStatus[maritalKey] {
             // Use marital status specific data (better for household income comparisons)
             stats = maritalStats
-        } else if let ageStats = nationalStats.byAge[ageRange] {
-            stats = ageStats
         } else {
+            // Use overall national data for single/divorced/widowed
             stats = IncomeStats(
                 median: nationalStats.overall.medianIndividualIncome,
                 mean: nationalStats.overall.meanHouseholdIncome / 2.5 // Rough conversion
@@ -135,14 +143,18 @@ class StatisticsCalculator {
             percentageDifference: percentageDiff,
             sampleSize: nil,
             perCapitaIncome: profile.perCapitaIncome,
-            householdSize: profile.householdSize
+            householdSize: profile.householdSize,
+            countryCode: profile.countryCode
         )
     }
 
     private func generateOccupationComparison(for profile: UserProfile) async throws -> ComparisonResult {
-        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode) else {
+        print("📊 generateOccupationComparison for socCode: \(profile.occupation.socCode), country: \(profile.countryCode)")
+        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode) else {
+            print("❌ Occupation data not found for socCode: \(profile.occupation.socCode), country: \(profile.countryCode)")
             throw StatisticsError.dataNotAvailable("Occupation data not available")
         }
+        print("✅ Occupation data found: \(occupationData.title)")
 
         let income = profile.annualIncome
         let percentile = calculatePercentile(
@@ -162,16 +174,20 @@ class StatisticsCalculator {
             percentageDifference: percentageDiff,
             sampleSize: nil,
             perCapitaIncome: nil,  // Don't show household metrics for occupation comparison
-            householdSize: nil
+            householdSize: nil,
+            countryCode: profile.countryCode
         )
     }
 
     private func generatePeerComparison(for profile: UserProfile) async throws -> ComparisonResult {
-        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode) else {
+        print("📊 generatePeerComparison for socCode: \(profile.occupation.socCode), country: \(profile.countryCode)")
+        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode) else {
+            print("❌ Peer comparison - Occupation data not found for socCode: \(profile.occupation.socCode), country: \(profile.countryCode)")
             throw StatisticsError.dataNotAvailable("Occupation data not available")
         }
+        print("✅ Peer comparison - Occupation data found: \(occupationData.title)")
 
-        let ageRange = dataLoader.getAgeRangeKey(for: profile.age)
+        let ageRange = dataLoader.getAgeRangeKey(for: profile.age, countryCode: profile.countryCode)
 
         // Get peer stats (same occupation + similar age)
         let stats: IncomeStats
@@ -182,16 +198,16 @@ class StatisticsCalculator {
             stats = IncomeStats(median: occupationData.nationalMedian, mean: occupationData.nationalMean)
         }
 
-        // Try to get state-specific peer data
-        let stateSpecificStats: IncomeStats?
-        if let stateOccStats = occupationData.byState[profile.state.rawValue] {
-            stateSpecificStats = IncomeStats(median: stateOccStats.median, mean: stateOccStats.mean)
+        // Try to get region-specific peer data
+        let regionSpecificStats: IncomeStats?
+        if let regionOccStats = occupationData.byState[profile.region.code] {
+            regionSpecificStats = IncomeStats(median: regionOccStats.median, mean: regionOccStats.mean)
         } else {
-            stateSpecificStats = nil
+            regionSpecificStats = nil
         }
 
-        // Use state-specific if available, otherwise use age-based peer stats
-        let finalStats = stateSpecificStats ?? stats
+        // Use region-specific if available, otherwise use age-based peer stats
+        let finalStats = regionSpecificStats ?? stats
 
         let income = profile.annualIncome
         let percentile = calculatePercentile(
@@ -203,8 +219,8 @@ class StatisticsCalculator {
 
         // Estimate sample size (rough approximation)
         let sampleSize: Int?
-        if let stateOccStats = occupationData.byState[profile.state.rawValue] {
-            sampleSize = stateOccStats.employment / 5 // Assume 1/5 are in similar age range
+        if let regionOccStats = occupationData.byState[profile.region.code] {
+            sampleSize = regionOccStats.employment / 5 // Assume 1/5 are in similar age range
         } else {
             sampleSize = nil
         }
@@ -219,7 +235,8 @@ class StatisticsCalculator {
             percentageDifference: percentageDiff,
             sampleSize: sampleSize,
             perCapitaIncome: nil,  // Don't show household metrics for peer comparison
-            householdSize: nil
+            householdSize: nil,
+            countryCode: profile.countryCode
         )
     }
 
@@ -283,16 +300,16 @@ class StatisticsCalculator {
     // MARK: - Additional Statistics Calculations
 
     private func calculatePathToTop10State(for profile: UserProfile) async throws -> PathToTop10 {
-        guard let stateData = dataLoader.getStateData(for: profile.state) else {
-            throw StatisticsError.dataNotAvailable("State data not available")
+        guard let regionData = dataLoader.getRegionData(for: profile.region.code, countryCode: profile.countryCode) else {
+            throw StatisticsError.dataNotAvailable("Region data not available")
         }
 
         let maritalKey = profile.maritalStatus.rawValue
         let stats: IncomeStats
-        if let maritalStats = stateData.byMaritalStatus?[maritalKey] {
+        if let maritalStats = regionData.byMaritalStatus?[maritalKey] {
             stats = maritalStats
         } else {
-            stats = stateData.overall.asIncomeStats
+            stats = regionData.overall.asIncomeStats
         }
 
         let top10 = stats.mean * 1.8
@@ -303,7 +320,7 @@ class StatisticsCalculator {
         return PathToTop10(
             currentIncome: income,
             top10Threshold: top10,
-            category: profile.state.fullName,
+            category: profile.region.name,
             gapAmount: gap,
             gapPercentage: gapPercentage,
             isAlreadyTop10: income >= top10
@@ -311,7 +328,7 @@ class StatisticsCalculator {
     }
 
     private func calculatePathToTop10Occupation(for profile: UserProfile) async throws -> PathToTop10 {
-        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode) else {
+        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode) else {
             throw StatisticsError.dataNotAvailable("Occupation data not available")
         }
 
@@ -331,13 +348,18 @@ class StatisticsCalculator {
     }
 
     private func calculateCareerForecast(for profile: UserProfile) async throws -> CareerForecast {
-        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode) else {
+        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode) else {
             throw StatisticsError.dataNotAvailable("Occupation data not available")
         }
 
         let ageGroups: [AgeGroupIncome] = occupationData.ageDistribution
             .sorted { $0.key < $1.key }
             .map { AgeGroupIncome(ageRange: $0.key, median: $0.value.median, mean: $0.value.mean) }
+
+        // Require at least 2 age groups for meaningful forecast
+        guard ageGroups.count >= 2 else {
+            throw StatisticsError.dataNotAvailable("Insufficient age distribution data for career forecast")
+        }
 
         let peakGroup = ageGroups.max { $0.median < $1.median }
         let peakAge = peakGroup?.ageRange ?? "45-54"
@@ -353,12 +375,12 @@ class StatisticsCalculator {
     }
 
     private func calculateGenderComparison(for profile: UserProfile) async throws -> GenderComparison {
-        guard let stateData = dataLoader.getStateData(for: profile.state) else {
-            throw StatisticsError.dataNotAvailable("State data not available")
+        guard let regionData = dataLoader.getRegionData(for: profile.region.code, countryCode: profile.countryCode) else {
+            throw StatisticsError.dataNotAvailable("Region data not available")
         }
 
-        let maleMedian = stateData.byGender["Male"]?.median
-        let femaleMedian = stateData.byGender["Female"]?.median
+        let maleMedian = regionData.byGender["Male"]?.median
+        let femaleMedian = regionData.byGender["Female"]?.median
 
         let payGap: Double?
         if let male = maleMedian, let female = femaleMedian, male > 0 {
@@ -368,7 +390,7 @@ class StatisticsCalculator {
         }
 
         return GenderComparison(
-            category: profile.state.fullName,
+            category: profile.region.name,
             maleMedian: maleMedian,
             femaleMedian: femaleMedian,
             userGender: profile.gender,
@@ -378,7 +400,7 @@ class StatisticsCalculator {
     }
 
     private func calculateStateRanking(for profile: UserProfile) async throws -> StateRanking {
-        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode) else {
+        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode) else {
             throw StatisticsError.dataNotAvailable("Occupation data not available")
         }
 
@@ -402,24 +424,24 @@ class StatisticsCalculator {
             )
         }
 
-        // Find user's state rank
-        let userStateRank = stateIncomes.firstIndex { $0.code == profile.state.rawValue }.map { $0 + 1 }
+        // Find user's region rank
+        let userStateRank = stateIncomes.firstIndex { $0.code == profile.region.code }.map { $0 + 1 }
 
         return StateRanking(
             occupation: occupationData.title,
             topStates: topStates,
             userStateRank: userStateRank,
-            userState: profile.state.fullName
+            userState: profile.region.name
         )
     }
 
     private func calculateSimilarOccupations(for profile: UserProfile) async throws -> [SimilarOccupation] {
-        guard let currentOccupation = dataLoader.getOccupationData(for: profile.occupation.socCode) else {
+        guard let currentOccupation = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode) else {
             throw StatisticsError.dataNotAvailable("Occupation data not available")
         }
 
         // Get all occupations from same category
-        let allOccupations = dataLoader.getAllOccupations()
+        let allOccupations = dataLoader.getAllOccupations(countryCode: profile.countryCode)
         let sameCategory = allOccupations.filter {
             $0.category == currentOccupation.category && $0.socCode != currentOccupation.socCode
         }
@@ -440,8 +462,8 @@ class StatisticsCalculator {
     }
 
     private func calculateFunFacts(for profile: UserProfile) async throws -> FunFacts {
-        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode),
-              let nationalStats = dataLoader.getNationalData() else {
+        guard let occupationData = dataLoader.getOccupationData(for: profile.occupation.socCode, countryCode: profile.countryCode),
+              let nationalStats = dataLoader.getNationalData(countryCode: profile.countryCode) else {
             throw StatisticsError.dataNotAvailable("Data not available")
         }
 
@@ -453,7 +475,7 @@ class StatisticsCalculator {
         )
 
         // Get employment numbers
-        let stateEmployment = occupationData.byState[profile.state.rawValue]?.employment
+        let stateEmployment = occupationData.byState[profile.region.code]?.employment
 
         // Calculate occupation employment (sum across all states)
         let occupationEmployment = occupationData.byState.values.reduce(0) { $0 + $1.employment }
@@ -472,25 +494,26 @@ class StatisticsCalculator {
         )
     }
 
-    private func calculateAfterTaxIncome(for profile: UserProfile) -> AfterTaxIncome {
+    private func calculateAfterTaxIncome(for profile: UserProfile) -> AfterTaxIncomeResult {
         return TaxCalculator.calculateAfterTaxIncome(
             grossIncome: profile.effectiveIncome,
-            state: profile.state,
+            countryCode: profile.countryCode,
+            region: profile.region,
             filingStatus: profile.maritalStatus
         )
     }
 
     private func calculatePurchasingPowerAnalysis(for profile: UserProfile) async throws -> PurchasingPowerAnalysis {
-        guard let stateData = dataLoader.getStateData(for: profile.state) else {
-            throw StatisticsError.dataNotAvailable("State data not available")
+        guard let regionData = dataLoader.getRegionData(for: profile.region.code, countryCode: profile.countryCode) else {
+            throw StatisticsError.dataNotAvailable("Region data not available")
         }
 
-        guard let nationalData = dataLoader.getNationalData() else {
+        guard let nationalData = dataLoader.getNationalData(countryCode: profile.countryCode) else {
             throw StatisticsError.dataNotAvailable("National data not available")
         }
 
         let actualIncome = profile.effectiveIncome
-        let colIndex = stateData.costOfLivingIndex
+        let colIndex = regionData.costOfLivingIndex
 
         // Adjusted income: what your income would be worth in an average-cost state
         // Formula: actual_income × (100 / state_COL_index)
@@ -516,7 +539,7 @@ class StatisticsCalculator {
             actualIncome: actualIncome,
             adjustedIncome: adjustedIncome,
             costOfLivingIndex: colIndex,
-            stateName: profile.state.fullName,
+            stateName: profile.region.name,
             nationalMedianAdjusted: nationalMedianAdjusted,
             adjustedPercentile: adjustedPercentile,
             savingsImpact: savingsImpact

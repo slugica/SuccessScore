@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SimilarOccupationsView: View {
     let similarOccupations: [SimilarOccupation]
+    var countryCode: String = "us"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -39,7 +40,7 @@ struct SimilarOccupationsView: View {
             } else {
                 VStack(spacing: 12) {
                     ForEach(Array(similarOccupations.enumerated()), id: \.element.socCode) { index, occupation in
-                        SimilarOccupationRow(occupation: occupation, rank: index + 1)
+                        SimilarOccupationRow(occupation: occupation, rank: index + 1, countryCode: countryCode)
                     }
                 }
             }
@@ -56,6 +57,7 @@ struct SimilarOccupationsView: View {
 struct SimilarOccupationRow: View {
     let occupation: SimilarOccupation
     let rank: Int
+    var countryCode: String = "us"
 
     var body: some View {
         HStack(spacing: 12) {
@@ -83,7 +85,7 @@ struct SimilarOccupationRow: View {
 
             // Median and difference
             VStack(alignment: .trailing, spacing: 4) {
-                Text(occupation.median.asCurrency)
+                Text(occupation.median.asCurrency(countryCode: countryCode))
                     .font(.body)
                     .fontWeight(.semibold)
                     .foregroundColor(.textPrimary)

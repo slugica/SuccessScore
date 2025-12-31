@@ -34,10 +34,15 @@ class StatisticsViewModel: ObservableObject {
         defer { isLoading = false }
 
         do {
-            // Ensure data is loaded
-            if !dataLoader.isDataLoaded {
-                try await dataLoader.loadAllData()
+            // Ensure data is loaded for this profile's country
+            if !dataLoader.isCountryDataLoaded(profile.countryCode) {
+                print("📊 Loading data for country: \(profile.countryCode)")
+                try await dataLoader.loadCountryData(countryCode: profile.countryCode)
             }
+
+            // Set current country for DataLoader
+            dataLoader.setCurrentCountry(profile.countryCode)
+            print("📊 Current country set to: \(profile.countryCode)")
 
             // Generate statistics snapshot
             let snapshot = try await calculator.generateStatisticsSnapshot(for: profile)
@@ -46,7 +51,13 @@ class StatisticsViewModel: ObservableObject {
         } catch {
             self.error = error
             self.showError = true
-            print("Error calculating statistics: \(error)")
+            print("❌❌❌ ERROR calculating statistics for country: \(profile.countryCode)")
+            print("❌ Error: \(error)")
+            print("❌ Error type: \(type(of: error))")
+            print("❌ Error description: \(error.localizedDescription)")
+            if let statsError = error as? StatisticsError {
+                print("❌ StatisticsError: \(statsError)")
+            }
         }
     }
 
@@ -95,8 +106,10 @@ class StatisticsViewModel: ObservableObject {
     }
 
     var automationRisk: OccupationRisk? {
-        guard let socCode = statisticsSnapshot?.userProfile.occupation.socCode else { return nil }
-        return dataLoader.getAutomationRisk(for: socCode)
+        guard let snapshot = statisticsSnapshot else { return nil }
+        let socCode = snapshot.userProfile.occupation.socCode
+        let countryCode = snapshot.userProfile.countryCode
+        return dataLoader.getAutomationRisk(for: socCode, countryCode: countryCode)
     }
 
     var earnedBadges: [Badge] {

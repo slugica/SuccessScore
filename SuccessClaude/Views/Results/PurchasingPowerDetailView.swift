@@ -9,12 +9,13 @@ import SwiftUI
 
 struct PurchasingPowerDetailView: View {
     let analysis: PurchasingPowerAnalysis
+    var currencySymbol: String = "$"
 
     var body: some View {
         ScrollView {
             VStack(spacing: Theme.paddingLarge) {
                 headerSection
-                PurchasingPowerCardView(analysis: analysis)
+                PurchasingPowerCardView(analysis: analysis, currencySymbol: currencySymbol)
                 explanationSection
                 footerSection
             }
@@ -52,7 +53,7 @@ struct PurchasingPowerDetailView: View {
             explanationCard(
                 icon: "chart.bar.fill",
                 title: "Adjusted Income",
-                description: "Your \(analysis.actualIncome.asCurrency) in \(analysis.stateName) has the same purchasing power as \(analysis.adjustedIncome.asCurrency) in an average-cost area."
+                description: "Your \(analysis.actualIncome.asCurrency(symbol: currencySymbol)) in \(analysis.stateName) has the same purchasing power as \(analysis.adjustedIncome.asCurrency(symbol: currencySymbol)) in an average-cost area."
             )
 
             if abs(analysis.savingsImpact) > 1000 {
@@ -116,9 +117,9 @@ struct PurchasingPowerDetailView: View {
         let impact = abs(analysis.savingsImpact)
 
         if analysis.savingsImpact < 0 {
-            return "Living in \(analysis.stateName) costs you approximately \(impact.asCurrency) per year more than if you lived in an average-cost state with the same nominal income."
+            return "Living in \(analysis.stateName) costs you approximately \(impact.asCurrency(symbol: currencySymbol)) per year more than if you lived in an average-cost area with the same nominal income."
         } else {
-            return "Living in \(analysis.stateName) saves you approximately \(impact.asCurrency) per year compared to living in an average-cost state with the same nominal income."
+            return "Living in \(analysis.stateName) saves you approximately \(impact.asCurrency(symbol: currencySymbol)) per year compared to living in an average-cost area with the same nominal income."
         }
     }
 }
