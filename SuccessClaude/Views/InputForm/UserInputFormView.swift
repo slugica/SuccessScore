@@ -333,8 +333,8 @@ struct UserInputFormView: View {
 
                     Divider()
 
-                    // Household Income (US and AU)
-                    if viewModel.userProfile.countryCode == "us" || viewModel.userProfile.countryCode == "au" {
+                    // Household Income (US, AU, DE, FR, ES - countries where marital status affects taxes)
+                    if ["us", "au", "de", "fr", "es"].contains(viewModel.userProfile.countryCode) {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Total Household Income")
                                 .font(.subheadline)

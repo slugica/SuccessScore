@@ -351,7 +351,11 @@ class UserInputViewModel: ObservableObject {
     }
 
     var isIncomeComplete: Bool {
-        if userProfile.isMarried {
+        // Countries where household income is required for married users (tax splitting)
+        let countriesRequiringHouseholdIncome = ["us", "au", "de", "fr", "es"]
+        let requiresHouseholdIncome = userProfile.isMarried && countriesRequiringHouseholdIncome.contains(userProfile.countryCode)
+
+        if requiresHouseholdIncome {
             return userProfile.annualIncome > 0 &&
                    userProfile.householdIncome > 0 &&
                    userProfile.annualIncome <= 10_000_000 &&

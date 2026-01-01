@@ -1,0 +1,31 @@
+{
+  "national": {
+    "overall": {
+      "median_household_income": 42500,
+      "median_individual_income": 33984,
+      "mean_household_income": 52000,
+      "top_10_percent": 67028
+    },
+    "by_age": {
+      "18-24": {"median": 20500, "mean": 22000},
+      "25-34": {"median": 28900, "mean": 32500},
+      "35-44": {"median": 35200, "mean": 41000},
+      "45-54": {"median": 37500, "mean": 45000},
+      "55-64": {"median": 38000, "mean": 47000},
+      "65+": {"median": 35000, "mean": 42000}
+    },
+    "by_gender": {
+      "male": {"median": 36725, "mean": 45089},
+      "female": {"median": 31200, "mean": 39025}
+    },
+    "by_marital_status": {
+      "single": {"median": 30000, "mean": 35000},
+      "married": {"median": 38000, "mean": 45000}
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-12-31",
+    "source": "INSEE - Revenus et patrimoine des ménages 2024"
+  }
+}

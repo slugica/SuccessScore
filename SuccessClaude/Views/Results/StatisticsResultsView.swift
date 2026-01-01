@@ -29,7 +29,7 @@ struct StatisticsResultsView: View {
             return "A$"
         case "nz":
             return "NZ$"
-        case "de":
+        case "de", "fr", "es":
             return "€"
         default:
             return "$"
@@ -50,6 +50,10 @@ struct StatisticsResultsView: View {
             return "New Zealand"
         case "de":
             return "Germany"
+        case "fr":
+            return "France"
+        case "es":
+            return "Spain"
         default:
             return "Country"
         }

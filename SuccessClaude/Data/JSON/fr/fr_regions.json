@@ -1,0 +1,351 @@
+{
+  "regions": [
+    {
+      "code": "IDF",
+      "name": "Île-de-France",
+      "country_code": "fr",
+      "overall": {"median": 54186, "mean": 60688, "top_10_percent": 95000},
+      "by_age": {
+        "18-24": {"median": 25000, "mean": 28000},
+        "25-34": {"median": 38000, "mean": 42000},
+        "35-44": {"median": 52000, "mean": 58000},
+        "45-54": {"median": 58000, "mean": 65000},
+        "55-64": {"median": 55000, "mean": 62000},
+        "65+": {"median": 50000, "mean": 56000}
+      },
+      "by_gender": {
+        "male": {"median": 58000, "mean": 65000},
+        "female": {"median": 48000, "mean": 54000}
+      },
+      "cost_of_living_index": 125.0
+    },
+    {
+      "code": "ARA",
+      "name": "Auvergne-Rhône-Alpes",
+      "country_code": "fr",
+      "overall": {"median": 41020, "mean": 45943, "top_10_percent": 72000},
+      "by_age": {
+        "18-24": {"median": 20000, "mean": 22000},
+        "25-34": {"median": 32000, "mean": 36000},
+        "35-44": {"median": 42000, "mean": 47000},
+        "45-54": {"median": 46000, "mean": 51000},
+        "55-64": {"median": 44000, "mean": 49000},
+        "65+": {"median": 40000, "mean": 45000}
+      },
+      "by_gender": {
+        "male": {"median": 44000, "mean": 49000},
+        "female": {"median": 37000, "mean": 41000}
+      },
+      "cost_of_living_index": 102.5
+    },
+    {
+      "code": "NAQ",
+      "name": "Nouvelle-Aquitaine",
+      "country_code": "fr",
+      "overall": {"median": 37514, "mean": 42016, "top_10_percent": 66000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 29000, "mean": 33000},
+        "35-44": {"median": 38000, "mean": 43000},
+        "45-54": {"median": 42000, "mean": 47000},
+        "55-64": {"median": 40000, "mean": 45000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 40000, "mean": 45000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 97.0
+    },
+    {
+      "code": "OCC",
+      "name": "Occitanie",
+      "country_code": "fr",
+      "overall": {"median": 38465, "mean": 43080, "top_10_percent": 68000},
+      "by_age": {
+        "18-24": {"median": 18500, "mean": 20500},
+        "25-34": {"median": 30000, "mean": 34000},
+        "35-44": {"median": 39000, "mean": 44000},
+        "45-54": {"median": 43000, "mean": 48000},
+        "55-64": {"median": 41000, "mean": 46000},
+        "65+": {"median": 37000, "mean": 41000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 35000, "mean": 39000}
+      },
+      "cost_of_living_index": 98.5
+    },
+    {
+      "code": "HDF",
+      "name": "Hauts-de-France",
+      "country_code": "fr",
+      "overall": {"median": 38107, "mean": 42680, "top_10_percent": 67000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 30000, "mean": 33000},
+        "35-44": {"median": 39000, "mean": 43000},
+        "45-54": {"median": 43000, "mean": 48000},
+        "55-64": {"median": 41000, "mean": 45000},
+        "65+": {"median": 37000, "mean": 41000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 95.0
+    },
+    {
+      "code": "GES",
+      "name": "Grand Est",
+      "country_code": "fr",
+      "overall": {"median": 38231, "mean": 42818, "top_10_percent": 67000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 30000, "mean": 33000},
+        "35-44": {"median": 39000, "mean": 44000},
+        "45-54": {"median": 43000, "mean": 48000},
+        "55-64": {"median": 41000, "mean": 46000},
+        "65+": {"median": 37000, "mean": 41000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 96.5
+    },
+    {
+      "code": "PAC",
+      "name": "Provence-Alpes-Côte d'Azur",
+      "country_code": "fr",
+      "overall": {"median": 40007, "mean": 44808, "top_10_percent": 70000},
+      "by_age": {
+        "18-24": {"median": 19000, "mean": 21000},
+        "25-34": {"median": 31000, "mean": 35000},
+        "35-44": {"median": 41000, "mean": 46000},
+        "45-54": {"median": 45000, "mean": 50000},
+        "55-64": {"median": 43000, "mean": 48000},
+        "65+": {"median": 39000, "mean": 43000}
+      },
+      "by_gender": {
+        "male": {"median": 43000, "mean": 48000},
+        "female": {"median": 36000, "mean": 40000}
+      },
+      "cost_of_living_index": 107.0
+    },
+    {
+      "code": "PDL",
+      "name": "Pays de la Loire",
+      "country_code": "fr",
+      "overall": {"median": 37950, "mean": 42504, "top_10_percent": 66000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 30000, "mean": 33000},
+        "35-44": {"median": 39000, "mean": 43000},
+        "45-54": {"median": 42000, "mean": 47000},
+        "55-64": {"median": 40000, "mean": 45000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 97.5
+    },
+    {
+      "code": "BRE",
+      "name": "Bretagne",
+      "country_code": "fr",
+      "overall": {"median": 37295, "mean": 41771, "top_10_percent": 65000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 29000, "mean": 32000},
+        "35-44": {"median": 38000, "mean": 42000},
+        "45-54": {"median": 42000, "mean": 46000},
+        "55-64": {"median": 40000, "mean": 44000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 40000, "mean": 45000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 97.5
+    },
+    {
+      "code": "NOR",
+      "name": "Normandie",
+      "country_code": "fr",
+      "overall": {"median": 37872, "mean": 42416, "top_10_percent": 66000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 29000, "mean": 33000},
+        "35-44": {"median": 38000, "mean": 43000},
+        "45-54": {"median": 42000, "mean": 47000},
+        "55-64": {"median": 40000, "mean": 45000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 96.0
+    },
+    {
+      "code": "BFC",
+      "name": "Bourgogne-Franche-Comté",
+      "country_code": "fr",
+      "overall": {"median": 37218, "mean": 41684, "top_10_percent": 65000},
+      "by_age": {
+        "18-24": {"median": 17500, "mean": 19500},
+        "25-34": {"median": 29000, "mean": 32000},
+        "35-44": {"median": 38000, "mean": 42000},
+        "45-54": {"median": 42000, "mean": 46000},
+        "55-64": {"median": 40000, "mean": 44000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 40000, "mean": 45000},
+        "female": {"median": 33000, "mean": 37000}
+      },
+      "cost_of_living_index": 96.0
+    },
+    {
+      "code": "CVL",
+      "name": "Centre-Val de Loire",
+      "country_code": "fr",
+      "overall": {"median": 37779, "mean": 42312, "top_10_percent": 66000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 29000, "mean": 33000},
+        "35-44": {"median": 38000, "mean": 43000},
+        "45-54": {"median": 42000, "mean": 47000},
+        "55-64": {"median": 40000, "mean": 45000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 95.5
+    },
+    {
+      "code": "COR",
+      "name": "Corse",
+      "country_code": "fr",
+      "overall": {"median": 35859, "mean": 40163, "top_10_percent": 63000},
+      "by_age": {
+        "18-24": {"median": 17000, "mean": 19000},
+        "25-34": {"median": 28000, "mean": 31000},
+        "35-44": {"median": 36000, "mean": 40000},
+        "45-54": {"median": 40000, "mean": 44000},
+        "55-64": {"median": 38000, "mean": 42000},
+        "65+": {"median": 34000, "mean": 38000}
+      },
+      "by_gender": {
+        "male": {"median": 38000, "mean": 43000},
+        "female": {"median": 32000, "mean": 36000}
+      },
+      "cost_of_living_index": 108.0
+    },
+    {
+      "code": "GUA",
+      "name": "Guadeloupe",
+      "country_code": "fr",
+      "overall": {"median": 37452, "mean": 41946, "top_10_percent": 65000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 29000, "mean": 32000},
+        "35-44": {"median": 38000, "mean": 42000},
+        "45-54": {"median": 42000, "mean": 46000},
+        "55-64": {"median": 40000, "mean": 44000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 40000, "mean": 45000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 115.0
+    },
+    {
+      "code": "MTQ",
+      "name": "Martinique",
+      "country_code": "fr",
+      "overall": {"median": 37996, "mean": 42556, "top_10_percent": 66000},
+      "by_age": {
+        "18-24": {"median": 18000, "mean": 20000},
+        "25-34": {"median": 29000, "mean": 33000},
+        "35-44": {"median": 39000, "mean": 43000},
+        "45-54": {"median": 42000, "mean": 47000},
+        "55-64": {"median": 40000, "mean": 45000},
+        "65+": {"median": 36000, "mean": 40000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 34000, "mean": 38000}
+      },
+      "cost_of_living_index": 117.0
+    },
+    {
+      "code": "GUF",
+      "name": "Guyane",
+      "country_code": "fr",
+      "overall": {"median": 38465, "mean": 43080, "top_10_percent": 67000},
+      "by_age": {
+        "18-24": {"median": 18500, "mean": 20500},
+        "25-34": {"median": 30000, "mean": 33000},
+        "35-44": {"median": 39000, "mean": 44000},
+        "45-54": {"median": 43000, "mean": 48000},
+        "55-64": {"median": 41000, "mean": 46000},
+        "65+": {"median": 37000, "mean": 41000}
+      },
+      "by_gender": {
+        "male": {"median": 41000, "mean": 46000},
+        "female": {"median": 35000, "mean": 39000}
+      },
+      "cost_of_living_index": 120.0
+    },
+    {
+      "code": "REU",
+      "name": "La Réunion",
+      "country_code": "fr",
+      "overall": {"median": 34836, "mean": 39016, "top_10_percent": 61000},
+      "by_age": {
+        "18-24": {"median": 16500, "mean": 18500},
+        "25-34": {"median": 27000, "mean": 30000},
+        "35-44": {"median": 35000, "mean": 39000},
+        "45-54": {"median": 39000, "mean": 43000},
+        "55-64": {"median": 37000, "mean": 41000},
+        "65+": {"median": 33000, "mean": 37000}
+      },
+      "by_gender": {
+        "male": {"median": 37000, "mean": 41000},
+        "female": {"median": 31000, "mean": 35000}
+      },
+      "cost_of_living_index": 112.0
+    },
+    {
+      "code": "MAY",
+      "name": "Mayotte",
+      "country_code": "fr",
+      "overall": {"median": 33621, "mean": 37656, "top_10_percent": 59000},
+      "by_age": {
+        "18-24": {"median": 16000, "mean": 18000},
+        "25-34": {"median": 26000, "mean": 29000},
+        "35-44": {"median": 34000, "mean": 38000},
+        "45-54": {"median": 38000, "mean": 42000},
+        "55-64": {"median": 36000, "mean": 40000},
+        "65+": {"median": 32000, "mean": 36000}
+      },
+      "by_gender": {
+        "male": {"median": 36000, "mean": 40000},
+        "female": {"median": 30000, "mean": 34000}
+      },
+      "cost_of_living_index": 125.0
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-12-31",
+    "source": "INSEE - Salaires par région 2024"
+  }
+}

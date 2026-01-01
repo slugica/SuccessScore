@@ -41,11 +41,13 @@ class DataLoader {
     private var countryDataSets: [String: CountryDataSet] = [:]
     private var currentCountryCode: String = "us"
 
-    // SOC code mapping (UK → US, NOC → SOC, ANZSCO → SOC, KldB → SOC, etc.)
+    // SOC code mapping (UK → US, NOC → SOC, ANZSCO → SOC, KldB → SOC, FAP → SOC, CNO → SOC, etc.)
     private var ukToUSSocMapping: SOCMapping?
     private var nocToSocMapping: SOCMapping?
     private var anzscoToSocMapping: SOCMapping?
     private var kldbToSocMapping: SOCMapping?
+    private var fapToSocMapping: SOCMapping?
+    private var cnoToSocMapping: SOCMapping?
 
     // Legacy properties for backward compatibility
     private var occupationsData: BLSOEWSData? {
@@ -173,6 +175,14 @@ class DataLoader {
         // Load KldB → SOC mapping for Germany
         kldbToSocMapping = try await load(filename: "kldb_to_soc_mapping", extension: "json", subdirectory: nil)
         print("🗺️ KldB→SOC mapping loaded: \(kldbToSocMapping?.mappings.count ?? 0) mappings")
+
+        // Load FAP → SOC mapping for France
+        fapToSocMapping = try await load(filename: "fap_to_soc_mapping", extension: "json", subdirectory: nil)
+        print("🗺️ FAP→SOC mapping loaded: \(fapToSocMapping?.mappings.count ?? 0) mappings")
+
+        // Load CNO → SOC mapping for Spain
+        cnoToSocMapping = try await load(filename: "cno_to_soc_mapping", extension: "json", subdirectory: nil)
+        print("🗺️ CNO→SOC mapping loaded: \(cnoToSocMapping?.mappings.count ?? 0) mappings")
     }
 
     // MARK: - Individual Loaders (Country-specific)
@@ -337,6 +347,12 @@ class DataLoader {
             case "de":
                 // Germany uses KldB 2010 classification
                 mapping = kldbToSocMapping
+            case "fr":
+                // France uses FAP 2009 classification
+                mapping = fapToSocMapping
+            case "es":
+                // Spain uses CNO-11 classification
+                mapping = cnoToSocMapping
             default:
                 mapping = nil
             }
@@ -402,6 +418,16 @@ class DataLoader {
             }
         case "ca", "au":
             // Canada and Australia use the same age groupings
+            switch age {
+            case 18...24: return "18-24"
+            case 25...34: return "25-34"
+            case 35...44: return "35-44"
+            case 45...54: return "45-54"
+            case 55...64: return "55-64"
+            default: return "65+"
+            }
+        case "fr", "es":
+            // France and Spain use similar age groupings
             switch age {
             case 18...24: return "18-24"
             case 25...34: return "25-34"

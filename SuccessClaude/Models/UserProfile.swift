@@ -102,7 +102,12 @@ struct UserProfile: Codable {
     }
 
     var effectiveIncome: Double {
-        return isMarried ? householdIncome : annualIncome
+        if isMarried {
+            // Use householdIncome if available, otherwise fallback to annualIncome
+            return householdIncome > 0 ? householdIncome : annualIncome
+        } else {
+            return annualIncome
+        }
     }
 
     /// OECD Modified Equivalence Scale for household income comparison

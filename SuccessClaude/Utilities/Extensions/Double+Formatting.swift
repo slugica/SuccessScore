@@ -70,7 +70,7 @@ extension Double {
             return "A$"
         case "nz":
             return "NZ$"
-        case "de":
+        case "de", "fr", "es":
             return "€"
         default:
             return "$"

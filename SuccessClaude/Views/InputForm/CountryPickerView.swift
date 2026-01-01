@@ -26,7 +26,7 @@ struct CountryPickerView: View {
             LazyVGrid(columns: [
                 GridItem(.flexible()),
                 GridItem(.flexible())
-            ], spacing: 16) {
+            ], spacing: 10) {
                 ForEach(countries) { country in
                     CountryCard(
                         country: country,
@@ -54,34 +54,41 @@ struct CountryCard: View {
 
     var body: some View {
         Button(action: action) {
-            VStack(spacing: 12) {
+            HStack(spacing: 12) {
                 Text(country.flag)
-                    .font(.system(size: 60))
+                    .font(.system(size: 32))
 
-                Text(country.name)
-                    .font(.headline)
-                    .foregroundColor(.primary)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(country.name)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.primary)
+                        .lineLimit(1)
 
-                VStack(spacing: 4) {
-                    Text("\(country.occupationCount) occupations")
-                        .font(.caption)
+                    Text("\(country.occupationCount) jobs")
+                        .font(.caption2)
                         .foregroundColor(.secondary)
+                }
 
-                    Text("\(country.regionCount) \(country.regionType.lowercased())s")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                Spacer()
+
+                if isSelected {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(.blue)
+                        .font(.title3)
                 }
             }
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 24)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
             .background(
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: 12)
                     .fill(isSelected ? Color.blue.opacity(0.1) : Color(.systemBackground))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 16)
-                            .stroke(isSelected ? Color.blue : Color.gray.opacity(0.3), lineWidth: isSelected ? 3 : 1)
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(isSelected ? Color.blue : Color.gray.opacity(0.3), lineWidth: isSelected ? 2 : 1)
                     )
-                    .shadow(color: isSelected ? Color.blue.opacity(0.3) : Color.black.opacity(0.05), radius: isSelected ? 8 : 4, x: 0, y: 2)
+                    .shadow(color: isSelected ? Color.blue.opacity(0.2) : Color.black.opacity(0.03), radius: isSelected ? 4 : 2, x: 0, y: 1)
             )
         }
         .buttonStyle(PlainButtonStyle())

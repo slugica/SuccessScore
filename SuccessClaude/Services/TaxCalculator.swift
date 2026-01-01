@@ -38,7 +38,13 @@ struct TaxCalculator {
             return calculateNewZealandTax(grossIncome: grossIncome, region: region)
 
         case "de":
-            return calculateGermanTax(grossIncome: grossIncome, region: region)
+            return calculateGermanTax(grossIncome: grossIncome, region: region, filingStatus: filingStatus)
+
+        case "fr":
+            return calculateFrenchTax(grossIncome: grossIncome, region: region, filingStatus: filingStatus)
+
+        case "es":
+            return calculateSpanishTax(grossIncome: grossIncome, region: region, filingStatus: filingStatus)
 
         default:
             return createEmptyResult(grossIncome: grossIncome, countryCode: countryCode, region: region)
@@ -630,22 +636,35 @@ struct TaxCalculator {
 
     private static func calculateGermanTax(
         grossIncome: Double,
-        region: Region
+        region: Region,
+        filingStatus: MaritalStatus
     ) -> AfterTaxIncomeResult {
-        let incomeTax = calculateGermanIncomeTax(income: grossIncome)
-        let solidaritySurcharge = calculateSolidaritySurcharge(incomeTax: incomeTax)
+        // Ehegattensplitting: For married couples, income is split in half,
+        // tax calculated on half, then doubled. This benefits unequal earners.
+        let incomeTax: Double
+        if filingStatus == .married {
+            // Splitting: calculate tax on half income, then double
+            let taxOnHalf = calculateGermanIncomeTax(income: grossIncome / 2)
+            incomeTax = taxOnHalf * 2
+        } else {
+            incomeTax = calculateGermanIncomeTax(income: grossIncome)
+        }
+
+        let solidaritySurcharge = calculateSolidaritySurcharge(incomeTax: incomeTax, filingStatus: filingStatus)
         let socialInsurance = calculateGermanSocialInsurance(income: grossIncome)
 
         let totalTax = incomeTax + solidaritySurcharge + socialInsurance
         let afterTaxIncome = grossIncome - totalTax
         let effectiveTaxRate = grossIncome > 0 ? (totalTax / grossIncome) * 100 : 0
 
+        let taxName = filingStatus == .married ? "Einkommensteuer (Splitting)" : "Einkommensteuer (Income Tax)"
+
         return AfterTaxIncomeResult(
             grossIncome: grossIncome,
             countryCode: "de",
             region: region,
             components: [
-                TaxComponent(name: "Einkommensteuer (Income Tax)", amount: incomeTax, rate: grossIncome > 0 ? (incomeTax / grossIncome) * 100 : 0),
+                TaxComponent(name: taxName, amount: incomeTax, rate: grossIncome > 0 ? (incomeTax / grossIncome) * 100 : 0),
                 TaxComponent(name: "Solidaritätszuschlag", amount: solidaritySurcharge, rate: grossIncome > 0 ? (solidaritySurcharge / grossIncome) * 100 : 0),
                 TaxComponent(name: "Sozialversicherung (Social Insurance)", amount: socialInsurance, rate: grossIncome > 0 ? (socialInsurance / grossIncome) * 100 : 0)
             ],
@@ -687,18 +706,19 @@ struct TaxCalculator {
         return 0.45 * income - 18_936.88
     }
 
-    private static func calculateSolidaritySurcharge(incomeTax: Double) -> Double {
+    private static func calculateSolidaritySurcharge(incomeTax: Double, filingStatus: MaritalStatus) -> Double {
         // Solidaritätszuschlag: 5.5% of income tax
-        // Only applies if income tax exceeds €18,130 (singles)
-        // Phased in between €18,130 and €33,951
+        // Thresholds for married couples are doubled
+        let threshold = filingStatus == .married ? 36_260.0 : 18_130.0
+        let phaseOutEnd = filingStatus == .married ? 67_902.0 : 33_951.0
 
-        if incomeTax <= 18_130 {
+        if incomeTax <= threshold {
             return 0
         }
 
-        if incomeTax <= 33_951 {
+        if incomeTax <= phaseOutEnd {
             // Phase-in zone: marginal rate of 11.9%
-            return (incomeTax - 18_130) * 0.119
+            return (incomeTax - threshold) * 0.119
         }
 
         // Full rate: 5.5% of income tax
@@ -726,6 +746,208 @@ struct TaxCalculator {
         let care = min(income, healthCap) * careRate
 
         return pension + unemployment + health + care
+    }
+
+    // MARK: - French Tax Calculation
+
+    private static func calculateFrenchTax(
+        grossIncome: Double,
+        region: Region,
+        filingStatus: MaritalStatus
+    ) -> AfterTaxIncomeResult {
+        // Quotient familial: For married couples, income is divided by number of "parts"
+        // Single = 1 part, Married = 2 parts
+        let parts = filingStatus == .married ? 2.0 : 1.0
+        let incomeTax = calculateFrenchIncomeTax(income: grossIncome, parts: parts)
+        let socialContributions = calculateFrenchSocialContributions(income: grossIncome)
+
+        let totalTax = incomeTax + socialContributions
+        let afterTaxIncome = grossIncome - totalTax
+        let effectiveTaxRate = grossIncome > 0 ? (totalTax / grossIncome) * 100 : 0
+
+        let taxName = filingStatus == .married ? "Impôt sur le Revenu (2 parts)" : "Impôt sur le Revenu"
+
+        return AfterTaxIncomeResult(
+            grossIncome: grossIncome,
+            countryCode: "fr",
+            region: region,
+            components: [
+                TaxComponent(name: taxName, amount: incomeTax, rate: grossIncome > 0 ? (incomeTax / grossIncome) * 100 : 0),
+                TaxComponent(name: "Cotisations Sociales (CSG/CRDS)", amount: socialContributions, rate: grossIncome > 0 ? (socialContributions / grossIncome) * 100 : 0)
+            ],
+            totalTax: totalTax,
+            afterTaxIncome: afterTaxIncome,
+            effectiveTaxRate: effectiveTaxRate
+        )
+    }
+
+    private static func calculateFrenchIncomeTax(income: Double, parts: Double = 1.0) -> Double {
+        // French Income Tax (Impôt sur le Revenu) 2024
+        // Quotient familial: income is divided by parts, tax calculated, then multiplied by parts
+        // Progressive rates per part:
+        // €0 - €11,294: 0%
+        // €11,295 - €28,797: 11%
+        // €28,798 - €82,341: 30%
+        // €82,342 - €177,106: 41%
+        // €177,107+: 45%
+
+        // Note: French tax is calculated on "net imposable" which is gross minus social contributions
+        // We approximate by applying a 10% deduction (forfait frais professionnels)
+        let deduction = min(income * 0.10, 13_522)  // 10% capped at €13,522
+        let taxableIncome = max(0, income - deduction)
+
+        // Divide by parts for quotient familial
+        let incomePerPart = taxableIncome / parts
+
+        var taxPerPart: Double
+        if incomePerPart <= 11_294 {
+            taxPerPart = 0
+        } else if incomePerPart <= 28_797 {
+            taxPerPart = (incomePerPart - 11_294) * 0.11
+        } else if incomePerPart <= 82_341 {
+            let bracket1 = (28_797 - 11_294) * 0.11
+            let bracket2 = (incomePerPart - 28_797) * 0.30
+            taxPerPart = bracket1 + bracket2
+        } else if incomePerPart <= 177_106 {
+            let bracket1 = (28_797 - 11_294) * 0.11
+            let bracket2 = (82_341 - 28_797) * 0.30
+            let bracket3 = (incomePerPart - 82_341) * 0.41
+            taxPerPart = bracket1 + bracket2 + bracket3
+        } else {
+            let bracket1 = (28_797 - 11_294) * 0.11
+            let bracket2 = (82_341 - 28_797) * 0.30
+            let bracket3 = (177_106 - 82_341) * 0.41
+            let bracket4 = (incomePerPart - 177_106) * 0.45
+            taxPerPart = bracket1 + bracket2 + bracket3 + bracket4
+        }
+
+        // Multiply by parts to get total tax
+        return taxPerPart * parts
+    }
+
+    private static func calculateFrenchSocialContributions(income: Double) -> Double {
+        // French Social Contributions (employee portion) 2024
+        // CSG: 9.2% (of which 6.8% deductible)
+        // CRDS: 0.5%
+        // Applied to 98.25% of gross salary
+        // Total effective rate on gross: approximately 9.7%
+
+        // Note: Full social security contributions (cotisations salariales) are about 22%
+        // but these are typically deducted before the gross salary is stated
+        // Here we calculate CSG/CRDS which are deducted from net salary
+
+        let csgBase = income * 0.9825  // CSG base is 98.25% of gross
+        let csg = csgBase * 0.092
+        let crds = csgBase * 0.005
+
+        return csg + crds
+    }
+
+    // MARK: - Spanish Tax Calculation
+
+    private static func calculateSpanishTax(
+        grossIncome: Double,
+        region: Region,
+        filingStatus: MaritalStatus
+    ) -> AfterTaxIncomeResult {
+        // Tributación conjunta: Joint filing adds €3,400 reduction to personal allowance
+        let incomeTax = calculateSpanishIncomeTax(income: grossIncome, regionCode: region.code, isJointFiling: filingStatus == .married)
+        let socialSecurity = calculateSpanishSocialSecurity(income: grossIncome)
+
+        let totalTax = incomeTax + socialSecurity
+        let afterTaxIncome = grossIncome - totalTax
+        let effectiveTaxRate = grossIncome > 0 ? (totalTax / grossIncome) * 100 : 0
+
+        let taxName = filingStatus == .married ? "IRPF (Tributación Conjunta)" : "IRPF (Impuesto sobre la Renta)"
+
+        return AfterTaxIncomeResult(
+            grossIncome: grossIncome,
+            countryCode: "es",
+            region: region,
+            components: [
+                TaxComponent(name: taxName, amount: incomeTax, rate: grossIncome > 0 ? (incomeTax / grossIncome) * 100 : 0),
+                TaxComponent(name: "Seguridad Social", amount: socialSecurity, rate: grossIncome > 0 ? (socialSecurity / grossIncome) * 100 : 0)
+            ],
+            totalTax: totalTax,
+            afterTaxIncome: afterTaxIncome,
+            effectiveTaxRate: effectiveTaxRate
+        )
+    }
+
+    private static func calculateSpanishIncomeTax(income: Double, regionCode: String, isJointFiling: Bool = false) -> Double {
+        // Spanish IRPF 2024 - combined state + regional rates
+        // State portion + autonomous community portion
+        // Brackets: 19%, 24%, 30%, 37%, 45%, 47%
+
+        // Personal allowance (mínimo personal)
+        // Joint filing (tributación conjunta) adds €3,400 reduction
+        let personalAllowance = isJointFiling ? 5_550.0 + 3_400.0 : 5_550.0
+        let taxableIncome = max(0, income - personalAllowance)
+
+        if taxableIncome == 0 {
+            return 0
+        }
+
+        var tax = 0.0
+
+        // Combined brackets (state + average regional)
+        // €0 - €12,450: 19%
+        // €12,450 - €20,200: 24%
+        // €20,200 - €35,200: 30%
+        // €35,200 - €60,000: 37%
+        // €60,000 - €300,000: 45%
+        // €300,000+: 47%
+
+        if taxableIncome <= 12_450 {
+            tax = taxableIncome * 0.19
+        } else if taxableIncome <= 20_200 {
+            let bracket1 = 12_450 * 0.19
+            let bracket2 = (taxableIncome - 12_450) * 0.24
+            tax = bracket1 + bracket2
+        } else if taxableIncome <= 35_200 {
+            let bracket1 = 12_450 * 0.19
+            let bracket2 = (20_200 - 12_450) * 0.24
+            let bracket3 = (taxableIncome - 20_200) * 0.30
+            tax = bracket1 + bracket2 + bracket3
+        } else if taxableIncome <= 60_000 {
+            let bracket1 = 12_450 * 0.19
+            let bracket2 = (20_200 - 12_450) * 0.24
+            let bracket3 = (35_200 - 20_200) * 0.30
+            let bracket4 = (taxableIncome - 35_200) * 0.37
+            tax = bracket1 + bracket2 + bracket3 + bracket4
+        } else if taxableIncome <= 300_000 {
+            let bracket1 = 12_450 * 0.19
+            let bracket2 = (20_200 - 12_450) * 0.24
+            let bracket3 = (35_200 - 20_200) * 0.30
+            let bracket4 = (60_000 - 35_200) * 0.37
+            let bracket5 = (taxableIncome - 60_000) * 0.45
+            tax = bracket1 + bracket2 + bracket3 + bracket4 + bracket5
+        } else {
+            let bracket1 = 12_450 * 0.19
+            let bracket2 = (20_200 - 12_450) * 0.24
+            let bracket3 = (35_200 - 20_200) * 0.30
+            let bracket4 = (60_000 - 35_200) * 0.37
+            let bracket5 = (300_000 - 60_000) * 0.45
+            let bracket6 = (taxableIncome - 300_000) * 0.47
+            tax = bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + bracket6
+        }
+
+        return tax
+    }
+
+    private static func calculateSpanishSocialSecurity(income: Double) -> Double {
+        // Spanish Social Security (Seguridad Social) 2024 - employee portion
+        // Common contingencies: 4.7%
+        // Unemployment: 1.55%
+        // Professional training: 0.1%
+        // Total employee: ~6.35%
+        // Maximum contribution base: €4,720.50/month = €56,646/year
+
+        let maxBase = 56_646.0
+        let rate = 0.0635
+
+        let contributionBase = min(income, maxBase)
+        return contributionBase * rate
     }
 
     // MARK: - Helper

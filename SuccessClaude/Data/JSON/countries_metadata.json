@@ -77,8 +77,34 @@
       "occupation_count": 140,
       "has_data": true,
       "is_active": true
+    },
+    {
+      "code": "fr",
+      "name": "France",
+      "flag": "🇫🇷",
+      "currency": "EUR",
+      "currency_symbol": "€",
+      "occupation_system": "FAP 2009",
+      "region_type": "Région",
+      "region_count": 18,
+      "occupation_count": 196,
+      "has_data": true,
+      "is_active": true
+    },
+    {
+      "code": "es",
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "currency": "EUR",
+      "currency_symbol": "€",
+      "occupation_system": "CNO-11",
+      "region_type": "Comunidad Autónoma",
+      "region_count": 19,
+      "occupation_count": 98,
+      "has_data": true,
+      "is_active": true
     }
   ],
-  "version": "1.2",
+  "version": "1.4",
   "last_updated": "2025-12-31"
 }

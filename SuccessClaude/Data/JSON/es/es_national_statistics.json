@@ -1,0 +1,31 @@
+{
+  "national": {
+    "overall": {
+      "median_household_income": 32200,
+      "median_individual_income": 23349,
+      "mean_household_income": 38500,
+      "top_10_percent": 52000
+    },
+    "by_age": {
+      "18-24": {"median": 14500, "mean": 16200},
+      "25-34": {"median": 21000, "mean": 23500},
+      "35-44": {"median": 25500, "mean": 28500},
+      "45-54": {"median": 27200, "mean": 30500},
+      "55-64": {"median": 26800, "mean": 30000},
+      "65+": {"median": 24000, "mean": 27000}
+    },
+    "by_gender": {
+      "male": {"median": 25800, "mean": 30372},
+      "female": {"median": 21500, "mean": 25591}
+    },
+    "by_marital_status": {
+      "single": {"median": 20000, "mean": 23000},
+      "married": {"median": 26000, "mean": 30000}
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-12-31",
+    "source": "INE - Encuesta Anual de Estructura Salarial 2023"
+  }
+}

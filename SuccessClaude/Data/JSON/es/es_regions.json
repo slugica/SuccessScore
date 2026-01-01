@@ -1,0 +1,370 @@
+{
+  "regions": [
+    {
+      "code": "MD",
+      "name": "Comunidad de Madrid",
+      "country_code": "es",
+      "overall": {"median": 27280, "mean": 32220, "top_10_percent": 58000},
+      "by_age": {
+        "18-24": {"median": 16500, "mean": 18500},
+        "25-34": {"median": 24000, "mean": 27000},
+        "35-44": {"median": 30000, "mean": 34000},
+        "45-54": {"median": 32000, "mean": 36000},
+        "55-64": {"median": 31000, "mean": 35000},
+        "65+": {"median": 28000, "mean": 32000}
+      },
+      "by_gender": {
+        "male": {"median": 30000, "mean": 35500},
+        "female": {"median": 24500, "mean": 29000}
+      },
+      "cost_of_living_index": 115.0
+    },
+    {
+      "code": "CT",
+      "name": "Cataluña",
+      "country_code": "es",
+      "overall": {"median": 25920, "mean": 30600, "top_10_percent": 55000},
+      "by_age": {
+        "18-24": {"median": 15500, "mean": 17500},
+        "25-34": {"median": 23000, "mean": 26000},
+        "35-44": {"median": 28500, "mean": 32000},
+        "45-54": {"median": 30000, "mean": 34000},
+        "55-64": {"median": 29500, "mean": 33000},
+        "65+": {"median": 26500, "mean": 30000}
+      },
+      "by_gender": {
+        "male": {"median": 28500, "mean": 33500},
+        "female": {"median": 23000, "mean": 27500}
+      },
+      "cost_of_living_index": 112.0
+    },
+    {
+      "code": "PV",
+      "name": "País Vasco",
+      "country_code": "es",
+      "overall": {"median": 28350, "mean": 33505, "top_10_percent": 60000},
+      "by_age": {
+        "18-24": {"median": 17000, "mean": 19000},
+        "25-34": {"median": 25000, "mean": 28000},
+        "35-44": {"median": 31000, "mean": 35000},
+        "45-54": {"median": 33000, "mean": 37000},
+        "55-64": {"median": 32000, "mean": 36000},
+        "65+": {"median": 29000, "mean": 33000}
+      },
+      "by_gender": {
+        "male": {"median": 31000, "mean": 36500},
+        "female": {"median": 25500, "mean": 30000}
+      },
+      "cost_of_living_index": 108.0
+    },
+    {
+      "code": "NC",
+      "name": "Comunidad Foral de Navarra",
+      "country_code": "es",
+      "overall": {"median": 26380, "mean": 31200, "top_10_percent": 56000},
+      "by_age": {
+        "18-24": {"median": 16000, "mean": 18000},
+        "25-34": {"median": 24000, "mean": 27000},
+        "35-44": {"median": 29000, "mean": 33000},
+        "45-54": {"median": 31000, "mean": 35000},
+        "55-64": {"median": 30000, "mean": 34000},
+        "65+": {"median": 27000, "mean": 31000}
+      },
+      "by_gender": {
+        "male": {"median": 29000, "mean": 34000},
+        "female": {"median": 23500, "mean": 28000}
+      },
+      "cost_of_living_index": 102.0
+    },
+    {
+      "code": "AR",
+      "name": "Aragón",
+      "country_code": "es",
+      "overall": {"median": 23870, "mean": 28200, "top_10_percent": 51000},
+      "by_age": {
+        "18-24": {"median": 14500, "mean": 16500},
+        "25-34": {"median": 21500, "mean": 24500},
+        "35-44": {"median": 26000, "mean": 30000},
+        "45-54": {"median": 28000, "mean": 32000},
+        "55-64": {"median": 27000, "mean": 31000},
+        "65+": {"median": 24500, "mean": 28000}
+      },
+      "by_gender": {
+        "male": {"median": 26000, "mean": 31000},
+        "female": {"median": 21500, "mean": 25500}
+      },
+      "cost_of_living_index": 95.0
+    },
+    {
+      "code": "RI",
+      "name": "La Rioja",
+      "country_code": "es",
+      "overall": {"median": 23920, "mean": 28270, "top_10_percent": 51000},
+      "by_age": {
+        "18-24": {"median": 14500, "mean": 16500},
+        "25-34": {"median": 21500, "mean": 24500},
+        "35-44": {"median": 26000, "mean": 30000},
+        "45-54": {"median": 28000, "mean": 32000},
+        "55-64": {"median": 27000, "mean": 31000},
+        "65+": {"median": 24500, "mean": 28000}
+      },
+      "by_gender": {
+        "male": {"median": 26000, "mean": 31000},
+        "female": {"median": 21500, "mean": 25500}
+      },
+      "cost_of_living_index": 92.0
+    },
+    {
+      "code": "CB",
+      "name": "Cantabria",
+      "country_code": "es",
+      "overall": {"median": 24640, "mean": 29100, "top_10_percent": 52000},
+      "by_age": {
+        "18-24": {"median": 15000, "mean": 17000},
+        "25-34": {"median": 22000, "mean": 25000},
+        "35-44": {"median": 27000, "mean": 31000},
+        "45-54": {"median": 29000, "mean": 33000},
+        "55-64": {"median": 28000, "mean": 32000},
+        "65+": {"median": 25000, "mean": 29000}
+      },
+      "by_gender": {
+        "male": {"median": 27000, "mean": 32000},
+        "female": {"median": 22000, "mean": 26000}
+      },
+      "cost_of_living_index": 94.0
+    },
+    {
+      "code": "AS",
+      "name": "Principado de Asturias",
+      "country_code": "es",
+      "overall": {"median": 23700, "mean": 28000, "top_10_percent": 50000},
+      "by_age": {
+        "18-24": {"median": 14500, "mean": 16500},
+        "25-34": {"median": 21000, "mean": 24000},
+        "35-44": {"median": 26000, "mean": 30000},
+        "45-54": {"median": 28000, "mean": 32000},
+        "55-64": {"median": 27000, "mean": 31000},
+        "65+": {"median": 24000, "mean": 28000}
+      },
+      "by_gender": {
+        "male": {"median": 26000, "mean": 31000},
+        "female": {"median": 21000, "mean": 25000}
+      },
+      "cost_of_living_index": 93.0
+    },
+    {
+      "code": "GA",
+      "name": "Galicia",
+      "country_code": "es",
+      "overall": {"median": 22720, "mean": 26850, "top_10_percent": 48000},
+      "by_age": {
+        "18-24": {"median": 14000, "mean": 16000},
+        "25-34": {"median": 20000, "mean": 23000},
+        "35-44": {"median": 25000, "mean": 29000},
+        "45-54": {"median": 27000, "mean": 31000},
+        "55-64": {"median": 26000, "mean": 30000},
+        "65+": {"median": 23000, "mean": 27000}
+      },
+      "by_gender": {
+        "male": {"median": 25000, "mean": 29500},
+        "female": {"median": 20500, "mean": 24000}
+      },
+      "cost_of_living_index": 90.0
+    },
+    {
+      "code": "CL",
+      "name": "Castilla y León",
+      "country_code": "es",
+      "overall": {"median": 23150, "mean": 27350, "top_10_percent": 49000},
+      "by_age": {
+        "18-24": {"median": 14000, "mean": 16000},
+        "25-34": {"median": 20500, "mean": 23500},
+        "35-44": {"median": 25500, "mean": 29500},
+        "45-54": {"median": 27500, "mean": 31500},
+        "55-64": {"median": 26500, "mean": 30500},
+        "65+": {"median": 24000, "mean": 27500}
+      },
+      "by_gender": {
+        "male": {"median": 25500, "mean": 30000},
+        "female": {"median": 21000, "mean": 24500}
+      },
+      "cost_of_living_index": 88.0
+    },
+    {
+      "code": "CM",
+      "name": "Castilla-La Mancha",
+      "country_code": "es",
+      "overall": {"median": 21540, "mean": 24886, "top_10_percent": 45000},
+      "by_age": {
+        "18-24": {"median": 13500, "mean": 15000},
+        "25-34": {"median": 19000, "mean": 21500},
+        "35-44": {"median": 24000, "mean": 27000},
+        "45-54": {"median": 26000, "mean": 29000},
+        "55-64": {"median": 25000, "mean": 28000},
+        "65+": {"median": 22000, "mean": 25000}
+      },
+      "by_gender": {
+        "male": {"median": 24000, "mean": 27500},
+        "female": {"median": 19000, "mean": 22000}
+      },
+      "cost_of_living_index": 85.0
+    },
+    {
+      "code": "VC",
+      "name": "Comunitat Valenciana",
+      "country_code": "es",
+      "overall": {"median": 22180, "mean": 26200, "top_10_percent": 47000},
+      "by_age": {
+        "18-24": {"median": 13500, "mean": 15500},
+        "25-34": {"median": 19500, "mean": 22500},
+        "35-44": {"median": 24500, "mean": 28000},
+        "45-54": {"median": 26500, "mean": 30000},
+        "55-64": {"median": 25500, "mean": 29000},
+        "65+": {"median": 23000, "mean": 26000}
+      },
+      "by_gender": {
+        "male": {"median": 24500, "mean": 29000},
+        "female": {"median": 20000, "mean": 23500}
+      },
+      "cost_of_living_index": 95.0
+    },
+    {
+      "code": "IB",
+      "name": "Illes Balears",
+      "country_code": "es",
+      "overall": {"median": 23800, "mean": 28100, "top_10_percent": 50000},
+      "by_age": {
+        "18-24": {"median": 15000, "mean": 17000},
+        "25-34": {"median": 21000, "mean": 24000},
+        "35-44": {"median": 26000, "mean": 30000},
+        "45-54": {"median": 28000, "mean": 32000},
+        "55-64": {"median": 27000, "mean": 31000},
+        "65+": {"median": 24000, "mean": 28000}
+      },
+      "by_gender": {
+        "male": {"median": 26000, "mean": 31000},
+        "female": {"median": 21500, "mean": 25500}
+      },
+      "cost_of_living_index": 110.0
+    },
+    {
+      "code": "AN",
+      "name": "Andalucía",
+      "country_code": "es",
+      "overall": {"median": 22350, "mean": 26400, "top_10_percent": 47000},
+      "by_age": {
+        "18-24": {"median": 13500, "mean": 15500},
+        "25-34": {"median": 19500, "mean": 22500},
+        "35-44": {"median": 24500, "mean": 28000},
+        "45-54": {"median": 26500, "mean": 30000},
+        "55-64": {"median": 25500, "mean": 29000},
+        "65+": {"median": 23000, "mean": 26000}
+      },
+      "by_gender": {
+        "male": {"median": 24500, "mean": 29000},
+        "female": {"median": 20000, "mean": 23500}
+      },
+      "cost_of_living_index": 90.0
+    },
+    {
+      "code": "MU",
+      "name": "Región de Murcia",
+      "country_code": "es",
+      "overall": {"median": 21540, "mean": 25450, "top_10_percent": 46000},
+      "by_age": {
+        "18-24": {"median": 13000, "mean": 15000},
+        "25-34": {"median": 19000, "mean": 22000},
+        "35-44": {"median": 24000, "mean": 27500},
+        "45-54": {"median": 26000, "mean": 29500},
+        "55-64": {"median": 25000, "mean": 28500},
+        "65+": {"median": 22000, "mean": 25500}
+      },
+      "by_gender": {
+        "male": {"median": 24000, "mean": 28000},
+        "female": {"median": 19000, "mean": 22500}
+      },
+      "cost_of_living_index": 88.0
+    },
+    {
+      "code": "EX",
+      "name": "Extremadura",
+      "country_code": "es",
+      "overall": {"median": 20360, "mean": 23684, "top_10_percent": 43000},
+      "by_age": {
+        "18-24": {"median": 12500, "mean": 14500},
+        "25-34": {"median": 18000, "mean": 20500},
+        "35-44": {"median": 22500, "mean": 25500},
+        "45-54": {"median": 24500, "mean": 27500},
+        "55-64": {"median": 23500, "mean": 26500},
+        "65+": {"median": 21000, "mean": 24000}
+      },
+      "by_gender": {
+        "male": {"median": 22500, "mean": 26000},
+        "female": {"median": 18000, "mean": 21000}
+      },
+      "cost_of_living_index": 82.0
+    },
+    {
+      "code": "CN",
+      "name": "Canarias",
+      "country_code": "es",
+      "overall": {"median": 21120, "mean": 24034, "top_10_percent": 43000},
+      "by_age": {
+        "18-24": {"median": 13000, "mean": 15000},
+        "25-34": {"median": 18500, "mean": 21000},
+        "35-44": {"median": 23000, "mean": 26000},
+        "45-54": {"median": 25000, "mean": 28000},
+        "55-64": {"median": 24000, "mean": 27000},
+        "65+": {"median": 21500, "mean": 24500}
+      },
+      "by_gender": {
+        "male": {"median": 23000, "mean": 26500},
+        "female": {"median": 19000, "mean": 21500}
+      },
+      "cost_of_living_index": 95.0
+    },
+    {
+      "code": "CE",
+      "name": "Ceuta",
+      "country_code": "es",
+      "overall": {"median": 24000, "mean": 28350, "top_10_percent": 51000},
+      "by_age": {
+        "18-24": {"median": 15000, "mean": 17000},
+        "25-34": {"median": 21000, "mean": 24000},
+        "35-44": {"median": 26500, "mean": 30500},
+        "45-54": {"median": 28500, "mean": 32500},
+        "55-64": {"median": 27500, "mean": 31500},
+        "65+": {"median": 25000, "mean": 28500}
+      },
+      "by_gender": {
+        "male": {"median": 26500, "mean": 31000},
+        "female": {"median": 21500, "mean": 25500}
+      },
+      "cost_of_living_index": 98.0
+    },
+    {
+      "code": "ML",
+      "name": "Melilla",
+      "country_code": "es",
+      "overall": {"median": 24200, "mean": 28600, "top_10_percent": 51000},
+      "by_age": {
+        "18-24": {"median": 15000, "mean": 17000},
+        "25-34": {"median": 21200, "mean": 24200},
+        "35-44": {"median": 26700, "mean": 30700},
+        "45-54": {"median": 28700, "mean": 32700},
+        "55-64": {"median": 27700, "mean": 31700},
+        "65+": {"median": 25200, "mean": 28700}
+      },
+      "by_gender": {
+        "male": {"median": 26700, "mean": 31200},
+        "female": {"median": 21700, "mean": 25700}
+      },
+      "cost_of_living_index": 98.0
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-12-31",
+    "source": "INE - Encuesta Anual de Estructura Salarial 2023, EPA Decil de Salarios 2023"
+  }
+}
