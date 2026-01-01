@@ -35,12 +35,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 41467,
-          "mean": 48931
-        },
-        "Female": {
           "median": 47452,
           "mean": 55994
+        },
+        "Female": {
+          "median": 41467,
+          "mean": 48931
         }
       },
       "by_marital_status": {
@@ -98,12 +98,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34038,
-          "mean": 40164
-        },
-        "Female": {
           "median": 42444,
           "mean": 50084
+        },
+        "Female": {
+          "median": 34038,
+          "mean": 40164
         }
       },
       "by_marital_status": {
@@ -161,12 +161,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 33734,
-          "mean": 39806
-        },
-        "Female": {
           "median": 40109,
           "mean": 47329
+        },
+        "Female": {
+          "median": 33734,
+          "mean": 39806
         }
       },
       "by_marital_status": {
@@ -224,12 +224,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37000,
-          "mean": 43660
-        },
-        "Female": {
           "median": 42873,
           "mean": 50590
+        },
+        "Female": {
+          "median": 37000,
+          "mean": 43660
         }
       },
       "by_marital_status": {
@@ -287,12 +287,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 38257,
-          "mean": 45143
-        },
-        "Female": {
           "median": 45704,
           "mean": 53931
+        },
+        "Female": {
+          "median": 38257,
+          "mean": 45143
         }
       },
       "by_marital_status": {
@@ -350,12 +350,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 40963,
-          "mean": 48336
-        },
-        "Female": {
           "median": 50746,
           "mean": 59881
+        },
+        "Female": {
+          "median": 40963,
+          "mean": 48336
         }
       },
       "by_marital_status": {
@@ -413,12 +413,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 40130,
-          "mean": 47353
-        },
-        "Female": {
           "median": 50398,
           "mean": 59470
+        },
+        "Female": {
+          "median": 40130,
+          "mean": 47353
         }
       },
       "by_marital_status": {
@@ -476,12 +476,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37713,
-          "mean": 44501
-        },
-        "Female": {
           "median": 54268,
           "mean": 64036
+        },
+        "Female": {
+          "median": 37713,
+          "mean": 44501
         }
       },
       "by_marital_status": {
@@ -539,12 +539,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 38557,
-          "mean": 45497
-        },
-        "Female": {
           "median": 46512,
           "mean": 54884
+        },
+        "Female": {
+          "median": 38557,
+          "mean": 45497
         }
       },
       "by_marital_status": {
@@ -602,12 +602,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 33878,
-          "mean": 39976
-        },
-        "Female": {
           "median": 39267,
           "mean": 46335
+        },
+        "Female": {
+          "median": 33878,
+          "mean": 39976
         }
       },
       "by_marital_status": {
@@ -665,12 +665,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 35324,
-          "mean": 41683
-        },
-        "Female": {
           "median": 42926,
           "mean": 50653
+        },
+        "Female": {
+          "median": 35324,
+          "mean": 41683
         }
       },
       "by_marital_status": {
@@ -728,12 +728,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 39682,
-          "mean": 46825
-        },
-        "Female": {
           "median": 46559,
           "mean": 54940
+        },
+        "Female": {
+          "median": 39682,
+          "mean": 46825
         }
       },
       "by_marital_status": {
@@ -791,12 +791,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 39108,
-          "mean": 46147
-        },
-        "Female": {
           "median": 47146,
           "mean": 55632
+        },
+        "Female": {
+          "median": 39108,
+          "mean": 46147
         }
       },
       "by_marital_status": {
@@ -854,12 +854,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 35610,
-          "mean": 42020
-        },
-        "Female": {
           "median": 43983,
           "mean": 51899
+        },
+        "Female": {
+          "median": 35610,
+          "mean": 42020
         }
       },
       "by_marital_status": {
@@ -917,12 +917,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37942,
-          "mean": 44771
-        },
-        "Female": {
           "median": 47157,
           "mean": 55645
+        },
+        "Female": {
+          "median": 37942,
+          "mean": 44771
         }
       },
       "by_marital_status": {
@@ -980,12 +980,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37412,
-          "mean": 44146
-        },
-        "Female": {
           "median": 46013,
           "mean": 54296
+        },
+        "Female": {
+          "median": 37412,
+          "mean": 44146
         }
       },
       "by_marital_status": {
@@ -1043,12 +1043,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 36952,
-          "mean": 43603
-        },
-        "Female": {
           "median": 45619,
           "mean": 53831
+        },
+        "Female": {
+          "median": 36952,
+          "mean": 43603
         }
       },
       "by_marital_status": {
@@ -1106,12 +1106,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34026,
-          "mean": 40151
-        },
-        "Female": {
           "median": 40933,
           "mean": 48301
+        },
+        "Female": {
+          "median": 34026,
+          "mean": 40151
         }
       },
       "by_marital_status": {
@@ -1169,12 +1169,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 33996,
-          "mean": 40116
-        },
-        "Female": {
           "median": 44873,
           "mean": 52950
+        },
+        "Female": {
+          "median": 33996,
+          "mean": 40116
         }
       },
       "by_marital_status": {
@@ -1232,12 +1232,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 42240,
-          "mean": 49843
-        },
-        "Female": {
           "median": 54183,
           "mean": 63936
+        },
+        "Female": {
+          "median": 42240,
+          "mean": 49843
         }
       },
       "by_marital_status": {
@@ -1295,12 +1295,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 42182,
-          "mean": 49775
-        },
-        "Female": {
           "median": 52212,
           "mean": 61610
+        },
+        "Female": {
+          "median": 42182,
+          "mean": 49775
         }
       },
       "by_marital_status": {
@@ -1358,12 +1358,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 36848,
-          "mean": 43481
-        },
-        "Female": {
           "median": 44100,
           "mean": 52038
+        },
+        "Female": {
+          "median": 36848,
+          "mean": 43481
         }
       },
       "by_marital_status": {
@@ -1421,12 +1421,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34993,
-          "mean": 41292
-        },
-        "Female": {
           "median": 43784,
           "mean": 51665
+        },
+        "Female": {
+          "median": 34993,
+          "mean": 41292
         }
       },
       "by_marital_status": {
@@ -1484,12 +1484,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 40382,
-          "mean": 47651
-        },
-        "Female": {
           "median": 48735,
           "mean": 57507
+        },
+        "Female": {
+          "median": 40382,
+          "mean": 47651
         }
       },
       "by_marital_status": {
@@ -1547,12 +1547,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 35369,
-          "mean": 41735
-        },
-        "Female": {
           "median": 43391,
           "mean": 51201
+        },
+        "Female": {
+          "median": 35369,
+          "mean": 41735
         }
       },
       "by_marital_status": {
@@ -1610,12 +1610,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 31777,
-          "mean": 37496
-        },
-        "Female": {
           "median": 39525,
           "mean": 46639
+        },
+        "Female": {
+          "median": 31777,
+          "mean": 37496
         }
       },
       "by_marital_status": {
@@ -1673,12 +1673,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 33824,
-          "mean": 39912
-        },
-        "Female": {
           "median": 42171,
           "mean": 49762
+        },
+        "Female": {
+          "median": 33824,
+          "mean": 39912
         }
       },
       "by_marital_status": {
@@ -1736,12 +1736,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34316,
-          "mean": 40493
-        },
-        "Female": {
           "median": 41158,
           "mean": 48566
+        },
+        "Female": {
+          "median": 34316,
+          "mean": 40493
         }
       },
       "by_marital_status": {
@@ -1799,12 +1799,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 41504,
-          "mean": 48975
-        },
-        "Female": {
           "median": 49692,
           "mean": 58636
+        },
+        "Female": {
+          "median": 41504,
+          "mean": 48975
         }
       },
       "by_marital_status": {
@@ -1862,12 +1862,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 38286,
-          "mean": 45177
-        },
-        "Female": {
           "median": 46259,
           "mean": 54586
+        },
+        "Female": {
+          "median": 38286,
+          "mean": 45177
         }
       },
       "by_marital_status": {
@@ -1925,12 +1925,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 42640,
-          "mean": 50315
-        },
-        "Female": {
           "median": 52327,
           "mean": 61746
+        },
+        "Female": {
+          "median": 42640,
+          "mean": 50315
         }
       },
       "by_marital_status": {
@@ -1988,12 +1988,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 40303,
-          "mean": 47558
-        },
-        "Female": {
           "median": 51125,
           "mean": 60328
+        },
+        "Female": {
+          "median": 40303,
+          "mean": 47558
         }
       },
       "by_marital_status": {
@@ -2051,12 +2051,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 31636,
-          "mean": 37330
-        },
-        "Female": {
           "median": 37879,
           "mean": 44697
+        },
+        "Female": {
+          "median": 31636,
+          "mean": 37330
         }
       },
       "by_marital_status": {
@@ -2114,12 +2114,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 38418,
-          "mean": 45333
-        },
-        "Female": {
           "median": 42872,
           "mean": 50589
+        },
+        "Female": {
+          "median": 38418,
+          "mean": 45333
         }
       },
       "by_marital_status": {
@@ -2177,12 +2177,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37822,
-          "mean": 44630
-        },
-        "Female": {
           "median": 46227,
           "mean": 54547
+        },
+        "Female": {
+          "median": 37822,
+          "mean": 44630
         }
       },
       "by_marital_status": {
@@ -2240,12 +2240,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 36066,
-          "mean": 42558
-        },
-        "Female": {
           "median": 44778,
           "mean": 52838
+        },
+        "Female": {
+          "median": 36066,
+          "mean": 42558
         }
       },
       "by_marital_status": {
@@ -2303,12 +2303,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34997,
-          "mean": 41296
-        },
-        "Female": {
           "median": 43137,
           "mean": 50901
+        },
+        "Female": {
+          "median": 34997,
+          "mean": 41296
         }
       },
       "by_marital_status": {
@@ -2366,12 +2366,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37149,
-          "mean": 43835
-        },
-        "Female": {
           "median": 44707,
           "mean": 52754
+        },
+        "Female": {
+          "median": 37149,
+          "mean": 43835
         }
       },
       "by_marital_status": {
@@ -2429,12 +2429,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37683,
-          "mean": 44466
-        },
-        "Female": {
           "median": 47075,
           "mean": 55548
+        },
+        "Female": {
+          "median": 37683,
+          "mean": 44466
         }
       },
       "by_marital_status": {
@@ -2492,12 +2492,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 40920,
-          "mean": 48285
-        },
-        "Female": {
           "median": 49766,
           "mean": 58724
+        },
+        "Female": {
+          "median": 40920,
+          "mean": 48285
         }
       },
       "by_marital_status": {
@@ -2555,12 +2555,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34076,
-          "mean": 40210
-        },
-        "Female": {
           "median": 41300,
           "mean": 48734
+        },
+        "Female": {
+          "median": 34076,
+          "mean": 40210
         }
       },
       "by_marital_status": {
@@ -2618,12 +2618,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 36852,
-          "mean": 43485
-        },
-        "Female": {
           "median": 43733,
           "mean": 51605
+        },
+        "Female": {
+          "median": 36852,
+          "mean": 43485
         }
       },
       "by_marital_status": {
@@ -2681,12 +2681,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 34947,
-          "mean": 41237
-        },
-        "Female": {
           "median": 41715,
           "mean": 49224
+        },
+        "Female": {
+          "median": 34947,
+          "mean": 41237
         }
       },
       "by_marital_status": {
@@ -2744,12 +2744,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 36273,
-          "mean": 42802
-        },
-        "Female": {
           "median": 44434,
           "mean": 52432
+        },
+        "Female": {
+          "median": 36273,
+          "mean": 42802
         }
       },
       "by_marital_status": {
@@ -2807,12 +2807,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 39591,
-          "mean": 46718
-        },
-        "Female": {
           "median": 50579,
           "mean": 59684
+        },
+        "Female": {
+          "median": 39591,
+          "mean": 46718
         }
       },
       "by_marital_status": {
@@ -2870,12 +2870,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 37833,
-          "mean": 44643
-        },
-        "Female": {
           "median": 48357,
           "mean": 57062
+        },
+        "Female": {
+          "median": 37833,
+          "mean": 44643
         }
       },
       "by_marital_status": {
@@ -2933,12 +2933,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 38384,
-          "mean": 45293
-        },
-        "Female": {
           "median": 44224,
           "mean": 52184
+        },
+        "Female": {
+          "median": 38384,
+          "mean": 45293
         }
       },
       "by_marital_status": {
@@ -2996,12 +2996,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 42072,
-          "mean": 49644
-        },
-        "Female": {
           "median": 52392,
           "mean": 61822
+        },
+        "Female": {
+          "median": 42072,
+          "mean": 49644
         }
       },
       "by_marital_status": {
@@ -3059,12 +3059,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 39477,
-          "mean": 46583
-        },
-        "Female": {
           "median": 47528,
           "mean": 56083
+        },
+        "Female": {
+          "median": 39477,
+          "mean": 46583
         }
       },
       "by_marital_status": {
@@ -3122,12 +3122,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 32853,
-          "mean": 38766
-        },
-        "Female": {
           "median": 41424,
           "mean": 48880
+        },
+        "Female": {
+          "median": 32853,
+          "mean": 38766
         }
       },
       "by_marital_status": {
@@ -3185,12 +3185,12 @@
       },
       "by_gender": {
         "Male": {
-          "median": 38292,
-          "mean": 45184
-        },
-        "Female": {
           "median": 51854,
           "mean": 61187
+        },
+        "Female": {
+          "median": 38292,
+          "mean": 45184
         }
       },
       "by_marital_status": {
