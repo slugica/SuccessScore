@@ -61,10 +61,16 @@ struct AnimatedNumberView: View {
         switch countryCode.lowercased() {
         case "us":
             symbol = "$"
-        case "ca":
-            symbol = "C$"
         case "uk":
             symbol = "£"
+        case "ca":
+            symbol = "C$"
+        case "au":
+            symbol = "A$"
+        case "nz":
+            symbol = "NZ$"
+        case "de", "fr", "es":
+            symbol = "€"
         default:
             symbol = "$"
         }

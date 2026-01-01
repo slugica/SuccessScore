@@ -14,13 +14,17 @@ struct ComparisonCardView: View {
         comparison.countryCode ?? "us"
     }
 
+    // Countries that collect household income data
+    private let countriesWithHouseholdIncome = ["us", "au", "de", "fr", "es"]
+
     var body: some View {
         VStack(alignment: .leading, spacing: Theme.paddingMedium) {
             headerSection
             Divider()
             metricsGrid
 
-            if comparison.hasHouseholdData {
+            // Only show household section for countries that collect household income
+            if comparison.hasHouseholdData && countriesWithHouseholdIncome.contains(countryCode) {
                 householdSection
             }
 
@@ -75,7 +79,8 @@ struct ComparisonCardView: View {
 
                 Spacer()
 
-                if let perCapita = comparison.perCapitaIncome {
+                // Only show Per Person if we have valid household income data
+                if let perCapita = comparison.perCapitaIncome, perCapita > 0 {
                     VStack(alignment: .trailing, spacing: 2) {
                         Text("Per Person")
                             .font(.caption2)

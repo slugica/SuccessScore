@@ -4,6 +4,7 @@
       "median_household_income": 42500,
       "median_individual_income": 33984,
       "mean_household_income": 52000,
+      "mean_individual_income": 42000,
       "top_10_percent": 67028
     },
     "by_age": {

@@ -444,8 +444,14 @@ struct UserInputFormView: View {
             )
         } footer: {
             if viewModel.userProfile.isMarried {
-                Text("Enter your personal income and the combined household income (you + spouse). This helps compare both your profession earnings and family prosperity.")
-                    .font(.caption)
+                // Countries that collect household income
+                if ["us", "au", "de", "fr", "es"].contains(viewModel.userProfile.countryCode) {
+                    Text("Enter your personal income and the combined household income (you + spouse). This helps compare both your profession earnings and family prosperity.")
+                        .font(.caption)
+                } else {
+                    Text("Enter your total annual income before taxes. Marital status affects tax calculations.")
+                        .font(.caption)
+                }
             } else {
                 Text("Enter your total annual income before taxes")
                     .font(.caption)

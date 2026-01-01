@@ -15,10 +15,16 @@ struct CareerPathDetailView: View {
         switch countryCode {
         case "us":
             return "$"
-        case "ca":
-            return "C$"
         case "uk":
             return "£"
+        case "ca":
+            return "C$"
+        case "au":
+            return "A$"
+        case "nz":
+            return "NZ$"
+        case "de", "fr", "es":
+            return "€"
         default:
             return "$"
         }

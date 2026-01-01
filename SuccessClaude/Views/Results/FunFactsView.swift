@@ -17,6 +17,18 @@ struct FunFactsView: View {
             return "the US"
         case "uk":
             return "the UK"
+        case "ca":
+            return "Canada"
+        case "au":
+            return "Australia"
+        case "nz":
+            return "New Zealand"
+        case "de":
+            return "Germany"
+        case "fr":
+            return "France"
+        case "es":
+            return "Spain"
         default:
             return "the country"
         }

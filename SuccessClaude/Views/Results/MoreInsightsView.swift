@@ -18,10 +18,16 @@ struct MoreInsightsView: View {
         switch countryCode {
         case "us":
             return "$"
-        case "ca":
-            return "C$"
         case "uk":
             return "£"
+        case "ca":
+            return "C$"
+        case "au":
+            return "A$"
+        case "nz":
+            return "NZ$"
+        case "de", "fr", "es":
+            return "€"
         default:
             return "$"
         }
@@ -41,9 +47,12 @@ struct MoreInsightsView: View {
                         GenderComparisonView(genderComparison: genderComparison, currencySymbol: currencySymbol)
                     }
 
-                    // Age Comparison
-                    if let stateData = DataLoader.shared.getStateData(for: snapshot.userProfile.state),
-                       let ageGroup = stateData.byAge[DataLoader.shared.getAgeRangeKey(for: snapshot.userProfile.age)] {
+                    // Age Comparison - use region data for current country
+                    if let regionData = DataLoader.shared.getRegionData(
+                        for: snapshot.userProfile.region.code,
+                        countryCode: snapshot.userProfile.countryCode
+                    ),
+                       let ageGroup = regionData.byAge[DataLoader.shared.getAgeRangeKey(for: snapshot.userProfile.age, countryCode: snapshot.userProfile.countryCode)] {
                         AgeComparisonCard(
                             userAge: snapshot.userProfile.age,
                             userIncome: snapshot.userProfile.annualIncome,

@@ -114,24 +114,39 @@ class StatisticsCalculator {
         }
         print("✅ National data found for country: \(profile.countryCode)")
 
-        let ageRange = dataLoader.getAgeRangeKey(for: profile.age, countryCode: profile.countryCode)
-        let maritalKey = profile.maritalStatus.rawValue
+        // Use overall national statistics for "vs National" comparison
+        // This provides an accurate comparison "vs all earners"
+        // (marital-specific comparison is done in state/region comparison)
 
-        // Get the most specific data available - prioritize marital status for household comparisons
-        let stats: IncomeStats
-        if let maritalStats = nationalStats.byMaritalStatus[maritalKey] {
-            // Use marital status specific data (better for household income comparisons)
-            stats = maritalStats
+        // For mean: Use explicit meanIndividualIncome if available
+        // Otherwise check if household and individual medians are similar
+        // If so, the data is already individual-level (e.g., Canada)
+        // Otherwise, estimate individual mean from household mean
+        let estimatedMean: Double
+        if let meanIndividual = nationalStats.overall.meanIndividualIncome {
+            // Use explicit individual mean if available
+            estimatedMean = meanIndividual
         } else {
-            // Use overall national data for single/divorced/widowed
-            stats = IncomeStats(
-                median: nationalStats.overall.medianIndividualIncome,
-                mean: nationalStats.overall.meanHouseholdIncome / 2.5 // Rough conversion
-            )
+            let householdMedian = nationalStats.overall.medianHouseholdIncome
+            let individualMedian = nationalStats.overall.medianIndividualIncome
+            let isIndividualData = abs(householdMedian - individualMedian) / max(householdMedian, 1) < 0.1
+
+            if isIndividualData {
+                // Data is already individual-level, use as-is
+                estimatedMean = nationalStats.overall.meanHouseholdIncome
+            } else {
+                // Estimate individual mean from household mean
+                estimatedMean = nationalStats.overall.meanHouseholdIncome / 2.5
+            }
         }
 
-        // Use comparisonIncome for fair household comparison (uses equivalised income for AU)
-        let income = profile.comparisonIncome
+        let stats = IncomeStats(
+            median: nationalStats.overall.medianIndividualIncome,
+            mean: estimatedMean
+        )
+
+        // Use personal income for national comparison (comparing individual earnings)
+        let income = profile.annualIncome
         let percentile = calculatePercentile(income: income, median: stats.median, mean: stats.mean)
         let percentageDiff = ((income - stats.median) / stats.median) * 100
 
@@ -306,15 +321,9 @@ class StatisticsCalculator {
             throw StatisticsError.dataNotAvailable("Region data not available")
         }
 
-        let maritalKey = profile.maritalStatus.rawValue
-        let stats: IncomeStats
-        if let maritalStats = regionData.byMaritalStatus?[maritalKey] {
-            stats = maritalStats
-        } else {
-            stats = regionData.overall.asIncomeStats
-        }
+        // Use actual top 10% data from region if available, otherwise estimate from mean
+        let top10 = regionData.overall.top10Percent ?? (regionData.overall.mean * 1.8)
 
-        let top10 = stats.mean * 1.8
         // Use comparisonIncome for fair household comparison
         let income = profile.comparisonIncome
         let gap = max(0, top10 - income)
@@ -382,8 +391,9 @@ class StatisticsCalculator {
             throw StatisticsError.dataNotAvailable("Region data not available")
         }
 
-        let maleMedian = regionData.byGender["Male"]?.median
-        let femaleMedian = regionData.byGender["Female"]?.median
+        // Support both capitalized and lowercase keys for by_gender (varies by country data files)
+        let maleMedian = regionData.byGender["Male"]?.median ?? regionData.byGender["male"]?.median
+        let femaleMedian = regionData.byGender["Female"]?.median ?? regionData.byGender["female"]?.median
 
         let payGap: Double?
         if let male = maleMedian, let female = femaleMedian, male > 0 {
@@ -392,12 +402,13 @@ class StatisticsCalculator {
             payGap = nil
         }
 
+        // Use personal income for gender comparison (comparing individual earnings, not household)
         return GenderComparison(
             category: profile.region.name,
             maleMedian: maleMedian,
             femaleMedian: femaleMedian,
             userGender: profile.gender,
-            userIncome: profile.comparisonIncome,
+            userIncome: profile.annualIncome,
             payGap: payGap
         )
     }
@@ -470,11 +481,22 @@ class StatisticsCalculator {
             throw StatisticsError.dataNotAvailable("Data not available")
         }
 
-        // Calculate national rank percentile (using comparisonIncome for fair comparison)
+        // Calculate national rank percentile using personal income vs individual income stats
+        // This matches the "vs National" comparison in the results
+        let estimatedMean: Double
+        if let meanIndividual = nationalStats.overall.meanIndividualIncome {
+            estimatedMean = meanIndividual
+        } else {
+            let householdMedian = nationalStats.overall.medianHouseholdIncome
+            let individualMedian = nationalStats.overall.medianIndividualIncome
+            let isIndividualData = abs(householdMedian - individualMedian) / max(householdMedian, 1) < 0.1
+            estimatedMean = isIndividualData ? nationalStats.overall.meanHouseholdIncome : nationalStats.overall.meanHouseholdIncome / 2.5
+        }
+
         let nationalPercentile = calculatePercentile(
-            income: profile.comparisonIncome,
-            median: nationalStats.overall.medianHouseholdIncome,
-            mean: nationalStats.overall.meanHouseholdIncome
+            income: profile.annualIncome,
+            median: nationalStats.overall.medianIndividualIncome,
+            mean: estimatedMean
         )
 
         // Get employment numbers

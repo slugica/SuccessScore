@@ -125,28 +125,27 @@ class DataLoader {
             print("⚠️ Failed to load national data: \(error)")
         }
 
-        // Load automation risk data for US (used universally for all countries)
-        if countryCode == "us" {
+        // Load automation risk data
+        do {
+            dataSet.automationRiskData = try await loadAutomationRiskData(countryCode: countryCode)
+            print("✅ Loaded automation risk data for \(countryCode)")
+        } catch {
+            print("⚠️ Failed to load automation risk data for \(countryCode): \(error)")
+        }
+
+        // For non-US countries, also ensure US automation data is loaded (as fallback)
+        if countryCode != "us" && countryDataSets["us"]?.automationRiskData == nil {
             do {
-                dataSet.automationRiskData = try await loadAutomationRiskData(countryCode: countryCode)
-            } catch {
-                print("⚠️ Failed to load automation risk data: \(error)")
-            }
-        } else {
-            // For non-US countries, ensure US automation data is loaded
-            if countryDataSets["us"]?.automationRiskData == nil {
-                do {
-                    let usAutomationData = try await loadAutomationRiskData(countryCode: "us")
-                    if var usDataSet = countryDataSets["us"] {
-                        usDataSet.automationRiskData = usAutomationData
-                        countryDataSets["us"] = usDataSet
-                    } else {
-                        countryDataSets["us"] = CountryDataSet(automationRiskData: usAutomationData)
-                    }
-                    print("✅ Loaded US automation data for non-US country")
-                } catch {
-                    print("⚠️ Failed to load US automation risk data: \(error)")
+                let usAutomationData = try await loadAutomationRiskData(countryCode: "us")
+                if var usDataSet = countryDataSets["us"] {
+                    usDataSet.automationRiskData = usAutomationData
+                    countryDataSets["us"] = usDataSet
+                } else {
+                    countryDataSets["us"] = CountryDataSet(automationRiskData: usAutomationData)
                 }
+                print("✅ Loaded US automation data as fallback")
+            } catch {
+                print("⚠️ Failed to load US automation risk data: \(error)")
             }
         }
 
@@ -329,10 +328,24 @@ class DataLoader {
         let country = countryCode ?? currentCountryCode
         print("🤖 Looking for automation risk: SOC=\(socCode), country=\(country)")
 
-        // For non-US countries: use US automation data with appropriate SOC mapping
-        var targetSOCCode = socCode
-        var searchCountry = country
+        // First, try country's own automation risk data (with 2-digit prefix matching for UK)
+        if let countryAutomationData = countryDataSets[country]?.automationRiskData {
+            // For UK: use 2-digit prefix (e.g., "5434" → "54")
+            let searchCode: String
+            if country == "uk" && socCode.count >= 2 {
+                searchCode = String(socCode.prefix(2))
+                print("🇬🇧 UK: Using 2-digit prefix '\(searchCode)' for SOC \(socCode)")
+            } else {
+                searchCode = socCode
+            }
 
+            if let match = countryAutomationData.automationRisks.first(where: { $0.socCode == searchCode }) {
+                print("✅ Found automation risk in \(country) data for \(searchCode): \(match.overallRisk)%")
+                return match
+            }
+        }
+
+        // Fallback: For non-US countries, try US automation data with SOC mapping
         if country != "us" {
             // Select appropriate mapping based on country
             let mapping: SOCMapping?
@@ -342,16 +355,12 @@ class DataLoader {
             case "ca":
                 mapping = nocToSocMapping
             case "au", "nz":
-                // Both Australia and New Zealand use ANZSCO classification
                 mapping = anzscoToSocMapping
             case "de":
-                // Germany uses KldB 2010 classification
                 mapping = kldbToSocMapping
             case "fr":
-                // France uses FAP 2009 classification
                 mapping = fapToSocMapping
             case "es":
-                // Spain uses CNO-11 classification
                 mapping = cnoToSocMapping
             default:
                 mapping = nil
@@ -359,28 +368,63 @@ class DataLoader {
 
             // Try to map to US SOC code
             if let mappedCode = mapping?.mappings[socCode] {
-                targetSOCCode = mappedCode
-                searchCountry = "us"
-                print("🗺️ Mapped \(country) code \(socCode) → US SOC \(mappedCode)")
-            } else {
-                print("⚠️ No mapping found for \(country) code: \(socCode)")
-                return nil
+                print("🗺️ Fallback: Mapped \(country) code \(socCode) → US SOC \(mappedCode)")
+
+                if let usAutomationData = countryDataSets["us"]?.automationRiskData {
+                    // First try exact match
+                    if let match = usAutomationData.automationRisks.first(where: { $0.socCode == mappedCode }) {
+                        print("✅ Found automation risk in US data for \(mappedCode): \(match.overallRisk)%")
+                        return match
+                    }
+
+                    // Try parent code (e.g., 27-2011 → 27-2010)
+                    if let parentMatch = findParentAutomationRisk(socCode: mappedCode, in: usAutomationData) {
+                        print("✅ Found automation risk in US data for parent code: \(parentMatch.overallRisk)%")
+                        return parentMatch
+                    }
+                }
             }
         }
 
-        // Get automation data (always use US data for risk assessment)
-        guard let automationData = countryDataSets["us"]?.automationRiskData else {
-            print("⚠️ No US automation data loaded")
-            return nil
+        // For US: direct lookup
+        if country == "us" {
+            if let usAutomationData = countryDataSets["us"]?.automationRiskData {
+                // First try exact match
+                if let match = usAutomationData.automationRisks.first(where: { $0.socCode == socCode }) {
+                    print("✅ Found automation risk for \(socCode): \(match.overallRisk)%")
+                    return match
+                }
+
+                // Try parent code
+                if let parentMatch = findParentAutomationRisk(socCode: socCode, in: usAutomationData) {
+                    print("✅ Found automation risk for parent code: \(parentMatch.overallRisk)%")
+                    return parentMatch
+                }
+            }
         }
 
-        // Find exact match in US data
-        if let match = automationData.automationRisks.first(where: { $0.socCode == targetSOCCode }) {
-            print("✅ Found automation risk for \(targetSOCCode): \(match.overallRisk)%")
-            return match
-        }
+        print("❌ No automation risk found for SOC code: \(socCode)")
+        return nil
+    }
 
-        print("❌ No automation risk found for SOC code: \(targetSOCCode)")
+    // Helper to find parent SOC code (e.g., 27-2011 → 27-2010, then 27-2000)
+    private func findParentAutomationRisk(socCode: String, in data: AutomationRiskData) -> OccupationRisk? {
+        // SOC format: XX-XXXX
+        // Try minor group: XX-XXX0 (e.g., 27-2011 → 27-2010)
+        if socCode.count == 7 {
+            let minorGroup = String(socCode.dropLast()) + "0"
+            if let match = data.automationRisks.first(where: { $0.socCode == minorGroup }) {
+                print("📍 Found parent minor group: \(minorGroup)")
+                return match
+            }
+
+            // Try broad group: XX-X000 (e.g., 27-2011 → 27-2000)
+            let broadGroup = String(socCode.prefix(4)) + "000"
+            if let match = data.automationRisks.first(where: { $0.socCode == broadGroup }) {
+                print("📍 Found parent broad group: \(broadGroup)")
+                return match
+            }
+        }
         return nil
     }
 

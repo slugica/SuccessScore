@@ -181,12 +181,14 @@ struct DetailedIncomeStats: Codable {
     let medianHouseholdIncome: Double
     let medianIndividualIncome: Double
     let meanHouseholdIncome: Double
+    let meanIndividualIncome: Double?
     let top10Percent: Double
 
     enum CodingKeys: String, CodingKey {
         case medianHouseholdIncome = "median_household_income"
         case medianIndividualIncome = "median_individual_income"
         case meanHouseholdIncome = "mean_household_income"
+        case meanIndividualIncome = "mean_individual_income"
         case top10Percent = "top_10_percent"
     }
 }
